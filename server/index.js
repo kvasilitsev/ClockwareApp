@@ -1,24 +1,20 @@
 const express = require("express");
-const path = require('path');
+const log4js = require("./logger");
+const masterRouter = require('./routes/master.routes');
+const cityRouter = require('./routes/city.routes');
+
+const logger = log4js.getLogger("clockwiseLog");
+logger.info("test");
 
 const PORT = process.env.PORT || 3001;
-
 const app = express();
 
+app.use(express.json());
+app.use('/api', masterRouter);
+app.use('/api', cityRouter)
 
   
-  app.listen(PORT, () => {
-    console.log(`Server listening on ${PORT}`);
-  });
-
-app.use(express.static(path.resolve(__dirname, '../client/build')));
-
-// Handle GET requests to /api route
-app.get("/api", (req, res) => {
-    res.json({ message: "This is an answer from server!" });
+app.listen(PORT, () => {
+  logger.info(`Server listening on ${PORT}`);
 });
 
-// All other GET requests not handled before will return our React app
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
-});
