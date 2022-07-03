@@ -2,9 +2,9 @@ const Router = require('express');
 const router = new Router();
 const cityController = require("../controllers/city.controller")
 
-router.post("/city", cityController.createCity);
-router.get("/city", cityController.getCity);
-router.get("/city/:id", cityController.getOneCity);
-router.delete("/city/:id", cityController.deleteCity);
+router.post("/createCity", cityController.createCity);
+router.get("/getCities", cityController.getCities);
+router.get("/getCityById/:id", cityController.getCityById);
+router.delete("/deleteCity/:id", cityController.deleteCity);
 
 module.exports = router;

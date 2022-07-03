@@ -4,7 +4,6 @@ const masterRouter = require('./routes/master.routes');
 const cityRouter = require('./routes/city.routes');
 
 const logger = log4js.getLogger("clockwiseLog");
-logger.info("test");
 
 const PORT = process.env.PORT || 3001;
 const app = express();

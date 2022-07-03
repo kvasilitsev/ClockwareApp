@@ -1,26 +1,19 @@
 const db = require('../db');
+const cityService = require('../services/city.service');
 
 class CityController {
-    async createCity(req, res) {
-        const {name} = req.body;
-        const newCity =  await db.query('INSERT INTO cities (name) values ($1) RETURNING *', [name]);
-        res.json(newCity.rows);
+    createCity(req, res) {
+      cityService.createCity(req,res);
     };
-    async getCity(req, res) {
-        const citiess = await db.query('SELECT * FROM cities');
-        res.json(citiess.rows);
+    getCities(req, res) {
+        cityService.getCities(req, res);
     };
-    async getOneCity(req, res) {
-        const id = req.params.id;
-        const city = await db.query('SELECT * FROM cities where id = $1', [id]);
-        res.json(city.rows);
+    getCityById(req, res) {
+        cityService.getCityById(req, res);
     }; 
-    async deleteCity(req, res) {
-        const id = req.params.id;
-        const city = await db.query('DELETE FROM cities where id = $1', [id]);
-        res.json(city.rows);
+    deleteCity(req, res) {
+        cityService.deleteCity(req, res);
     };
 }
-
 
 module.exports = new CityController();
