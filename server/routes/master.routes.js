@@ -7,6 +7,5 @@ router.get("/getMasters", masterController.getMasters);
 router.get("/getMasterById/:id", masterController.getMasterById);
 router.put("/updateMaster", masterController.updateMaster);
 router.delete("/deleteMaster/:id", masterController.deleteMaster);
-router.get("/getMasterByCity", masterController.getMasterByCity);
 
 module.exports = router;
