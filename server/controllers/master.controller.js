@@ -1,4 +1,4 @@
-const mastersData = require('../dal/masters.dal');
+const masterService = require("../services/master.services")
 const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
@@ -14,8 +14,8 @@ class MasterController {
    */
   async createMaster(req, res) {
     const {name, rating, city_id} = req.body;    
-    const newMaster = await mastersData.createMaster(name, rating, city_id);
-    res.json(newMaster.rows);
+    const newMaster = await masterService.createMaster(name, rating, city_id);
+    res.json(newMaster);
   };
 
   /**
@@ -24,8 +24,8 @@ class MasterController {
    * @param {*} res 
    */
   async getMasters(req, res) {
-    const masters = await mastersData.getMasters();
-    res.json(masters.rows);json
+    const masters = await masterService.getMasters();
+    res.json(masters)
   };
 
   /**
@@ -35,8 +35,8 @@ class MasterController {
    */
   async getMasterById(req, res) {
     const id = req.params.id;
-    const master = await mastersData.getMasterById(id);
-    res.json(master.rows);   
+    const master = await masterService.getMasterById(id);
+    res.json(master);   
   };
 
   /**
@@ -46,8 +46,8 @@ class MasterController {
    */
   async updateMaster(req, res) {
     const {id, name, rating} = req.body;
-    const master = mastersData.updateMaster(id, name, rating);
-    res.json(master.rows);
+    const master = await masterService.updateMaster(id, name, rating);    
+    res.json(master);
   };
 
   /**
@@ -57,9 +57,19 @@ class MasterController {
    */
   async deleteMaster(req, res) {
     const id = req.params.id;
-    const master = await mastersData.deleteMaster(id);
-    res.json(master.rows);  
+    const master = await masterService.deleteMaster(id);
+    res.json(master);  
   };
+   /**
+   * Method interprets http request to get masters by city name
+   * @param {*} req 
+   * @param {*} res 
+   */
+    async getMastersByCityName(req, res){
+      const name = req.params.name;
+      const masters = await masterService.getMastersByCityName(name);
+      res.json(masters);
+    }
 }
 
 module.exports = new MasterController();

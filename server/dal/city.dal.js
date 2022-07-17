@@ -7,24 +7,29 @@ const logger = log4js.getLogger("clockwiseLog");
  */
 class CityData {
   
+   /**
+  * Method creates new city
+  * @param {text} name 
+  * @returns message
+  */
+  async createCity(name) {
+    try {
+      const newCity =  await db.query(`INSERT INTO cities (name) values ($1) RETURNING *`, [name]);  
+      return `City ${name} has been added`;
+    } catch (err) {
+      logger.info(`Error ${err}`)
+      return err.detail;
+    }
+  };
+    
   /**
    * Method selects all cities
    * @returns id, name of all cities
    */
   async getCities() {
-    const cities = await db.query('SELECT id, name FROM cities');    
-    return cities;
+    const cities = await db.query('SELECT id, name FROM cities');
+    return cities.rows;
   }
-  
- /**
-  * Method creates new city
-  * @param {text} name 
-  * @returns new city values
-  */
-  async createCity(name) {
-    const newCity =  await db.query('INSERT INTO cities (name) values ($1) RETURNING *', [name]);
-    return newCity;
-  };
 
   /**
    * Method selects city by its id
@@ -33,29 +38,52 @@ class CityData {
    */
   async getCityById(id) {
     const city = await db.query('SELECT id, name FROM cities where id = $1', [id]);
-    return city;
+    return city.rows;
   };
 
   /**
-   * Method deletes city by its id
-   * @param {integer} id 
-   * @returns empty array of values
-   */
-  async deleteCity(id) {
-    const city = await db.query('DELETE FROM cities where id = $1', [id]);
-    return city;    
-  };
-
-  /**
-   * Method update city by its id
-   * @param {integer} id 
-   * @param {text} name 
-   * @returns updated city values
-   */
-  async updateCity(id, name) {
-    const city = await db.query('UPDATE cities SET name = $1 WHERE id = $2 RETURNING *', [name, id]);
-    return city;
+  * Method update city by its id
+  * @param {integer} id 
+  * @param {text} name 
+  * @returns message
+  */
+  async updateCity(id, name) {    
+    try {
+      const city = await db.query('UPDATE cities SET name = $1 WHERE id = $2 RETURNING *', [name, id]);
+      return `City ${name} has been updated`;
+    } catch (err) {
+      logger.info(`Error ${err}`)
+      return err.detail;
+    }
   }
+
+  /**
+   * Method deletes city by its name
+   * @param {integer} id 
+   * @returns message
+   */
+  async deleteCity(name) {     
+    try {
+      const city = await db.query('DELETE FROM cities where name = $1', [name]);
+      return `City ${name} has been deleted`;
+    } catch (err) {
+      logger.info(`Error ${err}`)
+      return err.detail;
+    }
+  };
+  /**
+   * Method select cities by master id
+   * @param {integer} id 
+   * @returns 
+   */
+  async getCitiesByMasterId(id) {
+    logger.info(id)
+    const cities = await db.query('select cities.name from cities, masters_cities  where masters_cities.master_id = $1 and masters_cities.city_id = cities.id', [id])
+    
+    return cities.rows;
+  }
+
+ 
 }
   
   module.exports = new CityData();

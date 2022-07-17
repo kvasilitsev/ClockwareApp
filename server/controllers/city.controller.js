@@ -1,5 +1,4 @@
-const db = require('../db');
-const citiesData = require('../dal/city.dal');
+const cityService = require('../services/city.services');
 const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
@@ -15,8 +14,8 @@ class CityController {
    */
   async createCity(req, res) {
     const {name} = req.body;
-    const newCity = await citiesData.createCity(name);
-		res.json(newCity.rows);
+    const newCity = await cityService.createCity(name);
+		res.json(newCity);
   };
 
   /**
@@ -25,8 +24,8 @@ class CityController {
    * @param {*} res 
    */
   async getCities(req, res) {
-    const cities = await citiesData.getCities(); 
-		res.json(cities.rows);
+    const cities = await cityService.getCities();
+    res.json(cities)
   };
 
   /**
@@ -36,9 +35,19 @@ class CityController {
    */
   async getCityById(req, res) {
     const id = req.params.id;
-    const city = await citiesData.getCityById(id);
-    res.json(city.rows);
+    const city = await cityService.getCityById(id);
+    res.json(city);
   }; 
+  /**
+  * Method interprets http request to updet city data by its id
+  * @param {*} req 
+  * @param {*} res 
+  */
+  async updateCity(req, res) {
+    const {id, name} = req.body;
+    const city = await cityService.updateCity(id, name);
+    res.json(city);
+  }
 
   /**
    * Method interprets http request to delete city by its id
@@ -46,21 +55,21 @@ class CityController {
    * @param {*} res 
    */
   async deleteCity(req, res) {
-    const id = req.params.id;
-    const city = await citiesData.deleteCity(id);
-    res.json(city.rows);
-  };
+    const name = req.params.name;
+    const city = await cityService.deleteCity(name);
+    res.json(city);
+  }; 
 
   /**
-   * Method interprets http request to updet city data by its id
+   * Method interprets http request to get cities name and id by master id
    * @param {*} req 
    * @param {*} res 
    */
-  async updateCity(req, res) {
-    const {id, name} = req.body;
-    const city = await citiesData.updateCity(id, name);
-    res.json(city.rows);
-  }
+  async getCitiesByMasterId(req, res){
+    const id = req.params.id;
+    const cities = await cityService.getCitiesByMasterId(id);
+    res.json(cities);
+  } 
 }
 
 module.exports = new CityController();

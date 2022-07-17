@@ -12,12 +12,17 @@ class MasterData {
    * Method creates new master
    * @param {text} name 
    * @param {integer} rating 
-   * @returns new master values
+   * @returns message
    */
   
-  async createMaster(name, rating) {     
-    const newMaster =  await db.query('INSERT INTO masters (name, rating) values ($1, $2) RETURNING *', [name, rating]);
-    return newMaster;
+  async createMaster(name, rating) {  
+    try {
+      const newMaster =  await db.query('INSERT INTO masters (name, rating) values ($1, $2) RETURNING *', [name, rating]);
+      return `Master ${name} with rating ${rating} has been added in the list`;
+    } catch (err) {
+      logger.info(`Error ${err}`)
+      return err.detail;
+    }
   };
 
   /**
@@ -26,7 +31,7 @@ class MasterData {
    */
   async getMasters() {    
     const masters = await db.query('SELECT id, name, rating FROM masters');
-    return masters;
+    return masters.rows;
   };
 
   /**
@@ -37,7 +42,7 @@ class MasterData {
   async getMasterById(id) {
     logger.trace("getMasterById()");    
     const master = await db.query('SELECT name, rating FROM masters where id = $1', [id]);
-    return master;
+    return master.rows;
   };
 
   /**
@@ -45,24 +50,41 @@ class MasterData {
    * @param {integer} id 
    * @param {text} name 
    * @param {integer} rating 
-   * @returns updated master value
+   * @returns message
    */
-  async updateMaster(id, name, rating) {
-    logger.trace("updateMaster()");
-    const master = await db.query('UPDATE masters SET name = $1, rating =$2 WHERE id = $3 RETURNING *', [name, rating, id]);
-    return master;
+  async updateMaster(id, name, rating) {    
+    try {
+      const master = await db.query('UPDATE masters SET name = $1, rating =$2 WHERE id = $3 RETURNING *', [name, rating, id]);
+      return `Master ${name} with id ${id} and rating ${rating} has been updated`;
+    } catch (err) {
+      logger.info(`Error ${err}`)
+      return err.detail;
+    }
   };
 
   /**
    * Method deletes master by their id
    * @param {integer} id 
-   * @returns empty array of values
+   * @returns message
    */
-  async deleteMaster(id) {
-    logger.trace("deleteMaster()");
-    const master = await db.query('DELETE FROM masters where id = $1', [id]);
-    return master;    
+  async deleteMaster(id) {   
+    try {
+      const master = await db.query('DELETE FROM masters where id = $1', [id]);
+      return `Master ${id} has been deleted`;
+    } catch (err) {
+      logger.info(`Error ${err}`)
+      return err.detail;
+    }
   };	
+  /**
+   * Methods select masters by cities name
+   * @param {text} name 
+   * @returns 
+   */
+  async getMastersByCityName(name) {
+    const masters = await db.query('select masters.name from masters, cities, masters_cities where masters_cities.master_id = masters.id and masters_cities.city_id = cities.id and cities.name = $1', [name]);
+    return masters.rows;
+  }
 }
   
   module.exports = new MasterData()
