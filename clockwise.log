@@ -3192,3 +3192,1348 @@
 [2022-07-16T17:40:44.194] [INFO] clockwiseLog - Server listening on 3001
 [2022-07-16T17:40:45.629] [INFO] clockwiseLog - Server listening on 3001
 [2022-07-16T17:40:54.597] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:52:37.157] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:53:54.438] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T18:55:17.060] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:55:19.644] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:55:20.855] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:55:23.216] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:55:24.686] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:55:55.573] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T18:56:24.243] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:56:31.082] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:56:33.575] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T18:58:14.901] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:58:17.074] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T18:58:51.324] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:58:54.485] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T18:59:54.605] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:00:01.605] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:00:03.672] [INFO] clockwiseLog - 6
+[2022-07-21T19:00:03.672] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T19:00:13.219] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:00:20.321] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:00:24.284] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T19:00:24.315] [INFO] clockwiseLog - Result {
+  command: 'SELECT',
+  rowCount: 1,
+  oid: null,
+  rows: [ { name: 'peter', rating: 3 } ],
+  fields: [
+    Field {
+      name: 'name',
+      tableID: 16385,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'rating',
+      tableID: 16385,
+      columnID: 3,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    }
+  ],
+  _parsers: [ [Function: noParse], [Function: parseInteger] ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false
+}
+[2022-07-21T19:01:14.573] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:01:15.893] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:01:25.270] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:01:38.430] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:01:45.556] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:01:51.915] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T19:01:51.948] [INFO] clockwiseLog - Result {
+  command: 'SELECT',
+  rowCount: 1,
+  oid: null,
+  rows: [ { name: 'peter', rating: 3 } ],
+  fields: [
+    Field {
+      name: 'name',
+      tableID: 16385,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'rating',
+      tableID: 16385,
+      columnID: 3,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    }
+  ],
+  _parsers: [ [Function: noParse], [Function: parseInteger] ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false
+}
+[2022-07-21T19:02:05.959] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:02:23.530] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T19:02:23.563] [INFO] clockwiseLog - { name: 'peter', rating: 3 }
+[2022-07-21T19:03:49.294] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:03:58.122] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:04:07.559] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:04:21.470] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:07:22.862] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:07:49.241] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:08:44.243] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:11:46.934] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:11:49.881] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:11:57.708] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:12:07.005] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:12:16.808] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:12:19.834] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:12:21.498] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:12:25.781] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:12:28.420] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:12:31.894] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T19:13:01.118] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:13:06.894] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:13:14.308] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:13:23.445] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:13:27.009] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T19:13:27.044] [INFO] clockwiseLog - [ { id: 6, name: 'peter', rating: 3 } ]
+[2022-07-21T19:13:45.270] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:13:47.999] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T19:13:48.032] [INFO] clockwiseLog - { id: 6, name: 'peter', rating: 3 }
+[2022-07-21T19:13:58.750] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:14:41.221] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:14:44.383] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T19:14:44.415] [INFO] clockwiseLog - peter
+[2022-07-21T19:14:44.415] [INFO] clockwiseLog - Master { id: 6, name: 'peter', rating: 3, cityList: undefined }
+[2022-07-21T19:14:58.078] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:15:09.717] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:15:11.185] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T19:15:11.221] [INFO] clockwiseLog - peter
+[2022-07-21T19:15:11.221] [INFO] clockwiseLog - Master { id: 6, name: 'peter', rating: 3, cityList: undefined }
+[2022-07-21T19:15:15.369] [TRACE] clockwiseLog - getMasterById()
+[2022-07-21T19:15:15.370] [INFO] clockwiseLog - Michael
+[2022-07-21T19:15:15.370] [INFO] clockwiseLog - Master { id: 4, name: 'Michael', rating: 2, cityList: undefined }
+[2022-07-21T19:18:25.813] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:18:47.550] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:19:02.606] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:19:04.591] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:19:31.166] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:19:33.824] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:19:36.027] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:19:40.107] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:19:41.460] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:20:03.759] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:20:05.794] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:20:26.034] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:20:32.456] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:20:40.907] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:20:49.114] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:20:50.176] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:20:51.671] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:20:58.730] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:21:35.019] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:21:43.855] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:21:45.494] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:22:12.202] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:22:22.239] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:22:26.685] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:22:33.438] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:22:39.613] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:22:45.530] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:22:46.997] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:23:25.473] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:23:27.105] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:23:55.852] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:24:10.599] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:24:15.680] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:24:20.230] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:24:23.827] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:24:24.867] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:24:27.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:24:28.950] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:24:31.660] [INFO] clockwiseLog - undefined
+[2022-07-21T19:24:46.421] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:25:13.665] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:25:16.008] [INFO] clockwiseLog - [
+  { id: 2, name: 'George', rating: 1 },
+  { id: 4, name: 'Michael', rating: 2 },
+  { id: 3, name: 'Robert', rating: 2 },
+  { id: 5, name: 'Alex', rating: 3 },
+  { id: 6, name: 'peter', rating: 3 }
+]
+[2022-07-21T19:26:28.915] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:26:32.149] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:26:33.796] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:26:38.884] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:26:40.014] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:26:47.999] [INFO] clockwiseLog - [
+  { id: 2, name: 'George', rating: 1 },
+  { id: 4, name: 'Michael', rating: 2 },
+  { id: 3, name: 'Robert', rating: 2 },
+  { id: 5, name: 'Alex', rating: 3 },
+  { id: 6, name: 'peter', rating: 3 }
+]
+[2022-07-21T19:27:35.801] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:27:41.030] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:27:42.664] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:27:45.179] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:27:46.274] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:27:55.146] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:27:58.443] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:28:04.039] [INFO] clockwiseLog - undefined
+[2022-07-21T19:28:30.016] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:28:33.999] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:28:36.088] [INFO] clockwiseLog - undefined
+[2022-07-21T19:29:58.713] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:30:02.261] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:30:04.397] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:30:05.777] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:30:28.436] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:30:36.916] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:30:43.611] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:30:46.262] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:30:50.517] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:30:56.557] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:30:59.606] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:31:06.100] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:31:08.853] [INFO] clockwiseLog - undefined
+[2022-07-21T19:31:20.436] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:31:22.934] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:31:27.344] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:31:29.385] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:31:30.831] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:31:33.324] [INFO] clockwiseLog - undefined
+[2022-07-21T19:31:53.436] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:32:00.002] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:32:02.214] [INFO] clockwiseLog - undefined
+[2022-07-21T19:32:15.670] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:32:28.943] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:32:43.212] [INFO] clockwiseLog - George
+[2022-07-21T19:32:43.212] [INFO] clockwiseLog - Michael
+[2022-07-21T19:32:43.212] [INFO] clockwiseLog - Robert
+[2022-07-21T19:32:43.212] [INFO] clockwiseLog - Alex
+[2022-07-21T19:32:43.212] [INFO] clockwiseLog - peter
+[2022-07-21T19:32:43.212] [INFO] clockwiseLog - undefined
+[2022-07-21T19:33:00.645] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:33:18.600] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:33:24.433] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:33:26.003] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:33:27.925] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:33:33.225] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:33:34.433] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:33:37.052] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:33:38.503] [INFO] clockwiseLog - George
+[2022-07-21T19:33:38.503] [INFO] clockwiseLog - Michael
+[2022-07-21T19:33:38.503] [INFO] clockwiseLog - Robert
+[2022-07-21T19:33:38.503] [INFO] clockwiseLog - Alex
+[2022-07-21T19:33:38.503] [INFO] clockwiseLog - peter
+[2022-07-21T19:33:38.503] [INFO] clockwiseLog - undefined
+[2022-07-21T19:34:52.037] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:34:56.058] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:01.184] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:05.413] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:09.588] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:10.896] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:16.983] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:30.593] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:32.928] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:34.935] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:36.220] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:38.163] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:41.640] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:35:48.046] [INFO] clockwiseLog - George
+[2022-07-21T19:35:48.046] [INFO] clockwiseLog - Michael
+[2022-07-21T19:35:48.046] [INFO] clockwiseLog - Robert
+[2022-07-21T19:35:48.046] [INFO] clockwiseLog - Alex
+[2022-07-21T19:35:48.046] [INFO] clockwiseLog - peter
+[2022-07-21T19:35:48.046] [INFO] clockwiseLog - [
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined }
+]
+[2022-07-21T19:36:10.045] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:36:12.368] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:36:13.581] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:36:15.244] [INFO] clockwiseLog - George
+[2022-07-21T19:36:15.244] [INFO] clockwiseLog - Michael
+[2022-07-21T19:36:15.244] [INFO] clockwiseLog - Robert
+[2022-07-21T19:36:15.244] [INFO] clockwiseLog - Alex
+[2022-07-21T19:36:15.244] [INFO] clockwiseLog - peter
+[2022-07-21T19:36:15.244] [INFO] clockwiseLog - [
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined }
+]
+[2022-07-21T19:37:58.260] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:38:38.577] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:39:11.131] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:39:28.090] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:40:27.333] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:40:28.584] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:43:21.175] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:47:55.728] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:47:57.897] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:48:15.565] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:48:22.616] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:48:29.390] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:48:34.246] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:48:44.528] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:48:51.660] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:49:00.509] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:49:07.958] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:49:43.652] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:49:47.769] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:50:30.801] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:50:39.488] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:51:43.265] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:53:08.554] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:53:17.723] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:53:18.930] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:53:19.977] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:53:37.934] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:56:32.996] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T19:56:34.029] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:00:54.437] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:00:57.337] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:01:44.227] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:02:08.122] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:02:09.282] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:02:13.054] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:02:17.798] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:02:21.667] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:02:29.417] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:02:32.446] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:03:33.212] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:03:34.739] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:03:37.559] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:03:40.507] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:03:56.309] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:04:03.040] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:04:05.985] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:04:08.254] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:04:12.354] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:04:17.465] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:05:06.934] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:05:11.139] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:05:15.397] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:05:16.450] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:05:27.065] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:05:42.079] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:05:48.402] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:05:50.641] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:05:52.693] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:05:54.280] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:06:03.321] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:06:05.690] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:06:07.259] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-21T20:06:18.360] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T12:53:34.669] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T12:54:26.208] [INFO] clockwiseLog - George
+[2022-07-24T12:54:26.209] [INFO] clockwiseLog - Michael
+[2022-07-24T12:54:26.209] [INFO] clockwiseLog - Robert
+[2022-07-24T12:54:26.209] [INFO] clockwiseLog - Alex
+[2022-07-24T12:54:26.209] [INFO] clockwiseLog - peter
+[2022-07-24T12:54:26.209] [INFO] clockwiseLog - [
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined }
+]
+[2022-07-24T12:56:00.835] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T12:56:06.567] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T12:56:38.648] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T12:56:42.855] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T12:58:02.479] [INFO] clockwiseLog - George
+[2022-07-24T12:58:02.479] [INFO] clockwiseLog - Michael
+[2022-07-24T12:58:02.479] [INFO] clockwiseLog - Robert
+[2022-07-24T12:58:02.479] [INFO] clockwiseLog - Alex
+[2022-07-24T12:58:02.479] [INFO] clockwiseLog - peter
+[2022-07-24T12:58:02.479] [INFO] clockwiseLog - Jacob
+[2022-07-24T12:58:02.479] [INFO] clockwiseLog - [
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined }
+]
+[2022-07-24T12:58:15.426] [INFO] clockwiseLog - George
+[2022-07-24T12:58:15.426] [INFO] clockwiseLog - Michael
+[2022-07-24T12:58:15.426] [INFO] clockwiseLog - Robert
+[2022-07-24T12:58:15.426] [INFO] clockwiseLog - Alex
+[2022-07-24T12:58:15.426] [INFO] clockwiseLog - peter
+[2022-07-24T12:58:15.426] [INFO] clockwiseLog - Jacob
+[2022-07-24T12:58:15.426] [INFO] clockwiseLog - [
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined }
+]
+[2022-07-24T12:58:28.877] [INFO] clockwiseLog - George
+[2022-07-24T12:58:28.877] [INFO] clockwiseLog - Michael
+[2022-07-24T12:58:28.877] [INFO] clockwiseLog - Robert
+[2022-07-24T12:58:28.877] [INFO] clockwiseLog - Alex
+[2022-07-24T12:58:28.877] [INFO] clockwiseLog - peter
+[2022-07-24T12:58:28.877] [INFO] clockwiseLog - Jacob
+[2022-07-24T12:58:28.877] [INFO] clockwiseLog - [
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined },
+  Master { id: 12, name: 'Jacob', rating: 2, cityList: undefined }
+]
+[2022-07-24T13:01:53.958] [INFO] clockwiseLog - George
+[2022-07-24T13:01:53.958] [INFO] clockwiseLog - Michael
+[2022-07-24T13:01:53.958] [INFO] clockwiseLog - Robert
+[2022-07-24T13:01:53.958] [INFO] clockwiseLog - Alex
+[2022-07-24T13:01:53.958] [INFO] clockwiseLog - peter
+[2022-07-24T13:01:53.958] [INFO] clockwiseLog - [
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined }
+]
+[2022-07-24T13:04:54.514] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:04:58.351] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:04:59.453] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:05:00.891] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:05:07.060] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:05:33.008] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:05:41.179] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:05:55.734] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:05:58.338] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:06:02.955] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:06:10.392] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:06:16.373] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:06:23.672] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:06:25.652] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:06:28.757] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:06:32.513] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:06:48.297] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:06:49.483] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:06:56.927] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:07:03.742] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:07:09.456] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:07:18.840] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:07:25.619] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:07:35.392] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:07:38.611] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:07:45.908] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:07:50.579] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:07:56.944] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:09.885] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:15.628] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:16.836] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:21.265] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:36.312] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:38.903] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:40.142] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:45.236] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:49.480] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:53.269] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:55.290] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:08:57.951] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:09:02.499] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:09:09.892] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:09:28.593] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:09:31.878] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:09:37.107] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:09:48.482] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:10:03.314] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:10:13.112] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:10:19.280] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:10:33.686] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:10:36.544] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:10:40.782] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:10:42.333] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:10:45.726] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:10:48.676] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:11:01.932] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:11:04.506] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:11:05.539] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:11:39.046] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:11:57.947] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:12:10.016] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:12:21.071] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:12:23.718] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:12:26.820] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:12:29.492] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:12:32.500] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:12:55.360] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:12:56.601] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:13:01.056] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:13:04.746] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:13:11.935] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:13:15.411] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:13:22.018] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:13:33.663] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:13:34.924] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:13:48.866] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:13:52.318] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:13:55.497] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:13:58.440] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:14:00.385] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:14:14.614] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:14:20.624] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:15:01.516] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:15:02.645] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:15:19.780] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:23:29.086] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:23:30.156] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:23:38.487] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:23:46.021] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:23:57.055] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:28:57.583] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:28:59.601] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:29:02.917] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:29:05.167] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:29:07.241] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:29:09.306] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:29:11.956] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:29:20.103] [INFO] clockwiseLog - Result {
+  command: 'SELECT',
+  rowCount: 5,
+  oid: null,
+  rows: [
+    { id: 2, name: 'George', rating: 1 },
+    { id: 4, name: 'Michael', rating: 2 },
+    { id: 3, name: 'Robert', rating: 2 },
+    { id: 5, name: 'Alex', rating: 3 },
+    { id: 6, name: 'peter', rating: 3 }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16385,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'name',
+      tableID: 16385,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'rating',
+      tableID: 16385,
+      columnID: 3,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: parseInteger]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false
+}
+[2022-07-24T13:29:20.104] [INFO] clockwiseLog - George
+[2022-07-24T13:29:20.104] [INFO] clockwiseLog - Michael
+[2022-07-24T13:29:20.104] [INFO] clockwiseLog - Robert
+[2022-07-24T13:29:20.104] [INFO] clockwiseLog - Alex
+[2022-07-24T13:29:20.104] [INFO] clockwiseLog - peter
+[2022-07-24T13:29:20.104] [INFO] clockwiseLog - [
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined }
+]
+[2022-07-24T13:30:10.926] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:31:16.255] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:31:24.940] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:31:26.081] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:31:28.709] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:32:05.354] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:32:19.279] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:32:24.169] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:32:28.402] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:32:37.658] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:34:21.816] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:34:44.598] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:34:56.463] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:35:00.061] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:35:01.270] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:35:45.149] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:37:20.887] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:37:22.170] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:37:27.460] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:37:28.703] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:37:34.385] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:37:35.583] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:37:46.799] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:38:34.725] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:38:40.148] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:38:43.948] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:38:45.609] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:39:05.121] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:39:08.042] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:39:12.877] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:39:17.771] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:39:20.452] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:39:27.151] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:39:30.763] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:39:33.386] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:40:06.976] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:40:10.197] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:40:17.311] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:40:30.984] [INFO] clockwiseLog - [ undefined, undefined, undefined, undefined, undefined ]
+[2022-07-24T13:42:14.626] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:42:20.131] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:42:27.402] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:42:33.705] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:42:35.782] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:42:37.478] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:42:38.964] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:43:40.305] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:43:42.923] [INFO] clockwiseLog - [
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined }
+]
+[2022-07-24T13:44:06.395] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:44:11.523] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T13:44:13.583] [INFO] clockwiseLog - { id: 2, name: 'George', rating: 1 }
+[2022-07-24T13:44:13.584] [INFO] clockwiseLog - { id: 4, name: 'Michael', rating: 2 }
+[2022-07-24T13:44:13.584] [INFO] clockwiseLog - { id: 3, name: 'Robert', rating: 2 }
+[2022-07-24T13:44:13.584] [INFO] clockwiseLog - { id: 5, name: 'Alex', rating: 3 }
+[2022-07-24T13:44:13.584] [INFO] clockwiseLog - { id: 6, name: 'peter', rating: 3 }
+[2022-07-24T13:44:13.584] [INFO] clockwiseLog - [
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined }
+]
+[2022-07-24T14:07:06.317] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:07:08.266] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:28:41.198] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:28:46.079] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:30:22.331] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:30:43.105] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:34:13.576] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:34:22.676] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:40:54.880] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:41:21.847] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:41:24.580] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:41:26.381] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:41:33.770] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:41:38.657] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:42:08.424] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:42:15.760] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:42:19.556] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:42:25.829] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:42:27.583] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:42:44.419] [INFO] clockwiseLog - Master {
+  id: undefined,
+  name: undefined,
+  rating: undefined,
+  cityList: undefined
+}
+[2022-07-24T14:42:44.450] [INFO] clockwiseLog - [
+  Master { id: 2, name: 'George', rating: 1, cityList: undefined },
+  Master { id: 4, name: 'Michael', rating: 2, cityList: undefined },
+  Master { id: 3, name: 'Robert', rating: 2, cityList: undefined },
+  Master { id: 5, name: 'Alex', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'peter', rating: 3, cityList: undefined }
+]
+[2022-07-24T14:43:26.384] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:43:42.500] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:43:44.547] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:45:31.206] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:45:37.779] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:45:44.440] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:45:59.452] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:46:02.221] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:46:11.844] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:46:13.563] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:46:16.689] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:46:27.637] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:46:36.268] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:48:49.394] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:49:22.170] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:49:28.680] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:49:30.895] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:49:32.803] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:49:37.277] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:49:40.351] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:03.706] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:04.784] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:09.780] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:11.989] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:14.496] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:15.655] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:20.807] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:26.709] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:34.858] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:38.417] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:40.493] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:47.306] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:50:53.687] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:51:11.199] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:51:13.214] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:51:15.783] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:51:23.996] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:51:27.762] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:51:29.474] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:51:35.496] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:51:37.139] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:51:41.155] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:51:58.749] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:52:09.507] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:52:12.011] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:52:14.033] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:52:59.152] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:53:01.339] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:53:02.550] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:53:04.463] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:53:08.477] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:53:11.441] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:53:18.064] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:53:20.391] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:53:35.060] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:53:36.998] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:54:29.710] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:54:35.714] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:54:42.867] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:54:44.531] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:54:49.293] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:57:02.673] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:57:06.915] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:57:09.323] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:57:27.980] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:57:30.496] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:57:33.731] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:57:58.582] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:58:11.884] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:58:15.425] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:58:20.543] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:58:25.085] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:58:29.356] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:58:31.575] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:59:01.272] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:59:02.843] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:59:18.673] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T14:59:20.777] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:00:06.679] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:00:08.628] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:00:14.625] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:00:16.943] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:00:19.948] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:01:31.736] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:01:48.582] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:01:52.735] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:02:16.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:02:18.488] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:02:25.737] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:02:30.834] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:03:37.014] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:03:39.533] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:04:25.696] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:04:34.462] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:04:38.984] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:04:41.711] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:04:47.075] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:04:48.585] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:00.511] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:06.236] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:09.881] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:11.790] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:19.394] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:22.000] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:25.274] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:27.676] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:35.732] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:39.001] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:45.078] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:47.214] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:05:52.774] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:00.848] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:04.803] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:07.770] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:10.429] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:12.176] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:16.149] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:21.801] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:27.486] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:33.800] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:35.869] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:41.420] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:46.248] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:06:51.021] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:07:00.525] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:07:04.838] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:07:30.770] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:07:32.757] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:07:36.493] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:07:44.149] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:08:30.515] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:09:00.490] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:09:46.986] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:09:51.721] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:09:55.898] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:09:57.712] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:10:03.782] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:10:12.980] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:10:21.949] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:10:31.277] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:10:40.456] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:10:44.245] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:10:57.446] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:11:00.937] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:11:04.891] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:11:08.716] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:11:25.693] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:11:28.938] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:11:32.363] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:11:36.031] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:11:44.450] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:11:48.027] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:11:51.918] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:11:58.015] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:12:03.843] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:12:06.313] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:12:46.604] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:13:09.305] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:13:20.955] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:13:30.790] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:13:41.707] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:13:51.983] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:13:53.870] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:13:55.177] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:13:58.691] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:09.235] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:12.654] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:17.432] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:21.120] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:26.054] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:27.299] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:31.980] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:37.399] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:41.485] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:45.699] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:48.444] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:14:51.949] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:15:32.327] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:15:36.422] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:15:46.460] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:20:17.025] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:20:18.543] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:20:31.584] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:20:36.450] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:20:51.263] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:21:03.099] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:21:05.810] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:21:08.782] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:21:15.755] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:21:34.784] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:21:40.093] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:21:43.092] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:22:26.907] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:22:30.699] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:22:34.617] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:22:40.918] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:22:44.110] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:22:45.750] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:03.830] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:06.256] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:14.674] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:19.950] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:23.280] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:29.501] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:30.527] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:34.394] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:37.945] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:43.924] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:48.659] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:24:50.118] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:25:29.611] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:25:34.692] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:25:39.297] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:25:41.779] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:25:50.387] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:25:58.685] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:07.656] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:10.019] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:12.232] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:19.648] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:25.581] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:26.779] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:30.038] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:33.979] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:39.462] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:42.563] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:44.884] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:50.621] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:26:54.979] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:27:03.783] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:27:05.485] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:27:08.671] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:31:22.527] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:31:38.423] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:31:39.789] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:31:41.835] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:32:11.179] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T15:32:24.112] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:32:28.672] [INFO] clockwiseLog - true
+[2022-07-24T15:33:35.251] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:34:14.035] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:34:52.982] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:35:33.623] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:35:35.136] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:35:38.042] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:35:43.327] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:35:45.779] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:36:49.540] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:36:56.925] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:37:01.216] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:37:03.904] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:37:14.117] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:37:18.960] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:37:20.236] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:37:33.139] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:37:41.966] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:38:34.630] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:38:38.987] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:38:43.202] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:38:46.216] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:38:59.502] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:01.617] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:08.283] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:11.156] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:14.995] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:25.932] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:38.059] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:43.106] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:45.017] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:47.040] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:49.558] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:51.971] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:53.023] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:54.126] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:39:56.285] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:40:01.976] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:40:03.028] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:40:09.911] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:40:12.239] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:42:08.216] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:42:10.634] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:42:37.496] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:42:39.434] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:42:42.265] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:42:46.336] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:42:48.402] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:42:52.454] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:42:57.067] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:02.799] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:09.085] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:13.003] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:19.551] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:20.876] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:25.370] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:27.194] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:30.184] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:36.391] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:38.251] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:42.345] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:50.364] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:53.755] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:55.252] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:56.438] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:43:58.511] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:44:19.519] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:44:22.779] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:44:28.065] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:44:29.519] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:44:32.174] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:44:41.957] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:44:57.985] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:45:01.947] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:45:06.014] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:45:10.031] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:45:14.263] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:45:16.850] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:45:18.301] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:45:22.596] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:45:25.530] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:45:30.503] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:45:33.371] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:45:40.575] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:47:48.533] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:47:51.391] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:47:56.557] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:48:40.163] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:48:44.408] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:48:48.445] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:48:54.452] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:48:57.093] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:48:58.733] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:05.483] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:16.421] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:20.149] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:21.430] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:26.906] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:30.810] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:34.467] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:40.648] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:42.184] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:45.635] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:47.568] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:51.195] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:49:57.954] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:50:01.030] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:50:02.504] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:50:04.681] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:50:09.802] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:50:12.925] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:50:16.698] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:50:18.748] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:50:22.057] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:52:27.373] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:52:28.510] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:52:31.150] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:52:34.882] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:52:37.494] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:53:49.906] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:53:52.753] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:56:06.868] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:56:11.014] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:56:28.081] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:56:44.626] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:56:46.551] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:58:19.649] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:58:24.903] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:58:27.201] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:58:34.622] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:58:35.923] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:58:46.805] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:59:00.611] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:59:04.156] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T15:59:12.916] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:00:02.341] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:00:11.837] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:00:14.630] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:00:24.722] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:00:25.800] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:00:32.069] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:00:40.861] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:00:46.190] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:00:47.275] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:00:49.378] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:01:18.118] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:01:22.409] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:01:25.068] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:01:26.661] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:03:02.696] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:03:05.293] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:03:08.040] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:03:22.325] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:03:29.765] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:03:36.445] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:04:17.994] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:04:24.075] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:04:54.913] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:04:56.796] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:04:58.835] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:05:25.633] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:05:37.871] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:05:48.351] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:05:49.865] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:05:54.339] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:06:12.869] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:06:14.461] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:06:22.199] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:06:27.688] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:06:29.273] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:06:30.401] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:06:41.406] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:06:47.073] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:06:49.750] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:09:07.266] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:09:09.392] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:09:18.541] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:09:21.685] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:09:25.995] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:10:42.336] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:10:46.776] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:10:56.108] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:10:57.143] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:04.110] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:06.038] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:08.103] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:10.705] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:13.427] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:18.732] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:35.750] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:38.052] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:42.403] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:43.707] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:46.846] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:11:49.250] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:12:40.376] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:12:41.416] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:12:45.069] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:12:47.800] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:13:21.486] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:13:24.273] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:13:33.427] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:13:41.043] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:13:46.124] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:13:47.239] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:13:52.211] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:14:08.688] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:14:11.002] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:14:14.468] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:14:15.531] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:14:31.479] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:14:34.509] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:14:35.708] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:14:55.882] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:15:03.908] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:15:05.350] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:15:22.810] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:15:32.555] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:15:36.613] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:15:39.144] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:15:46.613] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:15:59.491] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:16:04.267] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:16:05.292] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:16:15.545] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:16:33.051] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:16:51.861] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:16:53.569] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:16:55.683] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:16:57.584] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:17:00.588] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:17:06.122] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:17:08.689] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:17:21.972] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:17:24.321] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:17:27.035] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:17:28.454] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:17:56.496] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:18:17.078] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:18:18.874] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:18:23.554] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:18:25.979] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:21:49.194] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:25:57.381] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:26:01.758] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:26:34.613] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:27:49.522] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:27:51.814] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:27:53.739] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:27:55.934] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:28:01.193] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:28:12.878] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:28:48.312] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:29:04.671] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:29:26.963] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:29:32.480] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:29:33.481] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:29:47.592] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:30:41.455] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:30:44.066] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:31:15.353] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:31:22.875] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:31:31.999] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:31:35.548] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:32:12.670] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:32:16.942] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:32:19.925] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:32:21.672] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:32:27.957] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:32:32.017] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:32:34.262] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:32:38.576] [INFO] clockwiseLog - Promise {
+  <rejected> TypeError: Cannot read properties of undefined (reading 'id')
+      at CityController.getCitiesByMasterId (/home/ikarus/clockwareApp/server/controllers/city.controller.js:69:27)
+      at /home/ikarus/clockwareApp/server/dal/masters.dal.js:42:34
+      at Array.forEach (<anonymous>)
+      at MasterData.getMasters (/home/ikarus/clockwareApp/server/dal/masters.dal.js:37:29)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      at async getMasters (/home/ikarus/clockwareApp/server/controllers/master.controller.js:27:21)
+}
+[2022-07-24T16:34:37.319] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:34:40.301] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:34:40.302] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:34:40.302] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:34:40.302] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:34:40.302] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:34:56.218] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:34:56.218] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:34:56.218] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:34:56.218] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:34:56.218] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:36:06.087] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:36:10.332] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:37:03.847] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:37:51.878] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:37:53.528] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:37:53.528] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:37:53.528] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:37:53.528] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:37:53.528] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:38:22.220] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:38:32.266] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:38:35.786] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:38:35.786] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:38:35.786] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:38:35.786] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:38:35.787] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:38:42.678] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:39:30.322] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:39:31.936] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:39:36.195] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:39:38.968] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:39:47.222] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:39:48.458] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:39:50.643] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:39:50.643] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:39:50.643] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:39:50.643] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:39:50.643] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:42:49.457] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:42:53.814] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:42:55.936] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:42:58.986] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:43:07.223] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:43:11.557] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:43:12.724] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:43:14.277] [INFO] clockwiseLog - [AsyncFunction: getCityList]
+[2022-07-24T16:43:14.277] [INFO] clockwiseLog - [AsyncFunction: getCityList]
+[2022-07-24T16:43:14.277] [INFO] clockwiseLog - [AsyncFunction: getCityList]
+[2022-07-24T16:43:14.277] [INFO] clockwiseLog - [AsyncFunction: getCityList]
+[2022-07-24T16:43:14.277] [INFO] clockwiseLog - [AsyncFunction: getCityList]
+[2022-07-24T16:43:53.252] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:44:13.537] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:44:23.017] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:44:24.129] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:44:27.695] [INFO] clockwiseLog - [AsyncFunction: getCityList]
+[2022-07-24T16:44:27.696] [INFO] clockwiseLog - [AsyncFunction: getCityList]
+[2022-07-24T16:44:27.696] [INFO] clockwiseLog - [AsyncFunction: getCityList]
+[2022-07-24T16:44:27.696] [INFO] clockwiseLog - [AsyncFunction: getCityList]
+[2022-07-24T16:44:27.696] [INFO] clockwiseLog - [AsyncFunction: getCityList]
+[2022-07-24T16:44:58.560] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:45:02.325] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:45:16.157] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:45:18.151] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:45:25.782] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:45:28.741] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:45:33.407] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:45:35.724] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:45:38.266] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:45:43.985] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:45:43.985] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:45:43.985] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:45:43.985] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:45:43.985] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:45:55.951] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:46:52.932] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:46:54.130] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:47:10.711] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:47:13.679] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:48:13.378] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:48:21.862] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:48:24.303] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:48:27.569] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:48:33.912] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:48:48.060] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:49:03.189] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:49:07.321] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:49:12.513] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:49:25.889] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:49:30.237] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:49:31.379] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:49:42.192] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:49:44.090] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:49:47.094] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:49:51.150] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:49:55.739] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:49:55.739] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:49:55.739] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:49:55.739] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:49:55.739] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:50:21.676] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:50:25.100] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:50:28.173] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:50:31.183] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:50:33.430] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:50:33.430] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:50:33.430] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:50:33.430] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:50:33.430] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:50:47.756] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:52:27.442] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:52:38.991] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:52:53.002] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:55:41.711] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:55:43.539] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:55:43.540] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:55:43.540] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:55:43.540] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:55:43.540] [INFO] clockwiseLog - Promise { <pending> }
+[2022-07-24T16:56:18.922] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:56:21.839] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:56:37.281] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-24T16:56:41.912] [INFO] clockwiseLog - Server listening on 3001

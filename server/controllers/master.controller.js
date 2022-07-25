@@ -13,9 +13,9 @@ class MasterController {
    * @param {*} res 
    */
   async createMaster(req, res) {
-    const {name, rating, city_id} = req.body;    
-    const newMaster = await masterService.createMaster(name, rating, city_id);
-    res.json(newMaster);
+    const {name, rating} = req.body;    
+    const newMaster = masterService.createMaster(name, rating);
+    res.json(newMaster);   
   };
 
   /**
@@ -25,7 +25,7 @@ class MasterController {
    */
   async getMasters(req, res) {
     const masters = await masterService.getMasters();
-    res.json(masters)
+    res.json(masters);
   };
 
   /**
@@ -43,10 +43,10 @@ class MasterController {
    * Method interprets http request to update master data by their id
    * @param {*} req 
    * @param {*} res 
-   */
+   */  
   async updateMaster(req, res) {
     const {id, name, rating} = req.body;
-    const master = await masterService.updateMaster(id, name, rating);    
+    const master = await masterService.updateMaster(id, name, rating);
     res.json(master);
   };
 
@@ -57,8 +57,8 @@ class MasterController {
    */
   async deleteMaster(req, res) {
     const id = req.params.id;
-    const master = await masterService.deleteMaster(id);
-    res.json(master);  
+    const master = masterService.deleteMaster(id);
+   res.json(master); 
   };
    /**
    * Method interprets http request to get masters by city name

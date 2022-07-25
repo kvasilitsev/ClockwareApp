@@ -15,7 +15,7 @@ class CityController {
   async createCity(req, res) {
     const {name} = req.body;
     const newCity = await cityService.createCity(name);
-		res.json(newCity);
+    res.json(newCity);
   };
 
   /**
@@ -35,7 +35,7 @@ class CityController {
    */
   async getCityById(req, res) {
     const id = req.params.id;
-    const city = await cityService.getCityById(id);
+    const city = await cityService.getCityById(id);    
     res.json(city);
   }; 
   /**
