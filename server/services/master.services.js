@@ -4,24 +4,14 @@ const logger = log4js.getLogger("clockwiseLog");
 
 class MasterService {
 
-  createMaster(name, rating){
-    let isCreated = false;
+  async createMaster(name, rating) {    
     try {
-      isCreated = masterData.createMaster(name, rating);
+      await masterData.createMaster(name, rating);
     }
-    catch(error) {
-      logger.error(`problem with the createMaster() for masterId ${id}`);      
+    catch(err) {
+      throw new Error("Could not create master", { cause: err });      
     }
-    finally {
-      if(!isCreated) {
-        const message = `Could not create master with name ${name} and rating ${rating}`;
-        return message;
-      } else {
-        const message = `Created master with name ${name}, rating ${rating}`;
-        return message;
-      }
-    }    
-  } 
+  }
     
   getMasters() {
     const masters = masterData.getMasters();
@@ -33,48 +23,35 @@ class MasterService {
     return master;
   }
 
-  updateMaster(id, name, rating){
-    let isUpdated = false;
+  async updateMaster(id, name, rating){    
     try {
-      isUpdated = masterData.updateMaster(id, name, rating);
+      await masterData.updateMaster(id, name, rating);
     }
-    catch(error) {
-      logger.error(`problem with the updateMaster() for masterId ${id}`);      
-    }
-    finally {
-      if(!isUpdated) {
-        const message = `Could not update master with id ${id}, name ${name}, rating ${rating}`;
-        return message;
-      } else {
-        const message = `Updated master with id ${id}, name ${name}, rating ${rating}`;
-        return message;
-      }
-    }
-    return isUpdated;
+    catch(err) {
+      throw new Error("Could not update master", { cause: err });      
+    }      
   }
 
-  deleteMaster(id){
-    let isDeleted = false;
+  async deleteMaster(id){
     try {
-      isDeleted = masterData.deleteMaster(id);
+      await masterData.deleteMaster(id);
     }
-    catch(error) {
-      logger.error(`problem with the deleteMaster() for masterId ${id}`);      
-    }
-    finally {
-      if(!isDeleted) {
-        const message = `Could not delete master with id ${id}`;
-        return message;
-      } else {
-        const message = `Deleted master with id ${id}`;
-        return message;
-      }
-    }    
+    catch(err) {
+      throw new Error("Could not delete master", { cause: err });      
+    } 
   }
 
-  getMastersByCityName(name){
-    const masters = masterData.getMastersByCityName(name);
+  getMastersByCityId(id){
+    const masters = masterData.getMastersByCityId(id);
     return masters;
+  }
+  async addCityForMaster(masterId, cityId){
+    try {
+      await masterData.addCityForMaster(masterId, cityId);
+    }
+    catch (err){
+      throw new Error("Could not add new city", { cause: err });
+    }
   }
 }
 

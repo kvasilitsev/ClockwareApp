@@ -3,7 +3,7 @@ const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
 /**
- * Class consists of variety of methods of entity Master
+ * Class consists of variety of methods of entity MasterController
  */
 class MasterController {
 
@@ -14,8 +14,16 @@ class MasterController {
    */
   async createMaster(req, res) {
     const {name, rating} = req.body;    
-    const newMaster = masterService.createMaster(name, rating);
-    res.json(newMaster);   
+    try {
+      await masterService.createMaster(name, rating);
+    }
+    catch(err) {
+      res.json({
+        message: err.message,
+        cause: err.cause.detail
+      } );      
+    }
+    res.send(true);
   };
 
   /**
@@ -46,8 +54,16 @@ class MasterController {
    */  
   async updateMaster(req, res) {
     const {id, name, rating} = req.body;
-    const master = await masterService.updateMaster(id, name, rating);
-    res.json(master);
+    try {
+      await masterService.updateMaster(id, name, rating);
+    }
+    catch(err) {
+      res.json({
+        message: err.message,
+        cause: err.cause.detail
+      });      
+    }
+    res.send(true);
   };
 
   /**
@@ -56,20 +72,48 @@ class MasterController {
    * @param {*} res 
    */
   async deleteMaster(req, res) {
-    const id = req.params.id;
-    const master = masterService.deleteMaster(id);
-   res.json(master); 
-  };
-   /**
-   * Method interprets http request to get masters by city name
-   * @param {*} req 
-   * @param {*} res 
-   */
-    async getMastersByCityName(req, res){
-      const name = req.params.name;
-      const masters = await masterService.getMastersByCityName(name);
-      res.json(masters);
+    const id = req.params.id;   
+    try {
+      await masterService.deleteMaster(id);
     }
+    catch(err) {
+      res.json({
+        message: err.message,
+        cause: err.cause.detail
+      });      
+    }
+    res.send(true);
+  };
+
+  /**
+  * Method interprets http request to get masters by city name
+  * @param {*} req 
+  * @param {*} res 
+  */
+  async getMastersByCityId(req, res){
+    const id = req.params.id;
+    const masters = await masterService.getMastersByCityId(id);
+    res.json(masters);
+  }
+
+   /**
+    * Method add City for Master by Master id and City Id
+    * @param {*} req 
+    * @param {*} res 
+    */ 
+  async addCityForMaster(req, res){
+    const {masterId, cityId} = req.body;
+    try {
+      await masterService.addCityForMaster(masterId, cityId);
+    }
+    catch(err) {
+      res.json({
+        message: err.message,
+       cause: err.cause.detail
+      });      
+    }
+    res.send(true);
+  }
 }
 
 module.exports = new MasterController();

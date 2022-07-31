@@ -3,7 +3,7 @@ const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
 /**
- * Class consists of variety of methods of entity City
+ * Class consists of variety of methods of entity CityController
  */
 class CityController {
 
@@ -13,9 +13,17 @@ class CityController {
    * @param {*} res 
    */
   async createCity(req, res) {
-    const {name} = req.body;
-    const newCity = await cityService.createCity(name);
-    res.json(newCity);
+    const {name} = req.body;    
+    try {
+      await cityService.createCity(name);
+    }
+    catch(err) {
+      res.json({
+        message: err.message,
+        cause: err.cause.detail
+      } );      
+    }
+    res.send(true);
   };
 
   /**
@@ -45,8 +53,16 @@ class CityController {
   */
   async updateCity(req, res) {
     const {id, name} = req.body;
-    const city = await cityService.updateCity(id, name);
-    res.json(city);
+    try {
+      await cityService.updateCity(id, name);
+    }
+    catch(err) {
+      res.json({
+        message: err.message,
+        cause: err.cause.detail
+      } );
+    }
+    res.send(true);
   }
 
   /**
@@ -55,9 +71,17 @@ class CityController {
    * @param {*} res 
    */
   async deleteCity(req, res) {
-    const name = req.params.name;
-    const city = await cityService.deleteCity(name);
-    res.json(city);
+    const id = req.params.id;
+    try {
+      await cityService.deleteCity(id);
+    }
+    catch(err) {
+      res.json({
+        message: err.message,
+        cause: err.cause.detail
+      } );
+    }
+    res.send(true);
   }; 
 
   /**

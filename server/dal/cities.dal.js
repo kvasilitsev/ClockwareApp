@@ -10,17 +10,15 @@ class CityData {
   
    /**
   * Method creates new city
-  * @param {text} name 
-  * @returns message
+  * @param {text} name
   */
   async createCity(name) {
     try {
-      await db.query(`INSERT INTO cities (name) values ($1) RETURNING *`, [name]);  
-    }
-    catch (err) {
+      await db.query(`INSERT INTO cities (name) values ($1) RETURNING *`, [name]);      
+    } catch (err) {
+      logger.error(`createCity failed with reason: ${err.detail}`);
       throw err;
     }
-    return true;
   };
     
   /**
@@ -39,7 +37,7 @@ class CityData {
       });   
     }
     return cityList;    
-  }
+  };
 
   /**
    * Method selects city by its id
@@ -60,42 +58,38 @@ class CityData {
   /**
   * Method update city by its id
   * @param {integer} id 
-  * @param {text} name 
-  * @returns message
+  * @param {text} name
   */
-  async updateCity(id, name) {    
+  async updateCity(id, name) {
     try {
-      await db.query('UPDATE cities SET name = $1 WHERE id = $2 RETURNING *', [name, id]);      
+      await db.query('UPDATE cities SET name = $1 WHERE id = $2 RETURNING *', [name, id]);  
     } catch (err) {
+      logger.error(`updateCity failed with reason: ${err.detail}`);
       throw err;
     }
-    return true;
-  }
+  };
 
   /**
    * Method deletes city by its name
-   * @param {integer} id 
-   * @returns message
+   * @param {integer} id
    */
-  async deleteCity(name) {     
+  async deleteCity(id) {
     try {
-      await db.query('DELETE FROM cities where name = $1', [name]);      
+      await db.query('DELETE FROM cities where id = $1', [id]);  
     } catch (err) {
+      logger.error(`deleteCity failed with reason: ${err.detail}`);
       throw err;
     }
-    return true;
   };
   /**
    * Method select cities by master id
    * @param {integer} id 
-   * @returns 
+   * @returns an array of cities
    */
   async getCitiesByMasterId(id) {
     const cities = await db.query('select cities.name from cities, masters_cities  where masters_cities.master_id = $1 and masters_cities.city_id = cities.id', [id]);    
     return cities.rows;
-  }
-
- 
+  };  
 }
   
   module.exports = new CityData();

@@ -4537,3 +4537,866 @@
 [2022-07-24T16:56:21.839] [INFO] clockwiseLog - Server listening on 3001
 [2022-07-24T16:56:37.281] [INFO] clockwiseLog - Server listening on 3001
 [2022-07-24T16:56:41.912] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:02:14.519] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:03:56.529] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:05:50.571] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:07:02.497] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:07:44.264] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:08:35.822] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:08:40.245] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:08:43.318] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:09:29.282] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:15:43.099] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:15:47.715] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:15:50.708] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:15:59.345] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:02.257] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:05.447] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:07.671] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:10.070] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:13.724] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:18.374] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:24.653] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:26.026] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:33.345] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:48.894] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:50.933] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:54.001] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:16:59.356] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:17:04.670] [ERROR] clockwiseLog - createMaster failed with reason: undefined
+[2022-07-26T19:17:22.041] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:17:23.881] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:18:16.491] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:18:29.480] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:18:32.033] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:18:45.046] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:18:46.804] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:18:50.138] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:18:53.372] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:19:03.913] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:19:11.073] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:19:13.210] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:19:17.912] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:20:08.171] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:24:13.762] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:24:15.851] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:24:21.660] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:24:54.409] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:25:56.799] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:26:03.331] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:26:12.929] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:26:16.036] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:27:29.743] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:27:49.752] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:28:51.261] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:28:52.913] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:28:56.779] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:28:59.903] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:29:05.248] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:29:09.286] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:29:50.697] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:29:54.168] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:29:58.433] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:30:06.174] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:30:07.419] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:30:09.326] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:31:20.378] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:31:49.049] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:32:06.606] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:32:21.889] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:32:29.091] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:32:59.388] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:33:14.959] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:33:59.908] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:34:25.236] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:34:54.920] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:35:41.511] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:35:43.193] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:35:49.178] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:35:57.114] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:35:58.009] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:36:24.585] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:37:09.124] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:37:32.379] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:37:33.273] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:37:33.857] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:37:35.173] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:38:32.202] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:38:59.797] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:41:52.735] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:42:05.891] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:42:51.334] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:42:54.192] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:43:51.858] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:44:37.106] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:44:39.515] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:46:47.674] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:46:50.085] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:47:09.684] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:47:12.730] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:47:38.738] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:47:40.324] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:47:55.394] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:47:56.443] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:48:28.400] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:48:31.930] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:48:33.547] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:48:36.138] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:48:38.917] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:48:45.794] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:49:03.936] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:49:20.336] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:49:23.557] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:49:27.779] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:49:34.728] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:49:36.258] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:49:42.292] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:49:48.623] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:50:03.829] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:50:31.323] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:50:41.114] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:50:45.646] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:50:58.107] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:51:05.768] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:51:06.859] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:51:12.530] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:51:23.726] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:51:34.903] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:51:51.032] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:51:54.055] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:51:59.353] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:52:31.173] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:52:34.203] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:53:18.108] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:53:22.032] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:53:24.025] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:53:31.705] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:53:35.226] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:53:54.406] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:53:57.172] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:54:48.921] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:54:50.009] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:54:53.637] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:55:24.623] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:55:26.828] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:56:29.221] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:56:31.628] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:56:45.374] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:56:48.699] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:56:55.263] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:56:57.907] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T19:57:19.510] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T19:57:32.987] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:02:58.792] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:03:01.348] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:03:35.061] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:03:44.155] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:04:38.118] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:04:41.046] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:05:58.463] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:06:07.388] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:07:22.118] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:07:24.763] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:08:03.368] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:08:06.876] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:08:54.319] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:08:56.274] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:10:32.797] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:10:34.881] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:11:19.907] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:11:21.833] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:12:39.181] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:12:49.556] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:14:10.952] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:14:38.117] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:15:12.067] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:15:18.606] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:15:23.877] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:15:31.587] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:15:49.363] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:15:53.496] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:15:56.209] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:16:04.378] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:16:07.344] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:16:12.324] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:16:16.314] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:16:22.539] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:16:24.572] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:16:27.064] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:16:29.684] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:16:33.528] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:16:54.111] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:16:54.111] [ERROR] clockwiseLog - problem with the service.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:17:46.246] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:18:22.300] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:19:46.646] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:19:55.362] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:19:58.382] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:19:58.382] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:21:25.353] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:21:28.608] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:21:36.777] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:24:58.449] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:25:04.295] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:25:11.034] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:28:48.472] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:28:51.109] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:31:00.127] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:31:02.465] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:31:02.465] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:31:46.265] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:31:48.747] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:31:48.747] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:32:13.701] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:32:15.809] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:32:15.810] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:32:36.017] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:32:38.387] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:32:38.387] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:34:18.234] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:34:18.235] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:34:41.675] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:34:44.566] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:39:18.271] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:39:21.526] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:39:21.526] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:39:31.670] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:39:33.888] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:39:33.889] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:39:41.156] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:41:11.441] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:41:14.535] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:42:29.170] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:42:32.698] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:42:34.010] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:42:43.145] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:42:46.051] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:43:59.916] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:44:05.595] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:44:17.135] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:44:19.309] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:44:22.321] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:44:40.480] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:44:44.863] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:44:44.864] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:45:00.750] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:45:02.692] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:45:02.692] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:45:31.626] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:45:33.151] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:46:48.351] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:46:50.560] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-26T20:46:50.560] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Alex with error: Key (name)=(Alex) already exists.
+[2022-07-26T20:50:10.404] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Peter) already exists.
+[2022-07-26T20:50:10.404] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Peter with error: Key (name)=(Peter) already exists.
+[2022-07-26T20:50:23.419] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Fred) already exists.
+[2022-07-26T20:50:23.419] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Fred with error: Key (name)=(Fred) already exists.
+[2022-07-26T20:51:14.434] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:51:19.787] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:51:22.292] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:51:25.516] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:51:33.878] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:51:37.495] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:51:39.093] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:51:41.223] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:51:48.602] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:51:52.139] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T20:51:57.670] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Ben) already exists.
+[2022-07-26T20:52:23.534] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T21:00:12.308] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T21:00:20.454] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Dave) already exists.
+[2022-07-26T21:00:20.454] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with Dave with error: Key (name)=(Dave) already exists.
+[2022-07-26T21:03:19.768] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T21:03:23.290] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T21:03:31.045] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T21:03:49.784] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T21:03:53.984] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T21:04:03.471] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T21:04:05.400] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(John) already exists.
+[2022-07-26T21:04:05.400] [ERROR] clockwiseLog - problem with the MasterService.createMaster() for master with John with error: Key (name)=(John) already exists.
+[2022-07-26T21:10:57.331] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T21:11:02.097] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-26T21:11:06.683] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T12:55:27.843] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T12:57:33.745] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T12:58:54.829] [ERROR] clockwiseLog - createMaster failed with reason: Key (name)=(Alex) already exists.
+[2022-07-31T12:59:43.994] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:07:10.626] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:07:16.387] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:07:18.701] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:07:21.208] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:07:23.354] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:08:09.606] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:01.326] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:06.129] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:07.386] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:10.992] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:15.019] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:20.490] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:22.424] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:32.801] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:47.365] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:48.633] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:53.064] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:09:54.280] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:10:11.896] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:10:13.424] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:10:17.114] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:10:24.408] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:12:34.083] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:12:39.779] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:12:48.048] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:12:49.318] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:13:41.668] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:13:46.967] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:13:50.412] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:13:59.433] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:14:01.737] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:14:05.783] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:14:15.796] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:14:39.403] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:15:49.989] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:15:51.735] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:16:19.930] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:16:25.120] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:16:38.225] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:17:22.507] [ERROR] clockwiseLog - updateMaster failed with reason: undefined
+[2022-07-31T13:18:24.027] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:18:27.893] [ERROR] clockwiseLog - updateMaster failed with reason: error: invalid input syntax for type integer: "Alex"
+[2022-07-31T13:19:25.453] [ERROR] clockwiseLog - updateMaster failed with reason: error: invalid input syntax for type integer: "Bob"
+[2022-07-31T13:20:22.387] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:20:24.417] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:20:36.533] [ERROR] clockwiseLog - updateMaster failed with reason: error: duplicate key value violates unique constraint "master_uk"
+[2022-07-31T13:21:17.439] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:21:18.832] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:22:56.056] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:23:29.227] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:23:30.948] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:24:07.025] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:24:36.702] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:24:41.469] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:24:52.128] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:24:56.363] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:25:16.840] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:25:18.042] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:25:22.127] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:25:25.715] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:25:32.956] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:25:38.729] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:26:15.948] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:26:32.215] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:26:37.495] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:26:58.540] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:28:13.631] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:28:18.685] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:28:22.516] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:38:15.851] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:41:40.151] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:41:52.244] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:42:06.670] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:42:08.735] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:42:13.126] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:43:01.910] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:46:31.904] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:47:18.365] [ERROR] clockwiseLog - createCity failed with reason: Key (name)=(Kherson) already exists.
+[2022-07-31T13:49:39.469] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:51:14.204] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:51:21.489] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:51:23.833] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:51:25.453] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:51:32.179] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:51:34.872] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:51:36.362] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:51:56.729] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:52:09.359] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:52:10.988] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:52:21.332] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:52:30.979] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:52:38.418] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:52:54.798] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:52:56.952] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:53:00.276] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:53:02.183] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:53:05.525] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:53:45.522] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:53:52.632] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:53:54.329] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:54:00.811] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:54:06.666] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:54:08.583] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:54:10.120] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:54:12.270] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:54:20.561] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:54:26.474] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:55:30.668] [ERROR] clockwiseLog - updateCity failed with reason: Key (name)=(Dnipro) already exists.
+[2022-07-31T13:56:45.747] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:56:48.509] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:57:05.013] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:57:36.242] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:57:39.591] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:57:49.099] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:57:51.381] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:57:52.475] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:57:54.615] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:58:07.449] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:58:17.279] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:58:27.645] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:58:35.034] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:58:43.897] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:58:47.476] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:59:11.203] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:59:24.492] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:59:25.880] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:59:33.673] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:59:39.860] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:59:44.460] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:59:48.827] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T13:59:52.172] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:01:13.906] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:01:24.687] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:01:35.014] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:01:38.501] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:01:51.756] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:01:54.468] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:01:58.037] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:02:15.195] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:08:38.936] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:08:50.859] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:08:53.434] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:08:57.016] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:17:11.457] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:17:21.565] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:21:52.303] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:21:54.355] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:21:57.402] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:22:09.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:22:18.982] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:22:20.087] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:22:22.251] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:22:26.301] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:22:28.817] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:22:35.144] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:22:37.215] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:22:48.398] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:22:57.376] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:23:59.641] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:24:18.527] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:24:19.553] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:24:34.472] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:24:35.518] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:24:43.825] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:24:46.598] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:24:48.154] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:24:52.590] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:24:55.074] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:25:20.684] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:25:22.494] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:25:26.226] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:25:27.991] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:25:30.311] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:25:32.687] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:25:34.547] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:25:36.063] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:25:38.072] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:25:39.589] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:25:48.072] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:26:11.143] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:26:17.222] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:26:18.652] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:26:35.859] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:26:45.824] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:26:54.473] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:27:12.338] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:27:17.763] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:27:24.603] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:27:35.894] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:27:37.414] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:27:42.501] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:28:24.559] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:28:30.767] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:28:35.455] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:28:37.096] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:31:16.050] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:31:18.901] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:31:21.090] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:31:24.312] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:32:49.386] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:33:32.829] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:33:41.081] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:33:50.040] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:33:54.522] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:33:57.922] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:34:01.927] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:36:03.747] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:36:44.474] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:36:47.598] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:36:57.176] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:37:00.416] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:37:03.640] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:37:21.306] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:37:26.724] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:37:28.260] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:37:29.524] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:37:32.492] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:37:33.831] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:39:59.135] [ERROR] clockwiseLog - addCityForMaster failed with reason: undefined
+[2022-07-31T14:40:26.333] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:40:29.497] [ERROR] clockwiseLog - addCityForMaster failed with reason: undefined
+[2022-07-31T14:41:04.528] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:41:07.997] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:41:14.021] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:41:16.593] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:41:19.794] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:41:38.023] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:42:14.000] [ERROR] clockwiseLog - addCityForMaster failed with reason: undefined
+[2022-07-31T14:43:03.032] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:46:29.269] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:46:32.485] [ERROR] clockwiseLog - addCityForMaster failed with reason: undefined
+[2022-07-31T14:46:59.028] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:47:02.143] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:47:07.197] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:48:28.949] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:48:33.221] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:48:34.938] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:48:38.253] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:51:05.615] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:51:32.544] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:51:34.346] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:51:36.986] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:51:40.372] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:51:57.671] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:02.208] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:05.103] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:08.811] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:09.944] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:11.374] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:12.858] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:14.268] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:16.626] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:18.581] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:20.665] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:22.570] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:24.754] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:25.979] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:27.257] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:35.811] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:38.666] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:41.757] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:46.008] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:50.429] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:53.051] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:52:55.885] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:53:01.260] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:53:05.686] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:53:13.441] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:53:50.231] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:53:53.000] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:53:58.520] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:54:02.653] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:54:05.853] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:54:14.723] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:54:23.356] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:54:28.439] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:54:32.417] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:54:37.880] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:54:42.857] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:54:46.605] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:55:20.828] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:55:22.810] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:55:37.236] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:55:38.854] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:55:44.094] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:55:57.259] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:55:59.764] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T14:56:03.519] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:02:48.079] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:02:53.689] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:02:55.891] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:03:00.677] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:03:04.176] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:03:27.574] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:03:29.916] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:03:34.368] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:03:40.891] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:03:52.497] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:03:54.610] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:03:59.721] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:01.947] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:03.643] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:05.172] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:07.298] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:09.464] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:14.050] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:20.046] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:22.164] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:29.517] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:39.004] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:43.190] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:52.649] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:04:59.736] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:05:08.892] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:05:16.884] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:05:25.075] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:05:28.031] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:05:47.718] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:05:50.273] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:05:52.177] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:05:57.471] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:06:02.289] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:06:06.958] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:07:31.201] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:07:42.607] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:07:49.546] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:07:57.013] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:07:59.485] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:08:06.526] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:08:14.182] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:08:15.626] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:08:19.994] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:08:26.116] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:08:33.674] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:08:35.370] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:09:19.443] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:09:23.216] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:09:28.461] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:09:30.480] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:09:32.636] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:09:39.795] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:09:44.458] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:09:49.671] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:09:58.455] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:10:25.707] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:10:31.160] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:10:39.947] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:10:44.219] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:10:46.301] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:12:54.974] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:13:09.527] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:15:18.062] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:15:23.524] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:15:33.740] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:15:45.232] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:16:03.529] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:16:19.652] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:16:32.778] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:16:45.207] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:17:19.479] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:17:39.316] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:17:48.268] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:18:00.890] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:18:08.125] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:18:13.128] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:18:20.237] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:18:37.002] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:18:41.631] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:18:56.757] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:19:09.852] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:19:12.548] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:19:17.250] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:19:27.302] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:19:49.522] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:19:54.051] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:20:00.770] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:20:01.944] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:20:09.248] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:20:18.755] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:20:26.607] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:20:42.515] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:21:05.390] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:21:11.701] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:21:13.406] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:21:18.256] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:21:27.555] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:21:32.522] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:21:36.350] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:21:37.444] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:21:50.095] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:21:56.223] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:22:02.555] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:22:10.027] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:22:21.817] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:22:25.634] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:22:30.462] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:23:10.498] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:23:18.285] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:23:24.035] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:23:31.415] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:23:34.687] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:23:39.478] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:23:40.566] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:23:43.018] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:23:45.377] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:27:30.604] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:27:39.280] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:27:47.203] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:05.952] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:11.301] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:12.564] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:15.331] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:19.579] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:23.267] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:29.656] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:31.036] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:42.152] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:49.883] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:56.122] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:28:57.612] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:03.811] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:08.821] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:13.209] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:18.725] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:20.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:22.556] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:25.991] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:32.472] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:37.409] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:43.323] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:48.243] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:52.419] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:29:57.394] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:30:05.231] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:30:12.778] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:30:19.090] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:30:32.798] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:30:44.445] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:30:49.827] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:31:06.184] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:31:30.499] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:31:35.523] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:31:36.743] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:31:50.868] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:31:59.022] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:32:15.012] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:32:38.583] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:32:45.501] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:32:49.227] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:32:51.087] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:33:03.707] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:33:11.328] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:33:16.443] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:33:32.987] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:33:41.472] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:34:21.817] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:34:31.295] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:34:38.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:34:50.153] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:34:51.669] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:35:07.685] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:35:09.792] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:35:10.861] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:35:20.678] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:35:22.110] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:35:24.084] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:35:27.589] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:35:29.152] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:35:33.387] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:35:35.733] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:35:43.066] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:36:00.075] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:36:31.181] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:36:33.790] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:36:34.858] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:36:38.775] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:36:46.839] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:36:49.658] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:36:52.530] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:36:54.635] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:36:57.330] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:37:06.926] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:37:10.055] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:38:06.460] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:38:10.620] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:38:16.450] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:38:24.188] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:38:28.648] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:38:33.265] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:38:36.425] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:38:40.183] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:38:49.627] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:38:56.451] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:39:10.567] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:39:18.967] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:39:24.446] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:39:30.918] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:39:37.984] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:39:45.140] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:39:51.987] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:39:56.057] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:40:09.347] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:40:13.984] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:40:19.873] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:40:24.038] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:40:28.759] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:40:32.520] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:40:36.984] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:40:43.405] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:40:49.647] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:40:57.254] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:41:03.370] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:41:07.738] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:41:11.680] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:41:15.657] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:41:28.165] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:41:30.280] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:41:33.225] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:41:39.186] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:41:45.687] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:41:52.734] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:41:57.788] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:42:03.092] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:42:08.607] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:42:14.118] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:42:20.350] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:42:25.523] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:42:32.865] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:42:39.611] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:42:45.942] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:42:53.630] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:43:07.247] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:43:12.614] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:43:15.580] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:43:22.661] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:43:28.467] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:43:35.580] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:43:47.651] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:43:59.111] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:44:02.119] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:44:06.711] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:44:08.242] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:44:10.983] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:44:13.154] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:45:52.087] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:46:06.829] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:46:12.310] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:46:13.467] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T15:51:37.679] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:02:01.774] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:03:53.758] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:04:27.696] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:04:36.285] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:05:09.633] [ERROR] clockwiseLog - createClock failed with reason: Failing row contains (null, small, 00:00:01).
+[2022-07-31T16:05:59.217] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:14:05.660] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:14:08.401] [ERROR] clockwiseLog - createClock failed with reason: Failing row contains (null, small, 01:00:00).
+[2022-07-31T16:21:21.598] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:21:27.194] [ERROR] clockwiseLog - createClock failed with reason: Key (id)=(1) already exists.
+[2022-07-31T16:23:19.804] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:23:22.594] [ERROR] clockwiseLog - createClock failed with reason: undefined
+[2022-07-31T16:25:34.934] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:29:23.992] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:29:28.539] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:31:06.700] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:31:42.609] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:31:45.572] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:36:53.716] [ERROR] clockwiseLog - updateClock failed with reason: undefined
+[2022-07-31T16:38:03.115] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:38:05.779] [ERROR] clockwiseLog - updateClock failed with reason: undefined
+[2022-07-31T16:38:34.878] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:39:18.977] [ERROR] clockwiseLog - updateClock failed with reason: undefined
+[2022-07-31T16:40:43.179] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:41:06.793] [ERROR] clockwiseLog - updateClock failed with reason: undefined
+[2022-07-31T16:41:14.065] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:41:32.416] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:42:27.944] [INFO] clockwiseLog - Server listening on 3001
+[2022-07-31T16:42:40.779] [ERROR] clockwiseLog - updateClock failed with reason: Key (size)=(small) already exists.
+[2022-07-31T16:43:01.284] [INFO] clockwiseLog - Server listening on 3001

@@ -1,6 +1,5 @@
 const Master = require ('../dto/masters.dto.js');
 const db = require('../db');
-const cities = require('../dal/cities.dal')
 const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
@@ -14,16 +13,15 @@ class MasterData {
   /**
    * Method creates new master
    * @param {text} name 
-   * @param {integer} rating 
-   * @returns message
+   * @param {integer} rating   
    */  
-  async createMaster(name, rating) {  
+  async createMaster(name, rating) {
     try {
-      const newMaster =  await db.query('INSERT INTO masters (name, rating) values ($1, $2) RETURNING *', [name, rating]);      
+      await db.query('INSERT INTO masters (name, rating) values ($1, $2) RETURNING *', [name, rating]);    
     } catch (err) {
+      logger.error(`createMaster failed with reason: ${err.detail}`);
       throw err;
     }
-    return true;
   };
 
   /**
@@ -65,39 +63,37 @@ class MasterData {
    * Method updates master by their id
    * @param {integer} id 
    * @param {text} name 
-   * @param {integer} rating 
-   * @returns message
+   * @param {integer} rating
    */
-  async updateMaster(id, name, rating) {    
+  async updateMaster(id, name, rating) {   
     try {
-      await db.query('UPDATE masters SET name = $1, rating =$2 WHERE id = $3 RETURNING *', [name, rating, id]);      
+      await db.query('UPDATE masters SET name = $1, rating =$2 WHERE id = $3 RETURNING *', [name, rating, id]);
     } catch (err) {
+      logger.error(`updateMaster failed with reason: ${err.detail}`);
       throw err;
     }
-    return true;
   };
 
   /**
    * Method deletes master by their id
-   * @param {integer} id 
-   * @returns message
+   * @param {integer} id
    */
-  async deleteMaster(id) {   
+  async deleteMaster(id) {    
     try {
-      await db.query('DELETE FROM masters where id = $1', [id]);      
+      await db.query('DELETE FROM masters where id = $1', [id]); 
     } catch (err) {
+      logger.error(`deleteMaster failed with reason: ${err.detail}`);
       throw err;
     }
-    return true;
   };	
   /**
    * Methods select masters by cities name
    * @param {text} name 
-   * @returns 
+   * @returns an array af masters
    */
-  async getMastersByCityName(name) {
+  async getMastersByCityId(id) {
     let masterList = [];
-    const mastersResultSet = await db.query('select masters.name, masters.id, masters.rating from masters, cities, masters_cities where masters_cities.master_id = masters.id and masters_cities.city_id = cities.id and cities.name = $1', [name]);
+    const mastersResultSet = await db.query('select masters.name, masters.id, masters.rating from masters, cities, masters_cities where masters_cities.master_id = masters.id and masters_cities.city_id = cities.id and cities.id = $1', [id]);
     if (mastersResultSet.rowCount > 0) {
       mastersResultSet.rows.forEach(element => {
         let master = new Master();
@@ -109,6 +105,20 @@ class MasterData {
     }
     return masterList;
   }
+
+  /**
+   * Method adds City for Master by city id and master id
+   * @param {integer} masterId 
+   * @param {integer} cityId 
+   */
+  async addCityForMaster(masterId, cityId){
+    try {
+      await db.query('INSERT INTO masters_cities(master_id, city_id) VALUES ($1, $2) RETURNING *', [masterId, cityId])
+    } catch (err) {
+      logger.error(`addCityForMaster failed with reason: ${err.detail}`);
+      throw err;
+    }
+  }
 }
   
-  module.exports = new MasterData()
+module.exports = new MasterData();

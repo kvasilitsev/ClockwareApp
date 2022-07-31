@@ -3,23 +3,13 @@ const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
 class CityService {
-    createCity(name){
-      let isCreated = false;
+    async createCity(name){
       try {
-        isCreated = cityData.createCity(name);
+        await cityData.createCity(name);
       }
-      catch(error) {
-        logger.error(`problem with the createCity() for city name ${name}`);      
+      catch(err) {
+        throw new Error("Could not create city", { cause: err });
       }
-      finally {
-        if(!isCreated){
-          const message = `Could not create City ${name}`;
-          return message;
-        } else {
-          const message = `created city ${name}`;
-          return message;
-        }
-      }        
     }
     getCities(){
       const cities = cityData.getCities();
@@ -29,45 +19,25 @@ class CityService {
       const city = cityData.getCityById(id);
       return city;
     }
-    updateCity(id, name){
-      let isUpdated = false;
+    async updateCity(id, name){
       try {
-        isUpdated = cityData.updateCity(id, name);
+        await cityData.updateCity(id, name);
       }
-      catch(error) {
-        logger.error(`problem with the updateCity() for city id ${id}`);      
+      catch(err) {
+        throw new Error("Could not update city", { cause: err });
       }
-      finally {
-        if (!isUpdated) {
-          const message = `Could not update city ${name} with id ${id}`;
-          return message;
-        } else {
-          const message = `Udated city ${name} with id ${id}`;
-          return message;
-        }
-      }
-    }
-    deleteCity(name){
-      let isDeleted = false;
+    }    
+    async deleteCity(id){
       try {
-        isDeleted = cityData.deleteCity(name);
+        await cityData.deleteCity(id);
       }
-      catch(error) {
-        logger.error(`problem with the updateCity() for city name ${name}`);      
-      }
-      finally {
-        if(!isDeleted){
-          const message = `Could not delete city ${name} with id ${id}`;
-          return message;
-        } else {
-          const message = `Deleted city ${name}`;
-          return message;
-        }
-      }         
+      catch(err) {
+        throw new Error("Could not delete city", { cause: err });
+      }      
     }
     getCitiesByMasterId(id){
       const cities = cityData.getCitiesByMasterId(id);  
       return cities;
-    }
+    };
 }
 module.exports = new CityService()
