@@ -5400,3 +5400,27 @@
 [2022-07-31T16:42:27.944] [INFO] clockwiseLog - Server listening on 3001
 [2022-07-31T16:42:40.779] [ERROR] clockwiseLog - updateClock failed with reason: Key (size)=(small) already exists.
 [2022-07-31T16:43:01.284] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:36:52.553] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:37:05.757] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:37:11.181] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:37:12.849] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:37:18.296] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:37:25.007] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:37:36.641] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:47:10.090] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:49:19.090] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:49:51.804] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:52:45.083] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:53:08.717] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:55:33.446] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:56:09.356] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:56:12.218] [ERROR] clockwiseLog - createUser failed with reason: Failing row contains (null, George, george@gmail.com, t).
+[2022-08-01T12:57:15.428] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:57:17.808] [ERROR] clockwiseLog - createUser failed with reason: Key (id)=(1) already exists.
+[2022-08-01T12:59:36.587] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:59:39.257] [ERROR] clockwiseLog - createUser failed with reason: Key (id)=(2) already exists.
+[2022-08-01T12:59:55.262] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T12:59:57.586] [ERROR] clockwiseLog - createUser failed with reason: Key (id)=(3) already exists.
+[2022-08-01T13:00:05.087] [INFO] clockwiseLog - Server listening on 3001
+[2022-08-01T13:00:10.724] [ERROR] clockwiseLog - createUser failed with reason: Key (id)=(4) already exists.
+[2022-08-01T13:00:15.526] [INFO] clockwiseLog - Server listening on 3001
