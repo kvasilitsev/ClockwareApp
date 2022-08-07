@@ -72,7 +72,19 @@ class ClockController {
       });      
     }
     res.send(true);
-  }; 
+  };
+
+  /**
+   * Method interprets http request to get repair duration by clock id
+   * @param {*} req 
+   * @param {*} res 
+   */
+  async getRepairDurationByClockId(req, res) {
+    const id = req.params.id;    
+    const repairDuration = await clockService.getRepairDurationByClockId(id);
+    res.json(repairDuration);
+  };
+
 }
 
 module.exports = new ClockController();

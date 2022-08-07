@@ -35,6 +35,12 @@ class ClockService {
       throw new Error("Could not delete clock type", { cause: err });      
     } 
   };
+
+  async getRepairDurationByClockId(id){
+    const repairDuration = await clockData.getRepairDurationByClockId(id);
+    return repairDuration;    
+  };
+
 }
 
 module.exports = new ClockService()

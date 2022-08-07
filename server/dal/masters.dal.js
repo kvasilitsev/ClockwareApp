@@ -93,7 +93,7 @@ class MasterData {
    */
   async getMastersByCityId(id) {
     let masterList = [];
-    const mastersResultSet = await db.query('select masters.name, masters.id, masters.rating from masters, cities, masters_cities where masters_cities.master_id = masters.id and masters_cities.city_id = cities.id and cities.id = $1', [id]);
+    const mastersResultSet = await db.query('select masters.name, masters.id, masters.rating from masters, cities, masters_cities where masters_cities.master_id = masters.id AND masters_cities.city_id = cities.id and cities.id = $1', [id]);
     if (mastersResultSet.rowCount > 0) {
       mastersResultSet.rows.forEach(element => {
         let master = new Master();
@@ -114,6 +114,22 @@ class MasterData {
   async addCityForMaster(masterId, cityId){
     try {
       await db.query('INSERT INTO masters_cities(master_id, city_id) VALUES ($1, $2) RETURNING *', [masterId, cityId])
+    } catch (err) {
+      logger.error(`addCityForMaster failed with reason: ${err.detail}`);
+      throw err;
+    }
+  }
+
+  /**
+   * Method select all available masters in the city in certain date and time
+   * @param {integer} cityId 
+   * @param {integer} clockId 
+   * @param {date} bookingDate 
+   * @param {time} bookingTime 
+   */
+  async getAavailableMastersInCity (cityId, clockId, bookingDate, bookingTime){
+    try {
+      await db.query('SELECT masters.name, masters.rating FROM masters, masters_cities, orders, clocks WHERE masters_cities.city_id = $1 AND masters_cities.master_id = masters.id', [cityId, clockId, bookingDate, bookingTime])
     } catch (err) {
       logger.error(`addCityForMaster failed with reason: ${err.detail}`);
       throw err;

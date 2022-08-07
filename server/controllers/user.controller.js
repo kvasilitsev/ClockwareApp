@@ -3,7 +3,7 @@ const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
 /**
- * Class consists of variety of methods of entity MasterController
+ * Class consists of variety of methods of entity UserController
  */
 class UserController {
 

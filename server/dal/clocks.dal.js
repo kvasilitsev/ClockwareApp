@@ -69,6 +69,20 @@ class ClockData {
       logger.error(`deleteClock failed with reason: ${err.detail}`);
       throw err;
     }
+  };
+  
+  /**
+   * Method get repair duration time by clock id
+   * @param {integer} id 
+   * @returns 
+   */
+  async getRepairDurationByClockId(id) {
+    let clock = new Clock();
+    const repairDurationResultSet = await db.query('SELECT repair_duration FROM clocks where id = $1', [id]);
+    if(repairDurationResultSet.rowCount === 1){
+      clock.repairDuration = repairDurationResultSet.rows[0].repair_duration;
+    }
+    return clock.repairDuration;
   };  
 }
   
