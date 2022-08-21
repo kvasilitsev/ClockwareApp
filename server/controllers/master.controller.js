@@ -114,6 +114,17 @@ class MasterController {
     }
     res.send(true);
   }
+
+  /**
+   * Method get free masters in the city for the specified time range
+   * @param {*} req 
+   * @param {*} res 
+   */
+  async getFreeMastersInCity(req, res){
+    const {cityId, bookingTime, clockId} = req.body;
+    const masters = await masterService.getFreeMastersInCity(cityId, bookingTime, clockId);
+    res.json(masters);
+  }
 }
 
 module.exports = new MasterController();

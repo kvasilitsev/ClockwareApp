@@ -38,7 +38,7 @@ class MasterData {
         master.id = element.id;
         master.rating = element.rating;        
         masterList.push(master);       
-      });   
+      });
     }
     return masterList;
   };
@@ -120,21 +120,22 @@ class MasterData {
     }
   }
 
-  /**
-   * Method select all available masters in the city in certain date and time
-   * @param {integer} cityId 
-   * @param {integer} clockId 
-   * @param {date} bookingDate 
-   * @param {time} bookingTime 
-   */
-  async getAavailableMastersInCity (cityId, clockId, bookingDate, bookingTime){
-    try {
-      await db.query('SELECT masters.name, masters.rating FROM masters, masters_cities, orders, clocks WHERE masters_cities.city_id = $1 AND masters_cities.master_id = masters.id', [cityId, clockId, bookingDate, bookingTime])
-    } catch (err) {
-      logger.error(`addCityForMaster failed with reason: ${err.detail}`);
-      throw err;
+ /**
+  * Method check if master is free in the specified time range
+  * @param {*} element 
+  * @param {*} id 
+  * @param {*} bookingTime 
+  * @param {*} repairDuration 
+  */
+  async isFreeMaster(masterId, bookingTime, repairDuration){
+    let isFree = true;     
+    const hasOrder = await db.query('SELECT orders.id FROM orders WHERE orders.master_id = $1  AND ((orders.booking_date_time BETWEEN $2 AND ($2 + $3)) OR (orders.booking_date_time + orders.repair_duration BETWEEN $2 AND ($2 + $3))) AND (orders.booking_date_time <> ($2 + $3)) AND (orders.booking_date_time + orders.repair_duration <> $2)', [masterId, bookingTime, repairDuration]);    
+    if (hasOrder.rowCount > 0){
+      isFree = false;
     }
+    return isFree;
   }
+  
 }
   
 module.exports = new MasterData();

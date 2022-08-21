@@ -47,7 +47,7 @@ class OrderService {
     catch(err) {
       throw new Error("Could not delete order", { cause: err });      
     } 
-  }
+  } 
 }
 
 module.exports = new OrderService();

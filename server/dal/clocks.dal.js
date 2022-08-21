@@ -80,7 +80,7 @@ class ClockData {
     let clock = new Clock();
     const repairDurationResultSet = await db.query('SELECT repair_duration FROM clocks where id = $1', [id]);
     if(repairDurationResultSet.rowCount === 1){
-      clock.repairDuration = repairDurationResultSet.rows[0].repair_duration;
+      clock.repairDuration = repairDurationResultSet.rows[0].repair_duration; //TODO refactor
     }
     return clock.repairDuration;
   };  

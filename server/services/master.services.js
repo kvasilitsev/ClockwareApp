@@ -1,4 +1,5 @@
 const masterData = require('../dal/masters.dal');
+const clockData = require('../dal/clocks.dal');
 const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
@@ -45,6 +46,7 @@ class MasterService {
     const masters = masterData.getMastersByCityId(id);
     return masters;
   }
+
   async addCityForMaster(masterId, cityId){
     try {
       await masterData.addCityForMaster(masterId, cityId);
@@ -53,6 +55,22 @@ class MasterService {
       throw new Error("Could not add new city", { cause: err });
     }
   }
+
+  async getFreeMastersInCity(cityId, bookingTime, clockId){
+    const allMastersInCity = await masterData.getMastersByCityId(cityId);
+    const repairDuration = await clockData.getRepairDurationByClockId(clockId);    
+    async function check (allMastersInCity) {
+      let masters = [];
+      for (const master of allMastersInCity) {
+        const isFree = await masterData.isFreeMaster(master.id, bookingTime, repairDuration);
+        if(isFree){
+          masters.push(master);
+        }
+      }
+      return masters
+    };
+    return check(allMastersInCity);
+  }  
 }
 
 module.exports = new MasterService()
