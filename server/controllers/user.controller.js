@@ -13,9 +13,9 @@ class UserController {
    * @param {*} res 
    */
   async createUser(req, res) {
-    const {name, email, admin} = req.body;    
+    const {name, email, password} = req.body;
     try {
-      await userService.createUser(name, email, admin);
+      await userService.createUser(name, email, password);
     }
     catch(err) {
       res.json({
@@ -83,7 +83,75 @@ class UserController {
       });      
     }
     res.send(true);
-  };  
+  };
+
+  /**
+   * Maethod select user by their email
+   * @param {*} req 
+   * @param {*} res 
+   */
+  async getUserByEmail(req, res) {
+    const { email } = req.body;
+    const user = await userService.getUserByEmail(email);
+    res.json(user);   
+  };
+
+
+  /**
+   * Method perfomes user registartion
+   * @param {*} req 
+   * @param {*} res 
+   */
+  // async registration(req, res) {
+  //   try {
+      
+  //   }
+  //   catch(err) {
+           
+  //   }    
+  // };
+
+  /**
+   * Method performs user login
+   * @param {*} req 
+   * @param {*} res 
+   */
+  // async login(req, res) {
+  //   try {
+      
+  //   }
+  //   catch(err) {
+           
+  //   }    
+  // };
+
+  /**
+   * Method performs user logout
+   * @param {*} req 
+   * @param {*} res 
+   */
+  // async logout(req, res) {
+  //   try {
+      
+  //   }
+  //   catch(err) {
+           
+  //   }    
+  // };
+
+  /**
+   * Method performes refrsh users token
+   * @param {*} req 
+   * @param {*} res 
+   */
+  // async refresh(req, res) {
+  //   try {
+      
+  //   }
+  //   catch(err) {
+           
+  //   }    
+  // };
 }
 
 module.exports = new UserController();

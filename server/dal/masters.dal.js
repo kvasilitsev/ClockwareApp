@@ -128,7 +128,7 @@ class MasterData {
   * @param {*} repairDuration 
   */
   async isFreeMaster(masterId, bookingTime, repairDuration){
-    let isFree = true;     
+    let isFree = true;
     const hasOrder = await db.query('SELECT orders.id FROM orders WHERE orders.master_id = $1  AND ((orders.booking_date_time BETWEEN $2 AND ($2 + $3)) OR (orders.booking_date_time + orders.repair_duration BETWEEN $2 AND ($2 + $3))) AND (orders.booking_date_time <> ($2 + $3)) AND (orders.booking_date_time + orders.repair_duration <> $2)', [masterId, bookingTime, repairDuration]);    
     if (hasOrder.rowCount > 0){
       isFree = false;

@@ -6,6 +6,7 @@
     name;
     email;
     admin;
+    password;
   
     /**
      * 
@@ -13,12 +14,14 @@
      * @param {text} name 
      * @param {text} email 
      * @param {boolean} admin 
+     * @param {character varying} password 
      */
-    constructor (id, name, email, admin) {
+    constructor (id, name, email, admin, password) {
       this.id = id;
       this.name = name;
       this.email = email;
       this.admin = admin;
+      this.password = password;
     }
   }
   

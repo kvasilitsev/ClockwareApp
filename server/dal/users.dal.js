@@ -16,9 +16,9 @@ class UserData {
    * @param {integer} email
    * @param {boolean} admin  
    */  
-  async createUser(name, email, admin) {
+  async createUser(name, email, password) {
     try {
-      await db.query('INSERT INTO users (name, email, admin) values ($1, $2, $3) RETURNING *', [name, email, admin]);    
+      await db.query('INSERT INTO users (name, email, password, admin) values ($1, $2, $3, false) RETURNING *', [name, email, password]);    
     } catch (err) {
       logger.error(`createUser failed with reason: ${err.detail}`);
       throw err;
@@ -89,6 +89,23 @@ class UserData {
       logger.error(`deleteUser failed with reason: ${err.detail}`);
       throw err;
     }
+  };
+
+  /**
+   * Method select user by their email
+   * @param {text} email
+   * @returns 
+   */
+  async getUserByEmail(email) {
+    let user = new User();
+    const userResultSet = await db.query('SELECT id, name, email, admin FROM users where email = $1', [email]);
+    if(userResultSet.rowCount === 1){      
+      user.name = userResultSet.rows[0].name;
+      user.rating = userResultSet.rows[0].email;
+      user.admin = userResultSet.rows[0].admin;
+      user.id = userResultSet.rows[0].id;
+    };                                       
+    return user;
   };
 }
   

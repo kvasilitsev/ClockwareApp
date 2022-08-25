@@ -7,5 +7,10 @@ router.get("/getUsers", userController.getUsers);
 router.get("/getUserById/:id", userController.getUserById);
 router.put("/updateUser", userController.updateUser);
 router.delete("/deleteUser/:id", userController.deleteUser);
+//router.post("/registartion", userController.registartion);
+//router.post("/login", userController.login);
+//router.post("/logout", userController.logout);
+//router.get("/refresh", userController.refresh);
+router.get("/getUserByEmail", userController.getUserByEmail);
 
 module.exports = router;
