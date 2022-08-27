@@ -13,7 +13,7 @@ class MasterController {
    * @param {*} res 
    */
   async createMaster(req, res) {
-    const {name, rating} = req.body;    
+    const {name, rating} = req.body; 
     try {
       await masterService.createMaster(name, rating);
     }
@@ -109,7 +109,7 @@ class MasterController {
     catch(err) {
       res.json({
         message: err.message,
-       cause: err.cause.detail
+        cause: err.cause.detail
       });      
     }
     res.send(true);
@@ -122,9 +122,15 @@ class MasterController {
    */
   async getFreeMastersInCity(req, res){
     const {cityId, bookingTime, clockId} = req.body;
-    const masters = await masterService.getFreeMastersInCity(cityId, bookingTime, clockId);
+    let masters;
+    try {
+      masters = await masterService.getFreeMastersInCity(cityId, bookingTime, clockId);
+    }
+    catch(err) {
+      res.json(err.message);
+    }
     res.json(masters);
-  }
+  }  
 }
 
 module.exports = new MasterController();

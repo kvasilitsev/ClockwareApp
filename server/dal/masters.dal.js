@@ -136,6 +136,16 @@ class MasterData {
     return isFree;
   }
   
+  async bookedMastersIdInCity(cityId, bookingTime, repairDuration){
+    let masterList = [];
+    const mastersResultSet = await db.query('SELECT masters.id FROM masters, cities, masters_cities WHERE masters_cities.master_id = masters.id AND masters_cities.city_id = cities.id AND cities.id = $1 AND masters_cities.master_id IN (SELECT orders.master_id FROM orders WHERE ((orders.booking_date_time BETWEEN $2 AND ($2 + $3)) OR (orders.booking_date_time + orders.repair_duration BETWEEN $2 AND ($2 + $3))) AND (orders.booking_date_time <> ($2 +$3)) AND (orders.booking_date_time + orders.repair_duration <> $2))', [cityId, bookingTime, repairDuration]);
+      if(mastersResultSet.rowCount > 0) { 
+        mastersResultSet.rows.forEach(element => {
+          masterList.push(element.id);
+      });
+    }
+    return masterList;
+  }
 }
   
 module.exports = new MasterData();
