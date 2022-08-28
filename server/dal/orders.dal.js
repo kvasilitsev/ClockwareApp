@@ -21,7 +21,7 @@ class OrderData {
      */
   async createOrder(userId, masterId, cityId, clockId, bookingDateTime, repairDuration) {
     try {
-      await db.query('INSERT INTO orders (user_id, master_id, city_id, clock_id, booking_date_time, repair_duration) values ($1, $2, $3, $4, $5, $6) RETURNING *', [userId, masterId, cityId, clockId, bookingDateTime, repairDuration]);    
+      await db.query('INSERT INTO orders (user_id, master_id, city_id, clock_id, booking_date_time, repair_duration, is_deleted) values ($1, $2, $3, $4, $5, $6, false) RETURNING *', [userId, masterId, cityId, clockId, bookingDateTime, repairDuration]);    
     } catch (err) {
       logger.error(`createOrder failed with reason: ${err.detail}`);
       throw err;
@@ -34,7 +34,7 @@ class OrderData {
    */
   async getOrders() {
     let orderList = [];    
-    const ordersResultSet = await db.query('SELECT id, user_id, master_id, city_id, clock_id, booking_date_time, repair_duration FROM orders');    
+    const ordersResultSet = await db.query('SELECT id, user_id, master_id, city_id, clock_id, booking_date_time, repair_duration FROM orders WHERE is_deleted = false');    
     if(ordersResultSet.rowCount > 0) { 
       ordersResultSet.rows.forEach(element => {                 
         let order = new Order();
@@ -78,7 +78,7 @@ class OrderData {
    */
   async getOrdersByMasterId(id) {
     let orderList = [];    
-    const ordersResultSet = await db.query('SELECT id, user_id, master_id, city_id, clock_id, booking_date_time, repairDuration FROM orders where master_id = $1', [id]);    
+    const ordersResultSet = await db.query('SELECT id, user_id, master_id, city_id, clock_id, booking_date_time, repair_duration FROM orders WHERE master_id = $1 AND is_deleted = false', [id]);    
     if(ordersResultSet.rowCount > 0) { 
       ordersResultSet.rows.forEach(element => {                 
         let order = new Order();
@@ -114,11 +114,12 @@ class OrderData {
   };
 
   /**
-   * Method deletes order by its id
+   * Method performs soft delete of order by its id
+   * @param {integer} id 
    */
   async deleteOrder(id) {
     try {
-      await db.query('DELETE FROM orders where id = $1', [id]); 
+      await db.query('UPDATE orders SET is_deleted = true WHERE id = $1', [id]); 
     } catch (err) {
       logger.error(`deleteOrder failed with reason: ${err.detail}`);
       throw err;
