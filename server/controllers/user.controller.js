@@ -53,9 +53,9 @@ class UserController {
    * @param {*} res 
    */  
   async updateUser(req, res) {
-    const {id, name, email, admin} = req.body;
+    const {id, name, email} = req.body;
     try {
-      await userService.updateUser(id, name, email, admin);
+      await userService.updateUser(id, name, email);
     }
     catch(err) {
       res.json({
@@ -96,6 +96,24 @@ class UserController {
     res.json(user);   
   };
 
+  /**
+   * Method creates administrator
+   * @param {*} req 
+   * @param {*} res 
+   */
+  async createAdmin(req, res) {
+    const {name, email, password} = req.body;
+    try {
+      await userService.createAdmin(name, email, password);
+    }
+    catch(err) {
+      res.json({
+        message: err.message,
+        cause: err.cause.detail
+      } );      
+    }
+    res.send(true);
+  };
 
   /**
    * Method perfomes user registartion

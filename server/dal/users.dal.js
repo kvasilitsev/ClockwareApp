@@ -13,8 +13,8 @@ class UserData {
   /**
    * Method creates new user
    * @param {text} name 
-   * @param {integer} email
-   * @param {boolean} admin  
+   * @param {text} email
+   * @param {varchar} password  
    */  
   async createUser(name, email, password) {
     try {
@@ -69,9 +69,9 @@ class UserData {
    * @param {text} email
    * @param {boolean} admin
    */
-  async updateUser(id, name, email, admin) {   
+  async updateUser(id, name, email) {   
     try {
-      await db.query('UPDATE users SET name = $1, email = $2, admin = $3 WHERE id = $4 RETURNING *', [name, email, admin, id]);
+      await db.query('UPDATE users SET name = $1, email = $2 WHERE id = $3 RETURNING *', [name, email, admin, id]);
     } catch (err) {
       logger.error(`updateUser failed with reason: ${err.detail}`);
       throw err;
@@ -106,6 +106,21 @@ class UserData {
       user.id = userResultSet.rows[0].id;
     };                                       
     return user;
+  };
+
+  /**
+   * Method create administartor
+   * @param {text} name 
+   * @param {text} email 
+   * @param {varchar} password 
+   */
+  async createAdmin(name, email, password) {
+    try {
+      await db.query('INSERT INTO users (name, email, password, admin) values ($1, $2, $3, true) RETURNING *', [name, email, password]);    
+    } catch (err) {
+      logger.error(`createAdmin failed with reason: ${err.detail}`);
+      throw err;
+    }
   };
 }
   

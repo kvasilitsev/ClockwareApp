@@ -24,9 +24,9 @@ class UserService {
     return user;
   }
 
-  async updateUser(id, name, email, admin){    
+  async updateUser(id, name, email){    
     try {
-      await userData.updateUser(id, name, email, admin);
+      await userData.updateUser(id, name, email);
     }
     catch(err) {
       throw new Error("Could not update user", { cause: err });      
@@ -45,6 +45,15 @@ class UserService {
   getUserByEmail(email){
     const user = userData.getUserByEmail(email);
     return user;
+  }
+
+  async createAdmin(name, email, password) {    
+    try {
+      await userData.createAdmin(name, email, password);
+    }
+    catch(err) {
+      throw new Error("Could not create admin", { cause: err });      
+    }
   }
   
   // async registration(name, email, password){

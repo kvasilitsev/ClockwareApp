@@ -9,7 +9,7 @@ const logger = log4js.getLogger("clockwiseLog");
  */
 
 class OrderData {
-
+  
     /**
      * Method creates new order
      * @param {integer} userId 
