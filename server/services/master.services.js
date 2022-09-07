@@ -66,7 +66,7 @@ class MasterService {
     };
     if((bookingHours + repairDuration.hours) > 17){
       throw new Error(`Sorry, we are close at 17:00. Please book your appointment earlier`);
-    }  
+    };
     const freeMasters = allMastersInCity.filter(master => !bookedMastersIdInCity.includes(master.id))
     return freeMasters;
   }  

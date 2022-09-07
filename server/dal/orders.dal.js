@@ -57,9 +57,10 @@ class OrderData {
    * @returns userId, masterId, cityId, clockId, bookingDateTime, repairDuration of selected order
    */
   async getOrderById(id) {
-    let order = new Order();
+    let order = null;
     const orderResultSet = await db.query('SELECT user_id, master_id, city_id, clock_id, booking_date_time, repairDuration FROM orders where id = $1', [id]);
     if(orderResultSet.rowCount === 1){      
+      order = new Order();
       order.userId = orderResultSet.rows[0].user_id;
       order.masterId = orderResultSet.rows[0].master_id;
       order.cityId = orderResultSet.rows[0].city_id;      
@@ -67,7 +68,7 @@ class OrderData {
       order.bookingDateTime = orderResultSet.rows[0].booking_date_time;
       order.repairDuration = orderResultSet.rows[0].repairDuration; 
       order.id = orderResultSet.rows[0].id;
-    };    
+    }
     return order;
   };
 

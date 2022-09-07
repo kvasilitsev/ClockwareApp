@@ -120,14 +120,20 @@ class UserController {
    * @param {*} req 
    * @param {*} res 
    */
-  // async registration(req, res) {
-  //   try {
-      
-  //   }
-  //   catch(err) {
-           
-  //   }    
-  // };
+  async registration(req, res) {
+    try {
+      const {name, email, password} = req.body;
+      const userData = await userService.registration(name, email, password);
+      res.cookie('refreshToken', userData.refreshToken, {maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true} )
+      return res.json(userData);
+    }
+    catch(err) {
+      res.json({
+        message: err.message,
+        cause: err.cause.detail
+      } );      
+    }    
+  };
 
   /**
    * Method performs user login
@@ -136,7 +142,10 @@ class UserController {
    */
   // async login(req, res) {
   //   try {
-      
+  //     const {email, password} = req.body;
+  //     const userData = await userService.login(email, password);
+  //     res.cookie('refreshToken', userData.refreshToken, {maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true} )
+  //     return res.json(userData);
   //   }
   //   catch(err) {
            
