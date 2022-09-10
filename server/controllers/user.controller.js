@@ -140,45 +140,57 @@ class UserController {
    * @param {*} req 
    * @param {*} res 
    */
-  // async login(req, res) {
-  //   try {
-  //     const {email, password} = req.body;
-  //     const userData = await userService.login(email, password);
-  //     res.cookie('refreshToken', userData.refreshToken, {maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true} )
-  //     return res.json(userData);
-  //   }
-  //   catch(err) {
-           
-  //   }    
-  // };
+  async login(req, res) {
+    try {
+      const {email, password} = req.body;
+      const userData = await userService.login(email, password);
+      res.cookie('refreshToken', userData.refreshToken, {maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true} )
+      return res.json(userData);
+    }
+    catch(err) {
+      res.json({
+        message: err.message,
+        //cause: err.cause.detail
+      });
+    }    
+  };
 
   /**
    * Method performs user logout
    * @param {*} req 
    * @param {*} res 
    */
-  // async logout(req, res) {
-  //   try {
-      
-  //   }
-  //   catch(err) {
-           
-  //   }    
-  // };
+  async logout(req, res) {
+    try {
+      const {refreshToken} = req.cookies;
+      const token = await userService.logout(refreshToken);
+      res.clearCookie('refreshToken');
+      return res.send('you are logged out');
+    }
+    catch(err) {
+      res.json({
+        message: err.message,
+        //cause: err.cause.detail
+      });
+    }    
+  };
 
   /**
    * Method performes refrsh users token
    * @param {*} req 
    * @param {*} res 
    */
-  // async refresh(req, res) {
-  //   try {
-      
-  //   }
-  //   catch(err) {
+  async refresh(req, res) {
+    try {
+      const {refreshToken} = req.cookies;
+      const userData = await userService.refresh(refreshToken);
+      res.cookie('refreshToken', userData.refreshToken, {maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true} )
+      return res.json(userData);
+    }
+    catch(err) {
            
-  //   }    
-  // };
+    }    
+  };
 }
 
 module.exports = new UserController();

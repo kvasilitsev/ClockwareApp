@@ -49,6 +49,23 @@ class TokenData {
     return token;
 	}
 
+  async deleteToken(refreshToken){
+    try {
+      await db.query('DELETE FROM tokens WHERE refresh_token = $1', [refreshToken]);
+    }
+    catch(err) {
+      throw new Error("Could not delete token", { cause: err });      
+    }
+  }
+
+  async findToken(refreshToken){
+	  let existToken = false;
+    const tokenResultSet = await db.query('SELECT refresh_token FROM tokens where refresh_token = $1', [refreshToken]);
+    if(tokenResultSet.rowCount === 1){
+      existToken = true;
+    };
+    return existToken;
+	}
 }
 
 module.exports = new TokenData();

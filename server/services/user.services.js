@@ -62,27 +62,49 @@ class UserService {
   async registration(name, email, password){
     const ifUserExist = await userData.getUserByEmail(email);
     if(ifUserExist){
-      throw new Error(`User with ${email} already exist`, { cause: err })
+      throw new Error(`User with ${email} already exist`)
     }
     const hashPassword = await bcrypt.hash(password, 3);
     await userData.createUser(name, email, hashPassword);
     const user = await userData.getUserByEmail(email);
-    //const userDto = new User({...user});    
     const tokens = tokenService.generateTokens({...user});
     await tokenService.saveToken(user.id, tokens.refreshToken);
     return {...tokens, user: user}; //temp
   }
 
-  // async login(email, password){
-  //   const ifUserExist = await userData.getUserByEmail(email);
-  //   if(!ifUserExist){
-  //     throw new Error(`User with ${email} does not exist`, { cause: err });
-  //   }
-  //   const isPasswordCorrect = await bcrypt.compare(password, user.password);
-  //   if(!isPasswordCorrect){
-  //     throw new Error(`Password is not correct`, { cause: err });
-  //   }
-  // }
+  async login(email, password){
+    const user = await userData.getUserByEmail(email);
+    if(!user){
+      throw new Error(`User with email ${email} does not exist`);
+    }
+    const isPasswordCorrect = await bcrypt.compare(password, user.password);
+    if(!isPasswordCorrect){
+      throw new Error(`Password is not correct`);
+    }
+    const tokens = tokenService.generateTokens({...user});
+    await tokenService.saveToken(user.id, tokens.refreshToken);
+    return {...tokens, user: user}; //temp
+  }
+
+  async logout(refreshToken){
+    const token = await tokenService.removeToken(refreshToken);
+    return token;
+  }
+
+  async refresh(refreshToken){
+    if(!refreshToken){
+      throw new Error(`Unauthorized error`);
+    }
+    const userDataSet = tokenService.validateRefreshToken(refreshToken);
+    const isTokenInDB = await tokenService.findToken(refreshToken);
+    if(!userData || !isTokenInDB){
+      throw new Error(`Unauthorized error`);
+    }    
+    const user = await userData.getUserById(userDataSet.id);
+    const tokens = tokenService.generateTokens({...user});
+    await tokenService.saveToken(user.id, tokens.refreshToken);
+    return {...tokens, user: user}; //temp
+  }
 }
 
 module.exports = new UserService()

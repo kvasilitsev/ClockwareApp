@@ -18,6 +18,26 @@ class TokenService {
 		}
  	}
 
+  validateAccessToken(token){
+    try{
+      const userData = jwt.verify(token, process.env.JWT_ACCESS_SECRET);
+      return userData;
+    }
+    catch(err){
+      return null;
+    }
+  }
+
+  validateRefreshToken(token){
+    try{
+      const userData = jwt.verify(token, process.env.JWT_REFRESH_SECRET);
+      return userData;
+    }
+    catch(err){
+
+    }
+  }
+
 	/**
 	 * Method save refresh token in token table
 	 * @param {integer} userId 
@@ -33,6 +53,16 @@ class TokenService {
 		const newToken = await tokenData.createToken(userId, refreshToken);
 		return newToken;
 	}
+
+  async removeToken(refreshToken){
+    const token = await tokenData.deleteToken(refreshToken);
+    return token;
+  }
+
+  async findToken(refreshToken){
+    const token = await tokenData.findToken(refreshToken);
+    return token;
+  }
 };
 
 module.exports = new TokenService();
