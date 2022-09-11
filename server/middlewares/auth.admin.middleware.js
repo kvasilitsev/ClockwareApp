@@ -15,6 +15,9 @@ module.exports = function (req, res, next){
     if(!userDataSet){
       return next(ApiError.UnauthorizedError());
     }
+    if(!userDataSet.admin){
+      return next(ApiError.UnauthorizedError());
+    }
     req.user = userDataSet;
     next();
   }

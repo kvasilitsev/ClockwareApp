@@ -55,10 +55,10 @@ class UserData {
     const userResultSet = await db.query('SELECT id, name, email, admin FROM users where id = $1', [id]);
     if(userResultSet.rowCount === 1){      
       user.name = userResultSet.rows[0].name;
-      user.rating = userResultSet.rows[0].email;
+      user.email = userResultSet.rows[0].email;
       user.admin = userResultSet.rows[0].admin;
       user.id = userResultSet.rows[0].id;
-    };    
+    }
     return user;
   };
 

@@ -133,6 +133,23 @@ class UserController {
   };
 
   /**
+   * Method perfomes user registartion
+   * @param {*} req 
+   * @param {*} res 
+   */
+   async adminRegistration(req, res, next) {
+    try {
+      const {name, email, password} = req.body;
+      const userData = await userService.adminRegistration(name, email, password);
+      res.cookie('refreshToken', userData.refreshToken, {maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true} )
+      return res.json(userData);
+    }
+    catch(err) {
+      next(err);
+    }    
+  };
+
+  /**
    * Method performs user login
    * @param {*} req 
    * @param {*} res 

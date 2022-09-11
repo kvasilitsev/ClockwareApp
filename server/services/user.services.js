@@ -72,6 +72,19 @@ class UserService {
     return {...tokens, user: user}; //temp
   }
 
+  async adminRegistration(name, email, password){
+    const ifUserExist = await userData.getUserByEmail(email);
+    if(ifUserExist){
+      throw ApiError.BedRequest(`User with ${email} already exist`)
+    }
+    const hashPassword = await bcrypt.hash(password, 3);
+    await userData.createAdmin(name, email, hashPassword);
+    const user = await userData.getUserByEmail(email);
+    const tokens = tokenService.generateTokens({...user});
+    await tokenService.saveToken(user.id, tokens.refreshToken);
+    return {...tokens, user: user}; //temp
+  }
+
   async login(email, password){
     const user = await userData.getUserByEmail(email);
     if(!user){
