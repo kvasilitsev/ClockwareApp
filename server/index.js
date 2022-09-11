@@ -7,6 +7,7 @@ const cityRouter = require('./routes/city.routes');
 const clockRouter = require('./routes/clock.routes');
 const userRouter = require('./routes/user.routes');
 const orderRouter = require('./routes/order.routes');
+const errorMiddleware = require('./middlewares/error.middleware')
 
 const logger = log4js.getLogger("clockwiseLog");
 const PORT = process.env.API_PORT || 3001;
@@ -19,6 +20,7 @@ app.use('/api', cityRouter);
 app.use('/api', clockRouter);
 app.use('/api', userRouter);
 app.use('/api', orderRouter);
+app.use(errorMiddleware);
 
   
 app.listen(PORT, () => {

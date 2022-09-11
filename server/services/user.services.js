@@ -3,7 +3,7 @@ const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 const bcrypt = require('bcrypt');
 const tokenService = require('./token.services');
-const User = require ('../dto/users.dto.js');
+const ApiError = require('../exceptions/api.errors')
 
 
 class UserService {
@@ -62,7 +62,7 @@ class UserService {
   async registration(name, email, password){
     const ifUserExist = await userData.getUserByEmail(email);
     if(ifUserExist){
-      throw new Error(`User with ${email} already exist`)
+      throw ApiError.BedRequest(`User with ${email} already exist`)
     }
     const hashPassword = await bcrypt.hash(password, 3);
     await userData.createUser(name, email, hashPassword);
@@ -75,11 +75,11 @@ class UserService {
   async login(email, password){
     const user = await userData.getUserByEmail(email);
     if(!user){
-      throw new Error(`User with email ${email} does not exist`);
+      throw ApiError.BedRequest(`User with email ${email} does not exist`);
     }
     const isPasswordCorrect = await bcrypt.compare(password, user.password);
     if(!isPasswordCorrect){
-      throw new Error(`Password is not correct`);
+      throw ApiError.BedRequest(`Password is not correct`);
     }
     const tokens = tokenService.generateTokens({...user});
     await tokenService.saveToken(user.id, tokens.refreshToken);
@@ -93,12 +93,12 @@ class UserService {
 
   async refresh(refreshToken){
     if(!refreshToken){
-      throw new Error(`Unauthorized error`);
+      throw ApiError.UnauthorizedError();
     }
     const userDataSet = tokenService.validateRefreshToken(refreshToken);
     const isTokenInDB = await tokenService.findToken(refreshToken);
     if(!userData || !isTokenInDB){
-      throw new Error(`Unauthorized error`);
+      throw ApiError.UnauthorizedError();
     }    
     const user = await userData.getUserById(userDataSet.id);
     const tokens = tokenService.generateTokens({...user});

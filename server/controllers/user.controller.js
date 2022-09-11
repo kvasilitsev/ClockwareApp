@@ -120,7 +120,7 @@ class UserController {
    * @param {*} req 
    * @param {*} res 
    */
-  async registration(req, res) {
+  async registration(req, res, next) {
     try {
       const {name, email, password} = req.body;
       const userData = await userService.registration(name, email, password);
@@ -128,10 +128,7 @@ class UserController {
       return res.json(userData);
     }
     catch(err) {
-      res.json({
-        message: err.message,
-        cause: err.cause.detail
-      } );      
+      next(err);
     }    
   };
 
@@ -140,7 +137,7 @@ class UserController {
    * @param {*} req 
    * @param {*} res 
    */
-  async login(req, res) {
+  async login(req, res, next) {
     try {
       const {email, password} = req.body;
       const userData = await userService.login(email, password);
@@ -148,10 +145,7 @@ class UserController {
       return res.json(userData);
     }
     catch(err) {
-      res.json({
-        message: err.message,
-        //cause: err.cause.detail
-      });
+      next(err);
     }    
   };
 
@@ -160,7 +154,7 @@ class UserController {
    * @param {*} req 
    * @param {*} res 
    */
-  async logout(req, res) {
+  async logout(req, res, next) {
     try {
       const {refreshToken} = req.cookies;
       const token = await userService.logout(refreshToken);
@@ -168,19 +162,16 @@ class UserController {
       return res.send('you are logged out');
     }
     catch(err) {
-      res.json({
-        message: err.message,
-        //cause: err.cause.detail
-      });
+      next(err);
     }    
   };
 
   /**
-   * Method performes refrsh users token
+   * Method performes refrsh users tokens
    * @param {*} req 
    * @param {*} res 
    */
-  async refresh(req, res) {
+  async refresh(req, res, next) {
     try {
       const {refreshToken} = req.cookies;
       const userData = await userService.refresh(refreshToken);
@@ -188,7 +179,7 @@ class UserController {
       return res.json(userData);
     }
     catch(err) {
-           
+      next(err);
     }    
   };
 }
