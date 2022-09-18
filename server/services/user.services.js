@@ -62,7 +62,7 @@ class UserService {
   async registration(name, email, password){
     const ifUserExist = await userData.getUserByEmail(email);
     if(ifUserExist){
-      throw ApiError.BedRequest(`User with ${email} already exist`)
+      throw ApiError.BadRequest(`User with ${email} already exist`)
     }
     const hashPassword = await bcrypt.hash(password, 3);
     await userData.createUser(name, email, hashPassword);
@@ -75,7 +75,7 @@ class UserService {
   async adminRegistration(name, email, password){
     const ifUserExist = await userData.getUserByEmail(email);
     if(ifUserExist){
-      throw ApiError.BedRequest(`User with ${email} already exist`)
+      throw ApiError.BadRequest(`User with ${email} already exist`)
     }
     const hashPassword = await bcrypt.hash(password, 3);
     await userData.createAdmin(name, email, hashPassword);
@@ -88,11 +88,11 @@ class UserService {
   async login(email, password){
     const user = await userData.getUserByEmail(email);
     if(!user){
-      throw ApiError.BedRequest(`User with email ${email} does not exist`);
+      throw ApiError.BadRequest(`User with email ${email} does not exist`);
     }
     const isPasswordCorrect = await bcrypt.compare(password, user.password);
     if(!isPasswordCorrect){
-      throw ApiError.BedRequest(`Password is not correct`);
+      throw ApiError.BadRequest(`Password is not correct`);
     }
     const tokens = tokenService.generateTokens({...user});
     await tokenService.saveToken(user.id, tokens.refreshToken);

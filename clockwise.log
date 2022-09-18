@@ -861,3 +861,165 @@
 [2022-09-11T16:52:13.514] [INFO] clockwiseLog - Server listening on 3001
 [2022-09-11T16:57:23.956] [INFO] clockwiseLog - Server listening on 3001
 [2022-09-11T16:59:11.888] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-11T21:47:13.416] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:00:57.015] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:09:53.888] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:10:07.467] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:10:09.266] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:10:14.259] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:10:16.846] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:10:21.570] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:10:28.615] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:10:30.433] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:10:33.942] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:10:35.594] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:10:37.408] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:11:08.499] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:11:09.506] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:11:11.127] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:11:22.007] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:11:27.950] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:11:31.074] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:11:42.602] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:11:46.090] [WARN] clockwiseLog - ApiError: User with email 1Kevin@gmail.com does not exist
+    at Function.BedRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.login (/home/ikarus/clockwareApp/server/services/user.services.js:91:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async login (/home/ikarus/clockwareApp/server/controllers/user.controller.js:160:24) {
+  status: 400,
+  errors: []
+}
+[2022-09-13T19:16:08.533] [WARN] clockwiseLog - ApiError: Unauthorized user
+    at Function.UnauthorizedError (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:12:11)
+    at module.exports (/home/ikarus/clockwareApp/server/middlewares/auth.admin.middleware.js:16:28)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/home/ikarus/clockwareApp/node_modules/express/lib/middleware/init.js:40:5) {
+  status: 401,
+  errors: []
+}
+[2022-09-13T19:18:41.983] [WARN] clockwiseLog - ApiError: Unauthorized user
+    at Function.UnauthorizedError (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:12:11)
+    at UserService.refresh (/home/ikarus/clockwareApp/server/services/user.services.js:114:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async refresh (/home/ikarus/clockwareApp/server/controllers/user.controller.js:194:24) {
+  status: 401,
+  errors: []
+}
+[2022-09-13T19:19:32.449] [WARN] clockwiseLog - ApiError: Unauthorized user
+    at Function.UnauthorizedError (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:12:11)
+    at UserService.refresh (/home/ikarus/clockwareApp/server/services/user.services.js:114:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async refresh (/home/ikarus/clockwareApp/server/controllers/user.controller.js:194:24) {
+  status: 401,
+  errors: []
+}
+[2022-09-13T19:19:34.121] [WARN] clockwiseLog - ApiError: Unauthorized user
+    at Function.UnauthorizedError (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:12:11)
+    at UserService.refresh (/home/ikarus/clockwareApp/server/services/user.services.js:114:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async refresh (/home/ikarus/clockwareApp/server/controllers/user.controller.js:194:24) {
+  status: 401,
+  errors: []
+}
+[2022-09-13T19:56:53.251] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:57:12.990] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:57:18.015] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:57:40.270] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T19:57:44.038] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T20:00:58.663] [WARN] clockwiseLog - ApiError: Unauthorized user
+    at Function.UnauthorizedError (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:12:11)
+    at module.exports (/home/ikarus/clockwareApp/server/middlewares/auth.admin.middleware.js:16:28)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/home/ikarus/clockwareApp/node_modules/express/lib/middleware/init.js:40:5) {
+  status: 401,
+  errors: []
+}
+[2022-09-13T20:01:45.374] [WARN] clockwiseLog - ApiError: Unauthorized user
+    at Function.UnauthorizedError (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:12:11)
+    at module.exports (/home/ikarus/clockwareApp/server/middlewares/auth.admin.middleware.js:16:28)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/home/ikarus/clockwareApp/node_modules/express/lib/middleware/init.js:40:5) {
+  status: 401,
+  errors: []
+}
+[2022-09-13T20:03:49.634] [WARN] clockwiseLog - SyntaxError: Unexpected string in JSON at position 36
+    at JSON.parse (<anonymous>)
+    at parse (/home/ikarus/clockwareApp/node_modules/body-parser/lib/types/json.js:89:19)
+    at /home/ikarus/clockwareApp/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/home/ikarus/clockwareApp/node_modules/raw-body/index.js:224:16)
+    at done (/home/ikarus/clockwareApp/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/home/ikarus/clockwareApp/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:402:35)
+    at endReadableNT (node:internal/streams/readable:1343:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: ' {\n' +
+    '        "name": "Batman"\n' +
+    '        "email": "Kevin@gmail.com",\n' +
+    '        "password": "123456"\n' +
+    ' }',
+  type: 'entity.parse.failed'
+}
+[2022-09-13T20:05:49.027] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T20:05:55.245] [WARN] clockwiseLog - SyntaxError: Unexpected string in JSON at position 36
+    at JSON.parse (<anonymous>)
+    at parse (/home/ikarus/clockwareApp/node_modules/body-parser/lib/types/json.js:89:19)
+    at /home/ikarus/clockwareApp/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/home/ikarus/clockwareApp/node_modules/raw-body/index.js:224:16)
+    at done (/home/ikarus/clockwareApp/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/home/ikarus/clockwareApp/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:402:35)
+    at endReadableNT (node:internal/streams/readable:1343:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: ' {\n' +
+    '        "name": "Batman"\n' +
+    '        "email": "Kevin@gmail.com",\n' +
+    '        "password": "123456"\n' +
+    ' }',
+  type: 'entity.parse.failed'
+}
+[2022-09-13T20:05:56.897] [WARN] clockwiseLog - SyntaxError: Unexpected string in JSON at position 36
+    at JSON.parse (<anonymous>)
+    at parse (/home/ikarus/clockwareApp/node_modules/body-parser/lib/types/json.js:89:19)
+    at /home/ikarus/clockwareApp/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/home/ikarus/clockwareApp/node_modules/raw-body/index.js:224:16)
+    at done (/home/ikarus/clockwareApp/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/home/ikarus/clockwareApp/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:402:35)
+    at endReadableNT (node:internal/streams/readable:1343:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: ' {\n' +
+    '        "name": "Batman"\n' +
+    '        "email": "Kevin@gmail.com",\n' +
+    '        "password": "123456"\n' +
+    ' }',
+  type: 'entity.parse.failed'
+}
+[2022-09-13T20:07:50.025] [INFO] clockwiseLog - Server listening on 3001
+[2022-09-13T20:11:34.889] [INFO] clockwiseLog - Server listening on 3001
