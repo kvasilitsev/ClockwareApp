@@ -57,7 +57,7 @@ class UserService {
     catch(err) {
       throw new Error("Could not create admin", { cause: err });      
     }
-  }
+  }  
   
   async registration(name, email, password){
     const ifUserExist = await userData.getUserByEmail(email);

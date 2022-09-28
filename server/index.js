@@ -1,5 +1,6 @@
 require('dotenv').config({path: './.env'});
 const express = require("express");
+const cors = require('cors')
 const cookieParser = require('cookie-parser');
 const log4js = require("./logger");
 const masterRouter = require('./routes/master.routes');
@@ -11,6 +12,11 @@ const errorMiddleware = require('./middlewares/error.middleware')
 
 const logger = log4js.getLogger("clockwiseLog");
 const PORT = process.env.API_PORT || 3001;
+
+const corsOptions = {
+  origin: 'http://localhost:3000',
+  credentials: true
+}
 const app = express();
 
 app.use(express.json());
@@ -18,7 +24,7 @@ app.use(cookieParser());
 app.use('/api', masterRouter);
 app.use('/api', cityRouter);
 app.use('/api', clockRouter);
-app.use('/api', userRouter);
+app.use('/api', cors(corsOptions), userRouter);
 app.use('/api', orderRouter);
 app.use(errorMiddleware);
 
