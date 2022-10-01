@@ -3,7 +3,8 @@ const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 const bcrypt = require('bcrypt');
 const tokenService = require('./token.services');
-const ApiError = require('../exceptions/api.errors')
+const ApiError = require('../exceptions/api.errors');
+const {isStringNullOrEmpty, isEmailValid, isPasswordValid, isNameValid} = require('../utils');
 
 
 class UserService {
@@ -60,6 +61,18 @@ class UserService {
   }  
   
   async registration(name, email, password){
+    if(isStringNullOrEmpty(name) || isStringNullOrEmpty(email) || isStringNullOrEmpty(password)){
+      throw ApiError.BadRequest(`Name, email or password can not be an empty string`);
+    }
+    if(!isEmailValid(email)){
+      throw ApiError.BadRequest(`invalid email`);
+    }
+    if(!isPasswordValid(password)){
+      throw ApiError.BadRequest(`invalid password`);
+    }
+    if(!isNameValid(name)){
+      throw ApiError.BadRequest(`invalid name`);
+    }
     const ifUserExist = await userData.getUserByEmail(email);
     if(ifUserExist){
       throw ApiError.BadRequest(`User with ${email} already exist`)
@@ -73,6 +86,18 @@ class UserService {
   }
 
   async adminRegistration(name, email, password){
+    if(isStringNullOrEmpty(name) || isStringNullOrEmpty(email) || isStringNullOrEmpty(password)){
+      throw ApiError.BadRequest(`Name, email or password can not be an empty string`);
+    }
+    if(!isEmailValid(email)){
+      throw ApiError.BadRequest(`invalid email`);
+    }
+    if(!isPasswordValid(password)){
+      throw ApiError.BadRequest(`invalid password`);
+    }
+    if(!isNameValid(name)){
+      throw ApiError.BadRequest(`invalid name`);
+    }
     const ifUserExist = await userData.getUserByEmail(email);
     if(ifUserExist){
       throw ApiError.BadRequest(`User with ${email} already exist`)
@@ -88,11 +113,11 @@ class UserService {
   async login(email, password){
     const user = await userData.getUserByEmail(email);
     if(!user){
-      throw ApiError.BadRequest(`User with email ${email} does not exist`);
+      throw ApiError.BadRequest(`login/password is not correct`);
     }
     const isPasswordCorrect = await bcrypt.compare(password, user.password);
     if(!isPasswordCorrect){
-      throw ApiError.BadRequest(`Password is not correct`);
+      throw ApiError.BadRequest(`login/password is not correct`);
     }
     const tokens = tokenService.generateTokens({...user});
     await tokenService.saveToken(user.id, tokens.refreshToken);

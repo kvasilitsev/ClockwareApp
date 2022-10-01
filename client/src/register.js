@@ -5,7 +5,7 @@ import axios from './api/axios';
 
 const USER_REGEX = /^[A-z]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,24}$/;
-const EMAIL_REGEX = /.+@.+\..+/i;
+const EMAIL_REGEX = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 
 const REGISTER_URL = '/registration';
 
@@ -64,12 +64,10 @@ const Register = () => {
                     withCredentials: true
                 }
             );
-            console.log(response?.data);
-            console.log(response?.accessToken);
-            console.log(JSON.stringify(response))
+            console.log(response?.data); //temp
+            console.log(response?.accessToken); //temp
+            console.log(JSON.stringify(response)) //temp
             setSuccess(true);
-            //clear state and controlled inputs
-            //need value attrib on inputs for this
             setUser('');
             setEmail('');
             setPwd('');

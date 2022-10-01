@@ -1467,3 +1467,61 @@
   status: 400,
   errors: []
 }
+[2022-10-01T14:31:37.582] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-01T14:33:14.540] [WARN] clockwiseLog - ApiError: invalid email
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:68:22)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:126:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10) {
+  status: 400,
+  errors: []
+}
+[2022-10-01T14:33:22.480] [WARN] clockwiseLog - ApiError: invalid password
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:71:22)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:126:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10) {
+  status: 400,
+  errors: []
+}
+[2022-10-01T14:33:27.873] [WARN] clockwiseLog - ApiError: invalid password
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:71:22)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:126:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10) {
+  status: 400,
+  errors: []
+}
+[2022-10-01T14:33:35.526] [WARN] clockwiseLog - ApiError: Name, email or password can not be an empty string
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:65:22)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:126:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10) {
+  status: 400,
+  errors: []
+}
+[2022-10-01T14:35:16.498] [INFO] clockwiseLog - Server listening on 3001
