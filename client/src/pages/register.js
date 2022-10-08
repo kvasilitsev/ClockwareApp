@@ -1,13 +1,10 @@
 import { useRef, useState, useEffect } from 'react';
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import axios from './api/axios';
-
-const USER_REGEX = /^[A-z]{3,23}$/;
-const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,24}$/;
-const EMAIL_REGEX = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-
-const REGISTER_URL = '/registration';
+import { USER_REGEX, PWD_REGEX, EMAIL_REGEX } from '../models/regExp';
+ import { Request } from '../api/api.request';
+// import axios from '../api/axios';
+// import { REGISTER_URL } from '../models/route';
 
 const Register = () => {
     const userRef = useRef();
@@ -57,16 +54,18 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(REGISTER_URL,
-                JSON.stringify({ name: user, email, password: pwd }),
-                {
-                    headers: { 'Content-Type': 'application/json' },
-                    withCredentials: true
-                }
-            );
-            console.log(response?.data); //temp
-            console.log(response?.accessToken); //temp
-            console.log(JSON.stringify(response)) //temp
+            new Request(user, email, pwd).register();
+            //console.log(response, user, email, pwd)
+            // const response = await axios.post(REGISTER_URL,
+            //     JSON.stringify({ name: user, email, password: pwd }),
+            //     {
+            //         headers: { 'Content-Type': 'application/json' },
+            //         withCredentials: true
+            //     }
+            // );
+            // console.log(response?.data); //temp
+            // console.log(response?.accessToken); //temp
+            // console.log(JSON.stringify(response)) //temp
             setSuccess(true);
             setUser('');
             setEmail('');
