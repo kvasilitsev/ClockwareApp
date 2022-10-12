@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from 'react';
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { USER_REGEX, PWD_REGEX, EMAIL_REGEX } from '../models/regExp';
- import { Request } from '../api/api.request';
+import { Request } from '../api/api.request';
 // import axios from '../api/axios';
 // import { REGISTER_URL } from '../models/route';
 

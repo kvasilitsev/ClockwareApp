@@ -1,4 +1,4 @@
-const USER_REGEX = /^[A-z]{3,23}$/;
+const USER_REGEX = /^[A-z]{2,24}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,24}$/;
 const EMAIL_REGEX = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 

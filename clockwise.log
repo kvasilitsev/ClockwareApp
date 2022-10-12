@@ -1755,3 +1755,1065 @@
 [2022-10-08T16:10:05.882] [INFO] clockwiseLog - Server listening on 3001
 [2022-10-08T16:15:13.661] [INFO] clockwiseLog - Server listening on 3001
 [2022-10-08T16:15:28.719] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T14:02:36.327] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:50:24.375] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:50:45.412] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:52:15.944] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:52:50.842] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:52:52.742] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:52:54.479] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:53:03.978] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:53:11.361] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:53:12.404] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:53:32.699] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:54:24.775] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:54:26.315] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:54:30.831] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:54:38.547] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:55:05.987] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:55:08.993] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:55:32.797] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:55:37.558] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:55:39.639] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:55:43.688] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:55:45.958] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:55:51.389] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:55:52.893] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:56:02.582] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:56:56.126] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:57:00.825] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:59:53.403] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:59:54.532] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T15:59:58.524] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:00:02.221] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:00:03.263] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:00:06.185] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:00:08.132] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:00:11.842] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:00:19.483] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:00:23.524] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:00:53.027] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:01:04.799] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:01:08.815] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:01:35.240] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:01:36.432] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:01:38.984] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:01:47.414] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:01:49.839] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:01:51.507] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:01:57.095] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:02:00.729] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:02:02.253] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:02:04.895] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:126:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T16:02:37.952] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:02:42.060] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:02:44.435] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:02:49.071] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:02:50.651] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:126:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T16:06:57.395] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:09:06.334] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:09:24.005] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:126:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T16:09:53.452] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:126:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T16:09:54.575] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:126:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T16:10:27.054] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:10:31.238] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:10:34.890] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:10:36.459] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:10:39.531] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:10:42.861] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T16:12:12.795] [WARN] clockwiseLog - ApiError: Unauthorized user
+    at Function.UnauthorizedError (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:12:11)
+    at module.exports (/home/ikarus/clockwareApp/server/middlewares/auth.admin.middleware.js:16:28)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/home/ikarus/clockwareApp/node_modules/express/lib/middleware/init.js:40:5) {
+  status: 401,
+  errors: []
+}
+[2022-10-09T16:15:05.454] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:15:19.470] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T16:22:23.939] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T16:23:31.313] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:24:00.174] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:24:09.968] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:24:15.917] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:24:19.066] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:24:22.680] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:24:26.260] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:26:09.244] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:26:23.368] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:26:29.081] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:26:37.926] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:26:42.256] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:26:57.852] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:27:13.505] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:27:42.319] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:27:45.015] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:28:06.124] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:28:08.288] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:28:35.377] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:29:19.167] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:30:27.615] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:30:42.967] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:31:11.806] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:31:18.561] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:31:23.996] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:31:39.198] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:31:40.982] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:32:13.063] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:32:37.985] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:32:40.409] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:32:58.834] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:33:51.611] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:34:02.199] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:34:13.055] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:34:37.571] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:34:46.420] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:34:48.740] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:34:58.732] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:35:00.202] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:35:03.941] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:35:28.331] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:35:33.384] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T16:35:43.480] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:08:44.081] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:08:45.417] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:09:08.234] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:33:36.962] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:33:53.598] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:37:43.131] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:37:48.898] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:38:10.267] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:38:11.449] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:38:19.232] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:38:22.670] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:38:26.286] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:38:27.345] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:38:30.903] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:38:34.591] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:39:45.975] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:46:48.307] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:46:50.110] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:46:55.649] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:46:57.449] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:46:59.531] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:47:02.823] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:47:06.529] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:51:23.431] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:51:24.564] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:51:27.742] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:51:29.009] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:51:31.495] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:51:32.782] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:55:44.482] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:55:46.621] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:55:53.979] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:55:58.970] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:56:13.855] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:56:20.050] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:56:34.383] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:56:35.805] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:56:56.539] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:57:02.910] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:57:09.589] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:57:13.555] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:57:19.662] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:57:23.966] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:57:25.249] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:57:26.873] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:57:38.714] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:57:53.758] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:57:57.882] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:58:04.569] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:58:06.082] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:21.798] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:23.829] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:27.285] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:30.321] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:32.272] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:34.525] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:35.683] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:38.865] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:41.734] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:47.613] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:49.229] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:50.351] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:53.169] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T18:59:55.648] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:12.004] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:14.331] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:16.259] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:22.240] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:26.968] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:28.345] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:31.002] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:33.823] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:35.856] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:37.182] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:42.001] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:44.276] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:00:45.778] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:12:20.086] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:12:21.169] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:12:28.310] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:12:29.390] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:12:33.126] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:12:59.979] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:13:14.223] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:13:19.902] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:13:43.342] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:14:51.003] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:14:58.624] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:16:06.244] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:16:08.218] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:16:15.099] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:16:18.275] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:16:25.486] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:16:28.603] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:16:33.198] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:16:37.409] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:16:42.378] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:16:59.450] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:17:02.227] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:17:04.055] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:17:11.546] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:17:16.109] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:28:51.354] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:28:53.520] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:28:57.054] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:29:09.818] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:29:12.255] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:29:14.023] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:29:18.347] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:29:56.106] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:31:12.854] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:32:07.667] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:32:12.687] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:32:20.439] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:32:23.263] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:32:27.391] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:33:55.471] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:33:56.921] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:33:58.840] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:33:59.947] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:34:09.393] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:34:11.125] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:34:13.254] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:34:29.125] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:34:30.336] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:34:42.262] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:34:46.982] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:34:48.896] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:34:51.650] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:35:26.639] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:35:27.832] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:36:46.663] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:36:51.846] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:37:01.194] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:37:19.430] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T19:37:20.118] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T19:37:26.250] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T19:37:26.747] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T19:37:27.056] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T19:38:00.223] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:38:38.810] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:38:41.998] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:38:50.657] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:38:57.025] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:39:02.128] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:49:50.261] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:49:59.067] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:50:05.411] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:50:19.468] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:50:20.487] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:50:27.975] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:59:14.169] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:59:15.656] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:59:18.934] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:59:21.205] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:59:32.597] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:59:35.406] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:59:45.327] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:59:48.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T19:59:53.903] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:00:54.142] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:01:39.771] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:01:43.033] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:01:46.030] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:01:48.003] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:02:00.238] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:02:04.858] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:02:05.911] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:02:10.039] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:02:11.070] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:02:16.946] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:02:18.375] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:02:24.734] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:02:29.094] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:08:45.670] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:08:55.503] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:08:57.246] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:09:38.550] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:10:26.849] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:10:29.746] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:10:30.889] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:11:09.344] [WARN] clockwiseLog - TypeError: string.trim is not a function
+    at isStringNullOrEmpty (/home/ikarus/clockwareApp/server/utils.js:8:47)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:64:8)
+    at registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:42)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ikarus/clockwareApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ikarus/clockwareApp/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/ikarus/clockwareApp/node_modules/express/lib/router/index.js:275:10)
+[2022-10-09T20:25:48.803] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:28:18.726] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:28:20.165] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:28:23.257] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:28:25.215] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:28:34.057] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:29:12.723] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:29:15.440] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:29:24.339] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:29:27.829] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:29:31.771] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:29:35.016] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:29:36.603] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:29:43.462] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:29:45.742] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:29:54.787] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:30:20.510] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:30:34.975] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:30:43.438] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:30:47.192] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:30:50.750] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:30:57.106] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:30:59.215] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:01.196] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:03.161] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:06.773] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:08.063] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:09.964] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:13.667] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:17.916] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:24.031] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:28.078] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:33.973] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:41.546] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:31:42.657] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:32:45.170] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:32:46.857] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:33:00.229] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:11.906] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:12.494] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:12.814] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:13.032] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:13.268] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:13.459] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:13.673] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:13.905] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:14.122] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:14.355] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:14.585] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:33:51.084] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:33:54.059] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:33:57.361] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:34:22.194] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:34:23.202] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:34:27.443] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:34:30.262] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:34:44.804] [WARN] clockwiseLog - ApiError: User with inacck@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:36:11.583] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:36:25.685] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:36:27.061] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:02.483] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:03.896] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:09.275] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:13.235] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:17.636] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:20.116] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:24.628] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:27.851] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:41.232] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:42.850] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:45.697] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:54.801] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:38:56.927] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:40:42.688] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:40:45.226] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:42:56.805] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:43:00.844] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:43:02.414] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:43:04.177] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:43:07.004] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:43:13.967] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:43:28.818] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:43:54.750] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:44:12.542] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:44:14.696] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:44:18.123] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:45:44.158] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:46:05.772] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:46:06.933] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:46:09.781] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:46:13.623] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:46:15.609] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:46:17.209] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:46:20.296] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:46:29.394] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:46:42.062] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:46:45.990] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:47:21.492] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:47:42.573] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:01.259] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:03.264] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:06.268] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:13.654] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:18.148] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:26.613] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:29.001] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:32.253] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:36.694] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:41.067] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:44.559] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:46.343] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:55.204] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:48:56.320] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:49:02.203] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:49:37.978] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:49:39.283] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:49:42.969] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:49:44.337] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:49:47.709] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:49:55.706] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:49:56.937] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:49:58.684] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:06.731] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:12.448] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:35.519] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:39.155] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:42.492] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:45.447] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:47.606] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:50.160] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:52.567] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:53.815] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:58.108] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:50:59.120] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:04.580] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:07.364] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:12.327] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:15.486] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:19.630] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:20.736] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:24.943] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:27.298] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:28.399] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:35.144] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:36.749] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:38.501] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:51:48.500] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:52:54.317] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:52:56.770] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:53:03.588] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:53:04.658] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:53:06.532] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:53:09.078] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:53:12.357] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:53:15.957] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:53:29.624] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:53:33.334] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:53:37.721] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:53:39.482] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:53:42.314] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:54:21.628] [WARN] clockwiseLog - ApiError: User with sss@qqq.ca already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:54:23.025] [WARN] clockwiseLog - ApiError: User with sss@qqq.ca already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T20:56:31.984] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:56:32.987] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:56:38.498] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:56:42.526] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:56:43.630] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:56:53.678] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:57:18.546] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:57:22.192] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:57:23.805] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:57:29.251] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:58:53.939] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:58:56.190] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:58:57.581] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:59:00.396] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T20:59:08.915] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:00:00.134] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:00:09.938] [WARN] clockwiseLog - ApiError: User with sss@qqq.cab already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T21:00:13.703] [WARN] clockwiseLog - ApiError: User with sss@qqq.cab already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T21:00:39.495] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:00:41.497] [WARN] clockwiseLog - ApiError: User with sss@qqq.cab already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T21:01:30.249] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:01:32.933] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:02:09.475] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:02:10.842] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:02:14.638] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:02:17.626] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:02:21.133] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:02:22.509] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:02:33.918] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:04:00.961] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:04:03.733] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:04:05.941] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:05:28.450] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:05:30.461] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:05:36.781] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:05:38.240] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:05:50.525] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:05:58.365] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:06:11.877] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:06:13.363] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:06:16.181] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:06:20.149] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:06:21.894] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:06:38.229] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:06:42.956] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:06:46.409] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:00.017] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:05.528] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:08.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:12.552] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:20.252] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:22.533] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:23.673] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:25.201] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:26.993] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:41.776] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:43.551] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:07:58.116] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:00.270] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:06.909] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:13.270] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:26.319] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:28.366] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:31.034] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:36.692] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:38.446] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:48.578] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:51.295] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:53.981] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:08:56.058] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:09:01.323] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:09:02.641] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:09:03.762] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:09:27.051] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:10:51.595] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:10:54.912] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:10:57.146] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:10:58.343] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:11:02.337] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:11:03.954] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:11:06.812] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:11:15.185] [WARN] clockwiseLog - ApiError: User with sss@qqq.cab already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T21:12:13.426] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:12:15.042] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:12:16.065] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:12:31.630] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:12:38.422] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:12:43.429] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:12:44.548] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:13:35.994] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:13:39.794] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:13:42.462] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:13:45.974] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:13:53.950] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:13:55.913] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:13:57.350] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:14:09.906] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:14:11.447] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:14:14.539] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:14:21.562] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:14:26.846] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:14:31.099] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:14:57.906] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:15:22.344] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:15:23.580] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:16:03.397] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:16:07.611] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:16:10.980] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:16:12.001] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:16:15.980] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:16:41.886] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:16:44.910] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:16:52.293] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:16:54.550] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:16:58.368] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:17:00.120] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:17:14.698] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:17:28.788] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:17:29.766] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:17:33.595] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:17:37.449] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:17:38.546] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:18:51.633] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T21:19:57.487] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:19:58.744] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:20:18.014] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:21:03.751] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:21:14.212] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:21:18.058] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:21:21.118] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:21:26.284] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:21:28.954] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:21:52.370] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-09T21:22:20.193] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:22:21.859] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:22:26.226] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:22:27.876] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-09T21:22:50.964] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T18:56:50.971] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T18:57:09.265] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T18:58:15.382] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T18:58:16.619] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T18:58:17.974] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T18:58:27.232] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T18:58:42.330] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T18:58:46.071] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T18:58:47.415] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T18:58:49.218] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:00:36.479] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T19:02:34.650] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:02:36.242] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:02:39.390] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:02:49.394] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:02:53.983] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:02:55.455] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:02:59.805] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:03:02.710] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:03:16.202] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:03:17.603] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:03:21.337] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:03:26.538] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T19:03:30.114] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T19:11:37.851] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T19:19:07.299] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:14:10.184] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:14:12.722] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:14:16.531] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:14:17.741] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:14:21.609] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:14:26.052] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:14:32.559] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:14:35.535] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:14:36.966] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:14:42.832] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T20:14:43.604] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T20:14:48.333] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T20:15:08.287] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:15:12.827] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:15:15.246] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:15:19.151] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:15:22.035] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:15:24.510] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:15:28.443] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T20:15:47.123] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:15:50.656] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T20:16:12.824] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:16:14.473] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:16:15.953] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T20:16:52.045] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:16:54.774] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:16:59.230] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:17:02.402] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:17:04.560] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:17:08.076] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T20:17:10.287] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T21:20:55.054] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T21:21:07.815] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T21:21:10.567] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T21:21:15.582] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T21:21:19.350] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T21:22:12.822] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T21:22:49.588] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T21:22:50.693] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T21:23:39.945] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T21:23:41.087] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-11T21:24:16.566] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}
+[2022-10-11T21:24:21.352] [WARN] clockwiseLog - ApiError: User with ikarus256@gmail.com already exist
+    at Function.BadRequest (/home/ikarus/clockwareApp/server/exceptions/api.errors.js:16:12)
+    at UserService.registration (/home/ikarus/clockwareApp/server/services/user.services.js:78:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async registration (/home/ikarus/clockwareApp/server/controllers/user.controller.js:127:24) {
+  status: 400,
+  errors: []
+}

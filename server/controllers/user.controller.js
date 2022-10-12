@@ -121,6 +121,7 @@ class UserController {
    * @param {*} res 
    */
   async registration(req, res, next) {
+    console.log(req);
     try {
       const {name, email, password} = req.body;
       const userData = await userService.registration(name, email, password);

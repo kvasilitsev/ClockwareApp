@@ -1,10 +1,10 @@
-import Register from './pages/register';
+import  Register from './components/register'
 
 function App() {
 
   return (
     <main className="App">
-      <Register />      
+      <Register />   
     </main>
   );
 }

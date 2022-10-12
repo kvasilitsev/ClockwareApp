@@ -1,13 +1,13 @@
 import axios from './axios';
-import { REGISTER_URL } from '../models/route';
+import { REGISTER_URL } from '../routes';
 
 
 class Request {
 
-  constructor(user, email, pwd){
+  constructor(user, email, password){
     this.name = user;
     this.email = email;
-    this.password = pwd;
+    this.password = password;
   }
 
   async register() {
@@ -15,9 +15,10 @@ class Request {
       {
         headers: { 'Content-Type': 'application/json' },  
         withCredentials: true
-      }
-    );
+      }      
+    )  
   }
+  
 }
 
 export { Request };
