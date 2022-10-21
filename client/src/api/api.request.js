@@ -1,13 +1,16 @@
 import axios from './axios';
-import { REGISTER_URL } from '../routes';
+import { REGISTER_URL, ORDER_URL } from '../routes';
 
 
 class Request {
 
-  constructor(user, email, password){
-    this.name = user;
+  constructor({name, email, password, cityId, bookingTime, clockId}={}){
+    this.name = name;
     this.email = email;
     this.password = password;
+    this.cityId = cityId;
+    this.bookingTime = bookingTime;
+    this.clockId = clockId;
   }
 
   async register() {
@@ -17,6 +20,16 @@ class Request {
         withCredentials: true
       }      
     )  
+  }
+
+  async order() {    
+    const res = await axios.get(ORDER_URL, {params: {clockId: this.clockId, cityId: this.cityId, bookingTime: this.bookingTime }},
+      {
+        headers: { 'Content-Type': 'application/json' },  
+        withCredentials: true
+      }
+    )
+    return res;
   }
   
 }

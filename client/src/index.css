@@ -52,7 +52,7 @@ a, a:visited {
 input[type="text"],
 input[type="password"],
 button,
-textarea {
+textarea{
   font-family: 'Nunito', sans-serif;
   font-size: 22px;
   padding: 0.25rem;
@@ -111,4 +111,19 @@ button {
 
 .line {
     display: inline-block;
+}
+
+.datePicker {
+    background: rgb(255, 255, 255);        
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0.2em;    
+}
+.select {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    color:#000;
 }

@@ -60,14 +60,14 @@ class MasterService {
     const allMastersInCity = await masterData.getMastersByCityId(cityId);
     const repairDuration = await clockData.getRepairDurationByClockId(clockId);
     const bookedMastersIdInCity =  await masterData.bookedMastersIdInCity(cityId, bookingTime, repairDuration);
-    const bookingHours = new Date(bookingTime).getHours();
+    const bookingHours = new Date(bookingTime).getHours();   
     if(bookingHours < 8){
       throw new Error(`Sorry, we are open from 8:00`);
     };
     if((bookingHours + repairDuration.hours) > 17){
       throw new Error(`Sorry, we are close at 17:00. Please book your appointment earlier`);
     };
-    const freeMasters = allMastersInCity.filter(master => !bookedMastersIdInCity.includes(master.id))
+    const freeMasters = allMastersInCity.filter(master => !bookedMastersIdInCity.includes(master.id))    
     return freeMasters;
   }  
 }

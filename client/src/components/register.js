@@ -48,7 +48,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
      validate,     
      onSubmit: async (values) => {      
       try {
-        const apiRequest = new Request(values.name, values.email, values.password);
+        console.log(values)
+        const apiRequest = new Request({name: values.name, email: values.email, password: values.password});
+        console.log(apiRequest)
         await apiRequest.register();
         setSuccess(true);
       } catch (e) {
