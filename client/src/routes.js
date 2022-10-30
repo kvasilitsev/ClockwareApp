@@ -1,4 +1,5 @@
 const REGISTER_URL = '/registration';
-const ORDER_URL = '/getFreeMastersInCity'
+const GET_FREE_MASTERS_URL = '/getFreeMastersInCity';
+const CREATE_ORDER_URL = '/createOrder';
 
-export { REGISTER_URL, ORDER_URL };
+export { REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL };

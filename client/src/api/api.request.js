@@ -1,16 +1,17 @@
 import axios from './axios';
-import { REGISTER_URL, ORDER_URL } from '../routes';
+import { REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL } from '../routes';
 
 
 class Request {
 
-  constructor({name, email, password, cityId, bookingTime, clockId}={}){
+  constructor({name, email, password, cityId, bookingTime, clockId, masterId}={}){
     this.name = name;
     this.email = email;
     this.password = password;
     this.cityId = cityId;
     this.bookingTime = bookingTime;
     this.clockId = clockId;
+    this.masterId = masterId;
   }
 
   async register() {
@@ -22,14 +23,23 @@ class Request {
     )  
   }
 
-  async order() {    
-    const res = await axios.get(ORDER_URL, {params: {clockId: this.clockId, cityId: this.cityId, bookingTime: this.bookingTime }},
+  async getFreeMasters() {    
+    const res = await axios.get(GET_FREE_MASTERS_URL, {params: {clockId: this.clockId, cityId: this.cityId, bookingTime: this.bookingTime }},
       {
         headers: { 'Content-Type': 'application/json' },  
         withCredentials: true
       }
     )
     return res;
+  }
+
+  async createOrder() {
+    await axios.post(CREATE_ORDER_URL, { name: this.name, email: this.email, bookingTime: this.bookingTime, clockId: this.clockId, cityId: this.cityId, masterId: this.masterId },
+      {
+        headers: { 'Content-Type': 'application/json' },  
+        withCredentials: true
+      }      
+    )  
   }
   
 }
