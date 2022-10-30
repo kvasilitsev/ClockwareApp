@@ -2232,3 +2232,15 @@
   Master { id: 6, name: 'Peter', rating: 3, cityList: undefined },
   Master { id: 86, name: 'Fred', rating: 3, cityList: undefined }
 ]
+[2022-10-30T19:42:54.590] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-30T19:42:55.854] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-30T19:43:04.782] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-30T19:43:13.280] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-30T19:43:20.439] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-30T19:43:30.826] [INFO] clockwiseLog - Server listening on 3001
+[2022-10-30T19:44:16.795] [INFO] clockwiseLog - [
+  Master { id: 4, name: 'Michael', rating: 2, cityList: undefined },
+  Master { id: 5, name: 'Alex', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'Peter', rating: 3, cityList: undefined },
+  Master { id: 86, name: 'Fred', rating: 3, cityList: undefined }
+]

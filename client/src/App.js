@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import  Masters from './components/masters';
-import  Order from "./components/order";
+import  InitialOrder from "./components/initialOrder";
 
 
 // function App() {
@@ -18,7 +18,7 @@ function App() {
     <main className="App">      
       <BrowserRouter>      
         <Routes>
-          <Route path="/" element={<Order />} />
+          <Route path="/" element={<InitialOrder />} />
           <Route path="/masters" element={<Masters />} />         
         </Routes>
     </BrowserRouter>

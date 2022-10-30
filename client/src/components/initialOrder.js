@@ -39,7 +39,7 @@ const validate = values => {
   return errors;
 }; 
  
-const Order = () => {
+const InitialOrder = () => {
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
@@ -152,4 +152,4 @@ const Order = () => {
    </section>)
  };
  
-export default Order;
+export default InitialOrder;
