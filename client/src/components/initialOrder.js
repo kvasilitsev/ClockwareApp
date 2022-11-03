@@ -14,8 +14,8 @@ const clockOptions = [{value: process.env.REACT_APP_CLOCK_ID_SMALL, label:'Small
   {value: process.env.REACT_APP_CLOCK_ID_LARGE, label:'Large' }
 ];
 
-const cityOptions = [{value: process.env.REACT_APP_CITY_ID_DNIPRO, label:'Dnipro'},
-  {value: process.env.REACT_APP_CITY_ID_UZHGOROD, label:'Uzhgorod'}
+const cityOptions = [{value: process.env.REACT_APP_CITY_ID_DNIPRO, label:'Dnipro'}, //fix labvel
+  {value: process.env.REACT_APP_CITY_ID_UZHGOROD, label:'Uzhgorod'} //fix label
 ];
 
 const validate = values => {

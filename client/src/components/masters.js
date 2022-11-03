@@ -16,17 +16,16 @@ const Masters = props => {
       bookingTime: state.bookingTime,
       list: state.list     
     }, 
-    onSubmit: values => console.log(values) //temp until createOtrder fix
-    // onSubmit: async (values) => {      
-    //   try {
-    //     console.log(values.clockId, values.cityId, values.bookingTime, values.email, values.masterId);
-    //     const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId});        
-    //     const res = await apiRequest.createOrder(); 
-    //     console.log(res.data)    //temp                
-    //   } catch (e) {
-    //       console.log('error: ', e.response);          
-    //     }   
-    //   }
+    //onSubmit: values => console.log(values) //temp until createOtrder fix
+    onSubmit: async (values) => {      
+      try {        
+        const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId});        
+        const res = await apiRequest.createOrder(); 
+        console.log(res.data)                  
+      } catch (e) {
+          console.log('error: ', e.response);          
+        }   
+      }
   });
     return (  
     <section>

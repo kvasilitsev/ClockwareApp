@@ -16,12 +16,15 @@ class OrderData {
      * @param {integer} masterId 
      * @param {integer} cityId 
      * @param {integer} clockId
-     * @param {date} bookingDate 
      * @param {time} bookingTime 
+     * @param {varchar} email 
+     * @param {varchar} name 
      */
-  async createOrder(userId, masterId, cityId, clockId, bookingDateTime, repairDuration) {
+  async createOrder(masterId, cityId, clockId, bookingTime, email, name, repairDuration) {
+    logger.info('test')
+    logger.info(masterId, cityId, clockId, bookingTime, email, name, repairDuration, 'DAL layer')
     try {
-      await db.query('INSERT INTO orders (user_id, master_id, city_id, clock_id, booking_date_time, repair_duration, is_deleted) values ($1, $2, $3, $4, $5, $6, false) RETURNING *', [userId, masterId, cityId, clockId, bookingDateTime, repairDuration]);    
+      await db.query('INSERT INTO orders (master_id, city_id, clock_id, booking_date_time, email, user_name, repair_duration, is_deleted) values ($1, $2, $3, $4, $5, $6, $7, false) RETURNING *', [masterId, cityId, clockId, bookingTime, email, name, repairDuration]);    
     } catch (err) {
       logger.error(`createOrder failed with reason: ${err.detail}`);
       throw err;

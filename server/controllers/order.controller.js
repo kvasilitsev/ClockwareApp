@@ -13,9 +13,9 @@ class OrderController {
    * @param {*} res 
    */
   async createOrder(req, res) {
-    const {userId, masterId, cityId, clockId, bookingDateTime} = req.body;    
+    const {masterId, cityId, clockId, bookingTime, email, name} = req.body;
     try {
-      await orderService.createOrder(userId, masterId, cityId, clockId, bookingDateTime);
+      await orderService.createOrder(masterId, cityId, clockId, bookingTime, email, name);
     }
     catch(err) {
       res.json({

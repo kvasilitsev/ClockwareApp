@@ -34,12 +34,14 @@ class Request {
   }
 
   async createOrder() {
-    await axios.post(CREATE_ORDER_URL, { name: this.name, email: this.email, bookingTime: this.bookingTime, clockId: this.clockId, cityId: this.cityId, masterId: this.masterId },
+    console.log(this.name, this.email, this.bookingTime, this.clockId, this.cityId, this.masterId)
+    const res = await axios.post(CREATE_ORDER_URL, { name: this.name, email: this.email, bookingTime: this.bookingTime, clockId: this.clockId, cityId: this.cityId, masterId: this.masterId },
       {
         headers: { 'Content-Type': 'application/json' },  
         withCredentials: true
       }      
-    )  
+    )
+    return res; 
   }
   
 }

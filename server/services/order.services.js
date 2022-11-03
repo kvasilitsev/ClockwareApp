@@ -6,17 +6,19 @@ const logger = log4js.getLogger("clockwiseLog");
 
 class OrderService {
 
-  async createOrder(userId, masterId, cityId, clockId, bookingDateTime) {
+  async createOrder(masterId, cityId, clockId, bookingTime, email, name) {    
     const repairDuration =  await clockData.getRepairDurationByClockId(clockId);
     const mastersInCity = await masterData.getMastersByCityId(cityId);
-    const isMasterInCity = mastersInCity.filter(master => master.id === masterId).length === 1;
+    const isMasterInCity = mastersInCity.filter(master => master.id == masterId).length === 1;    
     if(!isMasterInCity){
       throw new Error("Could not create order, master does not exist in the city", { cause: 'undefiend'})
     }
     try {
-      await orderData.createOrder(userId, masterId, cityId, clockId, bookingDateTime, repairDuration);
+      logger.info(masterId, cityId, clockId, bookingTime, email, name, repairDuration, 'Service')
+      await orderData.createOrder(masterId, cityId, clockId, bookingTime, email, name, repairDuration);
     }
     catch(err) {
+      logger.info('error')
       throw new Error("Could not create order", { cause: err });      
     }    
   }

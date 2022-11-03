@@ -9,6 +9,8 @@
     clockId;
     bookingDateTime;    
     repairDuration;
+    email;
+    name;
   
     /**
      * 
@@ -19,8 +21,10 @@
      * @param {integer} clockId 
      * @param {timestamp} bookingDateTime    
      * @param {interval} repairDuration
+     * @param {varchar} email
+     * @param {varchar} name
      */
-    constructor (id, userId, masterId, cityId, clockId, bookingDateTime, repairDuration) {
+    constructor (id, userId, masterId, cityId, clockId, bookingDateTime, repairDuration, emaill, name) {
       this.id = id;
       this.userId = userId;
       this.masterId = masterId;
@@ -28,6 +32,8 @@
       this.clockId = clockId;
       this.bookingDateTime = bookingDateTime;      
       this.repairDuration = repairDuration;
+      this.email = email;
+      this.name = name;
   }
 }
   
