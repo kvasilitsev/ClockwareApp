@@ -1,14 +1,14 @@
-const MasterListItem = (props) => {
+const MasterListItem = (props) => {  
     const {id, name, rating} = props.value;
     return (
     <div>     
       <label>{name}, rating - {rating}</label>
-      <input type='radio' value={id} name='masters' />
+      <input id={id} type='radio' value={name} name='masters' />
     </div>
     );
   }
 
-const MasterList = (props) => {    
+const MasterList = (props) => {  
     const masters = props.masters;
     return (
       <div>

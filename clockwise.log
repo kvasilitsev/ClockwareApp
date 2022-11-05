@@ -186,3 +186,710 @@
 [2022-11-01T19:48:37.174] [INFO] clockwiseLog - test
 [2022-11-01T19:48:37.174] [INFO] clockwiseLog - 6 3 13 2022-11-18T19:00:00.000Z ikarus256@gmail.com www PostgresInterval { hours: 1 } DAL layer
 [2022-11-01T19:48:37.183] [ERROR] clockwiseLog - createOrder failed with reason: Key (master_id, booking_date_time)=(6, 2022-11-18 19:00:00) already exists.
+[2022-11-05T16:43:17.230] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T16:54:30.737] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T16:58:10.033] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T16:58:47.094] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T16:58:58.635] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:00:14.109] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:00:32.586] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:00:38.873] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:00:40.061] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:00:42.530] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:00:45.693] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:00:47.250] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:00:51.045] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:00:57.334] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:00:59.336] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:01:01.045] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:01:02.840] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:01:07.041] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:01:09.747] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:01:10.892] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:01:20.041] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:24:58.415] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:26:05.134] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:26:17.273] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:26:20.925] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:28:35.467] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:28:43.709] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:28:45.030] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:28:46.570] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:28:52.922] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:29:00.690] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:29:04.633] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:29:06.625] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:29:13.802] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:29:17.497] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:29:20.565] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:29:30.049] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:30:16.642] [INFO] clockwiseLog - undefined
+[2022-11-05T17:30:48.691] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:32:10.237] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:32:13.756] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:32:14.815] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:32:17.955] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:32:18.995] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:32:38.447] [INFO] clockwiseLog - undefined
+[2022-11-05T17:33:17.860] [INFO] clockwiseLog - [
+  Master { id: 2, name: 'George', rating: 1, cityList: undefined },
+  Master { id: 3, name: 'Robert', rating: 2, cityList: undefined },
+  Master { id: 6, name: 'Peter', rating: 3, cityList: undefined }
+]
+[2022-11-05T17:36:03.800] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:36:07.870] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:36:10.647] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:36:12.679] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:36:38.917] [INFO] clockwiseLog - [
+  Master { id: 4, name: 'Michael', rating: 2, cityList: undefined },
+  Master { id: 5, name: 'Alex', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'Peter', rating: 3, cityList: undefined },
+  Master { id: 86, name: 'Fred', rating: 3, cityList: undefined }
+]
+[2022-11-05T17:37:11.029] [INFO] clockwiseLog - 86 3 13 2022-11-25T19:00:00.000Z ikarus256@gmail.com www PostgresInterval { hours: 1 } Service
+[2022-11-05T17:37:11.030] [INFO] clockwiseLog - test
+[2022-11-05T17:37:11.030] [INFO] clockwiseLog - 86 3 13 2022-11-25T19:00:00.000Z ikarus256@gmail.com www PostgresInterval { hours: 1 } DAL layer
+[2022-11-05T17:37:14.684] [INFO] clockwiseLog - 86 3 13 2022-11-25T19:00:00.000Z ikarus256@gmail.com www PostgresInterval { hours: 1 } Service
+[2022-11-05T17:37:14.684] [INFO] clockwiseLog - test
+[2022-11-05T17:37:14.684] [INFO] clockwiseLog - 86 3 13 2022-11-25T19:00:00.000Z ikarus256@gmail.com www PostgresInterval { hours: 1 } DAL layer
+[2022-11-05T17:37:14.685] [ERROR] clockwiseLog - createOrder failed with reason: Key (master_id, booking_date_time)=(86, 2022-11-25 19:00:00) already exists.
+[2022-11-05T17:37:34.957] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:37:57.007] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:38:24.143] [INFO] clockwiseLog - [
+  Master { id: 4, name: 'Michael', rating: 2, cityList: undefined },
+  Master { id: 5, name: 'Alex', rating: 3, cityList: undefined },
+  Master { id: 86, name: 'Fred', rating: 3, cityList: undefined }
+]
+[2022-11-05T17:38:35.974] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:38:47.425] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:43:55.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:43:58.429] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:44:50.110] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:44:52.269] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:44:55.598] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:45:00.858] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:45:02.547] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:45:04.545] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:46:14.667] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:46:15.750] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:46:21.473] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:46:26.042] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:46:46.864] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:46:50.051] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:46:51.448] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:46:52.694] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:46:57.576] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:47:00.579] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:47:04.484] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:47:06.219] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:47:12.376] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:47:16.038] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:47:17.828] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:47:21.057] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:47:25.547] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:48:05.870] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:48:38.467] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:49:07.579] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:49:09.948] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:49:25.760] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:49:28.267] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:49:30.475] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:49:32.654] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:49:37.432] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:49:41.530] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:49:46.213] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:51:02.484] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:51:04.296] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:51:06.299] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:51:14.278] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:51:17.992] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:51:18.966] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:51:24.125] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:51:26.478] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:51:27.566] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:51:50.704] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:52:43.170] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:52:49.619] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:52:51.915] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:52:58.518] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:53:02.914] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:53:10.030] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:53:16.380] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:53:21.330] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:53:24.279] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:53:29.351] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:53:39.279] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:53:51.300] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:53:52.697] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:53:57.291] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:54:12.643] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:54:14.411] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:54:38.725] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:54:47.956] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:54:51.478] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:55:13.238] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:55:24.148] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:55:28.178] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:55:33.083] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:55:41.504] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:55:46.696] [INFO] clockwiseLog - 86 3 12 2022-11-18T19:00:00.000Z ikarus256@gmail.com www PostgresInterval { hours: 2 } Service
+[2022-11-05T17:55:46.696] [INFO] clockwiseLog - test
+[2022-11-05T17:55:46.696] [INFO] clockwiseLog - 86 3 12 2022-11-18T19:00:00.000Z ikarus256@gmail.com www PostgresInterval { hours: 2 } DAL layer
+[2022-11-05T17:57:09.399] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:57:12.793] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:57:51.258] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:57:53.390] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:57:56.035] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:57:59.162] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:58:04.171] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:58:06.899] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:58:09.233] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:58:11.359] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:58:29.251] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:58:38.096] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:58:44.995] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:58:51.658] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:58:53.004] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:58:56.762] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:59:37.440] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T17:59:57.145] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:00:11.932] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:00:28.059] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:00:32.318] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:00:55.463] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:01:03.141] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:01:10.420] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:01:26.661] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:01:35.381] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:01:45.362] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:01:50.263] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:02:00.019] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:05.994] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:14.264] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:17.147] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:22.492] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:23.894] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:26.395] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:29.367] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:33.368] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:35.607] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:43.323] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:45.149] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:03:46.338] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:04:55.801] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:04:59.496] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:05:03.103] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:05:05.200] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:05:17.603] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:05:28.050] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:05:29.883] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:05:48.812] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:05:50.810] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:06:35.605] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:06:37.768] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:06:39.350] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:06:42.650] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:06:44.727] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:06:46.739] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:06:52.402] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:06:56.082] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:06:58.779] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:07:00.750] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:07:03.723] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:07:30.538] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:07:31.992] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:07:38.810] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:10:38.823] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:10:46.583] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:10:52.045] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:10:59.672] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:11:27.023] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:11:32.406] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:11:35.510] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:11:37.100] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:11:39.724] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:11:41.055] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:11:43.623] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:11:44.902] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:11:46.726] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:11:54.567] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:11:56.513] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:12:02.899] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:12:04.596] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:12:07.735] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:12:14.576] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:12:16.858] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:12:19.989] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:12:37.177] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:12:39.180] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:12:54.267] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:12:57.006] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:13:05.523] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:13:10.117] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:05.566] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:07.619] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:09.795] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:12.969] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:15.427] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:20.864] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:23.582] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:25.830] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:27.475] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:35.297] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:42.632] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:45.620] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:50.028] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:53.821] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:56.123] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:16:57.944] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:17:00.307] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:17:05.072] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:17:52.394] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:17:57.915] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:18:03.004] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:18:08.461] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:18:37.192] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:18:42.575] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:18:46.916] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:18:53.991] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:18:58.004] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:01.785] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:04.759] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:06.509] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:08.339] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:14.163] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:18.430] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:20.480] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:25.573] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:27.128] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:41.080] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:48.129] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:49.374] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:54.898] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:19:58.064] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:20:18.243] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:20:36.940] [INFO] clockwiseLog - [
+  Master { id: 4, name: 'Michael', rating: 2, cityList: undefined },
+  Master { id: 5, name: 'Alex', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'Peter', rating: 3, cityList: undefined },
+  Master { id: 86, name: 'Fred', rating: 3, cityList: undefined }
+]
+[2022-11-05T18:23:50.623] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:23:52.984] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:23:59.595] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:24:01.163] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:24:06.949] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:24:08.660] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:24:11.330] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:24:13.059] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:24:15.881] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:24:18.525] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:24:19.605] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:24:30.395] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:24:31.605] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:24:38.339] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:25:03.176] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:25:06.731] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:25:53.725] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:25:55.427] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:25:59.427] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:00.813] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:02.747] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:03.995] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:06.459] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:07.798] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:12.431] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:17.555] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:22.240] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:24.810] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:27.283] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:29.654] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:37.670] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:38.849] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:45.111] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:54.392] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:26:58.520] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:27:02.820] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:27:11.905] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:27:19.079] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:28:12.700] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:28:16.912] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:28:23.631] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:28:32.951] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:28:43.687] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:28:44.879] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:28:46.209] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:28:51.179] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:29:25.482] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:29:28.684] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:29:32.859] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:29:48.256] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:30:53.483] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:31:03.495] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:31:05.237] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:31:22.154] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:31:24.695] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:31:39.459] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:31:41.431] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:31:42.945] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:31:44.549] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:31:51.799] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:32:33.754] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:32:37.975] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:32:45.739] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:32:53.543] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:33:17.450] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:37:54.369] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:38:59.784] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:39:01.869] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:39:04.652] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:39:08.011] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:40:58.705] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:41:06.199] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:41:07.855] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:41:11.422] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:41:12.502] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:41:14.497] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:41:16.066] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:41:56.092] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:41:57.525] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:41:59.440] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:42:01.548] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:42:04.775] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:42:06.471] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:42:10.084] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:42:35.209] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:42:50.557] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:43:29.318] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:44:05.119] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:44:10.436] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:44:13.827] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:44:56.095] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:44:59.042] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:45:02.951] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:48:14.725] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:48:17.732] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:48:26.967] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:51:27.155] [INFO] clockwiseLog - 4 3 13 2022-11-25T18:00:00.000Z k.vasilitsev@gmail.com www PostgresInterval { hours: 1 } Service
+[2022-11-05T18:51:27.156] [INFO] clockwiseLog - test
+[2022-11-05T18:51:27.156] [INFO] clockwiseLog - 4 3 13 2022-11-25T18:00:00.000Z k.vasilitsev@gmail.com www PostgresInterval { hours: 1 } DAL layer
+[2022-11-05T18:51:30.683] [INFO] clockwiseLog - 4 3 13 2022-11-25T18:00:00.000Z k.vasilitsev@gmail.com www PostgresInterval { hours: 1 } Service
+[2022-11-05T18:51:30.683] [INFO] clockwiseLog - test
+[2022-11-05T18:51:30.684] [INFO] clockwiseLog - 4 3 13 2022-11-25T18:00:00.000Z k.vasilitsev@gmail.com www PostgresInterval { hours: 1 } DAL layer
+[2022-11-05T18:51:48.831] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:51:53.137] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:51:54.571] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:51:58.986] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:52:02.223] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T18:52:12.017] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:06:22.128] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:06:23.731] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:06:25.688] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:06:28.314] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:06:30.494] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:03.738] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:06.140] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:09.161] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:13.039] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:18.506] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:20.651] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:22.439] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:26.072] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:33.406] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:34.565] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:37.061] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:38.579] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:07:41.769] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:08:43.909] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:08:47.687] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:08:49.918] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:08:52.286] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:08:54.315] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:08:57.647] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:09:01.590] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:09:04.520] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:09:08.235] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:09:16.371] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:09:18.368] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:09:27.542] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:09:28.912] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:09:32.960] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:09:35.388] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:09:47.004] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:09:49.406] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:04.042] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:06.947] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:08.433] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:11.326] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:13.177] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:16.273] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:17.505] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:20.340] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:21.922] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:25.319] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:33.579] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:37.097] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:49.156] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:55.255] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:10:56.410] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:11:16.144] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:11:31.560] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:11:57.060] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:12:05.794] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:12:09.578] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:12:13.600] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:12:16.475] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:12:49.606] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:14:37.959] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:14:41.659] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:14:43.075] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:14:46.616] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:14:48.928] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:16:19.702] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:17:57.024] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:18:20.728] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:18:30.818] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:19:25.269] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:19:28.193] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:19:29.893] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:19:32.045] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:19:36.216] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:19:38.310] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:19:42.148] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:19:47.657] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:19:49.339] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:19:50.793] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:19:53.801] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:01.322] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:03.281] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:05.292] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:09.093] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:15.421] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:32.758] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:36.729] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:40.234] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:41.606] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:44.674] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:46.230] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:49.478] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:51.790] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:20:55.525] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:03.510] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:05.894] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:07.657] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:40.854] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:44.363] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:46.298] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:48.381] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:50.457] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:52.381] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:54.121] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:57.730] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:21:59.350] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:22:03.574] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:22:06.445] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:22:11.113] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:22:13.658] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:22:39.502] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:26:34.013] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:26:38.002] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:26:41.450] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:26:43.094] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:26:47.870] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:26:51.290] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:26:57.056] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:26:58.738] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:27:03.903] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:27:07.576] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:27:09.713] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:27:58.918] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:28:06.122] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:28:15.913] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:28:26.049] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:28:28.671] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:28:31.371] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:28:32.747] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:28:53.317] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:29:32.115] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:30:23.911] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:30:26.427] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:30:28.423] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:30:29.428] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:30:33.213] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:30:42.875] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:30:49.897] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:30:52.275] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:30:55.654] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:00.501] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:04.412] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:06.791] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:08.075] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:14.975] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:21.696] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:26.293] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:35.843] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:37.738] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:40.043] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:41.602] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:31:43.615] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:32:17.779] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:32:22.261] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:32:26.262] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:32:39.965] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:32:43.335] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:32:45.600] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:33:06.501] [INFO] clockwiseLog - [
+  Master { id: 4, name: 'Michael', rating: 2, cityList: undefined },
+  Master { id: 5, name: 'Alex', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'Peter', rating: 3, cityList: undefined },
+  Master { id: 86, name: 'Fred', rating: 3, cityList: undefined }
+]
+[2022-11-05T19:33:23.749] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:33:24.968] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:33:30.714] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:33:31.842] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:33:37.718] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:33:42.469] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:33:44.503] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:33:55.184] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:34:10.752] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:34:12.022] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:34:13.459] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:34:15.487] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:34:16.522] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:34:21.731] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:34:50.651] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:34:53.640] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:34:59.706] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:35:02.900] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:35:15.090] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:35:16.656] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:35:18.760] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:35:36.690] [INFO] clockwiseLog - [
+  Master { id: 4, name: 'Michael', rating: 2, cityList: undefined },
+  Master { id: 5, name: 'Alex', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'Peter', rating: 3, cityList: undefined },
+  Master { id: 86, name: 'Fred', rating: 3, cityList: undefined }
+]
+[2022-11-05T19:37:05.522] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:42:17.123] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:42:18.328] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:42:20.120] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:42:22.246] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:42:24.403] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:42:26.124] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:42:34.775] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:42:37.415] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:43:10.202] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:43:12.846] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:43:31.155] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:43:33.100] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:44:41.322] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:44:52.718] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:44:54.725] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:44:56.998] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:44:58.301] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:45:03.621] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:45:24.897] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:45:27.548] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:45:33.121] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:45:38.068] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:45:40.073] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:45:48.188] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:05.102] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:10.317] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:12.758] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:16.736] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:24.282] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:28.382] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:29.730] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:41.974] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:48.225] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:57.190] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:58.281] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:46:59.566] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:00.869] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:02.478] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:03.840] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:05.810] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:07.639] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:08.961] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:10.420] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:19.482] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:21.966] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:22.969] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:24.175] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:25.409] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:35.554] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:37.072] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:49.379] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:50.594] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:52.087] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:47:57.626] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:48:02.137] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:48:03.909] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:48:08.769] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:48:15.161] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:48:18.557] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:48:23.858] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:48:27.870] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T19:48:29.038] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:15:11.622] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:15:13.335] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:16:33.763] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:16:35.034] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:16:37.906] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:16:50.058] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:17:05.961] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:17:08.177] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:17:18.150] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:17:20.287] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:17:24.754] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:17:32.583] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:17:34.269] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:18:45.659] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:18:51.326] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:18:57.487] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:20:31.050] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:20:33.253] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:20:36.515] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:20:37.570] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:20:42.658] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:20:45.331] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:20:46.419] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:20:50.049] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:20:51.149] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:20:53.262] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:21:00.721] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:21:09.225] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:21:17.253] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:21:20.736] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:21:25.796] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:21:27.511] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:21:28.555] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:22:06.146] [INFO] clockwiseLog - [
+  Master { id: 5, name: 'Alex', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'Peter', rating: 3, cityList: undefined },
+  Master { id: 86, name: 'Fred', rating: 3, cityList: undefined }
+]
+[2022-11-05T20:22:20.180] [INFO] clockwiseLog - 5 3 14 2022-11-25T16:00:00.000Z k.vasilitsev@gmail.com www PostgresInterval { hours: 3 } Service
+[2022-11-05T20:22:20.180] [INFO] clockwiseLog - test
+[2022-11-05T20:22:20.180] [INFO] clockwiseLog - 5 3 14 2022-11-25T16:00:00.000Z k.vasilitsev@gmail.com www PostgresInterval { hours: 3 } DAL layer
+[2022-11-05T20:22:38.018] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:22:39.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:23:25.956] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:23:41.084] [INFO] clockwiseLog - [
+  Master { id: 4, name: 'Michael', rating: 2, cityList: undefined },
+  Master { id: 5, name: 'Alex', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'Peter', rating: 3, cityList: undefined },
+  Master { id: 86, name: 'Fred', rating: 3, cityList: undefined }
+]
+[2022-11-05T20:23:45.232] [INFO] clockwiseLog - 6 3 14 2022-12-07T17:00:00.000Z k.vasilitsev@gmail.com www PostgresInterval { hours: 3 } Service
+[2022-11-05T20:23:45.232] [INFO] clockwiseLog - test
+[2022-11-05T20:23:45.232] [INFO] clockwiseLog - 6 3 14 2022-12-07T17:00:00.000Z k.vasilitsev@gmail.com www PostgresInterval { hours: 3 } DAL layer
+[2022-11-05T20:25:03.923] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:25:17.259] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:25:21.539] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:25:24.287] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:25:26.320] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-05T20:25:32.158] [INFO] clockwiseLog - Server listening on 3001

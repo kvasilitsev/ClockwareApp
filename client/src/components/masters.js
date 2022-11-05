@@ -1,13 +1,15 @@
 import React from 'react';
 import { useFormik } from 'formik';
-import { Request } from '../api/api.request';
+import { useNavigate } from "react-router-dom";
 import MasterList from './masterList';
 import { useLocation } from 'react-router-dom';
 
-const Masters = props => {
+const Masters = () => {
   const { state } = useLocation();
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
+      masterName: '',
       masterId: '',
       name: state.name,
       email: state.email,
@@ -16,22 +18,17 @@ const Masters = props => {
       bookingTime: state.bookingTime,
       list: state.list     
     }, 
-    //onSubmit: values => console.log(values) //temp until createOtrder fix
-    onSubmit: async (values) => {      
-      try {        
-        const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId});        
-        const res = await apiRequest.createOrder(); 
-        console.log(res.data)                  
-      } catch (e) {
-          console.log('error: ', e.response);          
-        }   
-      }
+   
+    onSubmit:  () => navigate('/orderReview', {state: formik.values})        
   });
     return (  
     <section>
       <h1>Select master</h1>
       <form onSubmit={formik.handleSubmit}> 
-        <div onChange={value => formik.setFieldValue('masterId', value.target.value)}> {/* value.target.value ??? */}
+        <div onChange={value => {
+                        formik.setFieldValue('masterId', value.target.id);
+                        formik.setFieldValue('masterName', value.target.value);
+                        }}> 
           <MasterList 
             masters = { formik.values.list }
           />

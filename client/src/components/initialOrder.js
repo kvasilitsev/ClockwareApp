@@ -5,18 +5,14 @@ import { Request } from '../api/api.request';
 import { USER_REGEX, EMAIL_REGEX } from '../models/regExp';
 import { faCheck, faTimes} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CustomSelect } from './customSelect'
+import { CustomSelect } from './customSelect';
+import clockLookUp from '../models/clock-lookup';
+import cityLookUp from '../models/city-lookup'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const clockOptions = [{value: process.env.REACT_APP_CLOCK_ID_SMALL, label:'Small'},
-  {value: process.env.REACT_APP_CLOCK_ID_MEDIUM, label:'Medium'},
-  {value: process.env.REACT_APP_CLOCK_ID_LARGE, label:'Large' }
-];
-
-const cityOptions = [{value: process.env.REACT_APP_CITY_ID_DNIPRO, label:'Dnipro'}, //fix labvel
-  {value: process.env.REACT_APP_CITY_ID_UZHGOROD, label:'Uzhgorod'} //fix label
-];
+const clockOptions = clockLookUp;
+const cityOptions = cityLookUp;
 
 const validate = values => {
   const errors = {};
@@ -48,7 +44,9 @@ const InitialOrder = () => {
       bookingTime: '',
       name: '',
       email: '',
-      list: ''
+      list: '',
+      city: '',
+      clockSize:''
     },
     validate,
     onSubmit: async (values) => {
