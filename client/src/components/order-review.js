@@ -16,7 +16,9 @@ const OrderReview = () => {
       cityId: state.cityId,
       clockId: state.clockId,
       bookingTime: state.bookingTime,
-      list: state.list     
+      list: state.list,
+      city: state.city,
+      clockSize: state.clockSize  
     },    
     onSubmit: async (values) => {         
       try {        
@@ -38,8 +40,8 @@ const OrderReview = () => {
         <div>
             <p>name - {formik.values.name}</p>
             <p>email - {formik.values.email}</p>
-            <p>clock size - {formik.values.clockId}</p> {/* will need to fix to clock type */}
-            <p>city - {formik.values.cityId}</p> {/* will need to fix to city name */}
+            <p>clock size - {formik.values.clockSize}</p>
+            <p>city - {formik.values.city}</p> 
             <p>booking date and time - {formik.values.bookingTime.toLocaleString()}</p>
             <p>master - {formik.values.masterName}</p>            
         </div>

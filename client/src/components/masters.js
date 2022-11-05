@@ -16,7 +16,9 @@ const Masters = () => {
       cityId: state.cityId,
       clockId: state.clockId,
       bookingTime: state.bookingTime,
-      list: state.list     
+      list: state.list,
+      city: state.city,
+      clockSize: state.clockSize  
     }, 
    
     onSubmit:  () => navigate('/orderReview', {state: formik.values})        

@@ -105,7 +105,10 @@ const InitialOrder = () => {
       </label>
       <CustomSelect
         className = 'select'       
-        onChange={value => formik.setFieldValue('clockId',value.value)}
+        onChange={value => {
+                            formik.setFieldValue('clockId', value.value);
+                            formik.setFieldValue('clockSize', value.label);                            
+                  }}
         value={formik.values.clockId}
         options={clockOptions}
       />
@@ -115,7 +118,10 @@ const InitialOrder = () => {
       </label>
       <CustomSelect
         className = 'select'       
-        onChange={value => formik.setFieldValue('cityId',value.value)}
+        onChange={value => {
+                            formik.setFieldValue('cityId',value.value);
+                            formik.setFieldValue('city',value.label)
+                            }}
         value={formik.values.cityId}
         options={cityOptions}
       />
