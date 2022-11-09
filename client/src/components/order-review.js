@@ -24,7 +24,11 @@ const OrderReview = () => {
       try {        
         const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId});        
         const res = await apiRequest.createOrder(); 
-        if (res.data === true){
+
+        if (res.data === true){          
+          const apiRequest = new Request({email: values.email})
+          const res = await apiRequest.sendEmail();
+          console.log(res);
           navigate('/success');
         }             
       } catch (e) {

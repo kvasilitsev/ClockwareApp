@@ -13,8 +13,7 @@ class OrderService {
     if(!isMasterInCity){
       throw new Error("Could not create order, master does not exist in the city", { cause: 'undefiend'})
     }
-    try {
-      logger.info(masterId, cityId, clockId, bookingTime, email, name, repairDuration, 'Service')
+    try {      
       await orderData.createOrder(masterId, cityId, clockId, bookingTime, email, name, repairDuration);
     }
     catch(err) {
