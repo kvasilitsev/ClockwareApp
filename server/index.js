@@ -13,7 +13,7 @@ const errorMiddleware = require('./middlewares/error.middleware');
 
 
 const logger = log4js.getLogger("/logs/clockwiseLog");
-const PORT = process.env.API_PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 const corsOptions = {
   origin: 'http://localhost:3000',
