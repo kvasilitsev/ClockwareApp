@@ -23,7 +23,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use("/", masterRouter);
+app.use(cors());
 app.use('/api', cors(corsOptions), masterRouter);
 app.use('/api', cors(corsOptions), cityRouter);
 app.use('/api', cors(corsOptions), clockRouter);
