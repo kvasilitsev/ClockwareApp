@@ -5,8 +5,7 @@ import MasterList from './masterList';
 import { useLocation } from 'react-router-dom';
 
 const Masters = () => {
-  const { state } = useLocation();
-  console.log(state)
+  const { state } = useLocation();  
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {

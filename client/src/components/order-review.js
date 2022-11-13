@@ -27,8 +27,7 @@ const OrderReview = () => {
 
         if (res.data === true){          
           const apiRequest = new Request({email: values.email})
-          const res = await apiRequest.sendEmail();
-          console.log(res);
+          await apiRequest.sendEmail();          
           navigate('/success');
         }             
       } catch (e) {

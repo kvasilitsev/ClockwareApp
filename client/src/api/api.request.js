@@ -13,61 +13,85 @@ class Request {
     this.clockId = clockId;
     this.masterId = masterId;
   }
-
-  async register() {
-    await axios.post(REGISTER_URL, { name: this.name, email: this.email, password: this.password },
-      {
-        headers: { 'Content-Type': 'application/json' },  
-        withCredentials: true
-      }      
-    )  
-  }
-
-  async getFreeMasters() {    
-    const res = await axios.get(GET_FREE_MASTERS_URL, {params: {clockId: this.clockId, cityId: this.cityId, bookingTime: this.bookingTime }},
-      {
-        headers: { 'Content-Type': 'application/json' },  
-        withCredentials: true
-      }
-    )
-    return res;
-  }
-
-  async createOrder() {    
-    const res = await axios.post(CREATE_ORDER_URL, { name: this.name, email: this.email, bookingTime: this.bookingTime, clockId: this.clockId, cityId: this.cityId, masterId: this.masterId },
-      {
-        headers: { 'Content-Type': 'application/json' },  
-        withCredentials: true
-      }      
-    )
-    return res; 
-  }
-
-  async sendEmail() {   
-    const res = axios.post(SEND_EMAIL_URL, {email: this.email})
-    console.log(res);
-  }
-
-  async getCities() {    
-    const res = await axios.get(GET_CITIES_URL,
-      {
-        headers: { 'Content-Type': 'application/json' },  
-        withCredentials: true
-      }
-    )
-    return res.data;
-  }
-
-  async getClocks() {    
-    const res = await axios.get(GET_CLOCKS_URL,
-      {
-        headers: { 'Content-Type': 'application/json' },  
-        withCredentials: true
-      }
-    )
-    return res.data;
-  }
   
+  async register() {
+    try {
+      await axios.post(REGISTER_URL, { name: this.name, email: this.email, password: this.password },
+        {          
+          withCredentials: true
+        }      
+      ) 
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }     
+  }
+
+  async getFreeMasters() { 
+    try {
+      const res = await axios.get(GET_FREE_MASTERS_URL, {params: {clockId: this.clockId, cityId: this.cityId, bookingTime: this.bookingTime }},
+        {      
+          withCredentials: true
+        }
+      )
+      return res;
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }    
+    
+  }
+
+  async createOrder() {
+    try {
+      const res = await axios.post(CREATE_ORDER_URL, { name: this.name, email: this.email, bookingTime: this.bookingTime, clockId: this.clockId, cityId: this.cityId, masterId: this.masterId },
+        {          
+          withCredentials: true
+        }      
+      )
+      return res;
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }    
+  }
+
+  async sendEmail() {
+    try {
+      await axios.post(SEND_EMAIL_URL, {email: this.email});       
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }       
+  }
+
+  async getCities() {
+    try {
+      const res = await axios.get(GET_CITIES_URL,
+        {
+          withCredentials: true
+        }
+      )
+      return res.data;      
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }    
+  }
+
+  async getClocks() {
+    try {
+      const res = await axios.get(GET_CLOCKS_URL,
+        {
+          withCredentials: true
+        }
+      )
+      return res.data;      
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }   
+  }  
 }
 
 export { Request };
