@@ -36,7 +36,7 @@ const Masters = () => {
             masters = { formik.values.list }
           />
         </div>
-        <button type="submit" disabled={ !formik.values.masterId ? true : false}>Submit request</button>
+        <button type="submit" disabled={  !(formik.isValid && formik.dirty) ? true : false}>Submit</button>
       </ form>
     </ section>)
  };

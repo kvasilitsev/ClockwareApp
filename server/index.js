@@ -12,7 +12,7 @@ const emailRouter = require('./routes/email.routes');
 const errorMiddleware = require('./middlewares/error.middleware');
 
 
-const logger = log4js.getLogger("clockwiseLog");
+const logger = log4js.getLogger("/logs/clockwiseLog");
 const PORT = process.env.API_PORT || 3001;
 
 const corsOptions = {

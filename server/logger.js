@@ -2,7 +2,7 @@
 const log4js = require("log4js");
 
 log4js.configure({
-    appenders: { clockwiseLog: { type: "file", filename: "clockwise.log" } },
+    appenders: { clockwiseLog: { type: "file", filename: "logs/clockwise.log" } },
     categories: { default: { appenders: ["clockwiseLog"], level: "all" } }
   });
 
