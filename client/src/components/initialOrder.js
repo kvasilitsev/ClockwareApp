@@ -6,14 +6,10 @@ import { USER_REGEX, EMAIL_REGEX } from '../models/regExp';
 import { faCheck, faTimes} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AsyncSelect from 'react-select/async'
-import clockLookUp from '../models/clock-lookup';
-import cityLookUp from '../models/city-lookup'
+import clockOptions from '../models/clock-options';
+import cityOptions from '../models/city-options'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
-const clockOptions = async() => await clockLookUp;
-const cityOptions = async() => await cityLookUp;
-
 
 const validate = values => {
   const errors = {};
@@ -80,7 +76,7 @@ const InitialOrder = () => {
         value={formik.values.name}           
       />        
       {formik.touched.name && formik.errors.name ? (
-        <div>{formik.errors.name}</div>
+        <div className='errmsg'>{formik.errors.name}</div>
       ) : null}
       <label htmlFor="email">
         Email:
@@ -98,7 +94,7 @@ const InitialOrder = () => {
         aria-invalid={!formik.errors.email ? "false" : "true"} 
       />
       {formik.touched.email && formik.errors.email ? (
-        <div>{formik.errors.email}</div>
+        <div className='errmsg'>{formik.errors.email}</div>
       ) : null}
       <label htmlFor="clockId">
         Clock size:

@@ -8,15 +8,15 @@ async function clocks (){
       console.log('error: ', e.response);          
     }      
   }
-const clockLookUp = async() => {
+const clockOptions = async() => {
   const clocksArr = await clocks();
   return clocksArr.map(clock => {
     clock['label'] = clock['size'];
     clock['value'] = clock['id'];
     delete clock['size'];
-    delete clock['id'];
-    delete clock['repairDuration']
-    return clock;  })
+    delete clock['id'];    
+    return clock;  
+  })
 }
 
-export default clockLookUp();
+export default clockOptions;

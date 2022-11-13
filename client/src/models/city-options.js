@@ -8,14 +8,15 @@ async function cities (){
       console.log('error: ', e.response.data.message);          
     }      
   }
-const cityLookUp = async() => {
+const cityOptions = async() => {
   const citiesArr = await cities();
   return citiesArr.map(city => {
     city['label'] = city['name'];
     city['value'] = city['id'];
     delete city['name'];
     delete city['id'];
-    return city;  })
+    return city;  
+  })
 }
 
-export default cityLookUp();
+export default cityOptions;
