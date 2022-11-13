@@ -1,8 +1,21 @@
-const cityLookUp = [
-    { label:'Dnipro',
-    value: 3},
-    { label:'Uzhgorod',
-    value: 4},
-]
+import { Request } from '../api/api.request';
 
-export default cityLookUp;
+async function cities (){
+  try {
+    const apiRequest = new Request();    
+    return await apiRequest.getCities();         
+  } catch (e) {
+      console.log('error: ', e.response.data.message);          
+    }      
+  }
+const cityLookUp = async() => {
+  const citiesArr = await cities();
+  return citiesArr.map(city => {
+    city['label'] = city['name'];
+    city['value'] = city['id'];
+    delete city['name'];
+    delete city['id'];
+    return city;  })
+}
+
+export default cityLookUp();

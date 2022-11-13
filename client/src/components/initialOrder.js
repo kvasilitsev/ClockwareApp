@@ -5,14 +5,15 @@ import { Request } from '../api/api.request';
 import { USER_REGEX, EMAIL_REGEX } from '../models/regExp';
 import { faCheck, faTimes} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CustomSelect } from './customSelect';
+import AsyncSelect from 'react-select/async'
 import clockLookUp from '../models/clock-lookup';
 import cityLookUp from '../models/city-lookup'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const clockOptions = clockLookUp;
-const cityOptions = cityLookUp;
+const clockOptions = async() => await clockLookUp;
+const cityOptions = async() => await cityLookUp;
+
 
 const validate = values => {
   const errors = {};
@@ -35,7 +36,7 @@ const validate = values => {
   return errors;
 }; 
  
-const InitialOrder = () => {
+const InitialOrder = () => {  
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
@@ -46,7 +47,7 @@ const InitialOrder = () => {
       email: '',
       list: '',
       city: '',
-      clockSize:''
+      clockSize:'',      
     },
     validate,
     onSubmit: async (values) => {
@@ -103,28 +104,28 @@ const InitialOrder = () => {
         Clock size:
         <FontAwesomeIcon icon={faCheck} className={formik.values.clockId ? "valid" : "hide"} />           
       </label>
-      <CustomSelect
+      <AsyncSelect 
         className = 'select'       
-        onChange={value => {
+        onChange={value => {                          
                             formik.setFieldValue('clockId', value.value);
                             formik.setFieldValue('clockSize', value.label);                            
-                  }}
-        value={formik.values.clockId}
-        options={clockOptions}
+                  }}        
+        loadOptions={clockOptions}
+        defaultOptions
       />
       <label htmlFor="cityId">
         City:
         <FontAwesomeIcon icon={faCheck} className={formik.values.cityId ? "valid" : "hide"} />           
       </label>
-      <CustomSelect
+      <AsyncSelect 
         className = 'select'       
         onChange={value => {
-                            formik.setFieldValue('cityId',value.value);
-                            formik.setFieldValue('city',value.label)
-                            }}
-        value={formik.values.cityId}
-        options={cityOptions}
-      />
+                            formik.setFieldValue('cityId', value.value);
+                            formik.setFieldValue('city', value.label);                            
+                  }}        
+        loadOptions={cityOptions}
+        defaultOptions
+      />      
       <label htmlFor="bookingTime">
         Date and time:
         <FontAwesomeIcon icon={faCheck} className={formik.values.bookingTime && !formik.errors.bookingTime ? "valid" : "hide"} />           

@@ -1,5 +1,5 @@
 import axios from './axios';
-import { REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL, SEND_EMAIL_URL } from '../routes';
+import { REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL, SEND_EMAIL_URL, GET_CITIES_URL, GET_CLOCKS_URL } from '../routes';
 
 
 class Request {
@@ -43,10 +43,29 @@ class Request {
     return res; 
   }
 
-  async sendEmail() {
-    //console.log(this.email);
+  async sendEmail() {   
     const res = axios.post(SEND_EMAIL_URL, {email: this.email})
     console.log(res);
+  }
+
+  async getCities() {    
+    const res = await axios.get(GET_CITIES_URL,
+      {
+        headers: { 'Content-Type': 'application/json' },  
+        withCredentials: true
+      }
+    )
+    return res.data;
+  }
+
+  async getClocks() {    
+    const res = await axios.get(GET_CLOCKS_URL,
+      {
+        headers: { 'Content-Type': 'application/json' },  
+        withCredentials: true
+      }
+    )
+    return res.data;
   }
   
 }

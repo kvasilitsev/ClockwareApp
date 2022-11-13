@@ -5844,3 +5844,2134 @@
   envelope: { from: 'clockwareapp@gmail.com', to: [ 'ikarus256@gmail.com' ] },
   messageId: '<400446fd-c149-0cb5-daa4-c569d88509a3@gmail.com>'
 }
+[2022-11-08T21:06:39.628] [INFO] clockwiseLog - [
+  Master { id: 4, name: 'Michael', rating: 2, cityList: undefined },
+  Master { id: 5, name: 'Alex', rating: 3, cityList: undefined },
+  Master { id: 6, name: 'Peter', rating: 3, cityList: undefined },
+  Master { id: 86, name: 'Fred', rating: 3, cityList: undefined }
+]
+[2022-11-08T21:07:09.816] [INFO] clockwiseLog - <ref *2> IncomingMessage {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 16384,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: [],
+    flowing: true,
+    ended: true,
+    endEmitted: true,
+    reading: false,
+    constructed: true,
+    sync: false,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    errorEmitted: false,
+    emitClose: true,
+    autoDestroy: true,
+    destroyed: false,
+    errored: null,
+    closed: false,
+    closeEmitted: false,
+    defaultEncoding: 'utf8',
+    awaitDrainWriters: null,
+    multiAwaitDrain: false,
+    readingMore: false,
+    dataEmitted: true,
+    decoder: null,
+    encoding: null,
+    [Symbol(kPaused)]: false
+  },
+  _events: [Object: null prototype] { end: [Function: clearRequestTimeout] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  socket: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: false,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      keepAliveTimeout: 5000,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      headersTimeout: 60000,
+      requestTimeout: 0,
+      _connectionKey: '6::::3001',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 9
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      keepAliveTimeout: 5000,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      headersTimeout: 60000,
+      requestTimeout: 0,
+      _connectionKey: '6::::3001',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 9
+    },
+    parser: HTTPParser {
+      '0': [Function: bound setRequestTimeout],
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(owner_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      locals: [Object: null prototype] {},
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    timeout: 0,
+    [Symbol(async_id_symbol)]: 248,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(kSetNoDelay)]: false,
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: Timeout {
+      _idleTimeout: -1,
+      _idlePrev: null,
+      _idleNext: null,
+      _idleStart: 2874103,
+      _onTimeout: null,
+      _timerArgs: undefined,
+      _repeat: null,
+      _destroyed: true,
+      [Symbol(refed)]: false,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 298,
+      [Symbol(triggerId)]: 294
+    },
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(RequestTimeout)]: undefined
+  },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: true,
+  rawHeaders: [
+    'Host',
+    'localhost:3001',
+    'Connection',
+    'keep-alive',
+    'Content-Length',
+    '32',
+    'sec-ch-ua',
+    '" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"',
+    'Accept',
+    'application/json, text/plain, */*',
+    'Content-Type',
+    'application/json',
+    'sec-ch-ua-mobile',
+    '?0',
+    'User-Agent',
+    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36',
+    'sec-ch-ua-platform',
+    '"Linux"',
+    'Origin',
+    'http://localhost:3000',
+    'Sec-Fetch-Site',
+    'same-site',
+    'Sec-Fetch-Mode',
+    'cors',
+    'Sec-Fetch-Dest',
+    'empty',
+    'Referer',
+    'http://localhost:3000/',
+    'Accept-Encoding',
+    'gzip, deflate, br',
+    'Accept-Language',
+    'en-CA,en;q=0.9,uk-UA;q=0.8,uk;q=0.7,ru-UA;q=0.6,ru;q=0.5,en-GB;q=0.4,en-US;q=0.3,de;q=0.2,nl;q=0.1'
+  ],
+  rawTrailers: [],
+  aborted: false,
+  upgrade: false,
+  url: '/sendEmail',
+  method: 'POST',
+  statusCode: null,
+  statusMessage: null,
+  client: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: false,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      keepAliveTimeout: 5000,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      headersTimeout: 60000,
+      requestTimeout: 0,
+      _connectionKey: '6::::3001',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 9
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      keepAliveTimeout: 5000,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      headersTimeout: 60000,
+      requestTimeout: 0,
+      _connectionKey: '6::::3001',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 9
+    },
+    parser: HTTPParser {
+      '0': [Function: bound setRequestTimeout],
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(owner_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      locals: [Object: null prototype] {},
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    timeout: 0,
+    [Symbol(async_id_symbol)]: 248,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(kSetNoDelay)]: false,
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: Timeout {
+      _idleTimeout: -1,
+      _idlePrev: null,
+      _idleNext: null,
+      _idleStart: 2874103,
+      _onTimeout: null,
+      _timerArgs: undefined,
+      _repeat: null,
+      _destroyed: true,
+      [Symbol(refed)]: false,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 298,
+      [Symbol(triggerId)]: 294
+    },
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(RequestTimeout)]: undefined
+  },
+  _consuming: true,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '/api',
+  originalUrl: '/api/sendEmail',
+  _parsedUrl: Url {
+    protocol: null,
+    slashes: null,
+    auth: null,
+    host: null,
+    port: null,
+    hostname: null,
+    hash: null,
+    search: null,
+    query: null,
+    pathname: '/sendEmail',
+    path: '/sendEmail',
+    href: '/sendEmail',
+    _raw: '/sendEmail'
+  },
+  params: {},
+  query: {},
+  res: <ref *3> ServerResponse {
+    _events: [Object: null prototype] { finish: [Function: bound resOnFinish] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: true,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: null,
+    _hasBody: true,
+    _trailer: '',
+    finished: false,
+    _headerSent: false,
+    _closed: false,
+    socket: <ref *1> Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 8,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: [Server],
+      _server: [Server],
+      parser: [HTTPParser],
+      on: [Function: socketListenerWrap],
+      addListener: [Function: socketListenerWrap],
+      prependListener: [Function: socketListenerWrap],
+      setEncoding: [Function: socketSetEncoding],
+      _paused: false,
+      _httpMessage: [Circular *3],
+      timeout: 0,
+      [Symbol(async_id_symbol)]: 248,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: -1,
+        _idlePrev: null,
+        _idleNext: null,
+        _idleStart: 2874103,
+        _onTimeout: null,
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: true,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 298,
+        [Symbol(triggerId)]: 294
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: null,
+    _keepAliveTimeout: 5000,
+    _onPendingData: [Function: bound updateOutgoingData],
+    req: [Circular *2],
+    _sent100: false,
+    _expect_continue: false,
+    locals: [Object: null prototype] {},
+    [Symbol(kCapture)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      'x-powered-by': [Array],
+      'access-control-allow-origin': [Array],
+      vary: [Array],
+      'access-control-allow-credentials': [Array]
+    }
+  },
+  body: { email: 'gala.vasva@gmail.com' },
+  _body: true,
+  length: undefined,
+  secret: undefined,
+  cookies: [Object: null prototype] {},
+  signedCookies: [Object: null prototype] {},
+  route: Route {
+    path: '/sendEmail',
+    stack: [ [Layer] ],
+    methods: { post: true }
+  },
+  [Symbol(kCapture)]: false,
+  [Symbol(kHeaders)]: {
+    host: 'localhost:3001',
+    connection: 'keep-alive',
+    'content-length': '32',
+    'sec-ch-ua': '" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"',
+    accept: 'application/json, text/plain, */*',
+    'content-type': 'application/json',
+    'sec-ch-ua-mobile': '?0',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36',
+    'sec-ch-ua-platform': '"Linux"',
+    origin: 'http://localhost:3000',
+    'sec-fetch-site': 'same-site',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-dest': 'empty',
+    referer: 'http://localhost:3000/',
+    'accept-encoding': 'gzip, deflate, br',
+    'accept-language': 'en-CA,en;q=0.9,uk-UA;q=0.8,uk;q=0.7,ru-UA;q=0.6,ru;q=0.5,en-GB;q=0.4,en-US;q=0.3,de;q=0.2,nl;q=0.1'
+  },
+  [Symbol(kHeadersCount)]: 32,
+  [Symbol(kTrailers)]: null,
+  [Symbol(kTrailersCount)]: 0,
+  [Symbol(RequestTimeout)]: undefined
+}
+[2022-11-08T21:07:09.818] [INFO] clockwiseLog - {
+  from: 'clockwareapp@gmail.com',
+  to: 'gala.vasva@gmail.com',
+  subject: 'Clockware order confirmation',
+  html: '\n' +
+    '            <h3>Hello!</h3>\n' +
+    '            <p>Thank you for your order!</p>\n' +
+    '            <p>Best regards, Clockware</p>\n' +
+    '        '
+}
+[2022-11-08T21:07:11.556] [INFO] clockwiseLog - {
+  accepted: [ 'gala.vasva@gmail.com' ],
+  rejected: [],
+  envelopeTime: 430,
+  messageTime: 921,
+  messageSize: 424,
+  response: '250 2.0.0 OK  1667956031 bm35-20020a05620a19a300b006eed75805a2sm10107287qkb.126 - gsmtp',
+  envelope: { from: 'clockwareapp@gmail.com', to: [ 'gala.vasva@gmail.com' ] },
+  messageId: '<b194189b-4845-e297-e609-57aaf0edc828@gmail.com>'
+}
+[2022-11-12T14:37:39.252] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:07:59.682] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:08:15.502] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:08:21.056] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:11:41.816] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:11:47.175] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:11:49.672] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:11:53.740] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:11:55.572] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:11:57.180] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:12:00.676] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:12:05.744] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:12:08.188] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:12:11.992] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:12:22.378] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:12:35.706] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:12:36.709] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:12:43.233] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:12:44.641] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:12:58.580] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:13:12.616] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:13:30.875] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:13:32.336] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:13:45.661] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:14:18.105] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:15:27.588] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:15:30.145] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:15:31.281] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:15:33.918] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:15:37.146] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:16:31.200] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:16:32.730] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:16:45.040] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:16:46.693] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:16:47.833] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:17:50.380] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:17:58.965] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:18:03.824] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:18:07.212] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:18:13.641] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:18:15.712] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:18:26.356] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:18:29.644] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:18:33.976] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:18:49.197] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:19:04.932] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:19:06.370] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:19:08.063] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:19:13.181] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:19:16.093] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:19:48.568] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:20:07.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:20:08.524] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:20:20.039] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:20:26.953] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:20:28.461] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:20:31.688] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:20:33.201] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:20:36.727] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:20:37.903] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:21:17.206] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:21:18.804] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:21:21.372] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:21:22.951] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:21:25.860] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:21:27.405] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:21:28.861] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:22:42.560] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:22:57.721] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:23:02.429] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:23:04.624] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:23:08.938] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:23:11.403] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:23:22.999] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:23:25.359] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:23:29.647] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:23:31.141] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:23:35.803] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:23:37.692] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:24:16.058] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:24:18.134] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:25:23.967] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:25:27.900] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:25:30.004] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:25:33.128] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:25:36.936] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:25:40.167] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:25:42.623] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:25:46.856] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:26:03.299] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:26:08.074] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:26:10.947] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:26:14.257] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:26:15.946] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:26:17.957] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:26:19.782] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:26:31.740] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:26:33.373] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:27:10.105] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:27:13.651] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:27:48.002] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:28:34.866] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:28:38.384] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:28:43.167] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:28:44.829] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:28:46.913] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:28:48.665] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:28:50.226] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:30:36.874] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:30:40.188] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:30:43.329] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:30:46.949] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:30:56.468] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:31:00.497] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:31:02.505] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:31:09.754] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:31:17.811] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:31:19.566] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:31:48.846] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:31:51.340] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:31:56.655] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:33:08.418] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:33:09.977] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:33:11.369] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:33:56.313] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:34:05.566] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:34:11.418] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:34:15.966] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:34:18.757] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:34:20.615] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:34:23.169] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:34:31.709] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:34:41.732] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:34:42.983] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:37:55.471] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:38:14.795] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:38:20.877] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:38:37.328] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:38:52.181] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:39:11.875] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:39:15.857] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:39:20.381] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:39:22.440] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:39:25.473] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:39:26.683] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:39:50.481] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:40:11.123] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:40:12.245] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:40:22.969] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:40:29.353] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:40:33.138] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:40:35.851] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:40:53.074] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:40:56.341] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:40:59.501] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:41:00.616] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:41:02.150] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:41:04.816] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:41:09.032] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:41:10.441] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:41:17.864] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:41:22.018] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:41:25.277] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:00.426] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:02.051] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:03.729] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:06.356] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:10.148] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:21.824] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:23.132] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:27.030] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:28.862] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:31.235] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:34.167] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:39.694] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:42.190] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:42:43.964] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:43:27.831] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:43:29.313] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:43:31.065] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:43:33.890] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:43:35.097] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:44:30.431] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:44:58.344] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:44:59.782] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:45:01.723] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:45:06.582] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:45:10.767] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:45:11.794] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:46:07.474] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:46:37.347] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:46:40.190] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:46:43.115] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:46:46.945] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:46:51.057] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:47:34.897] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:51:37.939] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:51:42.714] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:51:43.913] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:51:45.442] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:51:48.045] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:51:56.663] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:51:59.694] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:52:01.385] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:52:06.672] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:52:07.885] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:52:15.246] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:52:20.855] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:01.442] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:03.569] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:05.321] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:26.208] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:28.799] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:32.177] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:34.130] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:35.461] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:38.136] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:40.500] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:41.631] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:51.038] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:52.087] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:53.773] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:55:55.968] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:56:04.557] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:56:08.425] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:56:11.046] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:56:19.425] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:57:15.451] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:57:18.988] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:57:23.133] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:57:25.234] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:58:08.331] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:58:09.899] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:58:16.667] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:58:19.689] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:58:22.898] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:58:34.610] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:58:41.546] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:58:44.260] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:58:53.463] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:58:54.487] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:58:55.917] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T15:59:59.127] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:01:11.984] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:02:19.334] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:02:20.994] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:02:22.579] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:02:32.002] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:02:33.854] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:02:35.263] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:02:59.699] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:03:02.234] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:03:04.614] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:03:09.174] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:03:13.201] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:03:15.234] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:03:18.008] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:03:19.061] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:03:20.521] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:03:21.941] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:04:26.530] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:04:27.583] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:04:31.953] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:04:34.160] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:04:35.693] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:04:43.771] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:05:23.647] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:06:19.764] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:07:00.496] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:07:02.550] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:07:22.304] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:08:42.955] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:08:45.564] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:08:50.039] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:08:56.082] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:08:58.150] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:00.287] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:01.692] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:02.823] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:06.561] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:10.671] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:14.427] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:15.815] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:17.301] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:20.507] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:28.457] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:29.687] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:35.723] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:38.979] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:41.612] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:09:44.276] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:10:11.844] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:10:13.265] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:10:20.992] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:10:23.958] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:10:28.926] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:10:32.289] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:10:34.215] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:10:43.424] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:10:57.979] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:10:58.943] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:11:01.719] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:11:04.664] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:11:15.051] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:11:18.840] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:11:23.740] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:11:28.022] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:11:34.138] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:12:05.946] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:12:23.808] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:12:24.885] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:12:40.808] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:15:23.126] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:15:26.492] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:15:33.611] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:17:47.392] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:17:55.040] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:17:57.055] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:19:29.477] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:19:31.525] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:19:36.218] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:19:42.229] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:09.767] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:15.020] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:19.809] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:23.341] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:30.928] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:32.982] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:35.725] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:37.805] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:41.850] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:48.548] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:56.446] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:21:57.977] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:22:28.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:22:36.765] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:22:40.353] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:22:42.334] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:22:46.566] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:22:50.988] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:22:54.621] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:22:58.205] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:23:00.564] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:23:03.021] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:23:06.209] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:23:09.412] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:23:50.503] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:23:55.763] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:23:57.580] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:24:01.740] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:24:03.457] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:24:07.311] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:24:10.782] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:24:19.667] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:24:21.812] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:24:30.365] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:24:46.862] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:25:10.552] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:25:20.088] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:25:21.298] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:27:52.582] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:27:55.237] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:31:15.346] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:31:16.786] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:31:19.762] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:31:49.745] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:31:59.808] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:32:46.823] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:32:54.643] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:32:57.582] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:32:58.679] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:33:04.673] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:33:06.304] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:33:09.707] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:33:19.340] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:33:21.780] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:33:34.333] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:33:35.305] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:34:10.120] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:34:11.195] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:34:13.171] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:34:15.849] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:34:26.368] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:34:27.921] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:34:34.016] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:34:43.268] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:44:57.493] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:45:00.093] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:45:31.550] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:45:44.432] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:47:21.317] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:47:43.510] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:48:08.135] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:48:22.768] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:50:46.753] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:50:52.031] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:50:53.183] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:50:59.022] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:51:14.566] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:51:38.843] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:51:43.041] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:51:46.048] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:51:50.189] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:54:39.217] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:54:40.549] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:54:52.102] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:54:55.132] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:57:07.904] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:57:48.580] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:57:50.214] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:57:59.979] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:58:04.804] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:58:05.812] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:58:37.332] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:58:48.062] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:58:50.634] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:58:55.733] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:59:13.903] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:59:18.415] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:59:19.700] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T16:59:30.232] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:09:03.520] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:09:04.495] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:09:30.009] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:09:54.579] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:15:39.380] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:15:43.377] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:15:46.812] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:16:20.066] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:16:21.247] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:16:23.513] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:16:27.946] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:16:29.269] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:16:37.068] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:16:39.130] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:16:41.011] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:16:43.967] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:16:46.757] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:16:48.241] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:00.308] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:03.235] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:05.771] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:07.031] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:10.781] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:14.769] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:17.372] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:18.975] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:20.042] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:22.599] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:23.642] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:24.898] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:26.766] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:47.431] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:51.609] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:55.975] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:17:59.738] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:00.987] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:04.339] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:06.340] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:10.905] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:13.132] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:14.890] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:17.410] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:19.396] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:20.822] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:22.920] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:24.099] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:27.578] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:30.451] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:53.201] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:18:54.661] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:19:04.876] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:19:12.766] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:19:14.376] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:19:19.782] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:19:21.887] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:19:24.086] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:19:28.674] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:20:27.545] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:20:40.842] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:20:52.049] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:20:54.271] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:20:56.100] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:21:00.397] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:21:03.863] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:21:09.101] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:21:20.290] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:21:39.792] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:21:41.038] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:21:47.450] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:21:49.561] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:21:59.740] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:22:07.399] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:22:19.191] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:23:02.866] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:24:11.634] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:24:16.798] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:24:18.434] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:24:21.828] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:24:24.943] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:24:27.538] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:24:30.639] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:24:32.888] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:24:35.255] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:24:37.887] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:24:39.442] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:25:32.192] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:25:33.774] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:28:31.978] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:28:33.093] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:28:36.583] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:28:42.883] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:28:44.142] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:28:46.744] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:28:51.957] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:30:27.021] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:30:28.108] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:30:34.390] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:30:37.147] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:37:25.783] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:37:38.154] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:37:41.608] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T17:38:11.127] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:37:27.638] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:37:34.535] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:37:35.742] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:37:37.065] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:37:38.507] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:38:06.404] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:42:30.246] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:42:31.666] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:42:48.214] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:43:37.567] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:43:42.090] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:43:43.814] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:43:47.982] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:43:50.914] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:43:55.153] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:44:12.266] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:44:14.093] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:44:20.232] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:44:36.483] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:44:38.492] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:44:41.641] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:46:19.182] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:46:22.818] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:46:51.055] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:47:11.551] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:47:12.827] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:48:02.762] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:48:08.089] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:48:10.937] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:48:16.754] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:48:34.198] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:48:36.680] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:48:39.161] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:49:07.122] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:49:19.800] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:49:25.908] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:49:48.785] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:49:50.338] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:49:54.317] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:49:55.787] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:50:09.116] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:50:14.816] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:50:27.400] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T20:50:30.575] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:12:06.219] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:12:07.196] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:12:12.602] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:13:16.696] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:13:19.925] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:13:33.367] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:14:22.875] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:14:28.037] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:14:31.565] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:15:09.403] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:15:11.712] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:15:26.904] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:15:29.045] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:15:38.742] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:15:39.991] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:21:28.250] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:21:29.736] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:21:44.257] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:22:04.319] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:22:05.793] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:22:41.371] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:22:45.239] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:22:47.390] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:22:51.248] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:22:57.828] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:23:56.786] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:23:58.788] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:24:03.157] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:24:42.599] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:24:44.093] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:24:45.330] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:24:47.015] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:24:52.484] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:24:53.846] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:24:57.396] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:25:04.200] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:25:23.902] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:25:26.444] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:25:27.922] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:25:34.708] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:25:36.328] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:25:38.206] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:25:57.550] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:26:10.378] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:26:15.938] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:26:16.977] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:26:23.734] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:26:33.356] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:26:39.329] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:26:44.095] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:26:48.310] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:26:58.977] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:27:03.196] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:27:12.923] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:27:13.940] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:27:15.717] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:27:17.029] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:27:20.086] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:27:25.982] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:27:30.914] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:27:35.196] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:27:39.107] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:27:42.646] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:28:07.507] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:28:10.530] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:28:12.087] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:28:24.391] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:29:11.284] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:30:01.164] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:30:03.342] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:30:05.774] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:30:11.597] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:31:25.607] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:31:31.454] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:31:39.576] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:31:41.554] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:34:56.742] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:35:18.681] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:35:22.583] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:35:26.552] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:35:29.239] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:35:32.390] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:35:36.842] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:35:38.340] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:36:06.459] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:36:11.072] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:36:12.695] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:36:18.125] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:36:32.346] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:37:00.416] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:37:42.414] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:38:10.679] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:38:14.657] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:38:19.081] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:38:21.074] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:38:58.865] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:39:25.514] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:39:28.131] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:40:08.941] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:42:31.408] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:42:33.483] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:42:38.435] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:42:40.566] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:42:43.128] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:45:06.095] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:45:07.601] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:45:51.907] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:45:54.451] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:48:35.400] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:48:51.861] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:50:02.648] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:50:06.797] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:50:08.725] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:50:35.835] [INFO] clockwiseLog - undefined
+[2022-11-12T21:51:29.430] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:51:35.392] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:51:55.670] [INFO] clockwiseLog - [
+  Master { id: 4, name: 'Michael', rating: 2, cityList: undefined },
+  Master { id: 5, name: 'Alex', rating: 3, cityList: undefined },
+  Master { id: 86, name: 'Fred', rating: 3, cityList: undefined }
+]
+[2022-11-12T21:52:07.794] [INFO] clockwiseLog - <ref *2> IncomingMessage {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 16384,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: [],
+    flowing: true,
+    ended: true,
+    endEmitted: true,
+    reading: false,
+    constructed: true,
+    sync: false,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    errorEmitted: false,
+    emitClose: true,
+    autoDestroy: true,
+    destroyed: false,
+    errored: null,
+    closed: false,
+    closeEmitted: false,
+    defaultEncoding: 'utf8',
+    awaitDrainWriters: null,
+    multiAwaitDrain: false,
+    readingMore: false,
+    dataEmitted: true,
+    decoder: null,
+    encoding: null,
+    [Symbol(kPaused)]: false
+  },
+  _events: [Object: null prototype] { end: [Function: clearRequestTimeout] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  socket: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: false,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      keepAliveTimeout: 5000,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      headersTimeout: 60000,
+      requestTimeout: 0,
+      _connectionKey: '6::::3001',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 9
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      keepAliveTimeout: 5000,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      headersTimeout: 60000,
+      requestTimeout: 0,
+      _connectionKey: '6::::3001',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 9
+    },
+    parser: HTTPParser {
+      '0': [Function: bound setRequestTimeout],
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(owner_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      locals: [Object: null prototype] {},
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    timeout: 0,
+    [Symbol(async_id_symbol)]: 58,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(kSetNoDelay)]: false,
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: Timeout {
+      _idleTimeout: -1,
+      _idlePrev: null,
+      _idleNext: null,
+      _idleStart: 32586,
+      _onTimeout: null,
+      _timerArgs: undefined,
+      _repeat: null,
+      _destroyed: true,
+      [Symbol(refed)]: false,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 108,
+      [Symbol(triggerId)]: 104
+    },
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(RequestTimeout)]: undefined
+  },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: true,
+  rawHeaders: [
+    'Host',
+    'localhost:3001',
+    'Connection',
+    'keep-alive',
+    'Content-Length',
+    '34',
+    'sec-ch-ua',
+    '" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"',
+    'Accept',
+    'application/json, text/plain, */*',
+    'Content-Type',
+    'application/json',
+    'sec-ch-ua-mobile',
+    '?1',
+    'User-Agent',
+    'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Mobile Safari/537.36',
+    'sec-ch-ua-platform',
+    '"Android"',
+    'Origin',
+    'http://localhost:3000',
+    'Sec-Fetch-Site',
+    'same-site',
+    'Sec-Fetch-Mode',
+    'cors',
+    'Sec-Fetch-Dest',
+    'empty',
+    'Referer',
+    'http://localhost:3000/',
+    'Accept-Encoding',
+    'gzip, deflate, br',
+    'Accept-Language',
+    'en-CA,en;q=0.9,uk-UA;q=0.8,uk;q=0.7,ru-UA;q=0.6,ru;q=0.5,en-GB;q=0.4,en-US;q=0.3,de;q=0.2,nl;q=0.1'
+  ],
+  rawTrailers: [],
+  aborted: false,
+  upgrade: false,
+  url: '/sendEmail',
+  method: 'POST',
+  statusCode: null,
+  statusMessage: null,
+  client: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: false,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      keepAliveTimeout: 5000,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      headersTimeout: 60000,
+      requestTimeout: 0,
+      _connectionKey: '6::::3001',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 9
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      keepAliveTimeout: 5000,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      headersTimeout: 60000,
+      requestTimeout: 0,
+      _connectionKey: '6::::3001',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 9
+    },
+    parser: HTTPParser {
+      '0': [Function: bound setRequestTimeout],
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(owner_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      locals: [Object: null prototype] {},
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    timeout: 0,
+    [Symbol(async_id_symbol)]: 58,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(kSetNoDelay)]: false,
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: Timeout {
+      _idleTimeout: -1,
+      _idlePrev: null,
+      _idleNext: null,
+      _idleStart: 32586,
+      _onTimeout: null,
+      _timerArgs: undefined,
+      _repeat: null,
+      _destroyed: true,
+      [Symbol(refed)]: false,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 108,
+      [Symbol(triggerId)]: 104
+    },
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(RequestTimeout)]: undefined
+  },
+  _consuming: true,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '/api',
+  originalUrl: '/api/sendEmail',
+  _parsedUrl: Url {
+    protocol: null,
+    slashes: null,
+    auth: null,
+    host: null,
+    port: null,
+    hostname: null,
+    hash: null,
+    search: null,
+    query: null,
+    pathname: '/sendEmail',
+    path: '/sendEmail',
+    href: '/sendEmail',
+    _raw: '/sendEmail'
+  },
+  params: {},
+  query: {},
+  res: <ref *3> ServerResponse {
+    _events: [Object: null prototype] { finish: [Function: bound resOnFinish] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: true,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: null,
+    _hasBody: true,
+    _trailer: '',
+    finished: false,
+    _headerSent: false,
+    _closed: false,
+    socket: <ref *1> Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 8,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: [Server],
+      _server: [Server],
+      parser: [HTTPParser],
+      on: [Function: socketListenerWrap],
+      addListener: [Function: socketListenerWrap],
+      prependListener: [Function: socketListenerWrap],
+      setEncoding: [Function: socketSetEncoding],
+      _paused: false,
+      _httpMessage: [Circular *3],
+      timeout: 0,
+      [Symbol(async_id_symbol)]: 58,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: -1,
+        _idlePrev: null,
+        _idleNext: null,
+        _idleStart: 32586,
+        _onTimeout: null,
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: true,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 108,
+        [Symbol(triggerId)]: 104
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: null,
+    _keepAliveTimeout: 5000,
+    _onPendingData: [Function: bound updateOutgoingData],
+    req: [Circular *2],
+    _sent100: false,
+    _expect_continue: false,
+    locals: [Object: null prototype] {},
+    [Symbol(kCapture)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      'x-powered-by': [Array],
+      'access-control-allow-origin': [Array],
+      vary: [Array],
+      'access-control-allow-credentials': [Array]
+    }
+  },
+  body: { email: 'k.vasilitsev@gmail.com' },
+  _body: true,
+  length: undefined,
+  secret: undefined,
+  cookies: [Object: null prototype] {},
+  signedCookies: [Object: null prototype] {},
+  route: Route {
+    path: '/sendEmail',
+    stack: [ [Layer] ],
+    methods: { post: true }
+  },
+  [Symbol(kCapture)]: false,
+  [Symbol(kHeaders)]: {
+    host: 'localhost:3001',
+    connection: 'keep-alive',
+    'content-length': '34',
+    'sec-ch-ua': '" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"',
+    accept: 'application/json, text/plain, */*',
+    'content-type': 'application/json',
+    'sec-ch-ua-mobile': '?1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Mobile Safari/537.36',
+    'sec-ch-ua-platform': '"Android"',
+    origin: 'http://localhost:3000',
+    'sec-fetch-site': 'same-site',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-dest': 'empty',
+    referer: 'http://localhost:3000/',
+    'accept-encoding': 'gzip, deflate, br',
+    'accept-language': 'en-CA,en;q=0.9,uk-UA;q=0.8,uk;q=0.7,ru-UA;q=0.6,ru;q=0.5,en-GB;q=0.4,en-US;q=0.3,de;q=0.2,nl;q=0.1'
+  },
+  [Symbol(kHeadersCount)]: 32,
+  [Symbol(kTrailers)]: null,
+  [Symbol(kTrailersCount)]: 0,
+  [Symbol(RequestTimeout)]: undefined
+}
+[2022-11-12T21:52:07.799] [INFO] clockwiseLog - {
+  from: 'clockwareapp@gmail.com',
+  to: 'k.vasilitsev@gmail.com',
+  subject: 'Clockware order confirmation',
+  html: '\n' +
+    '            <h3>Hello!</h3>\n' +
+    '            <p>Thank you for your order!</p>\n' +
+    '            <p>Best regards, Clockware</p>\n' +
+    '        '
+}
+[2022-11-12T21:52:10.204] [INFO] clockwiseLog - {
+  accepted: [ 'k.vasilitsev@gmail.com' ],
+  rejected: [],
+  envelopeTime: 1017,
+  messageTime: 716,
+  messageSize: 426,
+  response: '250 2.0.0 OK  1668304330 h3-20020a05620a244300b006eed47a1a1esm4055937qkn.134 - gsmtp',
+  envelope: { from: 'clockwareapp@gmail.com', to: [ 'k.vasilitsev@gmail.com' ] },
+  messageId: '<82d96fae-2e0d-93aa-b8f7-476c999a8773@gmail.com>'
+}
+[2022-11-12T21:53:09.518] [INFO] clockwiseLog - undefined
+[2022-11-12T21:56:23.187] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:56:26.341] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:56:28.099] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:56:31.542] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:56:36.097] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:56:37.469] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:56:40.743] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:56:43.199] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:56:59.342] [INFO] clockwiseLog - Server listening on 3001
+[2022-11-12T21:57:04.163] [INFO] clockwiseLog - Server listening on 3001
