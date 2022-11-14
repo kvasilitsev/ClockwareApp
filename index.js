@@ -17,10 +17,9 @@ const logger = log4js.getLogger("./server/logs/clockwiseLog");
 const PORT = process.env.PORT || 3001;
 
 if (process.env.NODE_ENV === 'production'){
-  app.use(express.static('build')); 
-  app.get('*', (req, res) => {
-    req.sendFile(path.resolve(__dirname, 'build', 'index.html'))
-  })
+  const static = express.static(path.join(__dirname, '/build'))
+    app.use(static);
+    app.use('/*', static);
 }
 
 const corsOptions = {
