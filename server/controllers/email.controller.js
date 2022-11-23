@@ -3,8 +3,7 @@ const emailService = require("../services/email.services");
 const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
-async function sendEmail(req, res) {
-  logger.info(req);
+async function sendEmail(req, res) {  
     const { email } = req.body;  
     try {
         const send_to = email;

@@ -17,14 +17,13 @@ const emailService = async (subject, message, send_to, sent_from) => {
     to: send_to,    
     subject: subject,
     html: message,
-  };
-  logger.info(options);
+  };  
 
   transporter.sendMail(options, function (err, info) {
     if (err) {
       logger.error(err);
     } else {
-      logger.info(info);
+      logger.info('succes');
     }
   });
 };

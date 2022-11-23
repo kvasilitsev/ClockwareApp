@@ -17,6 +17,7 @@ class UserData {
    * @param {varchar} password  
    */  
   async createUser(name, email, password) {
+    logger.info(name, email, password, 'dal user');
     try {
       await db.query('INSERT INTO users (name, email, password, admin) values ($1, $2, $3, false) RETURNING *', [name, email, password]);    
     } catch (err) {

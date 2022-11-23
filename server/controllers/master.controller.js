@@ -128,8 +128,7 @@ class MasterController {
     }
     catch(err) {
       res.json(err.message);
-    }
-    logger.info(masters)    
+    }     
     res.send(masters);
   }  
 }
