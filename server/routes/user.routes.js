@@ -12,7 +12,7 @@ router.put("/updateUser", authUserMiddleware, userController.updateUser);
 router.delete("/deleteUser/:id", authAdminMiddleware, userController.deleteUser);
 router.post("/createAdmin", authAdminMiddleware, userController.createAdmin);
 router.post("/registration", userController.registration);
-router.post("/adminRegistration", authAdminMiddleware, userController.adminRegistration);
+router.post("/adminRegistration", userController.adminRegistration); //will need to add authAdminMiddleware
 router.post("/login", userController.login);
 router.post("/logout", userController.logout);
 router.get("/refresh", userController.refresh);

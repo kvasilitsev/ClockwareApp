@@ -121,7 +121,8 @@ class UserController {
    * @param {*} res 
    */
   async registration(req, res, next) {
-    console.log(req);
+    logger.info(req.data);
+    //console.log(req);
     try {
       const {name, email, password} = req.body;
       const userData = await userService.registration(name, email, password);
@@ -139,6 +140,7 @@ class UserController {
    * @param {*} res 
    */
    async adminRegistration(req, res, next) {
+    logger.info(req.data);
     try {
       const {name, email, password} = req.body;
       const userData = await userService.adminRegistration(name, email, password);
@@ -156,11 +158,12 @@ class UserController {
    * @param {*} res 
    */
   async login(req, res, next) {
+    logger.info('login', req);
     try {
       const {email, password} = req.body;
       const userData = await userService.login(email, password);
       res.cookie('refreshToken', userData.refreshToken, {maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true} )
-      return res.json(userData);
+      return res.json(true);
     }
     catch(err) {
       next(err);

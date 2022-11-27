@@ -1,5 +1,5 @@
 import axios from './axios';
-import { REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL, SEND_EMAIL_URL, GET_CITIES_URL, GET_CLOCKS_URL } from '../models/routes';
+import { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL, SEND_EMAIL_URL, GET_CITIES_URL, GET_CLOCKS_URL, LOGIN_URL } from '../models/routes';
 
 
 class Request {
@@ -14,9 +14,22 @@ class Request {
     this.masterId = masterId;
   }
   
-  async register() {
+  async register() {    
     try {
       await axios.post(REGISTER_URL, { name: this.name, email: this.email, password: this.password },
+        {          
+          withCredentials: true
+        }      
+      ) 
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }     
+  }
+
+  async registerAdmin() {    
+    try {
+      await axios.post(ADMIN_REGISTER_URL, { name: this.name, email: this.email, password: this.password },
         {          
           withCredentials: true
         }      
@@ -91,7 +104,22 @@ class Request {
     catch (error) {
       console.log('error: ', error); 
     }   
-  }  
+  }
+
+  async login() {
+    console.log(this.email, this.password)
+    try {
+      const res = await axios.post(LOGIN_URL, { email: this.email, password: this.password },
+        {          
+          withCredentials: true
+        }          
+      )     
+      return res.data;
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }     
+  }
 }
 
 export { Request };

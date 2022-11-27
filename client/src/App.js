@@ -5,6 +5,9 @@ import  InitialOrder from "./components/initial-order";
 import  OrderReview from './components/order-review';
 import Success from './components/success';
 import NoMasters from "./components/no-masters";
+import Register from "./components/register";
+import RegisterAdmin from "./components/register-admin";
+import Login from "./components/login"
 
 // function App() {
 //   return (
@@ -27,6 +30,9 @@ function App() {
           <Route path="/orderReview" element={<OrderReview />} />
           <Route path="/success" element={<Success />} />
           <Route path="/no-masters" element={<NoMasters />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/register-admin" element={<RegisterAdmin />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
     </BrowserRouter>
     </main>
