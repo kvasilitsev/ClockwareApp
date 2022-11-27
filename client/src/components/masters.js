@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import { useNavigate } from "react-router-dom";
-import MasterList from './masterList';
+import MasterList from './master-list';
 import { useLocation } from 'react-router-dom';
 
 const Masters = () => {
