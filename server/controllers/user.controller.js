@@ -1,5 +1,6 @@
 const userService = require("../services/user.services")
 const log4js = require('../logger');
+const tokenServices = require("../services/token.services");
 const logger = log4js.getLogger("clockwiseLog");
 
 /**
@@ -91,7 +92,7 @@ class UserController {
    * @param {*} res 
    */
   async getUserByEmail(req, res) {
-    const { email } = req.body;
+    const { email } = req.query;
     const user = await userService.getUserByEmail(email);
     res.json(user);   
   };
@@ -157,13 +158,12 @@ class UserController {
    * @param {*} req 
    * @param {*} res 
    */
-  async login(req, res, next) {
-    logger.info('login', req);
+  async login(req, res, next) {   
     try {
       const {email, password} = req.body;
       const userData = await userService.login(email, password);
-      res.cookie('refreshToken', userData.refreshToken, {maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true} )
-      return res.json(true);
+      res.cookie('refreshToken', userData.refreshToken, {maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true} )      
+      return res.json(userData);
     }
     catch(err) {
       next(err);
@@ -175,10 +175,10 @@ class UserController {
    * @param {*} req 
    * @param {*} res 
    */
-  async logout(req, res, next) {
+  async logout(req, res, next) {    
     try {
-      const {refreshToken} = req.cookies;
-      const token = await userService.logout(refreshToken);
+      const {refreshToken} = req.cookies;      
+      await userService.logout(refreshToken);
       res.clearCookie('refreshToken');
       return res.send('you are logged out');
     }

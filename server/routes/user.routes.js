@@ -16,6 +16,6 @@ router.post("/adminRegistration", userController.adminRegistration); //will need
 router.post("/login", userController.login);
 router.post("/logout", userController.logout);
 router.get("/refresh", userController.refresh);
-router.get("/getUserByEmail", authAdminMiddleware, userController.getUserByEmail);
+router.get("/getUserByEmail", userController.getUserByEmail);
 
 module.exports = router;

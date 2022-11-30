@@ -66,6 +66,15 @@ class TokenData {
     };
     return existToken;
 	}
+
+  async findTokenByUserId(id){
+	  try {
+      const refreshToken = await db.query('SELECT refresh_token FROM tokens where id = $1', [id]);
+      return refreshToken;
+    } catch(err) {
+        throw new Error("Could not find token", { cause: err });      
+      }
+  }	
 }
 
 module.exports = new TokenData();

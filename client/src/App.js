@@ -7,7 +7,9 @@ import Success from './components/success';
 import NoMasters from "./components/no-masters";
 import Register from "./components/register";
 import RegisterAdmin from "./components/register-admin";
-import Login from "./components/login"
+import Login from "./components/login";
+import Logout from "./components/logout";
+
 
 // function App() {
 //   return (
@@ -33,6 +35,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/register-admin" element={<RegisterAdmin />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/logout" element={<Logout />} />
+
         </Routes>
     </BrowserRouter>
     </main>

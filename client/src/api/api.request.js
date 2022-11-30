@@ -1,5 +1,7 @@
 import axios from './axios';
-import { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL, SEND_EMAIL_URL, GET_CITIES_URL, GET_CLOCKS_URL, LOGIN_URL } from '../models/routes';
+import { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL,
+       SEND_EMAIL_URL, GET_CITIES_URL, GET_CLOCKS_URL, LOGIN_URL, LOGOUT_URL, 
+       GET_USERBY_EMAIL_URL } from '../models/routes';
 
 
 class Request {
@@ -106,19 +108,48 @@ class Request {
     }   
   }
 
-  async login() {
-    console.log(this.email, this.password)
+  async login() {    
     try {
       const res = await axios.post(LOGIN_URL, { email: this.email, password: this.password },
         {          
           withCredentials: true
         }          
-      )     
-      return res.data;
+      )      
+      return res.data.accessToken;
     }
     catch (error) {
       console.log('error: ', error); 
     }     
+  }
+
+  async logout() {
+    console.log(localStorage.userId) 
+    try {
+      const res = await axios.post(LOGOUT_URL, { id: localStorage.userId },
+        {          
+          withCredentials: true
+        }              
+      )      
+      console.log('api response', res);   
+      return res;
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }     
+  }
+
+  async getUserByEmail() {
+    try {
+      const res = await axios.get(GET_USERBY_EMAIL_URL, {params: {email: this.email }},
+        {
+          withCredentials: true
+        }
+      )
+      return res.data;      
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }   
   }
 }
 

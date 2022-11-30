@@ -10,10 +10,10 @@ class TokenService {
 	 * @returns 
 	 */
   generateTokens(payload){
-    const accesToken = jwt.sign(payload, process.env.JWT_ACCESS_SECRET, {expiresIn: '30m'});
+    const accessToken = jwt.sign(payload, process.env.JWT_ACCESS_SECRET, {expiresIn: '30m'});
 		const refreshToken = jwt.sign(payload, process.env.JWT_REFRESH_SECRET, {expiresIn: '30d'});
 		return {
-			accesToken,
+			accessToken,
 			refreshToken
 		}
  	}
@@ -62,6 +62,11 @@ class TokenService {
   async findToken(refreshToken){
     const token = await tokenData.findToken(refreshToken);
     return token;
+  }
+
+  async findTokenByUserId(id){
+    const refreshToken = await tokenData.findTokenByUserId(id);
+    return refreshToken
   }
 };
 

@@ -14,7 +14,7 @@ const validate = values => {
   return errors;
 }; 
 
-const Register = () => {
+const Login = () => {
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {        
@@ -25,8 +25,8 @@ const Register = () => {
     onSubmit: async (values) => {      
       try {
         const apiRequest = new Request({email: values.email, password: values.password});       
-        await apiRequest.login();
-
+        const res = await apiRequest.login();        
+        localStorage.setItem("token", res);        
       } catch (e) {
         console.log('error: ', e.response.data.message);        
       }
@@ -46,7 +46,7 @@ const Register = () => {
         <input
           id="email"
           name="email"
-          type="email"
+          type="text"
           placeholder='Email'
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -80,5 +80,5 @@ const Register = () => {
     );
   };
   
- export default Register;
+ export default Login;
  
