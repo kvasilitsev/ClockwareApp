@@ -1,24 +1,25 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+//import { useLocation } from 'react-router-dom';
 import { useFormik } from 'formik';
 import { Request } from '../api/api.request';
 import { useNavigate } from "react-router-dom";
 
-const OrderReview = () => {
-  const { state } = useLocation();
+const OrderReview = (props) => {
+  //const { state } = useLocation();
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
-      masterId: state.masterId,
-      masterName: state.masterName,
-      name: state.name,
-      email: state.email,
-      cityId: state.cityId,
-      clockId: state.clockId,
-      bookingTime: state.bookingTime,
-      list: state.list,
-      city: state.city,
-      clockSize: state.clockSize  
+      nextState: 'success',
+      masterId: props.state.masterId,
+      masterName: props.state.masterName,
+      name: props.state.name,
+      email: props.state.email,
+      cityId: props.state.cityId,
+      clockId: props.state.clockId,
+      bookingTime: props.state.bookingTime,
+      list: props.state.list,
+      city: props.state.city,
+      clockSize: props.state.clockSize  
     },    
     onSubmit: async (values) => {         
       try {        
@@ -27,8 +28,9 @@ const OrderReview = () => {
 
         if (res.data === true){          
           const apiRequest = new Request({email: values.email})
-          await apiRequest.sendEmail();          
-          navigate('/success');
+          await apiRequest.sendEmail();
+          props.context(formik.values);               
+          //navigate('/success');
         }             
       } catch (e) {
           console.log('error: ', e.response);          

@@ -9,6 +9,8 @@ import Register from "./components/register";
 import RegisterAdmin from "./components/register-admin";
 import Login from "./components/login";
 import Logout from "./components/logout";
+import AdminMenu from "./components/admin-menu";
+import Home from "./pages/home"
 
 
 // function App() {
@@ -26,8 +28,8 @@ function App() {
     <>
     <main className="App">      
       <BrowserRouter>      
-        <Routes>
-          <Route path="/" element={<InitialOrder />} />
+        <Routes>         
+          <Route path="/initial-order" element={<InitialOrder />} />
           <Route path="/masters" element={<Masters />} />  
           <Route path="/orderReview" element={<OrderReview />} />
           <Route path="/success" element={<Success />} />
@@ -36,7 +38,8 @@ function App() {
           <Route path="/register-admin" element={<RegisterAdmin />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
-
+          <Route path="/admin-menu" element={<AdminMenu />} />
+          <Route path="/" element={<Home />} />
         </Routes>
     </BrowserRouter>
     </main>

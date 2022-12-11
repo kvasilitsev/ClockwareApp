@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { useNavigate } from "react-router-dom";
 import { useFormik } from 'formik';
 import { Request } from '../api/api.request';
@@ -45,10 +45,11 @@ const validate = values => {
   return errors;
 }; 
  
-const InitialOrder = () => {  
+const InitialOrder = (props) => {  
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
+      nextState: 'masters',    
       clockId: '',
       cityId: '',
       bookingTime: '',
@@ -67,16 +68,18 @@ const InitialOrder = () => {
       } catch (e) {
           console.log('error: ', e.response.data.message);          
         }        
-        if(formik.values.list.length > 0){
-          navigate('/masters', {state: formik.values});
-        } else {
-          navigate('/no-masters');
+        if(formik.values.list.length > 0){               
+          props.context(formik.values);                   
+          //navigate('/masters', {state: formik.values});
+        } else {          
+          formik.values.nextState = 'no-masters';
+          props.context(formik.values);
         }        
       }      
   });
     return (  
     <section>
-    <h1>Complete order form</h1>
+    <h5>Complete order form</h5>
     <form onSubmit={formik.handleSubmit}>
       <label htmlFor="name">
           Name:
