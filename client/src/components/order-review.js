@@ -36,7 +36,8 @@ const OrderReview = (props) => {
           console.log('error: ', e.response);          
         }   
       },
-    onReset: () => navigate('/')
+    onReset: () => props.context(null)
+    //onReset: () => navigate('/')
   });
     return (  
     <section className='review'>
