@@ -11,25 +11,24 @@ const orderRouter = require('./server/routes/order.routes');
 const emailRouter = require('./server/routes/email.routes');
 const errorMiddleware = require('./server/middlewares/error.middleware');
 const path = require('path');
+const app = express();
 
 
 const logger = log4js.getLogger("./server/logs/clockwiseLog");
 const PORT = process.env.PORT || 3001;
 
+
+
 if (process.env.NODE_ENV === 'production'){
-  app.get('/', (req, res) => {
-    res.send('Hello from Node.js!')
-})
-  // const static = express.static(path.join(__dirname, '/build'))
-  //   app.use(static);
-  //   app.use('/*', static);
+  app.use(express.static(path.join(__dirname, 'client/build'))); 
 }
+
 
 const corsOptions = {
   origin: 'http://localhost:3000',
   credentials: true
 }
-const app = express();
+
 
 app.use(express.json());
 app.use(cookieParser());
