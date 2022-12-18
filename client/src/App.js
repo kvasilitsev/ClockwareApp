@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import  Masters from './components/masters';
 import  InitialOrder from "./components/initial-order";
 import  OrderReview from './components/order-review';
@@ -26,8 +26,7 @@ import Home from "./pages/home"
 function App() {
   return (
     <>
-    <main className="App">      
-      <BrowserRouter>      
+    <main className="App">          
         <Routes>         
           <Route path="/initial-order" element={<InitialOrder />} />
           <Route path="/masters" element={<Masters />} />  
@@ -41,7 +40,6 @@ function App() {
           <Route path="/admin-menu" element={<AdminMenu />} />
           <Route path="/" element={<Home />} />
         </Routes>
-    </BrowserRouter>
     </main>
     </>
   );
