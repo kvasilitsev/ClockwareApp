@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
-//import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Success = (props) => { 
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
   useEffect(() => {
     setTimeout(() => {
-      props.context(null); 
-      // navigate('/', { replace: true });
+      //props.context(null); 
+      navigate('/', { replace: true });
     }, 8000);
   });
   return (

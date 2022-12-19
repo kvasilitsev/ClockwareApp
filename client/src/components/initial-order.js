@@ -1,5 +1,5 @@
 import React from 'react'
-//import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useFormik } from 'formik';
 import { Request } from '../api/api.request';
 import { USER_REGEX, EMAIL_REGEX } from '../models/regExp';
@@ -46,10 +46,10 @@ const validate = values => {
 }; 
  
 const InitialOrder = (props) => {  
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
-      nextState: 'masters',    
+      //nextState: 'masters',    
       clockId: '',
       cityId: '',
       bookingTime: '',
@@ -69,11 +69,12 @@ const InitialOrder = (props) => {
           console.log('error: ', e.response.data.message);          
         }        
         if(formik.values.list.length > 0){               
-          props.context(formik.values);                   
-          //navigate('/masters', {state: formik.values});
-        } else {          
-          formik.values.nextState = 'no-masters';
-          props.context(formik.values);
+          //props.context(formik.values);                   
+          navigate('/masters', {state: formik.values});
+        } else {
+          navigate('/no-masters', {state: formik.values});    
+          // formik.values.nextState = 'no-masters';
+          // props.context(formik.values);
         }        
       }      
   });
