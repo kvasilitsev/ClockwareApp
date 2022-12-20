@@ -26,8 +26,13 @@ class CityData {
    * @returns id, name of all cities
    */
   async getCities() {
-    let cityList = [];    
-    const citiesResultSet = await db.query('SELECT id, name FROM cities');   
+    let cityList = [];
+    let citiesResultSet;   
+    try {
+      citiesResultSet = await db.query('SELECT id, name FROM cities');
+    } catch (err) {
+      throw new Error('Can not get data from DB');
+    } 
     if(citiesResultSet.rowCount > 0){ 
       citiesResultSet.rows.forEach(element => {
         let city = new City();
