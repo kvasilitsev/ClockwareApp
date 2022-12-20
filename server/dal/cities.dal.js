@@ -31,7 +31,8 @@ class CityData {
     try {
       citiesResultSet = await db.query('SELECT id, name FROM cities');
     } catch (err) {
-      throw new Error('Can not get data from DB');
+      logger.Error(err);
+      throw new Error(err, 'Can not get data from DB');
     } 
     if(citiesResultSet.rowCount > 0){ 
       citiesResultSet.rows.forEach(element => {
