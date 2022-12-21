@@ -50,6 +50,7 @@ app.use(errorMiddleware);
 
   
 app.listen(PORT, () => {
+  console.log('hello world');
   logger.info(`Server listening on ${PORT}`);  
 });
 
