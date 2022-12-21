@@ -32,6 +32,8 @@ class ClockController {
    * @param {*} res 
    */
   async getClocks(req, res) {
+    console.log('cotroller.getClocks');
+    logger.info('controller/getClocks');
     const clocks = await clockService.getClocks();
     res.json(clocks);
   };

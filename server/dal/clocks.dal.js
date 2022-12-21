@@ -29,6 +29,7 @@ class ClockData {
    * @returns an array of clocks objects
    */
   async getClocks() {
+    logger.info('dal/getClocks');
     let clockList = [];    
     let clocksResultSet;
     try {

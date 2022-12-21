@@ -49,8 +49,7 @@ app.use('/api', cors(corsOptions), emailRouter);
 app.use(errorMiddleware);
 
   
-app.listen(PORT, () => {
-  console.log('hello world');
+app.listen(PORT, () => {  
   logger.info(`Server listening on ${PORT}`);  
 });
 
