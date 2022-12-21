@@ -35,6 +35,7 @@ class CityData {
     }
     catch(err) {
       logger.error(err);
+      console.log(err);
       throw(err);    
     }
     if(citiesResultSet.rowCount > 0){ 
