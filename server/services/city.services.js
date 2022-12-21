@@ -13,8 +13,10 @@ class CityService {
     }
     getCities(){
       const cities = cityData.getCities();
-      if(cities.length < 1)
+      if(cities.length < 1) {
+        logger.error("we have a db problem, not sure what");
         throw new Error("no cities returned from database");
+      }
       return cities; 
     }
     getCityById(id){

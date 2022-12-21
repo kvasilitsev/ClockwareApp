@@ -1,6 +1,7 @@
 const City = require ('../dto/cities.dto.js');
 const db = require('../db');
 const log4js = require('../logger');
+const { Pool } = require('pg');
 const logger = log4js.getLogger("clockwiseLog");
 
 /**
@@ -14,7 +15,7 @@ class CityData {
   */
   async createCity(name) {
     try {
-      await db.query(`INSERT INTO cities (name) values ($1) RETURNING *`, [name]);      
+      await db.query(`INSERT INTO cities (name) values ($1) RETURNING *`, [name]);           
     } catch (err) {
       logger.error(`createCity failed with reason: ${err.detail}`);
       throw err;
@@ -26,14 +27,16 @@ class CityData {
    * @returns id, name of all cities
    */
   async getCities() {
+    logger.info('cities.dal.getCities() v1');
     let cityList = [];
-    let citiesResultSet;   
+    let citiesResultSet;     
     try {
       citiesResultSet = await db.query('SELECT id, name FROM cities');
-    } catch (err) {
-      logger.Error(err);
-      throw new Error(err, 'Can not get data from DB');
-    } 
+    }
+    catch(err) {
+      logger.error(err);
+      throw(err);    
+    }
     if(citiesResultSet.rowCount > 0){ 
       citiesResultSet.rows.forEach(element => {
         let city = new City();

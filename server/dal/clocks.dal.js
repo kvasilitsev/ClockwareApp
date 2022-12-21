@@ -30,7 +30,13 @@ class ClockData {
    */
   async getClocks() {
     let clockList = [];    
-    const clocksResultSet = await db.query('SELECT id, size, repair_duration FROM clocks');    
+    let clocksResultSet;
+    try {
+      clocksResultSet = await db.query('SELECT id, size, repair_duration FROM clocks');
+    } catch (err) {
+      logger.error(err);
+      throw err;
+    }
     if(clocksResultSet.rowCount > 0) { 
         clocksResultSet.rows.forEach(element => {                 
         let clock = new Clock();
