@@ -41,8 +41,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use('/api', cors(corsOptions), masterRouter);
-app.use('/api', cors(corsOptions), cityRouter);
-app.use('/api', cors(corsOptions), clockRouter);
+app.use('/api', cityRouter);
+app.use('/api', clockRouter);
 app.use('/api', cors(corsOptions), userRouter);
 app.use('/api', cors(corsOptions), orderRouter);
 app.use('/api', cors(corsOptions), emailRouter);
