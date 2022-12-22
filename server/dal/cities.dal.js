@@ -34,8 +34,7 @@ class CityData {
       citiesResultSet = await db.query('SELECT id, name FROM cities');
     }
     catch(err) {
-      logger.error(err);
-      console.log(err);
+      logger.error(err);      
       throw(err);    
     }
     if(citiesResultSet.rowCount > 0){ 

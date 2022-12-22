@@ -35,8 +35,7 @@ class ClockData {
     try {
       clocksResultSet = await db.query('SELECT id, size, repair_duration FROM clocks');
     } catch (err) {
-      logger.error(err);
-      console.log(err);
+      logger.error(err);      
       throw err;
     }
     if(clocksResultSet.rowCount > 0) { 
