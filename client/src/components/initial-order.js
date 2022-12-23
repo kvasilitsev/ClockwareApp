@@ -65,6 +65,7 @@ const InitialOrder = (props) => {
         const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId});        
         const res = await apiRequest.getFreeMasters();
         formik.values.list = res.data;
+        console.log('formik.values.list');
       } catch (e) {
           console.log('error: ', e.response.data.message);          
         }        
