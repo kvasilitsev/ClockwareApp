@@ -1,4 +1,5 @@
-const MasterListItem = (props) => {  
+const MasterListItem = (props) => {
+    console.log('masterList', props);
     const {id, name, rating} = props.value;
     return (
     <div>     

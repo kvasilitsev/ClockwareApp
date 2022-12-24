@@ -61,15 +61,16 @@ const InitialOrder = (props) => {
     },
     validate,
     onSubmit: async (values) => {
-      try {
+      try {        
         const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId});        
         const res = await apiRequest.getFreeMasters();
         formik.values.list = res.data;
-        console.log('formik.values.list');
+        console.log(formik.values.list);
       } catch (e) {
           console.log('error: ', e.response.data.message);          
         }        
-        if(formik.values.list.length > 0){               
+        if(formik.values.list.length > 0){
+          console.log('if list>0', formik.values.list);              
           //props.context(formik.values);                   
           navigate('/masters', {state: formik.values});
         } else {
