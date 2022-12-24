@@ -28,8 +28,7 @@ class ClockData {
    * Method returns all masters
    * @returns an array of clocks objects
    */
-  async getClocks() {
-    logger.info('dal/getClocks');
+  async getClocks() {    
     let clockList = [];    
     let clocksResultSet;
     try {

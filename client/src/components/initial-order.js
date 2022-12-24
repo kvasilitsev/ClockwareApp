@@ -11,6 +11,7 @@ import cityOptions from '../models/city-options'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+
 const validate = values => {
   const errors = {};  
 
@@ -46,7 +47,7 @@ const validate = values => {
 }; 
  
 const InitialOrder = (props) => {  
-  const navigate = useNavigate();
+  const navigate = useNavigate();  
   const formik = useFormik({
     initialValues: {
       //nextState: 'masters',    
@@ -64,13 +65,11 @@ const InitialOrder = (props) => {
       try {        
         const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId});        
         const res = await apiRequest.getFreeMasters();
-        formik.values.list = res.data;
-        console.log(formik.values.list);
+        formik.values.list = res.data;        
       } catch (e) {
           console.log('error: ', e.response.data.message);          
         }        
-        if(formik.values.list.length > 0){
-          console.log('if list>0', formik.values.list);              
+        if(formik.values.list.length > 0){                       
           //props.context(formik.values);                   
           navigate('/masters', {state: formik.values});
         } else {

@@ -11,7 +11,6 @@ const orderRouter = require('./server/routes/order.routes');
 const emailRouter = require('./server/routes/email.routes');
 const errorMiddleware = require('./server/middlewares/error.middleware');
 const path = require('path');
-const { nextTick } = require('process');
 const app = express();
 
 

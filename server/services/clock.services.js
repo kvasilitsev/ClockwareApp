@@ -13,8 +13,7 @@ class ClockService {
     }
   };
     
-  getClocks() {
-    logger.info('services/getClocks');
+  getClocks() {    
     const clocks = clockData.getClocks();
     return clocks;
   };

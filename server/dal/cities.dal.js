@@ -26,8 +26,7 @@ class CityData {
    * Method selects all cities
    * @returns id, name of all cities
    */
-  async getCities() {
-    logger.info('cities.dal.getCities() v1');
+  async getCities() {    
     let cityList = [];
     let citiesResultSet;     
     try {
