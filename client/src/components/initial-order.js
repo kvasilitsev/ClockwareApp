@@ -9,8 +9,8 @@ import AsyncSelect from 'react-select/async'
 import clockOptions from '../models/clock-options';
 import cityOptions from '../models/city-options'
 import DatePicker from "react-datepicker";
+import setHours from "date-fns/setHours";
 import "react-datepicker/dist/react-datepicker.css";
-
 
 const validate = values => {
   const errors = {};  
@@ -62,8 +62,10 @@ const InitialOrder = (props) => {
     },
     validate,
     onSubmit: async (values) => {
-      try {        
-        const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId});        
+      try {
+        const UTCOffset = values.bookingTime.getTimezoneOffset();
+        const modifyTime = new Date(values.bookingTime.getTime() - UTCOffset * 60 * 1000);               
+        const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId});        
         const res = await apiRequest.getFreeMasters();
         formik.values.list = res.data;        
       } catch (e) {
@@ -162,11 +164,11 @@ const InitialOrder = (props) => {
           name='bookingTime'
           placeholderText = ' Select...'
           showTimeSelect
-          minTime={new Date().setHours(7)}
-          maxTime={new Date().setHours(16)}         
+          minTime={setHours(new Date(), 7)}
+          maxTime={setHours(new Date(), 16)}
           timeIntervals={60}
           minDate={new Date()}
-          onChange={date => formik.setFieldValue('bookingTime',date)}
+          onChange={selectedDate => formik.setFieldValue('bookingTime',selectedDate)}
         />     
       { formik.errors.bookingTime && formik.touched.bookingTime ? 
       ( <div className='errmsg'>{formik.errors.bookingTime}</div> ) :

@@ -43,7 +43,7 @@ class Request {
   }
 
   async getFreeMasters() { 
-    try {
+    try {      
       const res = await axios.get(GET_FREE_MASTERS_URL, {params: {clockId: this.clockId, cityId: this.cityId, bookingTime: this.bookingTime }},
         {      
           withCredentials: true

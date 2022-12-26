@@ -32,8 +32,10 @@ const OrderReview = (props) => {
       clockSize: state.clockSize 
     },    
     onSubmit: async (values) => {         
-      try {        
-        const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId});        
+      try {
+        const UTCOffset = values.bookingTime.getTimezoneOffset();
+        const modifyTime = new Date(values.bookingTime.getTime() - UTCOffset * 60 * 1000);        
+        const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId});        
         const res = await apiRequest.createOrder(); 
 
         if (res.data === true){          
