@@ -2,7 +2,7 @@ import React from 'react';
 import { Request } from '../api/api.request';
 import { useNavigate } from "react-router-dom";
 
-const Logout = () => {
+const Logout = (props) => {
   const navigate = useNavigate();
   return (
   <>
@@ -10,8 +10,8 @@ const Logout = () => {
       <button onClick={async () => {
         try { const apiRequest = new Request();
               await apiRequest.logout();
-              localStorage.removeItem('token');
-              navigate('/');                    
+              localStorage.removeItem('token');              
+              navigate('/');                        
         } catch (e) {
           console.log('error: ', e.response.data.message);
         }        

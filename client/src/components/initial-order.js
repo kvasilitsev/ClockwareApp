@@ -49,8 +49,7 @@ const validate = values => {
 const InitialOrder = (props) => {  
   const navigate = useNavigate();  
   const formik = useFormik({
-    initialValues: {
-      //nextState: 'masters',    
+    initialValues: {         
       clockId: '',
       cityId: '',
       bookingTime: '',
@@ -72,13 +71,10 @@ const InitialOrder = (props) => {
       } catch (e) {
           console.log('error: ', e.response.data.message);          
         }        
-        if(list.length > 0){                
-          //props.context(formik.values);          
+        if(list.length > 0){                 
           navigate('/masters', {state: {...formik.values, list: list}}); 
         } else {
-          navigate('/no-masters', {state: formik.values});    
-          // formik.values.nextState = 'no-masters';
-          // props.context(formik.values);
+          navigate('/no-masters', {state: formik.values});          
         }        
       }      
   });

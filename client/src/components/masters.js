@@ -8,18 +8,7 @@ const Masters = () => {
   const { state } = useLocation();  
   const navigate = useNavigate();
   const formik = useFormik({
-    initialValues: {
-      // masterName: '',
-      // masterId: '',
-      // nextState: props.state.nextState,
-      // name: props.state.name,
-      // email: props.state.email,
-      // cityId: props.state.cityId,
-      // clockId: props.state.clockId,
-      // bookingTime: props.state.bookingTime,
-      // list: props.state.list,
-      // city: props.state.city,
-      // clockSize: props.state.clockSize
+    initialValues: {      
       masterName: '',
       masterId: '',
       name: state.name,
@@ -31,10 +20,7 @@ const Masters = () => {
       clockSize: state.clockSize  
     }, 
    
-    onSubmit:  () => navigate('/orderReview', {state: formik.values})        
-    // onSubmit:  () => {      
-    //   props.context(formik.values);
-    // }
+    onSubmit:  () => navigate('/orderReview', {state: formik.values})    
   });
     return (  
     <section>

@@ -14,7 +14,7 @@ const validate = values => {
   return errors;
 }; 
 
-const Login = () => {
+const Login = (props) => {
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {        
@@ -26,11 +26,15 @@ const Login = () => {
       try {
         const apiRequest = new Request({email: values.email, password: values.password});       
         const res = await apiRequest.login();        
-        localStorage.setItem("token", res);        
-      } catch (e) {
+        localStorage.setItem("token", res);               
+      } catch (e) {        
         console.log('error: ', e.response.data.message);        
       }
-      navigate('/'); //Temp, will need to change to admin page  
+      if (localStorage.token !== 'undefined') {        
+        navigate('/'); 
+      } else {
+        navigate('/wrong-login');
+      }       
     },
   });
 
