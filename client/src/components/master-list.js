@@ -8,7 +8,7 @@ const MasterListItem = (props) => {
     );
   }
 
-const MasterList = (props) => {  
+const MasterList = (props) => {   
     const masters = props.masters;
     return (
       <div>

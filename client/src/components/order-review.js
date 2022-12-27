@@ -26,16 +26,16 @@ const OrderReview = (props) => {
       email: state.email,
       cityId: state.cityId,
       clockId: state.clockId,
-      bookingTime: state.bookingTime,
-      list: state.list,
+      bookingTime: state.bookingTime,     
       city: state.city,
       clockSize: state.clockSize 
     },    
     onSubmit: async (values) => {         
       try {
-        const UTCOffset = values.bookingTime.getTimezoneOffset();
-        const modifyTime = new Date(values.bookingTime.getTime() - UTCOffset * 60 * 1000);        
-        const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId});        
+        const UTCOffset = values.bookingTime.getTimezoneOffset(); //to get timezone offset with UTC
+        const modifyTime = new Date(values.bookingTime.getTime() - UTCOffset * 60 * 1000); //to subtract timezone offset from selected time       
+        const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId});  //for production when server in UTC timezone
+        //const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId}); //for dev
         const res = await apiRequest.createOrder(); 
 
         if (res.data === true){          

@@ -6,8 +6,8 @@ import { USER_REGEX, EMAIL_REGEX } from '../models/regExp';
 import { faCheck, faTimes} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AsyncSelect from 'react-select/async'
-import clockOptions from '../models/clock-options';
-import cityOptions from '../models/city-options'
+import clockOptions from '../api/clock-options';
+import cityOptions from '../api/city-options'
 import DatePicker from "react-datepicker";
 import setHours from "date-fns/setHours";
 import "react-datepicker/dist/react-datepicker.css";
@@ -55,25 +55,26 @@ const InitialOrder = (props) => {
       cityId: '',
       bookingTime: '',
       name: '',
-      email: '',
-      list: '',
+      email: '',     
       city: '',
       clockSize:'',      
     },
     validate,
     onSubmit: async (values) => {
+      let list;
       try {
-        const UTCOffset = values.bookingTime.getTimezoneOffset();
-        const modifyTime = new Date(values.bookingTime.getTime() - UTCOffset * 60 * 1000);               
-        const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId});        
-        const res = await apiRequest.getFreeMasters();
-        formik.values.list = res.data;        
+        const UTCOffset = values.bookingTime.getTimezoneOffset(); //to get timezone offset with UTC
+        const modifyTime = new Date(values.bookingTime.getTime() - UTCOffset * 60 * 1000); //to subtract timezone offset from selected time            
+        const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId}); //for production only when server in UTC zone
+        //const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId}); //for dev
+        const res = await apiRequest.getFreeMasters();        
+        list = res.data;
       } catch (e) {
           console.log('error: ', e.response.data.message);          
         }        
-        if(formik.values.list.length > 0){                       
-          //props.context(formik.values);                   
-          navigate('/masters', {state: formik.values});
+        if(list.length > 0){                
+          //props.context(formik.values);          
+          navigate('/masters', {state: {...formik.values, list: list}}); 
         } else {
           navigate('/no-masters', {state: formik.values});    
           // formik.values.nextState = 'no-masters';

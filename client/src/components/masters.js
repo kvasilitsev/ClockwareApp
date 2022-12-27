@@ -26,8 +26,7 @@ const Masters = () => {
       email: state.email,
       cityId: state.cityId,
       clockId: state.clockId,
-      bookingTime: state.bookingTime,
-      list: state.list,
+      bookingTime: state.bookingTime,      
       city: state.city,
       clockSize: state.clockSize  
     }, 
@@ -47,7 +46,7 @@ const Masters = () => {
                         formik.setFieldValue('nextState', 'review');                        
                         }}> 
           <MasterList 
-            masters = { formik.values.list }
+            masters = { state.list }
           />
         </div>
         <button type="submit" disabled={  !(formik.isValid && formik.dirty) ? true : false}>Submit</button>

@@ -1,4 +1,4 @@
-import { Request } from '../api/api.request';
+import { Request } from './api.request';
 
 async function cities (){
   try {
