@@ -1,6 +1,6 @@
 const Router = require('express');
 const router = new Router();
-const masterController = require("../controllers/master.controller")
+const masterController = require("../../controllers/master.controller")
 
 router.post("/createMaster", masterController.createMaster);
 router.get("/getMasters", masterController.getMasters);
