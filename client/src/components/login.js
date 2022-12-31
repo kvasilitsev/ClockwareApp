@@ -25,7 +25,7 @@ const Login = (props) => {
     onSubmit: async (values) => {      
       try {
         const apiRequest = new Request({email: values.email, password: values.password});       
-        const res = await apiRequest.login();        
+        const res = await apiRequest.login();   
         localStorage.setItem("token", res);               
       } catch (e) {        
         console.log('error: ', e.response.data.message);        

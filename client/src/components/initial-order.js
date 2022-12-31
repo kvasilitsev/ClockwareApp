@@ -9,7 +9,7 @@ import AsyncSelect from 'react-select/async'
 import clockOptions from '../api/clock-options';
 import cityOptions from '../api/city-options'
 import DatePicker from "react-datepicker";
-import setHours from "date-fns/setHours";
+import UTCConverter from '../models/UTCDateConvert';
 import "react-datepicker/dist/react-datepicker.css";
 
 const validate = values => {
@@ -41,7 +41,10 @@ const validate = values => {
   
   if (Date.parse(values.bookingTime) < Date.now() && values.bookingTime) {
     errors.bookingTime = 'Invalid date or time'
-  } 
+  }  
+  if (new Date(values.bookingTime).getHours() < 8 || new Date(values.bookingTime).getHours() > 16){
+    errors.bookingTime = 'Invalid time'
+  }
 
   return errors;
 }; 
@@ -61,9 +64,9 @@ const InitialOrder = (props) => {
     validate,
     onSubmit: async (values) => {
       let list;
-      try {
-        const UTCOffset = values.bookingTime.getTimezoneOffset(); //to get timezone offset with UTC
-        const modifyTime = new Date(values.bookingTime.getTime() - UTCOffset * 60 * 1000); //to subtract timezone offset from selected time            
+      try {        
+        //const UTCOffset = values.bookingTime.getTimezoneOffset(); //to get timezone offset with UTC
+        const modifyTime = UTCConverter(values.bookingTime); //to subtract timezone offset from selected time                    
         const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId}); //for production only when server in UTC zone
         //const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId}); //for dev
         const res = await apiRequest.getFreeMasters();        
@@ -157,15 +160,16 @@ const InitialOrder = (props) => {
         <DatePicker
           className='datePicker'
           selected={formik.values.bookingTime}
-          dateFormat='MMMM d, yyyy, hh:mm'
+          timeFormat="HH:mm"
+          dateFormat='MMMM d, yyyy, HH:mm'
           name='bookingTime'
           placeholderText = ' Select...'
           showTimeSelect
-          minTime={setHours(new Date(), 7)}
-          maxTime={setHours(new Date(), 16)}
+          minTime={new Date().setHours(7)}
+          maxTime={new Date().setHours(16)}
           timeIntervals={60}
           minDate={new Date()}
-          onChange={selectedDate => formik.setFieldValue('bookingTime',selectedDate)}
+          onChange={selectedDate => formik.setFieldValue('bookingTime',selectedDate)}         
         />     
       { formik.errors.bookingTime && formik.touched.bookingTime ? 
       ( <div className='errmsg'>{formik.errors.bookingTime}</div> ) :

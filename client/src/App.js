@@ -25,19 +25,19 @@ function App() {
     <main className="App">      
       {localStorage.token === undefined && (<Header />)}
       {localStorage.token !== undefined && (<AdminHeader />)}      
-        <Routes>          
-          <Route path="/masters" element={<Masters />} /> 
-          <Route path="/orderReview" element={<OrderReview />} />
-          <Route path="/success" element={<Success />} />
-          <Route path="/no-masters" element={<NoMasters />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/register-admin" element={<RegisterAdmin />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/logout" element={<Logout />} />
-          <Route path="/admin-header" element={<AdminHeader />} />
-          <Route path="/wrong-login" element={<WrongLogin />} />
-          <Route path="/" element={<InitialOrder />} />          
-        </Routes>
+      <Routes>          
+        <Route path="/masters" element={<Masters />} /> 
+        <Route path="/orderReview" element={<OrderReview />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="/no-masters" element={<NoMasters />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/register-admin" element={<RegisterAdmin />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<Logout />} />
+        <Route path="/admin-header" element={<AdminHeader />} />
+        <Route path="/wrong-login" element={<WrongLogin />} />
+        <Route path="/" element={<InitialOrder />} />          
+      </Routes>
       <Footer />
     </main>
     </>

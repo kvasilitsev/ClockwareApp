@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useFormik } from 'formik';
 import { Request } from '../api/api.request';
 import { useNavigate } from "react-router-dom";
+import UTCConverter from '../models/UTCDateConvert';
 
 const OrderReview = (props) => {
   const { state } = useLocation();
@@ -20,9 +21,8 @@ const OrderReview = (props) => {
       clockSize: state.clockSize 
     },    
     onSubmit: async (values) => {         
-      try {
-        const UTCOffset = values.bookingTime.getTimezoneOffset(); //to get timezone offset with UTC
-        const modifyTime = new Date(values.bookingTime.getTime() - UTCOffset * 60 * 1000); //to subtract timezone offset from selected time       
+      try {        
+        const modifyTime = UTCConverter(values.bookingTime); //show time zone in UTC       
         const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId});  //for production when server in UTC timezone
         //const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId}); //for dev
         const res = await apiRequest.createOrder(); 
