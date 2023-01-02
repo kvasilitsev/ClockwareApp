@@ -11,7 +11,8 @@ const Logout = (props) => {
         try { const apiRequest = new Request();
               await apiRequest.logout();
               localStorage.removeItem('token');              
-              navigate('/');                        
+              navigate('/');
+              window.location.reload(false);                       
         } catch (e) {
           console.log('error: ', e.response.data.message);
         }        

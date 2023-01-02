@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { useFormik } from 'formik';
 import { Request } from '../api/api.request';
 import { useNavigate } from "react-router-dom";
@@ -15,6 +15,7 @@ const validate = values => {
 }; 
 
 const Login = (props) => {
+  
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {        
@@ -26,12 +27,13 @@ const Login = (props) => {
       try {
         const apiRequest = new Request({email: values.email, password: values.password});       
         const res = await apiRequest.login();   
-        localStorage.setItem("token", res);               
+        localStorage.setItem("token", res);                              
       } catch (e) {        
         console.log('error: ', e.response.data.message);        
       }
       if (localStorage.token !== 'undefined') {        
-        navigate('/'); 
+        navigate('/');
+        window.location.reload(false); 
       } else {
         navigate('/wrong-login');
       }       
