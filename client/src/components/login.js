@@ -25,15 +25,15 @@ const Login = (props) => {
     validate, 
     onSubmit: async (values) => {      
       try {
-        const apiRequest = new Request({email: values.email, password: values.password});       
-        const res = await apiRequest.login();   
-        localStorage.setItem("token", res);                              
+        const apiRequest = new Request({email: values.email, password: values.password});  
+        const res = await apiRequest.login();
+
+        localStorage.setItem("token", res);
       } catch (e) {        
         console.log('error: ', e.response.data.message);        
       }
-      if (localStorage.token !== 'undefined') {        
-        navigate('/');
-        window.location.reload(false); 
+      if (localStorage.token !== 'undefined') {                
+        window.location.replace('/');  
       } else {
         navigate('/wrong-login');
       }       

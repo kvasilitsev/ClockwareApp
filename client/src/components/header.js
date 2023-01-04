@@ -3,7 +3,7 @@ import { Navbar, Nav, Container,  NavDropdown } from 'react-bootstrap';
 import { CurrentAuthContext } from '../App';
 const Header = () => {
   const value = React.useContext(CurrentAuthContext);  
-  console.log(value);
+  //console.log(value);
   if(value) {
     return (    
       <header>   

@@ -7,4 +7,3 @@ export default function dateToUTC (setDate) {
     const utcDate = new Date(Date.UTC(year, month, date, hours));    
     return utcDate.toUTCString();
 }
-

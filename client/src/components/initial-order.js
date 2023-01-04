@@ -65,8 +65,7 @@ const InitialOrder = (props) => {
     onSubmit: async (values) => {
       let list;
       try {        
-        //const UTCOffset = values.bookingTime.getTimezoneOffset(); //to get timezone offset with UTC
-        const modifyTime = UTCConverter(values.bookingTime); //to subtract timezone offset from selected time                    
+        const modifyTime = UTCConverter(values.bookingTime); //to convert time to UTC                    
         const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId}); //for production only when server in UTC zone
         //const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId}); //for dev
         const res = await apiRequest.getFreeMasters();        
