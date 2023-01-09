@@ -33,6 +33,7 @@ class OrderController {
    */
   async getOrders(req, res) {
     const orders = await orderService.getOrders();
+    logger.info('order.controller.getOrders', orders);
     res.json(orders);
   };
 

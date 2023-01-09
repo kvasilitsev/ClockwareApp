@@ -1,9 +1,11 @@
 const tokenService = require('../services/token.services');
 const ApiError = require('../exceptions/api.errors');
+const log4js = require('../logger');
+const logger = log4js.getLogger("clockwiseLog");
 
-module.exports = function (req, res, next){
+module.exports = function (req, res, next){  
   try {
-    const authHeader = req.headers.authorization;
+    const authHeader = req.headers.authorization;    
     if(!authHeader){
       return next(ApiError.UnauthorizedError());
     }

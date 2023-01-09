@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Navbar, Nav, Container,  NavDropdown } from 'react-bootstrap';
 import { CurrentAuthContext } from '../App';
+import logout from "../models/logoutFunction";
+
 const Header = () => {
   const value = React.useContext(CurrentAuthContext);  
   //console.log(value);
@@ -13,13 +15,13 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">            
-              <NavDropdown title="Orders" id="basic-nav-dropdown" >
-                <NavDropdown.Item eventKey="1.1" >Create order</NavDropdown.Item>
-                <NavDropdown.Item eventKey="1.2">Find all orders</NavDropdown.Item>
-                <NavDropdown.Item eventKey="1.3">Find order by master</NavDropdown.Item>
-                <NavDropdown.Item eventKey="1.3">Find order by user</NavDropdown.Item>
-                <NavDropdown.Item eventKey="1.4">Edit order</NavDropdown.Item>
-                <NavDropdown.Item eventKey="1.5">Delete order</NavDropdown.Item>
+              <NavDropdown title="Orders" id="basic-nav-dropdown" menuVariant="dark" >
+                <NavDropdown.Item href="/">Create order</NavDropdown.Item>
+                <NavDropdown.Item href="/all-orders">Find all orders</NavDropdown.Item>
+                <NavDropdown.Item href="/">Find order by master</NavDropdown.Item>
+                <NavDropdown.Item href="/">Find order by user</NavDropdown.Item>
+                <NavDropdown.Item href="/">Edit order</NavDropdown.Item>
+                <NavDropdown.Item href="/">Delete order</NavDropdown.Item>
                 </NavDropdown>
               <NavDropdown title="Users" id="nav-dropdown">
                 <NavDropdown.Item eventKey="2.1">Create user</NavDropdown.Item>
@@ -50,7 +52,7 @@ const Header = () => {
               </NavDropdown>
             </Nav>
             <Nav className="ms-auto">            
-              <Nav.Link href="/logout">Logout</Nav.Link>       
+              <Nav.Link onClick={()=>logout()}>Logout</Nav.Link>       
             </Nav>
           </Navbar.Collapse>
         </Container>

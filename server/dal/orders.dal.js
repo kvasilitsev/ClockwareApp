@@ -34,7 +34,7 @@ class OrderData {
    */
   async getOrders() {
     let orderList = [];    
-    const ordersResultSet = await db.query('SELECT id, user_id, master_id, city_id, clock_id, booking_date_time, repair_duration FROM orders WHERE is_deleted = false');    
+    const ordersResultSet = await db.query('SELECT id, user_name, master_id, city_id, clock_id, booking_date_time, repair_duration, email FROM orders WHERE is_deleted = false');    
     if(ordersResultSet.rowCount > 0) { 
       ordersResultSet.rows.forEach(element => {                 
         let order = new Order();
@@ -44,8 +44,9 @@ class OrderData {
         order.clockId = element.clock_id;
         order.bookingDateTime = element.booking_date_time;
         order.id = element.id;
-        order.repairDuration = element.repair_duration;  
-        orderList.push(order);       
+        order.repairDuration = element.repair_duration;
+        order.email = element.email;
+        orderList.push(order);               
       });   
     }
     return orderList;

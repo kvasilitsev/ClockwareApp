@@ -29,7 +29,7 @@ body {
 
 section {
     width: 100%;
-    max-width: 420px;
+    max-width: 400px;
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -140,7 +140,7 @@ button {
 }
 
 .adminMenu{
-    width: 100%;    
+    min-width: 100vw;    
     min-height: 100px;
     display: flex;    
     padding: 1rem;   
@@ -152,4 +152,16 @@ header{
 
 footer{
   min-width: 100vw;
+}
+table{        
+    min-height: 100px;
+    max-width: 80vw;  
+}
+.orderList-table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h4{
+    margin: 1em;
 }

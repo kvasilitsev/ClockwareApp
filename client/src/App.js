@@ -1,17 +1,17 @@
 import * as React from "react";
 import { Route, Routes } from "react-router-dom";
-import Masters from './components/masters';
-import InitialOrder from "./components/initial-order";
-import OrderReview from './components/order-review';
-import Success from './components/success';
-import NoMasters from "./components/no-masters";
-import Register from "./components/register";
-import RegisterAdmin from "./components/register-admin";
-import Login from "./components/login";
-import Logout from "./components/logout";
-import WrongLogin from "./components/wrong-login";
-import Footer from "./components/footer";
-import Header from './components/header';
+import Masters from './components/Masters';
+import InitialOrder from "./components/CreateOrder";
+import OrderReview from './components/OrderReview';
+import Success from './components/Success';
+import NoMasters from "./components/NoMasters";
+import Register from "./components/Register";
+import RegisterAdmin from "./components/RegisterAdmin";
+import Login from "./components/Login";
+import WrongLogin from "./components/WrongLogin";
+import Footer from "./components/Footer";
+import Header from './components/Header';
+import FindAllOrders from "./components/admin/FindAllOrders";
 
 export const CurrentAuthContext = React.createContext(null);
 
@@ -36,16 +36,16 @@ function App() {
     <main className="App">      
      <Header />
       <Routes>          
-        <Route path="/masters" element={<Masters />} /> 
+        <Route path="/masters" element={<Masters />} />
         <Route path="/orderReview" element={<OrderReview />} />
         <Route path="/success" element={<Success />} />
         <Route path="/no-masters" element={<NoMasters />} />
         <Route path="/register" element={<Register />} />
         <Route path="/register-admin" element={<RegisterAdmin />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/logout" element={<Logout />} />        
+        <Route path="/login" element={<Login />} /> 
         <Route path="/wrong-login" element={<WrongLogin />} />
-        <Route path="/" element={<InitialOrder />} />          
+        <Route path="/" element={<InitialOrder />} />
+        <Route path="/all-orders" element={<FindAllOrders />} />           
       </Routes>
       <Footer />
     </main>

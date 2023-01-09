@@ -18,7 +18,6 @@ const errorMiddleware = require('./server/middlewares/error.middleware');
 const path = require('path');
 const app = express();
 
-
 const logger = log4js.getLogger("./server/logs/clockwiseLog");
 const PORT = process.env.PORT || 3001;
 

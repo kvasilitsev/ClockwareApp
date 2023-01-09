@@ -27,7 +27,6 @@ const Login = (props) => {
       try {
         const apiRequest = new Request({email: values.email, password: values.password});  
         const res = await apiRequest.login();
-
         localStorage.setItem("token", res);
       } catch (e) {        
         console.log('error: ', e.response.data.message);        
@@ -43,7 +42,7 @@ const Login = (props) => {
   return (
   <>
     <section>
-      <h1>Pease login</h1>
+      <h3>Pease login</h3>
       <form onSubmit={formik.handleSubmit}>
 
         <label htmlFor="email">

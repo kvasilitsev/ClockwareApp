@@ -24,7 +24,7 @@
      * @param {varchar} email
      * @param {varchar} name
      */
-    constructor (id, userId, masterId, cityId, clockId, bookingDateTime, repairDuration, emaill, name) {
+    constructor (id, userId, masterId, cityId, clockId, bookingDateTime, repairDuration, email, name) {
       this.id = id;
       this.userId = userId;
       this.masterId = masterId;
