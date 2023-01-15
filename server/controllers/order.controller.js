@@ -32,8 +32,7 @@ class OrderController {
    * @param {*} res 
    */
   async getOrders(req, res) {
-    const orders = await orderService.getOrders();
-    logger.info('order.controller.getOrders', orders);
+    const orders = await orderService.getOrders();    
     res.json(orders);
   };
 
@@ -57,7 +56,18 @@ class OrderController {
     const { id } = req.query;   
     const orders = await orderService.getOrdersByMasterId(id);    
     res.json(orders);   
-  };  
+  }; 
+  
+  /**
+   * Method interprets http request to select order by user email
+   * @param {*} req 
+   * @param {*} res 
+   */
+  async getOrdersByUser(req, res) {    
+    const { email } = req.query;    
+    const orders = await orderService.getOrdersByUser(email);    
+    res.json(orders);   
+  }; 
 
   /**
    * Method interprets http request to update order data by their id

@@ -96,6 +96,30 @@ class OrderData {
     }    
     return orderList;    
   };
+
+  /**
+   * Method selects order by user email
+   * @param {varchar} email  
+   * @returns 
+   */
+  async getOrdersByUser(email) {
+    let orderList = [];    
+    const ordersResultSet = await db.query('SELECT id, email, master_id, city_id, clock_id, booking_date_time, repair_duration FROM orders WHERE email = $1 AND is_deleted = false', [email]);    
+    if(ordersResultSet.rowCount > 0) {
+      ordersResultSet.rows.forEach(element => {                 
+        let order = new Order();
+        order.email = element.email;
+        order.masterId = element.master_id;
+        order.cityId = element.city_id;
+        order.clockId = element.clock_id;
+        order.bookingDateTime = element.booking_date_time;
+        order.repairDuration = element.repair_duration;
+        order.id = element.id;       
+        orderList.push(order);       
+      });   
+    }    
+    return orderList;    
+  };  
   
   /**
    * Method updates order by their id

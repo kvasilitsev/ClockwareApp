@@ -14,6 +14,8 @@ import Header from './components/Header';
 import FindAllOrders from "./components/admin/FindAllOrders";
 import FindOrdersByMaster from "./components/admin/FindOrdersByMaster";
 import OrderListByMaster from "./components/admin/OrderListByMaster";
+import FindOrdersByUser from "./components/admin/FindOrdersByUser";
+import OrderListByUser from "./components/admin/OrderListByUser";
 
 export const CurrentAuthContext = React.createContext(null);
 
@@ -49,7 +51,9 @@ function App() {
         <Route path="/" element={<InitialOrder />} />
         <Route path="/all-orders" element={<FindAllOrders />} /> 
         <Route path="/find-orders-by-master" element={<FindOrdersByMaster />} />
-        <Route path="/orders-list-by-master" element={<OrderListByMaster />} />        
+        <Route path="/orders-list-by-master" element={<OrderListByMaster />} />
+        <Route path="/find-orders-by-user" element={<FindOrdersByUser />} />
+        <Route path="/orders-list-by-user" element={<OrderListByUser />} />       
       </Routes>
       <Footer />
     </main>

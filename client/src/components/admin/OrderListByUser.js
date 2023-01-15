@@ -1,26 +1,26 @@
 import React from 'react';
 import { useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom';
-import findOrdersByMaster from "../../models/findOrdersByMasterFunction";
+import findOrdersByUser from "../../models/findOrdersByUserFunction";
 import Row from '../Row';
 import Table from 'react-bootstrap/Table';
 
 
-const OrderListByMaster = () => {
+const OrderListByUser = () => {
   const { state } = useLocation();  
   const [orderList, setOredrList] = useState([]);
   useEffect(() => {    
-    findOrdersByMaster(state)
+    findOrdersByUser(state)
     .then(data =>
       setOredrList(data)
     );
    });
   if (orderList < 1){
-    return (<h4>No orders found for master with id={state}</h4>)
+    return (<h4>No orders found for user with email={state}</h4>)
   } else {
       return (
         <div className="orderList-table">
-          <h4>Master id={state} order list</h4>
+          <h4>User email={state} order list</h4>
           <Table striped bordered hover size="sm" variant="light">        
           <thead>
             <tr>
@@ -51,4 +51,4 @@ const OrderListByMaster = () => {
       )
     }
   }
-export default OrderListByMaster;
+export default OrderListByUser;

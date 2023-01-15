@@ -41,7 +41,12 @@ class OrderService {
   getOrdersByMasterId(id){
     const orders = orderData.getOrdersByMasterId(id);    
     return orders;
-  } 
+  }
+
+  getOrdersByUser(email){
+    const orders = orderData.getOrdersByUser(email);    
+    return orders;
+  }  
 
   async updateOrder(id, userId, masterId, cityId, clockId, bookingDateTime){
     const repairDuration =  await clockData.getRepairDurationByClockId(clockId);   

@@ -18,7 +18,7 @@ const Header = () => {
                 <NavDropdown.Item href="/">Create order</NavDropdown.Item>
                 <NavDropdown.Item href="/all-orders">Find all orders</NavDropdown.Item>
                 <NavDropdown.Item href="/find-orders-by-master">Find order by master</NavDropdown.Item>
-                <NavDropdown.Item href="/">Find order by user</NavDropdown.Item>
+                <NavDropdown.Item href="/find-orders-by-user">Find order by user</NavDropdown.Item>
                 <NavDropdown.Item href="/">Edit order</NavDropdown.Item>
                 <NavDropdown.Item href="/">Delete order</NavDropdown.Item>
                 </NavDropdown>
