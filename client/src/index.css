@@ -30,7 +30,7 @@ body {
 section {
     width: 100%;
     max-width: 400px;
-    min-height: 400px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

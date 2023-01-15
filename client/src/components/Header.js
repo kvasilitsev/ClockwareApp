@@ -5,7 +5,6 @@ import logout from "../models/logoutFunction";
 
 const Header = () => {
   const value = React.useContext(CurrentAuthContext);  
-  //console.log(value);
   if(value) {
     return (    
       <header>   
@@ -18,7 +17,7 @@ const Header = () => {
               <NavDropdown title="Orders" id="basic-nav-dropdown" menuVariant="dark" >
                 <NavDropdown.Item href="/">Create order</NavDropdown.Item>
                 <NavDropdown.Item href="/all-orders">Find all orders</NavDropdown.Item>
-                <NavDropdown.Item href="/">Find order by master</NavDropdown.Item>
+                <NavDropdown.Item href="/find-orders-by-master">Find order by master</NavDropdown.Item>
                 <NavDropdown.Item href="/">Find order by user</NavDropdown.Item>
                 <NavDropdown.Item href="/">Edit order</NavDropdown.Item>
                 <NavDropdown.Item href="/">Delete order</NavDropdown.Item>

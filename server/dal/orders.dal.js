@@ -80,20 +80,20 @@ class OrderData {
    */
   async getOrdersByMasterId(id) {
     let orderList = [];    
-    const ordersResultSet = await db.query('SELECT id, user_id, master_id, city_id, clock_id, booking_date_time, repair_duration FROM orders WHERE master_id = $1 AND is_deleted = false', [id]);    
+    const ordersResultSet = await db.query('SELECT id, email, master_id, city_id, clock_id, booking_date_time, repair_duration FROM orders WHERE master_id = $1 AND is_deleted = false', [id]);    
     if(ordersResultSet.rowCount > 0) { 
       ordersResultSet.rows.forEach(element => {                 
         let order = new Order();
-        order.userId = element.user_id;
+        order.email = element.email;
         order.masterId = element.master_id;
         order.cityId = element.city_id;
         order.clockId = element.clock_id;
-        order.bookingDdateTime = element.booking_date_time;
-        order.RepairDuration = element.repairDuration;
+        order.bookingDateTime = element.booking_date_time;
+        order.repairDuration = element.repair_duration;
         order.id = element.id;       
         orderList.push(order);       
       });   
-    }
+    }    
     return orderList;    
   };
   

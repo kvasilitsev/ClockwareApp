@@ -25,8 +25,7 @@ const OrderReview = (props) => {
         const modifyTime = UTCConverter(values.bookingTime); //show time zone in UTC       
         const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId});  //for production when server in UTC timezone
         //const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId}); //for dev
-        const res = await apiRequest.createOrder(); 
-
+        const res = await apiRequest.createOrder();
         if (res.data === true){          
           const apiRequest = new Request({email: values.email})
           await apiRequest.sendEmail();                      

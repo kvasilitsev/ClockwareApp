@@ -54,8 +54,8 @@ class OrderController {
    * @param {*} res 
    */
    async getOrdersByMasterId(req, res) {
-    const id = req.params.id;
-    const orders = await orderService.getOrdersByMasterId(id);
+    const { id } = req.query;   
+    const orders = await orderService.getOrdersByMasterId(id);    
     res.json(orders);   
   };  
 

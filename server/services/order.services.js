@@ -39,7 +39,7 @@ class OrderService {
   }
   
   getOrdersByMasterId(id){
-    const orders = orderData.getOrdersByMasterId(id);
+    const orders = orderData.getOrdersByMasterId(id);    
     return orders;
   } 
 

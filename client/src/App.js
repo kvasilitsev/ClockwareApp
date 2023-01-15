@@ -12,6 +12,8 @@ import WrongLogin from "./components/WrongLogin";
 import Footer from "./components/Footer";
 import Header from './components/Header';
 import FindAllOrders from "./components/admin/FindAllOrders";
+import FindOrdersByMaster from "./components/admin/FindOrdersByMaster";
+import OrderListByMaster from "./components/admin/OrderListByMaster";
 
 export const CurrentAuthContext = React.createContext(null);
 
@@ -24,8 +26,8 @@ function App() {
   }, [])
 
   const checkLogin = async () => {
-    const token = localStorage.getItem("token");
-    if(token) {
+    const token = localStorage.getItem("token");    
+    if(token && token !== 'undefined') {
       setAuthState('true');
     } else {
       setAuthState(null);
@@ -45,7 +47,9 @@ function App() {
         <Route path="/login" element={<Login />} /> 
         <Route path="/wrong-login" element={<WrongLogin />} />
         <Route path="/" element={<InitialOrder />} />
-        <Route path="/all-orders" element={<FindAllOrders />} />           
+        <Route path="/all-orders" element={<FindAllOrders />} /> 
+        <Route path="/find-orders-by-master" element={<FindOrdersByMaster />} />
+        <Route path="/orders-list-by-master" element={<OrderListByMaster />} />        
       </Routes>
       <Footer />
     </main>
