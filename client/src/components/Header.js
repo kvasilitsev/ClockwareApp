@@ -16,12 +16,9 @@ const Header = () => {
             <Nav className="me-auto">            
               <NavDropdown title="Orders" id="basic-nav-dropdown" menuVariant="dark" >
                 <NavDropdown.Item href="/">Create order</NavDropdown.Item>
-                <NavDropdown.Item href="/all-orders">Find all orders</NavDropdown.Item>
-                <NavDropdown.Item href="/find-orders-by-master">Find order by master</NavDropdown.Item>
-                <NavDropdown.Item href="/find-orders-by-user">Find order by user</NavDropdown.Item>
-                <NavDropdown.Item href="/">Edit order</NavDropdown.Item>
-                <NavDropdown.Item href="/">Delete order</NavDropdown.Item>
-                </NavDropdown>
+                <NavDropdown.Item href="/all-orders">Find orders</NavDropdown.Item>
+                <NavDropdown.Item href="/delete-order">Delete order</NavDropdown.Item>                
+              </NavDropdown>
               <NavDropdown title="Users" id="nav-dropdown">
                 <NavDropdown.Item eventKey="2.1">Create user</NavDropdown.Item>
                 <NavDropdown.Item eventKey="2.2">Find all users</NavDropdown.Item>
@@ -78,19 +75,3 @@ const Header = () => {
 }
 
 export default Header;
-
-  // return (    
-  // <header>    
-  //   <Navbar bg="dark" variant='dark' expand="lg">
-  //     <Container>        
-  //       <Navbar.Brand href="/">Clockwise Clockware</Navbar.Brand>        
-  //       <Navbar.Collapse id="basic-navbar-nav">
-  //         <Nav className="ms-auto">
-  //           <Nav.Link href="#about">About</Nav.Link>
-  //           <Nav.Link href="/login">Login</Nav.Link>       
-  //         </Nav>
-  //       </Navbar.Collapse>
-  //     </Container>
-  //   </Navbar>
-  // </header>
-  //   )

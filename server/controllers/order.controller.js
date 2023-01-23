@@ -93,8 +93,8 @@ class OrderController {
    * @param {*} req 
    * @param {*} res 
    */
-  async deleteOrder(req, res) {
-    const id = req.params.id;   
+  async deleteOrder(req, res) {    
+    const { id } = req.body.params;    
     try {
       await orderService.deleteOrder(id);
     }

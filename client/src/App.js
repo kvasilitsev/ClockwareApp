@@ -11,11 +11,8 @@ import Login from "./components/Login";
 import WrongLogin from "./components/WrongLogin";
 import Footer from "./components/Footer";
 import Header from './components/Header';
-import FindAllOrders from "./components/admin/FindAllOrders";
-import FindOrdersByMaster from "./components/admin/FindOrdersByMaster";
-import OrderListByMaster from "./components/admin/OrderListByMaster";
-import FindOrdersByUser from "./components/admin/FindOrdersByUser";
-import OrderListByUser from "./components/admin/OrderListByUser";
+import FindOrders from "./components/admin/FindOrders";
+import DeleteOrderFromList from "./components/admin/DeleteOrder";
 
 export const CurrentAuthContext = React.createContext(null);
 
@@ -49,11 +46,8 @@ function App() {
         <Route path="/login" element={<Login />} /> 
         <Route path="/wrong-login" element={<WrongLogin />} />
         <Route path="/" element={<InitialOrder />} />
-        <Route path="/all-orders" element={<FindAllOrders />} /> 
-        <Route path="/find-orders-by-master" element={<FindOrdersByMaster />} />
-        <Route path="/orders-list-by-master" element={<OrderListByMaster />} />
-        <Route path="/find-orders-by-user" element={<FindOrdersByUser />} />
-        <Route path="/orders-list-by-user" element={<OrderListByUser />} />       
+        <Route path="/all-orders" element={<FindOrders />} />         
+        <Route path="/delete-order" element={<DeleteOrderFromList />} /> 
       </Routes>
       <Footer />
     </main>

@@ -1,13 +1,12 @@
 import { host, authHost } from './axios';
 import { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL,
        SEND_EMAIL_URL, GET_CITIES_URL, GET_CLOCKS_URL, LOGIN_URL, LOGOUT_URL, 
-       GET_USERBY_EMAIL_URL, GET_ALL_ORDERS_URL, GET_ORDERS_BY_MASTER_URL, 
-       GET_ORDERS_BY_USER_URL} from './routes';
+       GET_USERBY_EMAIL_URL, GET_ALL_ORDERS_URL, DELETE_ORDER_URL} from './routes';
 
 
 class Request {
 
-  constructor({name, email, password, cityId, bookingTime, clockId, masterId}={}){
+  constructor({ name, email, password, cityId, bookingTime, clockId, masterId, orderId } = {}){
     this.name = name;
     this.email = email;
     this.password = password;
@@ -15,6 +14,7 @@ class Request {
     this.bookingTime = bookingTime;
     this.clockId = clockId;
     this.masterId = masterId;
+    this.orderId = orderId;
   }
   
   async register() {    
@@ -165,36 +165,20 @@ class Request {
     catch (error) {
       console.log('error: ', error); 
     }   
-  }
+  }  
 
-  async getOrdersByMaster() {
-    try {      
-      const res = await authHost.get(GET_ORDERS_BY_MASTER_URL, {params: {id: this.masterId }},
+  async deleteOrder() {           
+    try {                  
+      await authHost.put(DELETE_ORDER_URL, {params: {id: this.orderId }},
         {
           withCredentials: true
         }
-      )
-      return res.data;      
-    }
-    catch (error) {
-      console.log('error: ', error); 
-    }   
-  }
-
-  async getOrdersByUser() {    
-    try {          
-      const res = await authHost.get(GET_ORDERS_BY_USER_URL, {params: {email: this.email }},
-        {
-          withCredentials: true
-        }
-      )      
-      return res.data;      
+      )                
     }
     catch (error) {      
       console.log('error: ', error); 
     }   
   }
-
 }
 
 export { Request };
