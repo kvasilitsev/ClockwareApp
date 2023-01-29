@@ -1,18 +1,29 @@
 import React, { useMemo, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import MaterialReactTable from 'material-react-table';
 import findAllOrders from '../../models/findAllOrdersFunction';
 import orderIdToName from '../../models/orderIdToNameFunction';
 import {
-  Box,  
-  IconButton,  
+  Box,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  IconButton,
+  MenuItem,
+  Stack,
+  TextField,
   Tooltip,
 } from '@mui/material';
-import { Delete } from '@mui/icons-material';
+import { Delete, Edit } from '@mui/icons-material';
 import deleteOrder from '../../models/deleteOrderFunction'
 
 const Orders = () => {
+  const navigate = useNavigate();
   const [orderList, setOrderList] = useState([]);
-  const [nameOrderList, setNameOrderList] = useState([]);
+  const [nameOrderList, setNameOrderList] = useState([]);  
+
   useEffect(() => {    
     findAllOrders()
     .then(data =>
@@ -35,7 +46,8 @@ const Orders = () => {
     }      
      await deleteOrder(row.getValue('id'));
      window.location.replace('/orders');      
-  }       
+  } 
+
   const columns = useMemo(
     () => [
       {
@@ -66,6 +78,7 @@ const Orders = () => {
     [],
   );
   return (
+  <> 
     <MaterialReactTable   
     displayColumnDefOptions={{
       'mrt-row-actions': {
@@ -88,8 +101,18 @@ const Orders = () => {
           </IconButton>
         </Tooltip>
       </Box>
+    )}
+    renderTopToolbarCustomActions={() => (
+      <Button
+        color="inherit"
+        onClick={() => navigate('/')}
+        variant="contained"
+      >
+        Create New Order
+      </Button>
     )}    
     />
+  </>
   );  
 };
 
