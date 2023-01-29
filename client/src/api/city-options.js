@@ -1,15 +1,7 @@
-import { Request } from './api.request';
+import cities from '../models/getAllCitiesFunction';
 
-async function cities (){
-  try {
-    const apiRequest = new Request();    
-    return await apiRequest.getCities();         
-  } catch (e) {
-      console.log('error: ', e.response.data.message);          
-    }      
-  }
 const cityOptions = async() => {
-  const citiesArr = await cities();
+  const citiesArr = await cities(); 
   return citiesArr.map(city => {
     city['label'] = city['name'];
     city['value'] = city['id'];

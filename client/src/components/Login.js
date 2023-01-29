@@ -32,7 +32,7 @@ const Login = (props) => {
         console.log('error: ', e.response.data.message);        
       }
       if (localStorage.token !== 'undefined') {                
-        window.location.replace('/');  
+        window.location.replace('/orders');       
       } else {
         navigate('/wrong-login');
       }       

@@ -1,7 +1,7 @@
 import { host, authHost } from './axios';
 import { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL,
        SEND_EMAIL_URL, GET_CITIES_URL, GET_CLOCKS_URL, LOGIN_URL, LOGOUT_URL, 
-       GET_USERBY_EMAIL_URL, GET_ALL_ORDERS_URL, DELETE_ORDER_URL} from './routes';
+       GET_USERBY_EMAIL_URL, GET_ALL_ORDERS_URL, DELETE_ORDER_URL, GET_MASTERS_URL} from './routes';
 
 
 class Request {
@@ -56,6 +56,20 @@ class Request {
       console.log('error: ', error); 
     }    
     
+  }
+
+  async getMasters() {
+    try {
+      const res = await authHost.get(GET_MASTERS_URL,
+        {
+          withCredentials: true
+        }
+      )
+      return res.data;    
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }    
   }
 
   async createOrder() {

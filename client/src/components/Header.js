@@ -13,39 +13,12 @@ const Header = () => {
           <Navbar.Brand href="/">Clockwise Clockware</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">            
-              <NavDropdown title="Orders" id="basic-nav-dropdown" menuVariant="dark" >
-                <NavDropdown.Item href="/">Create order</NavDropdown.Item>
-                <NavDropdown.Item href="/all-orders">Find orders</NavDropdown.Item>
-                <NavDropdown.Item href="/delete-order">Delete order</NavDropdown.Item>                
-              </NavDropdown>
-              <NavDropdown title="Users" id="nav-dropdown">
-                <NavDropdown.Item eventKey="2.1">Create user</NavDropdown.Item>
-                <NavDropdown.Item eventKey="2.2">Find all users</NavDropdown.Item>
-                <NavDropdown.Item eventKey="2.3">Find user by email</NavDropdown.Item>
-                <NavDropdown.Item eventKey="2.4">Edit user</NavDropdown.Item>
-                <NavDropdown.Item eventKey="2.5">Delete user</NavDropdown.Item>        
-              </NavDropdown>
-              <NavDropdown title="Masters" id="nav-dropdown">
-                <NavDropdown.Item eventKey="3.1">Create master</NavDropdown.Item>
-                <NavDropdown.Item eventKey="3.2">Find all masters</NavDropdown.Item>
-                <NavDropdown.Item eventKey="3.3">Find master by id</NavDropdown.Item>
-                <NavDropdown.Item eventKey="3.4">Find master by city</NavDropdown.Item>
-                <NavDropdown.Item eventKey="3.5">Add city for master</NavDropdown.Item>
-                <NavDropdown.Item eventKey="3.6">Edit master</NavDropdown.Item>
-                <NavDropdown.Item eventKey="3.7">Delete master</NavDropdown.Item>        
-              </NavDropdown>
-              <NavDropdown title="Cities" id="nav-dropdown">
-                <NavDropdown.Item eventKey="4.1">Create city</NavDropdown.Item>
-                <NavDropdown.Item eventKey="4.2">Find all cities</NavDropdown.Item>        
-                <NavDropdown.Item eventKey="4.3">Edit city</NavDropdown.Item>
-                <NavDropdown.Item eventKey="4.4">Delete city</NavDropdown.Item>        
-              </NavDropdown>
-              <NavDropdown title="Clocks" id="nav-dropdown">
-                <NavDropdown.Item eventKey="5.1">Add new clock size</NavDropdown.Item>
-                <NavDropdown.Item eventKey="5.2">Edit clock</NavDropdown.Item>        
-                <NavDropdown.Item eventKey="5.3">Delete clock</NavDropdown.Item>            
-              </NavDropdown>
+            <Nav className="me-auto">
+            <Nav.Link href="/orders">Orders</Nav.Link>
+            <Nav.Link href="/orders">Users</Nav.Link>
+            <Nav.Link href="/orders">Masters</Nav.Link>
+            <Nav.Link href="/orders">Cities</Nav.Link>
+            <Nav.Link href="/orders">Clocks</Nav.Link>              
             </Nav>
             <Nav className="ms-auto">            
               <Nav.Link onClick={()=>logout()}>Logout</Nav.Link>       

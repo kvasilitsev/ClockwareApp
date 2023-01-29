@@ -11,7 +11,7 @@ import Login from "./components/Login";
 import WrongLogin from "./components/WrongLogin";
 import Footer from "./components/Footer";
 import Header from './components/Header';
-import FindOrders from "./components/admin/FindOrders";
+import Orders from "./components/admin/Orders";
 import DeleteOrderFromList from "./components/admin/DeleteOrder";
 
 export const CurrentAuthContext = React.createContext(null);
@@ -25,8 +25,8 @@ function App() {
   }, [])
 
   const checkLogin = async () => {
-    const token = localStorage.getItem("token");    
-    if(token && token !== 'undefined') {
+    const token = localStorage.getItem("token");     
+    if(token) { //(token && token !== 'undefined')
       setAuthState('true');
     } else {
       setAuthState(null);
@@ -46,7 +46,7 @@ function App() {
         <Route path="/login" element={<Login />} /> 
         <Route path="/wrong-login" element={<WrongLogin />} />
         <Route path="/" element={<InitialOrder />} />
-        <Route path="/all-orders" element={<FindOrders />} />         
+        <Route path="/orders" element={<Orders />} />         
         <Route path="/delete-order" element={<DeleteOrderFromList />} /> 
       </Routes>
       <Footer />
