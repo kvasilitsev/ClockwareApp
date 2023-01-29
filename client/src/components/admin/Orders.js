@@ -34,7 +34,7 @@ const Orders = () => {
       return;
     }      
      await deleteOrder(row.getValue('id'));
-     window.location.replace('/delete-order');      
+     window.location.replace('/orders');      
   }       
   const columns = useMemo(
     () => [

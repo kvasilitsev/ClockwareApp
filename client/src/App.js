@@ -12,7 +12,7 @@ import WrongLogin from "./components/WrongLogin";
 import Footer from "./components/Footer";
 import Header from './components/Header';
 import Orders from "./components/admin/Orders";
-import DeleteOrderFromList from "./components/admin/DeleteOrder";
+//import DeleteOrderFromList from "./components/admin/DeleteOrder";
 
 export const CurrentAuthContext = React.createContext(null);
 
@@ -46,8 +46,7 @@ function App() {
         <Route path="/login" element={<Login />} /> 
         <Route path="/wrong-login" element={<WrongLogin />} />
         <Route path="/" element={<InitialOrder />} />
-        <Route path="/orders" element={<Orders />} />         
-        <Route path="/delete-order" element={<DeleteOrderFromList />} /> 
+        <Route path="/orders" element={<Orders />} />        
       </Routes>
       <Footer />
     </main>
