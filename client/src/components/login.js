@@ -2,6 +2,8 @@ import * as React from 'react';
 import { useFormik } from 'formik';
 import { Request } from '../api/api.request';
 import { useNavigate } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 const validate = values => {
   const errors = {};  
@@ -14,8 +16,7 @@ const validate = values => {
   return errors;
 }; 
 
-const Login = (props) => {
-  
+const Login = (props) => {  
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {        
@@ -43,43 +44,45 @@ const Login = (props) => {
   <>
     <section>
       <h3>Pease login</h3>
-      <form onSubmit={formik.handleSubmit}>
-
-        <label htmlFor="email">
-          Email:          
-        </label>
-        <input
+      <Form onSubmit={formik.handleSubmit}>
+        <Form.Group className="mb-3">
+        <Form.Label>
+            Email:          
+        </Form.Label>
+        <Form.Control
           id="email"
           name="email"
           type="text"
           placeholder='Email'
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.email}          
-        /> 
+          value={formik.values.email}           
+        />        
         {formik.touched.email && formik.errors.email ? (
-         <div>{formik.errors.email}</div>
-        ) : null}
-
-        <label htmlFor="password">
+          <div>{formik.errors.email}</div>
+          ) : null}
+        </Form.Group>
+        <Form.Group className="mb-3">
+        <Form.Label>
           Password:          
-        </label>
-        <input
+        </Form.Label>
+        <Form.Control
           id="password"
           name="password"
           type="password"
           placeholder='Password'
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.password}          
-        />
-        {formik.touched.password && formik.errors.password ? (
-         <div>{formik.errors.password}</div>
-        ) : null}
-
-        <button type="submit" disabled={ !(formik.isValid && formik.dirty) ? true : false }>Login</button>  
-       
-      </form>      
+          value={formik.values.password}           
+        />       
+          {formik.touched.password && formik.errors.password ? (
+          <div>{formik.errors.password}</div>
+          ) : null}
+        <div className="d-grid mt-4">
+        <Button type="submit" variant="secondary" disabled={ !(formik.isValid && formik.dirty) ? true : false }>Login</Button>
+        </div>        
+        </Form.Group>
+      </Form>      
     </section>
    </>
     );

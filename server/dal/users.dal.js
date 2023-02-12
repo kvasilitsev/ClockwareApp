@@ -98,15 +98,21 @@ class UserData {
    */
   async getUserByEmail(email) {
     let user = null;
-    const userResultSet = await db.query('SELECT id, name, email, admin, password FROM users where email = $1', [email]);
-    if(userResultSet.rowCount === 1){  
-      user = new User();
-      user.name = userResultSet.rows[0].name;
-      user.email = userResultSet.rows[0].email;
-      user.admin = userResultSet.rows[0].admin;
-      user.id = userResultSet.rows[0].id;
-      user.password = userResultSet.rows[0].password;
-    };                                       
+    try{
+      const userResultSet = await db.query('SELECT id, name, email, admin, password FROM users where email = $1', [email]);
+      if(userResultSet.rowCount === 1){  
+        user = new User();
+        user.name = userResultSet.rows[0].name;
+        user.email = userResultSet.rows[0].email;
+        user.admin = userResultSet.rows[0].admin;
+        user.id = userResultSet.rows[0].id;
+        user.password = userResultSet.rows[0].password;
+      };
+    } catch (error) {
+      logger.error(`getUserByEmail failed with reason: ${error.detail}`);
+      throw error;
+    }
+                                           
     return user;
   };
 
@@ -119,9 +125,9 @@ class UserData {
   async createAdmin(name, email, password) {
     try {
       await db.query('INSERT INTO users (name, email, password, admin) values ($1, $2, $3, true) RETURNING *', [name, email, password]);    
-    } catch (err) {
-      logger.error(`createAdmin failed with reason: ${err.detail}`);
-      throw err;
+    } catch (error) {
+      logger.error(`createAdmin failed with reason: ${error.detail}`);
+      throw error;
     }
   };
 }

@@ -11,6 +11,8 @@ import cityOptions from '../api/city-options'
 import DatePicker from "react-datepicker";
 import UTCConverter from '../models/UTCDateConvert';
 import "react-datepicker/dist/react-datepicker.css";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 const validate = values => {
   const errors = {};  
@@ -82,13 +84,14 @@ const InitialOrder = () => {
     return (  
     <section>
     <h5>Complete order form</h5>
-    <form onSubmit={formik.handleSubmit}>
-      <label htmlFor="name">
+    <Form onSubmit={formik.handleSubmit}>
+      <Form.Group className="mb-3">
+      <Form.Label>
           Name:
           <FontAwesomeIcon icon={faCheck} className={!formik.errors.name && formik.values.name ? "valid" : "hide"} />
           <FontAwesomeIcon icon={faTimes} className={!formik.errors.name || !formik.values.name ? "hide" : "invalid"} />
-      </label>
-      <input
+      </Form.Label>
+      <Form.Control
         id="name"
         name="name"
         type="text"
@@ -100,12 +103,14 @@ const InitialOrder = () => {
       {formik.touched.name && formik.errors.name ? (
         <div className='errmsg'>{formik.errors.name}</div>
       ) : null}
-      <label htmlFor="email">
+      </Form.Group>
+      <Form.Group className="mb-3">
+      <Form.Label>
         Email:
         <FontAwesomeIcon icon={faCheck} className={!formik.errors.email && formik.values.email ? "valid" : "hide"} />
         <FontAwesomeIcon icon={faTimes} className={!formik.errors.email || !formik.values.email ? "hide" : "invalid"} />
-      </label>
-      <input
+      </Form.Label>
+      <Form.Control
         id="email"
         name="email"
         type="text"
@@ -118,10 +123,12 @@ const InitialOrder = () => {
       {formik.touched.email && formik.errors.email ? (
         <div className='errmsg'>{formik.errors.email}</div>
       ) : null}
-      <label htmlFor="clockId">
-        Clock size:
+      </Form.Group>
+      <Form.Group className="mb-3">
+        <Form.Label>
+         Clock size:
         <FontAwesomeIcon icon={faCheck} className={formik.values.clockId ? "valid" : "hide"} />           
-      </label>
+        </Form.Label>
       <AsyncSelect 
         className = 'select'       
         onChange={value => {                          
@@ -134,10 +141,12 @@ const InitialOrder = () => {
       {formik.touched.clockId && formik.errors.clockId ? (
         <div className='errmsg'>{formik.errors.clockId}</div>
       ) : null}
-      <label htmlFor="cityId">
+      </Form.Group>
+      <Form.Group className="mb-3">
+      <Form.Label>
         City:
         <FontAwesomeIcon icon={faCheck} className={formik.values.cityId ? "valid" : "hide"} />           
-      </label>
+      </Form.Label>
       <AsyncSelect 
         className = 'select'       
         onChange={value => {
@@ -149,12 +158,14 @@ const InitialOrder = () => {
       />
       {formik.touched.cityId && formik.errors.cityId ? (
         <div className='errmsg'>{formik.errors.cityId}</div>
-      ) : null}     
-      <label htmlFor="bookingTime">
+      ) : null} 
+      </Form.Group>
+      <Form.Group className="mb-3">   
+      <Form.Label>
         Date and time:
         <FontAwesomeIcon icon={faCheck} className={formik.values.bookingTime && !formik.errors.bookingTime ? "valid" : "hide"} />           
         <FontAwesomeIcon icon={faTimes} className={!formik.values.bookingTime || !formik.errors.bookingTime ? "hide" : "invalid"} />
-      </label>     
+      </Form.Label>     
         <DatePicker
           className='datePicker'
           selected={formik.values.bookingTime}
@@ -171,11 +182,12 @@ const InitialOrder = () => {
         />     
       { formik.errors.bookingTime && formik.touched.bookingTime ? 
       ( <div className='errmsg'>{formik.errors.bookingTime}</div> ) :
-      null }      
-      <button type="submit" disabled={
-        !(formik.isValid && formik.dirty) ? true : false}>Submit request</button>      
-    </form>    
+      null }
+      </Form.Group>
+      <Button type="submit" variant="secondary" className='mt-4' disabled={
+        !(formik.isValid && formik.dirty) ? true : false}>Submit request</Button>      
+    </Form>    
    </section>)
- };
+ }; 
  
 export default InitialOrder;

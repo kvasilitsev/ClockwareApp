@@ -48,14 +48,39 @@ class OrderService {
     return orders;
   }  
 
-  async updateOrder(id, userId, masterId, cityId, clockId, bookingDateTime){
-    const repairDuration =  await clockData.getRepairDurationByClockId(clockId);   
+  async updateOrder(id, email, masterId, cityId, clockId, bookingTime){
+    
+    const validate = {
+      isUser: true,
+      isMaster: true,
+      isTime: true
+    }
+
+    const checkUser = await userData.getUserByEmail(email);
+    const mastersInCity = await masterData.getMastersByCityId(cityId);
+    const isMasterInCity = mastersInCity.filter(master => master.id == masterId).length === 1;
+    const repairDuration = await clockData.getRepairDurationByClockId(clockId);
+    const bookedMastersIdInCity = await masterData.bookedMastersIdInCityExludeOrderId(cityId, bookingTime, repairDuration, id);
+    const isMasterBusy = bookedMastersIdInCity.find(master => master === masterId);  
+
+    if(!checkUser){
+      validate.isUser = false;
+      return validate;
+    } else if (!isMasterInCity){
+      validate.isMaster = false;      
+      return validate;
+    } else if(isMasterBusy){
+      validate.isTime = false;
+      return validate;
+    }    
+    
     try {
-      await orderData.updateOrder(id, userId, masterId, cityId, clockId, bookingDateTime, repairDuration);
+      await orderData.updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration);
     }
     catch(err) {
       throw new Error("Could not update order", { cause: err });      
-    }      
+    }    
+    return validate; 
   }
 
   async deleteOrder(id){

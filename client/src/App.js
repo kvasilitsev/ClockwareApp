@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Route, Routes } from "react-router-dom";
 import Masters from './components/Masters';
-import InitialOrder from "./components/CreateOrder";
+import CreateOrder from "./components/CreateOrder";
 import OrderReview from './components/OrderReview';
 import Success from './components/Success';
 import NoMasters from "./components/NoMasters";
 import Register from "./components/Register";
 import RegisterAdmin from "./components/RegisterAdmin";
-import Login from "./components/Login";
+import Login from "./components/login";
 import WrongLogin from "./components/WrongLogin";
 import Footer from "./components/Footer";
 import Header from './components/Header';
@@ -35,7 +35,7 @@ function App() {
   return (
     <CurrentAuthContext.Provider value={authState}>    
     <main className="App">      
-     <Header />
+     <Header />     
       <Routes>          
         <Route path="/masters" element={<Masters />} />
         <Route path="/orderReview" element={<OrderReview />} />
@@ -45,9 +45,9 @@ function App() {
         <Route path="/register-admin" element={<RegisterAdmin />} />
         <Route path="/login" element={<Login />} /> 
         <Route path="/wrong-login" element={<WrongLogin />} />
-        <Route path="/" element={<InitialOrder />} />
+        <Route path="/" element={<CreateOrder />} />
         <Route path="/orders" element={<Orders />} />        
-      </Routes>
+      </Routes>      
       <Footer />
     </main>
     </CurrentAuthContext.Provider>   

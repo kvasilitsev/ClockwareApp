@@ -8,7 +8,7 @@
 
 html {
     font-family: 'Nunito', sans-serif;
-    font-size: 22px;
+    /* font-size: 22px; */
     color: #fff;
 }
 
@@ -36,6 +36,8 @@ section {
     justify-content: flex-start;
     padding: 1rem;
     background-color: rgba(98, 97, 97, 0.584);
+    border: solid 1px;   
+    border-radius: 0.3rem;
 }
 
 form {
@@ -43,30 +45,46 @@ form {
     flex-direction: column;
     justify-content: space-evenly;
     flex-grow: 1;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem;    
 }
 
 a, a:visited {
     color: #fff;
 }
 
-input[type="text"],
+/* input[type="text"],
 input[type="password"],
 button,
-textarea{
-  font-family: 'Nunito', sans-serif;
-  font-size: 22px;
-  padding: 0.25rem;
-  border-radius: 0.5rem;
-}
+textArea{
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    padding: 0.25rem;
+    border: none;
+    border-radius: 0.15rem;
+  } */
+
+input[type="text"],
 
 label,
 button {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+.datePicker-label {
+    color: rgba(33, 33, 33, 0.6);
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 0.85em;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    margin-bottom: -2.1rem;   
+    max-width: 133%;    
+    left: 0;
+    top: 0;
 }
 
 button {
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 .instructions {
@@ -121,13 +139,14 @@ button {
     display: block;
     overflow: hidden;
     border: 0;
-    border-radius: 0.2em;    
+    border-radius: 0.2em; 
+    padding: .375rem .75rem;  
 }
-.select {
+/* .select {
     font-family: 'Nunito', sans-serif;
     font-size: 22px;
     color:#000;
-}
+} */
 .review{
     width: 100%;
     max-width: 800px;
@@ -147,11 +166,13 @@ button {
 }
 
 header{
-  min-width: 100vw;
+  min-width: 100vw;   
+  margin-bottom: 30px;
 }
 
 footer{
   min-width: 100vw;
+  margin-top: 30px;
 }
 table{        
     min-height: 100px;

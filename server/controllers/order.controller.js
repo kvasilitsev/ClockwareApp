@@ -1,4 +1,4 @@
-const orderService = require("../services/order.services")
+const orderService = require("../services/order.services");
 const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
@@ -75,17 +75,18 @@ class OrderController {
    * @param {*} res 
    */  
   async updateOrder(req, res) {
-    const {id, userId, masterId, cityId, clockId, bookingDateTime} = req.body;
-    try {
-      await orderService.updateOrder(id, userId, masterId, cityId, clockId, bookingDateTime);
+    const {id, email, masterId, cityId, clockId, bookingTime} = req.body.params;
+    let response = null;
+    try {                
+     response = await orderService.updateOrder(id, email, masterId, cityId, clockId, bookingTime);
     }
     catch(err) {
       res.json({
         message: err.message,
-        cause: err.cause.detail
+        cause: err
       });      
-    }
-    res.send(true);
+    }      
+    res.send(response);
   };
 
   /**

@@ -59,10 +59,8 @@ class MasterService {
   async getFreeMastersInCity(cityId, bookingTime, clockId){
     const allMastersInCity = await masterData.getMastersByCityId(cityId);
     const repairDuration = await clockData.getRepairDurationByClockId(clockId);
-    const bookedMastersIdInCity =  await masterData.bookedMastersIdInCity(cityId, bookingTime, repairDuration);
-    logger.info('services/getFreeMasters', bookingTime)
-    const bookingHours = new Date(bookingTime).getHours();
-    //logger.info('services/getFreeMasters', new Date(bookingTime), bookingHours);
+    const bookedMastersIdInCity =  await masterData.bookedMastersIdInCity(cityId, bookingTime, repairDuration);    
+    const bookingHours = new Date(bookingTime).getHours();    
     if(bookingHours < 8){ //todo: should be in the params file
       throw new Error(`Sorry, we are open from 8:00`); //todo: should be in the params file
     };

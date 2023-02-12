@@ -124,15 +124,16 @@ class OrderData {
   /**
    * Method updates order by their id
    * @param {integer} id 
-   * @param {integer} userId 
+   * @param {varchar} email 
    * @param {integer} masterId 
    * @param {integer} cityId 
    * @param {integer} clockId 
    * @param {timestamp} bookingDateTime 
    */
-  async updateOrder(id, userId, masterId, cityId, clockId, bookingDateTime, repairDuration) {   
+  async updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration) {
+    logger.info('order dal', id, email, masterId, cityId, clockId, bookingTime, repairDuration)
     try {
-      await db.query('UPDATE orders SET user_id = $1, master_id = $2, city_id = $3, clock_id = $4, booking_date_time = $5, repair_duration = $6 WHERE id = $7 RETURNING *', [userId, masterId, cityId, clockId, bookingDateTime, repairDuration, id]);
+      await db.query('UPDATE orders SET email = $1, master_id = $2, city_id = $3, clock_id = $4, booking_date_time = $5, repair_duration = $6 WHERE id = $7 RETURNING *', [email, masterId, cityId, clockId, bookingTime, repairDuration, id]);
     } catch (err) {
       logger.error(`updateOrder failed with reason: ${err.detail}`);
       throw err;
@@ -150,7 +151,7 @@ class OrderData {
       logger.error(`deleteOrder failed with reason: ${err.detail}`);
       throw err;
     }
-  };
+  };  
 }
   
 module.exports = new OrderData();
