@@ -4,6 +4,8 @@ import { useFormik } from 'formik';
 import { Request } from '../api/api.request';
 import { useNavigate } from "react-router-dom";
 import UTCConverter from '../models/UTCDateConvert';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const OrderReview = (props) => {
   const { state } = useLocation();
@@ -39,19 +41,40 @@ const OrderReview = (props) => {
   });
     return (  
     <section className='review'>
-      <h2>Please review your order</h2>
-      <form onSubmit={formik.handleSubmit} onReset={formik.handleReset}>
-        <div>
-            <p>name - {formik.values.name}</p>
-            <p>email - {formik.values.email}</p>
-            <p>clock size - {formik.values.clockSize}</p>
-            <p>city - {formik.values.city}</p> 
-            <p>booking date and time - {formik.values.bookingTime.toLocaleString()}</p>
-            <p>master - {formik.values.masterName}</p>            
+      <h2>Order review</h2>
+      <Form onSubmit={formik.handleSubmit} onReset={formik.handleReset}>
+        <div className='order-review'>
+          <div>
+            <h6>Name</h6>
+            <h5>{formik.values.name}</h5>
+          </div>
+          <div>
+            <h6>Email</h6>
+            <h5>{formik.values.email}</h5>
+          </div>
+          <div>
+            <h6>Clock size</h6>
+            <h5>{formik.values.clockSize}</h5>
+          </div>
+          <div>
+            <h6>City</h6>
+            <h5>{formik.values.city}</h5>
+          </div>
+          <div>
+            <h6>Booking date and time</h6>
+            <h5>{formik.values.bookingTime.toLocaleString()}</h5>
+          </div>
+          <div>
+            <h6>Master</h6>
+            <h5>{formik.values.masterName}</h5>
+          </div>                       
         </div>
-        <button type='reset'>Reset</button>          
-        <button type="submit">Create order</button>
-      </ form>
+        <div className='order-review-button d-grid gap-2'>
+          <Button type='submit' variant='secondary'>Create order</Button>
+          <Button type='reset' variant='secondary'>Reset</Button>          
+        </div>
+        
+      </ Form>
     </ section>)
  };
  

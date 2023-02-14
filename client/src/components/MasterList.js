@@ -1,11 +1,34 @@
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Rating from '@mui/material/Rating';
+import Typography from '@mui/material/Typography';
+import Radio from '@mui/material/Radio';
+
 const MasterListItem = (props) => {    
     const {id, name, rating} = props.value;
-    return (
-    <div>     
-      <label>{name}, rating - {rating}</label>
-      <input id={id} type='radio' value={name} name='masters' />
-    </div>
-    );
+    return (      
+        <div className='master-select'>
+          <div className='master-select-radio'>
+            <Radio 
+              id={id}
+              value={name}
+              name='masters'
+              color="default" 
+            />
+          </div>
+          <div>
+            <Box
+            sx={{
+            '& > legend': { mt: 2 },
+            }}
+            >        
+            <Typography component="legend">{name}</Typography>
+            <Rating name="master" value={rating} readOnly />
+            </Box>
+          </div>          
+        </div>
+                    
+   );
   }
 
 const MasterList = (props) => {   

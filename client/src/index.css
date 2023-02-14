@@ -142,21 +142,7 @@ button {
     border-radius: 0.2em; 
     padding: .375rem .75rem;  
 }
-/* .select {
-    font-family: 'Nunito', sans-serif;
-    font-size: 22px;
-    color:#000;
-} */
-.review{
-    width: 100%;
-    max-width: 800px;
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1rem;
-    background-color: rgba(0,0,0,0.4);
-}
+
 
 .adminMenu{
     min-width: 100vw;    
@@ -183,6 +169,46 @@ table{
     flex-wrap: wrap;
     justify-content: center;
 }
+h2{
+    margin: 10px auto 10px auto ;
+}
 h4{
     margin: 1em;
 }
+.master-select {
+    display: flex;
+    justify-content: start;
+    align-items: center;    
+}
+
+.master-select-radio {
+    width: 15%; 
+    margin-left: 20px;
+    padding: auto;     
+}
+.review{       
+    min-width: 35%;
+    padding: 5px;        
+}
+.order-review > div {
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px; 
+    margin: 7px auto 7px auto
+}
+.order-review > div > h5 {
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+    width: 40%;    
+}
+.order-review > div > h6 {
+    padding: 5px;
+    width: 40%;  
+}
+.order-review-button{
+    width: 60%;       
+    margin: 0 auto;
+}
+

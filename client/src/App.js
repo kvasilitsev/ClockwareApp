@@ -12,7 +12,6 @@ import WrongLogin from "./components/WrongLogin";
 import Footer from "./components/Footer";
 import Header from './components/Header';
 import Orders from "./components/admin/Orders";
-//import DeleteOrderFromList from "./components/admin/DeleteOrder";
 
 export const CurrentAuthContext = React.createContext(null);
 
@@ -35,7 +34,7 @@ function App() {
   return (
     <CurrentAuthContext.Provider value={authState}>    
     <main className="App">      
-     <Header />     
+      <Header />
       <Routes>          
         <Route path="/masters" element={<Masters />} />
         <Route path="/orderReview" element={<OrderReview />} />
