@@ -57,30 +57,34 @@ class OrderService {
     }
 
     const checkUser = await userData.getUserByEmail(email);
-    const mastersInCity = await masterData.getMastersByCityId(cityId);
-    const isMasterInCity = mastersInCity.filter(master => master.id == masterId).length === 1;
-    const repairDuration = await clockData.getRepairDurationByClockId(clockId);
-    const bookedMastersIdInCity = await masterData.bookedMastersIdInCityExludeOrderId(cityId, bookingTime, repairDuration, id);
-    const isMasterBusy = bookedMastersIdInCity.find(master => master === masterId);  
 
-    if(!checkUser){
+    if(!checkUser){       
       validate.isUser = false;
       return validate;
-    } else if (!isMasterInCity){
+    }
+
+    const mastersInCity = await masterData.getMastersByCityId(cityId);
+    const isMasterInCity = mastersInCity.filter(master => master.id == masterId).length === 1;    
+    if (!isMasterInCity){
       validate.isMaster = false;      
       return validate;
-    } else if(isMasterBusy){
+    }
+
+    const repairDuration = await clockData.getRepairDurationByClockId(clockId);
+    const bookedMastersIdInCity = await masterData.bookedMastersIdInCityExludeOrderId(cityId, bookingTime, repairDuration, id);
+    const isMasterBusy = bookedMastersIdInCity.find(master => master === masterId);      
+    if(isMasterBusy){
       validate.isTime = false;
-      return validate;
-    }    
-    
+      return validate;    
+    } 
+   
     try {
       await orderData.updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration);
     }
     catch(err) {
       throw new Error("Could not update order", { cause: err });      
     }    
-    return validate; 
+    return validate;    
   }
 
   async deleteOrder(id){

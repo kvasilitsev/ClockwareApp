@@ -1,4 +1,4 @@
-const REGISTER_URL = '/registration';
+const REGISTER_URL = '/createUser';
 const ADMIN_REGISTER_URL = '/adminRegistration';
 const GET_FREE_MASTERS_URL = '/getFreeMastersInCity';
 const CREATE_ORDER_URL = '/createOrder';
@@ -12,9 +12,12 @@ const GET_ALL_ORDERS_URL = '/getOrders';
 const DELETE_ORDER_URL = '/deleteOrder';
 const GET_MASTERS_URL = '/getMasters';
 const UPDATE_ORDER_URL = '/updateOrder';
+const GET_ALL_USERS_URL = '/getUsers';
+const DELETE_USER_URL = '/deleteUser';
+const UPDATE_USER_URL = '/updateUser';
 
 export { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL,
          SEND_EMAIL_URL, GET_CITIES_URL, GET_CLOCKS_URL, LOGIN_URL, LOGOUT_URL,
          GET_USERBY_EMAIL_URL, GET_ALL_ORDERS_URL, DELETE_ORDER_URL, GET_MASTERS_URL,
-         UPDATE_ORDER_URL}; 
+         UPDATE_ORDER_URL, GET_ALL_USERS_URL, DELETE_USER_URL, UPDATE_USER_URL}; 
          

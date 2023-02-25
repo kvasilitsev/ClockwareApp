@@ -13,12 +13,11 @@ class UserData {
   /**
    * Method creates new user
    * @param {text} name 
-   * @param {text} email
-   * @param {varchar} password  
+   * @param {text} email   
    */  
-  async createUser(name, email, password) {    
+  async createUser(name, email) {    
     try {
-      await db.query('INSERT INTO users (name, email, password, admin) values ($1, $2, $3, false) RETURNING *', [name, email, password]);    
+      await db.query('INSERT INTO users (name, email, password, admin) values ($1, $2, null, false) RETURNING *', [name, email]);    
     } catch (err) {
       logger.error(`createUser failed with reason: ${err.detail}`);
       throw err;
@@ -71,7 +70,7 @@ class UserData {
    */
   async updateUser(id, name, email) {   
     try {
-      await db.query('UPDATE users SET name = $1, email = $2 WHERE id = $3 RETURNING *', [name, email, admin, id]);
+      await db.query('UPDATE users SET name = $1, email = $2 WHERE id = $3 RETURNING *', [name, email, id]);
     } catch (err) {
       logger.error(`updateUser failed with reason: ${err.detail}`);
       throw err;
@@ -82,9 +81,9 @@ class UserData {
    * Method deletes user by their id
    * @param {integer} id
    */
-  async deleteUser(id) {
+  async deleteUser(email) {
     try {
-      await db.query('DELETE FROM users where id = $1', [id]); 
+      await db.query('DELETE FROM users where email = $1', [email]); 
     } catch (err) {
       logger.error(`deleteUser failed with reason: ${err.detail}`);
       throw err;
@@ -96,7 +95,7 @@ class UserData {
    * @param {text} email
    * @returns 
    */
-  async getUserByEmail(email) {
+  async getUserByEmail(email) {    
     let user = null;
     try{
       const userResultSet = await db.query('SELECT id, name, email, admin, password FROM users where email = $1', [email]);
@@ -111,8 +110,7 @@ class UserData {
     } catch (error) {
       logger.error(`getUserByEmail failed with reason: ${error.detail}`);
       throw error;
-    }
-                                           
+    }                                      
     return user;
   };
 

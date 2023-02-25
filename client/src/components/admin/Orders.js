@@ -1,7 +1,7 @@
-import React, { useMemo, useEffect, useState, useCallback, cloneElement } from "react";
+import React, { useMemo, useEffect, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import MaterialReactTable from 'material-react-table';
-import findAllOrders from '../../models/findAllOrdersFunction';
+import findAllOrders from '../../models/getAllOrdersFunction';
 import orderIdToName from '../../models/orderListIdToNameConvert';
 import { Box, Button, IconButton, MenuItem,  Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
@@ -108,7 +108,7 @@ const Orders = () => {
       setBookingTime('');      
     } 
     const validateUpdate = await updateOrder(values);
-    console.log(validateUpdate)     
+    //console.log(validateUpdate)     
     if(!validateUpdate.isUser){
       alert(`User with email ${values.email} does not exist, please create the user first`);      
     } else if(!validateUpdate.isMaster){      

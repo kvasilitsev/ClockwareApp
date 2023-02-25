@@ -2,12 +2,12 @@ import { host, authHost } from './axios';
 import { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL,
        SEND_EMAIL_URL, GET_CITIES_URL, GET_CLOCKS_URL, LOGIN_URL, LOGOUT_URL, 
        GET_USERBY_EMAIL_URL, GET_ALL_ORDERS_URL, DELETE_ORDER_URL, GET_MASTERS_URL,
-       UPDATE_ORDER_URL} from './routes';
+       UPDATE_ORDER_URL, GET_ALL_USERS_URL, DELETE_USER_URL, UPDATE_USER_URL} from './routes';
 
 
 class Request {
 
-  constructor({ name, email, password, cityId, bookingTime, clockId, masterId, orderId } = {}){
+  constructor({ name, email, password, cityId, bookingTime, clockId, masterId, orderId, userId } = {}){
     this.name = name;
     this.email = email;
     this.password = password;
@@ -16,11 +16,12 @@ class Request {
     this.clockId = clockId;
     this.masterId = masterId;
     this.orderId = orderId;
+    this.userId = userId;
   }
   
-  async register() {    
+  async createUser() {     
     try {
-      await host.post(REGISTER_URL, { name: this.name, email: this.email, password: this.password },
+      await authHost.post(REGISTER_URL, { name: this.name, email: this.email },
         {          
           withCredentials: true
         }      
@@ -199,6 +200,47 @@ class Request {
   async deleteOrder() {           
     try {                  
       await authHost.put(DELETE_ORDER_URL, {params: {id: this.orderId }},
+        {
+          withCredentials: true
+        }
+      )                
+    }
+    catch (error) {      
+      console.log('error: ', error); 
+    }   
+  }
+
+  async getAllUsers() {
+    try {
+      const res = await authHost.get(GET_ALL_USERS_URL,
+        {
+          withCredentials: true
+        }
+      )
+      return res.data;      
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }   
+  }
+  
+  async updateUser() {    
+    try {                  
+      const res = await authHost.put(UPDATE_USER_URL, {params: {id: this.userId, email: this.email, name: this.name }},
+        {
+          withCredentials: true
+        }
+      )
+      return res.data;                
+    }
+    catch (error) {      
+      console.log('error: ', error); 
+    }
+  }
+  
+  async deleteUser() {           
+    try {                 
+      await authHost.delete(DELETE_USER_URL, {params: {email: this.email }},
         {
           withCredentials: true
         }

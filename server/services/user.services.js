@@ -1,4 +1,5 @@
 const userData = require('../dal/users.dal');
+const orderData = require('../dal/orders.dal');
 const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 const bcrypt = require('bcrypt');
@@ -9,9 +10,9 @@ const {isStringNullOrEmpty, isEmailValid, isPasswordValid, isNameValid} = requir
 
 class UserService {
 
-  async createUser(name, email, password) {    
+  async createUser(name, email) {    
     try {
-      await userData.createUser(name, email, password);
+      await userData.createUser(name, email);
     }
     catch(err) {
       throw new Error("Could not create user", { cause: err });      
@@ -28,18 +29,34 @@ class UserService {
     return user;
   }
 
-  async updateUser(id, name, email){    
+  async updateUser(id, name, email){ 
+    
+    const validate = {
+      isEmail: true      
+    }
+
+    const checkUser = await userData.getUserByEmail(email);
+    
+    if(checkUser && checkUser.id != id){       // if email exist in db and this email does not belong to current user.
+      validate.isEmail = false;
+      return validate;
+    }
+
     try {
-      await userData.updateUser(id, name, email);
+      await orderData.updateOrderEmail(email, id);        
+      await userData.updateUser(id, name, email);      
     }
     catch(err) {
       throw new Error("Could not update user", { cause: err });      
-    }      
+    } 
+       
+    return validate;     
   }
 
-  async deleteUser(id){
-    try {
-      await userData.deleteUser(id);
+  async deleteUser(email){
+    try {      
+      await orderData.deleteOrderByEmail(email);
+      await userData.deleteUser(email);
     }
     catch(err) {
       throw new Error("Could not delete user", { cause: err });      
@@ -59,31 +76,7 @@ class UserService {
       throw new Error("Could not create admin", { cause: err });      
     }
   }  
-  
-  async registration(name, email, password){
-    if(isStringNullOrEmpty(name) || isStringNullOrEmpty(email) || isStringNullOrEmpty(password)){
-      throw ApiError.BadRequest(`Name, email or password can not be an empty string`);
-    }
-    if(!isEmailValid(email)){
-      throw ApiError.BadRequest(`invalid email`);
-    }
-    if(!isPasswordValid(password)){
-      throw ApiError.BadRequest(`invalid password`);
-    }
-    if(!isNameValid(name)){
-      throw ApiError.BadRequest(`invalid name`);
-    }
-    const ifUserExist = await userData.getUserByEmail(email);
-    if(ifUserExist){
-      throw ApiError.BadRequest(`User with ${email} already exist`)
-    }
-    const hashPassword = await bcrypt.hash(password, 3);
-    await userData.createUser(name, email, hashPassword);
-    const user = await userData.getUserByEmail(email);
-    const tokens = tokenService.generateTokens({...user});
-    await tokenService.saveToken(user.id, tokens.refreshToken);
-    return {...tokens, user: user}; //temp
-  }
+
 
   async adminRegistration(name, email, password){
     if(isStringNullOrEmpty(name) || isStringNullOrEmpty(email) || isStringNullOrEmpty(password)){
@@ -107,7 +100,7 @@ class UserService {
     const user = await userData.getUserByEmail(email);
     const tokens = tokenService.generateTokens({...user});
     await tokenService.saveToken(user.id, tokens.refreshToken);
-    return {...tokens, user: user}; //temp
+    return {...tokens, user: user}; //temp for debug
   }
 
   async login(email, password){
@@ -121,7 +114,7 @@ class UserService {
     }
     const tokens = tokenService.generateTokens({...user});
     await tokenService.saveToken(user.id, tokens.refreshToken);
-    return {...tokens, user: user}; //temp
+    return {...tokens, user: user}; //temp for debug
   }
 
   async logout(refreshToken){
@@ -141,7 +134,7 @@ class UserService {
     const user = await userData.getUserById(userDataSet.id);
     const tokens = tokenService.generateTokens({...user});
     await tokenService.saveToken(user.id, tokens.refreshToken);
-    return {...tokens, user: user}; //temp
+    return {...tokens, user: user}; //temp for debug
   }
 }
 

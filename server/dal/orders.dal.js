@@ -130,10 +130,23 @@ class OrderData {
    * @param {integer} clockId 
    * @param {timestamp} bookingDateTime 
    */
-  async updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration) {
-    logger.info('order dal', id, email, masterId, cityId, clockId, bookingTime, repairDuration)
+  async updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration) {        
     try {
       await db.query('UPDATE orders SET email = $1, master_id = $2, city_id = $3, clock_id = $4, booking_date_time = $5, repair_duration = $6 WHERE id = $7 RETURNING *', [email, masterId, cityId, clockId, bookingTime, repairDuration, id]);
+    } catch (err) {
+      logger.error(`updateOrder failed with reason: ${err.detail}`);
+      throw err;
+    }
+  };
+
+  /**
+   * Method updates order by their id   
+   * @param {varchar} email   
+   */
+  async updateOrderEmail(email, id) { 
+    logger.info(email, id);
+    try {
+      await db.query('UPDATE orders SET email = $1 where email = (SELECT email FROM users WHERE id = $2) RETURNING *', [email, id]);
     } catch (err) {
       logger.error(`updateOrder failed with reason: ${err.detail}`);
       throw err;
@@ -149,6 +162,19 @@ class OrderData {
       await db.query('UPDATE orders SET is_deleted = true WHERE id = $1', [id]); 
     } catch (err) {
       logger.error(`deleteOrder failed with reason: ${err.detail}`);
+      throw err;
+    }
+  };
+  
+  /**
+   * Method performs hard delete of order by user email
+   * @param {varchar} email 
+   */
+  async deleteOrderByEmail(email) {    
+    try { 
+      await db.query('UPDATE orders SET is_deleted = true WHERE email = $1', [email]);      
+    } catch (err) {
+      logger.error(`deleteOrder failed with reason: ${err}`);
       throw err;
     }
   };  

@@ -13,10 +13,11 @@ class UserController {
    * @param {*} req 
    * @param {*} res 
    */
-  async createUser(req, res) {
-    const {name, email, password} = req.body;
+  async createUser(req, res) {    
+    const {name, email} = req.body;
+    
     try {
-      await userService.createUser(name, email, password);
+      await userService.createUser(name, email);
     }
     catch(err) {
       res.json({
@@ -54,9 +55,10 @@ class UserController {
    * @param {*} res 
    */  
   async updateUser(req, res) {
-    const {id, name, email} = req.body;
+    const {id, name, email} = req.body.params;    
+    let response = null;
     try {
-      await userService.updateUser(id, name, email);
+      response = await userService.updateUser(id, name, email);
     }
     catch(err) {
       res.json({
@@ -64,7 +66,7 @@ class UserController {
         cause: err.cause.detail
       });      
     }
-    res.send(true);
+    res.send(response);
   };
 
   /**
@@ -73,14 +75,14 @@ class UserController {
    * @param {*} res 
    */
   async deleteUser(req, res) {
-    const id = req.params.id;   
+    const { email } = req.query;    
     try {
-      await userService.deleteUser(id);
+      await userService.deleteUser(email);
     }
     catch(err) {
       res.json({
         message: err.message,
-        cause: err.cause.detail
+        cause: err
       });      
     }
     res.send(true);
@@ -114,26 +116,7 @@ class UserController {
       } );      
     }
     res.send(true);
-  };
-
-  /**
-   * Method perfomes user registartion
-   * @param {*} req 
-   * @param {*} res 
-   */
-  async registration(req, res, next) {
-    logger.info(req.data);
-    //console.log(req);
-    try {
-      const {name, email, password} = req.body;
-      const userData = await userService.registration(name, email, password);
-      res.cookie('refreshToken', userData.refreshToken, {maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true} )
-      return res.json(userData);
-    }
-    catch(err) {
-      next(err);
-    }    
-  };
+  };  
 
   /**
    * Method perfomes user registartion
