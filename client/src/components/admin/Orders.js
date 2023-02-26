@@ -1,19 +1,19 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import MaterialReactTable from 'material-react-table';
-import findAllOrders from '../../models/getAllOrdersFunction';
-import orderIdToName from '../../models/orderListIdToNameConvert';
+import findAllOrders from '../../utils/getAllOrdersFunction';
+import orderIdToName from '../../utils/orderListIdToNameConvert';
 import { Box, Button, IconButton, MenuItem,  Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
-import deleteOrder from '../../models/deleteOrderFunction';
-import getAllCities from '../../models/getAllCitiesFunction';
-import getAllClocks from '../../models/getAllClocksFunction';
-import getAllMasters from '../../models/getAllMastersFunction';
+import deleteOrder from '../../utils/deleteOrderFunction';
+import getAllCities from '../../utils/getAllCitiesFunction';
+import getAllClocks from '../../utils/getAllClocksFunction';
+import getAllMasters from '../../utils/getAllMastersFunction';
 import DatePicker from "react-datepicker";
-import UTCConverter from '../../models/UTCDateConvert';
+import UTCConverter from '../../utils/UTCDateConvert';
 import { EMAIL_REGEX } from '../../models/regExp';
 import "react-datepicker/dist/react-datepicker.css";
-import updateOrder from "../../models/updateOrderFunction";
+import updateOrder from "../../utils/updateOrderFunction";
 
 const validateRequired = (value) => !!value.length;
 

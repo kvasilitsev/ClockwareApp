@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useFormik } from 'formik';
 import { Request } from '../api/api.request';
 import { useNavigate } from "react-router-dom";
-import UTCConverter from '../models/UTCDateConvert';
+import UTCConverter from '../utils/UTCDateConvert';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 

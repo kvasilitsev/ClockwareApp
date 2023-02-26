@@ -6,10 +6,10 @@ import { USER_REGEX, EMAIL_REGEX } from '../models/regExp';
 import { faCheck, faTimes} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AsyncSelect from 'react-select/async'
-import clockOptions from '../api/clock-options';
-import cityOptions from '../api/city-options'
+import clockOptions from '../utils/clock-options';
+import cityOptions from '../utils/city-options'
 import DatePicker from "react-datepicker";
-import UTCConverter from '../models/UTCDateConvert';
+import UTCConverter from '../utils/UTCDateConvert';
 import "react-datepicker/dist/react-datepicker.css";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';

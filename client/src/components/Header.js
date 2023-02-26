@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Navbar, Nav, Container,  NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import { CurrentAuthContext } from '../App';
-import logout from "../models/logoutFunction";
+import logout from "../utils/logoutFunction";
 
 const Header = () => {
   const value = React.useContext(CurrentAuthContext);  

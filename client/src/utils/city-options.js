@@ -1,4 +1,4 @@
-import cities from '../models/getAllCitiesFunction';
+import cities from './getAllCitiesFunction';
 
 const cityOptions = async() => {
   const citiesArr = await cities(); 

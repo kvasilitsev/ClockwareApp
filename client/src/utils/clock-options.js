@@ -1,4 +1,4 @@
-import clocks from '../models/getAllClocksFunction';
+import clocks from './getAllClocksFunction';
 
 const clockOptions = async() => {
   const clocksArr = await clocks();

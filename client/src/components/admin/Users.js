@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { Box, Button, IconButton, Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
 import { EMAIL_REGEX, USER_REGEX } from '../../models/regExp';
-import getAllUsers from '../../models/getAllUsersFunction';
-import deleteUser from '../../models/deleteUserFunction';
-import updateUser from '../../models/updateUserFunction';
+import getAllUsers from '../../utils/getAllUsersFunction';
+import deleteUser from '../../utils/deleteUserFunction';
+import updateUser from '../../utils/updateUserFunction';
 
 const Users = () => {
 
