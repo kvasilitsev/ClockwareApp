@@ -1,4 +1,5 @@
 const masterData = require('../dal/masters.dal');
+const orderData = require('../dal/orders.dal');
 const clockData = require('../dal/clocks.dal');
 const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
@@ -25,7 +26,7 @@ class MasterService {
   }
 
   async updateMaster(id, name, rating){    
-    try {
+    try {      
       await masterData.updateMaster(id, name, rating);
     }
     catch(err) {
@@ -35,6 +36,7 @@ class MasterService {
 
   async deleteMaster(id){
     try {
+      await orderData.deleteOrderByMasterId(id);
       await masterData.deleteMaster(id);
     }
     catch(err) {

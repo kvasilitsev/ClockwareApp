@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import { useFormik } from 'formik';
-import { USER_REGEX, EMAIL_REGEX } from '../models/regExp';
-import { Request } from '../api/api.request';
+import { USER_REGEX, RATING_REGEX } from '../../models/regExp';
+import { Request } from '../../api/api.request';
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from 'react-bootstrap/Button';
@@ -16,36 +16,36 @@ import Form from 'react-bootstrap/Form';
      errors.name = 'Invalid name'
    };
  
-   if (!values.email) {
-     errors.email = 'Required';
-   } else if (!EMAIL_REGEX.test(values.email)) {
-     errors.email = 'Invalid email address';
+   if (!values.rating) {
+     errors.rating = 'Required';
+   } else if (!RATING_REGEX.test(values.rating)) {
+     errors.rating = 'Invalid rating';
    } 
    return errors;
  }; 
  
-  const Register = () => {
+  const MasterRegistration = () => {
     const navigate = useNavigate();
     const formik = useFormik({
       initialValues: {
         name: '',
-        email: ''       
+        rating: ''       
     },
      validate,     
      onSubmit: async (values) => {      
       try {        
-        const apiRequest = new Request({name: values.name, email: values.email});        
-        await apiRequest.createUser();        
+        const apiRequest = new Request({name: values.name, rating: values.rating});        
+        await apiRequest.createMaster();        
       } catch (e) {
         console.log('error: ', e.response.data.message);        
       }      
-      navigate('/users');      
+      navigate('/masters');      
      },
    });
    return (
   <>  
    <section>
-     <h5>New user registartion</h5>
+     <h5>New master registartion</h5>
      <Form onSubmit={formik.handleSubmit}>
         <Form.Group className="mb-3">
         <Form.Label>
@@ -69,32 +69,32 @@ import Form from 'react-bootstrap/Form';
         </Form.Group>        
         <Form.Group className="mb-3">
         <Form.Label>
-         Email:
-         <FontAwesomeIcon icon={faCheck} className={!formik.errors.email && formik.values.email ? "valid" : "hide"} />
-         <FontAwesomeIcon icon={faTimes} className={!formik.errors.email || !formik.values.email ? "hide" : "invalid"} />
+         Rating:
+         <FontAwesomeIcon icon={faCheck} className={!formik.errors.rating && formik.values.rating ? "valid" : "hide"} />
+         <FontAwesomeIcon icon={faTimes} className={!formik.errors.rating || !formik.values.rating ? "hide" : "invalid"} />
         </Form.Label> 
         <Form.Control
-          id="email"
-          name="email"
+          id="rating"
+          name="rating"
           type="text"
-          placeholder='Email'
+          placeholder='Rating'
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.email}
-          aria-invalid={!formik.errors.email ? "false" : "true"} 
+          value={formik.values.rating}
+          aria-invalid={!formik.errors.rating ? "false" : "true"} 
         />
-        {formik.touched.email && formik.errors.email ? (
-          <div>{formik.errors.email}</div>
+        {formik.touched.rating && formik.errors.rating ? (
+          <div>{formik.errors.rating}</div>
         ) : null}
         </Form.Group>       
        <Button variant="secondary" type="submit" className='mt-4' disabled={
-        formik.errors.name || formik.errors.email || !formik.values.name ||
-         !formik.values.email ? true : false}>Register</Button>      
+        formik.errors.name || formik.errors.rating || !formik.values.name ||
+         !formik.values.rating ? true : false}>Register</Button>      
      </Form>     
    </section>  
   </>
   );
  };
  
-export default Register;
+export default MasterRegistration;
 

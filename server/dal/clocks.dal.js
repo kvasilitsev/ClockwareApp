@@ -66,7 +66,7 @@ class ClockData {
 
   /**
    * Method deletes clock by their id
-   * @param {integer} id
+   * @param {integer} id data base primary key for clock table
    */
   async deleteClock(id) {    
     try {

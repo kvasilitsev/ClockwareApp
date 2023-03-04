@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Route, Routes } from "react-router-dom";
-import Masters from './components/Masters';
+import MasterSelect from './components/MasterSelect';
 import CreateOrder from "./components/CreateOrder";
 import OrderReview from './components/OrderReview';
 import Success from './components/Success';
@@ -13,6 +13,8 @@ import Footer from "./components/Footer";
 import Header from './components/Header';
 import Orders from "./components/admin/Orders";
 import Users from "./components/admin/Users";
+import Masters from "./components/admin/Masters";
+import CreateMaster from "./components/admin/CreateMaster";
 
 export const CurrentAuthContext = React.createContext(null);
 
@@ -37,7 +39,7 @@ function App() {
       <main className="App">
         <Header />
         <Routes>
-          <Route path="/masters" element={<Masters />} />
+          <Route path="/masterSelect" element={<MasterSelect />} />
           <Route path="/orderReview" element={<OrderReview />} />
           <Route path="/success" element={<Success />} />
           <Route path="/no-masters" element={<NoMasters />} />
@@ -48,6 +50,8 @@ function App() {
           <Route path="/" element={<CreateOrder />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/users" element={<Users />} />
+          <Route path="/masters" element={<Masters />} />
+          <Route path="/createMaster" element={<CreateMaster />} />
         </Routes>
         <Footer />
       </main>

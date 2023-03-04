@@ -37,7 +37,7 @@ class UserService {
 
     const checkUser = await userData.getUserByEmail(email);
     
-    if(checkUser && checkUser.id != id){       // if email exist in db and this email does not belong to current user.
+    if(checkUser && checkUser.id != id){       // if email exist in db AND this email does not belong to current user.
       validate.isEmail = false;
       return validate;
     }

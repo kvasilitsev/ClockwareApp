@@ -53,7 +53,7 @@ class MasterController {
    * @param {*} res 
    */  
   async updateMaster(req, res) {
-    const {id, name, rating} = req.body;
+    const {id, name, rating} = req.body.params;    
     try {
       await masterService.updateMaster(id, name, rating);
     }
@@ -72,7 +72,7 @@ class MasterController {
    * @param {*} res 
    */
   async deleteMaster(req, res) {
-    const id = req.params.id;   
+    const { id } = req.query;   
     try {
       await masterService.deleteMaster(id);
     }
@@ -121,8 +121,7 @@ class MasterController {
    * @param {*} res 
    */
   async getFreeMastersInCity(req, res){
-    const {cityId, bookingTime, clockId} = req.query;
-    logger.info('getfreeMasters controller', bookingTime);
+    const {cityId, bookingTime, clockId} = req.query;    
     let masters;
     try {
       masters = await masterService.getFreeMastersInCity(cityId, bookingTime, clockId);

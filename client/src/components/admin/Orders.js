@@ -108,7 +108,7 @@ const Orders = () => {
       setBookingTime('');      
     } 
     const validateUpdate = await updateOrder(values);
-    //console.log(validateUpdate)     
+        
     if(!validateUpdate.isUser){
       alert(`User with email ${values.email} does not exist, please create the user first`);      
     } else if(!validateUpdate.isMaster){      

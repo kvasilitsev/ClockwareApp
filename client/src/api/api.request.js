@@ -2,12 +2,13 @@ import { host, authHost } from './axios';
 import { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_URL,
        SEND_EMAIL_URL, GET_CITIES_URL, GET_CLOCKS_URL, LOGIN_URL, LOGOUT_URL, 
        GET_USERBY_EMAIL_URL, GET_ALL_ORDERS_URL, DELETE_ORDER_URL, GET_MASTERS_URL,
-       UPDATE_ORDER_URL, GET_ALL_USERS_URL, DELETE_USER_URL, UPDATE_USER_URL} from '../models/routes';
+       UPDATE_ORDER_URL, GET_ALL_USERS_URL, DELETE_USER_URL, UPDATE_USER_URL,
+       DELETE_MASTER_URL, UPDATE_MASTER_URL, CREATE_MASTER_URL } from '../models/routes';
 
 
 class Request {
 
-  constructor({ name, email, password, cityId, bookingTime, clockId, masterId, orderId, userId } = {}){
+  constructor({ name, email, password, cityId, bookingTime, clockId, masterId, orderId, userId, rating } = {}){
     this.name = name;
     this.email = email;
     this.password = password;
@@ -17,6 +18,7 @@ class Request {
     this.masterId = masterId;
     this.orderId = orderId;
     this.userId = userId;
+    this.rating = rating;
   }
   
   async createUser() {     
@@ -241,6 +243,46 @@ class Request {
   async deleteUser() {           
     try {                 
       await authHost.delete(DELETE_USER_URL, {params: {email: this.email }},
+        {
+          withCredentials: true
+        }
+      )                
+    }
+    catch (error) {      
+      console.log('error: ', error); 
+    }   
+  }
+
+  async createMaster() {     
+    try {
+      await authHost.post(CREATE_MASTER_URL, { name: this.name, rating: this.rating },
+        {          
+          withCredentials: true
+        }      
+      ) 
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }     
+  }
+
+  async updateMaster() {     
+    try {                  
+      const res = await authHost.put(UPDATE_MASTER_URL, {params: {id: this.masterId, name: this.name, rating: this.rating }},
+        {
+          withCredentials: true
+        }
+      )
+      return res.data;                
+    }
+    catch (error) {      
+      console.log('error: ', error); 
+    }
+  }
+
+  async deleteMaster() {            
+    try {                 
+      await authHost.delete(DELETE_MASTER_URL, {params: {id: this.masterId }},
         {
           withCredentials: true
         }

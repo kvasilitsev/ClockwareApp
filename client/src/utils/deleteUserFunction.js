@@ -1,6 +1,6 @@
 import { Request } from "../api/api.request";
 
-const deleteOrder = async(email) => {  
+const deleteUser = async(email) => {  
   try { 
     const apiRequest = new Request({email: email});
     await apiRequest.deleteUser();           
@@ -9,4 +9,4 @@ const deleteOrder = async(email) => {
     }   
 }
 
-export default deleteOrder;
+export default deleteUser;

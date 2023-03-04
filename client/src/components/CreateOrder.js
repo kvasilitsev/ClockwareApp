@@ -75,7 +75,7 @@ const InitialOrder = () => {
           console.log('error: ', e.response.data.message);          
         }        
         if(list.length > 0){                 
-          navigate('/masters', {state: {...formik.values, list: list}}); 
+          navigate('/masterSelect', {state: {...formik.values, list: list}}); 
         } else {
           navigate('/no-masters', {state: formik.values});          
         }        

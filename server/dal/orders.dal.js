@@ -177,7 +177,16 @@ class OrderData {
       logger.error(`deleteOrder failed with reason: ${err}`);
       throw err;
     }
-  };  
+  };
+  
+  async deleteOrderByMasterId(id) {    
+    try { 
+      await db.query('UPDATE orders SET is_deleted = true WHERE master_id = $1', [id]);      
+    } catch (err) {
+      logger.error(`deleteOrder failed with reason: ${err}`);
+      throw err;
+    }
+  };
 }
   
 module.exports = new OrderData();

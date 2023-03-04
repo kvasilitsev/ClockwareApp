@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import RadioGroup from '@mui/material/RadioGroup';
 
-const Masters = () => {
+const MasterSelect = () => {
   const { state } = useLocation();  
   const navigate = useNavigate();
   const formik = useFormik({
@@ -45,4 +45,4 @@ const Masters = () => {
     </ section>)
  };
  
-export default Masters;
+export default MasterSelect;

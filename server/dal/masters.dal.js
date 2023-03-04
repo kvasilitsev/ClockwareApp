@@ -78,7 +78,8 @@ class MasterData {
    * Method deletes master by their id
    * @param {integer} id
    */
-  async deleteMaster(id) {    
+  async deleteMaster(id) {
+    logger.info('masters dal', id)   
     try {
       await db.query('DELETE FROM masters where id = $1', [id]); 
     } catch (err) {
@@ -135,7 +136,7 @@ class MasterData {
           masterList.push(element.id);
       });
       }
-    } catch (errror) {
+    } catch (error) {
       logger.error(`bookedMastersIdInCity failed with reason: ${error.detail}`);
       throw err;
     }    
@@ -158,7 +159,7 @@ class MasterData {
           masterList.push(element.id);
       });
       }
-    } catch (errror) {
+    } catch (error) {
       logger.error(`bookedMastersIdInCityExludeOrderId failed with reason: ${error.detail}`);
       throw err;
     }    
