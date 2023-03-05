@@ -52,7 +52,7 @@ class CityController {
   * @param {*} res 
   */
   async updateCity(req, res) {
-    const {id, name} = req.body;
+    const { id, name } = req.body.params;
     try {
       await cityService.updateCity(id, name);
     }
@@ -71,7 +71,7 @@ class CityController {
    * @param {*} res 
    */
   async deleteCity(req, res) {
-    const id = req.params.id;
+    const { id } = req.query;    
     try {
       await cityService.deleteCity(id);
     }

@@ -187,6 +187,16 @@ class OrderData {
       throw err;
     }
   };
+
+  async deleteOrderByCityId(id) {    
+    try { 
+      await db.query('UPDATE orders SET is_deleted = true WHERE city_id = $1', [id]);      
+    } catch (err) {
+      logger.error(`deleteOrder failed with reason: ${err}`);
+      throw err;
+    }
+  };
+
 }
   
 module.exports = new OrderData();

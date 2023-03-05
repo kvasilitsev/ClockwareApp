@@ -1,4 +1,5 @@
 const cityData = require('../dal/cities.dal');
+const orderData = require('../dal/orders.dal');
 const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
@@ -32,6 +33,7 @@ class CityService {
     }    
     async deleteCity(id){
       try {
+        await orderData.deleteOrderByCityId(id);
         await cityData.deleteCity(id);
       }
       catch(err) {

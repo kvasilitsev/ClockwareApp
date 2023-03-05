@@ -3,7 +3,8 @@ import { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_UR
        SEND_EMAIL_URL, GET_CITIES_URL, GET_CLOCKS_URL, LOGIN_URL, LOGOUT_URL, 
        GET_USERBY_EMAIL_URL, GET_ALL_ORDERS_URL, DELETE_ORDER_URL, GET_MASTERS_URL,
        UPDATE_ORDER_URL, GET_ALL_USERS_URL, DELETE_USER_URL, UPDATE_USER_URL,
-       DELETE_MASTER_URL, UPDATE_MASTER_URL, CREATE_MASTER_URL } from '../models/routes';
+       DELETE_MASTER_URL, UPDATE_MASTER_URL, CREATE_MASTER_URL, DELETE_CITY_URL,
+       UPDATE_CITY_URL, CREATE_CITY_URL } from '../models/routes';
 
 
 class Request {
@@ -283,6 +284,46 @@ class Request {
   async deleteMaster() {            
     try {                 
       await authHost.delete(DELETE_MASTER_URL, {params: {id: this.masterId }},
+        {
+          withCredentials: true
+        }
+      )                
+    }
+    catch (error) {      
+      console.log('error: ', error); 
+    }   
+  }
+
+  async createCity() {     
+    try {
+      await authHost.post(CREATE_CITY_URL, { name: this.name },
+        {          
+          withCredentials: true
+        }      
+      ) 
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }     
+  }
+
+  async updateCity() {     
+    try {                  
+      const res = await authHost.put(UPDATE_CITY_URL, {params: {id: this.cityId, name: this.name }},
+        {
+          withCredentials: true
+        }
+      )
+      return res.data;                
+    }
+    catch (error) {      
+      console.log('error: ', error); 
+    }
+  }
+
+  async deleteCity() {            
+    try {                    
+      await authHost.delete(DELETE_CITY_URL, {params: {id: this.cityId }},
         {
           withCredentials: true
         }

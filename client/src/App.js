@@ -15,6 +15,8 @@ import Orders from "./components/admin/Orders";
 import Users from "./components/admin/Users";
 import Masters from "./components/admin/Masters";
 import CreateMaster from "./components/admin/CreateMaster";
+import Cities from "./components/admin/Cities";
+import CreateCity from "./components/admin/CreateCity";
 
 export const CurrentAuthContext = React.createContext(null);
 
@@ -52,6 +54,8 @@ function App() {
           <Route path="/users" element={<Users />} />
           <Route path="/masters" element={<Masters />} />
           <Route path="/createMaster" element={<CreateMaster />} />
+          <Route path="/cities" element={<Cities />} />
+          <Route path="/createCity" element={<CreateCity />} />
         </Routes>
         <Footer />
       </main>
