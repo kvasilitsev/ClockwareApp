@@ -13,7 +13,7 @@ class ClockController {
    * @param {*} res 
    */
   async createClock(req, res) {
-    const {size, repairDuration} = req.body;    
+    const {size, repairDuration} = req.body;      
     try {
       await clockService.createClock(size, repairDuration);
     }
@@ -42,9 +42,10 @@ class ClockController {
    * @param {*} res 
    */  
   async updateClock(req, res) {
-    const {id, size, repairDuration} = req.body;
+    const { id, size, repairDuration } = req.body.params;
+    let response = null;
     try {
-      await clockService.updateClock(id, size, repairDuration);
+      response = await clockService.updateClock(id, size, repairDuration);
     }
     catch(err) {
       res.json({
@@ -52,7 +53,7 @@ class ClockController {
         cause: err.cause.detail
       });      
     }
-    res.send(true);
+    res.send(response);
   };
 
   /**
@@ -61,7 +62,7 @@ class ClockController {
    * @param {*} res 
    */
   async deleteClock(req, res) {
-    const id = req.params.id;   
+    const { id } = req.query;     
     try {
       await clockService.deleteClock(id);
     }

@@ -4,12 +4,12 @@ import { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_UR
        GET_USERBY_EMAIL_URL, GET_ALL_ORDERS_URL, DELETE_ORDER_URL, GET_MASTERS_URL,
        UPDATE_ORDER_URL, GET_ALL_USERS_URL, DELETE_USER_URL, UPDATE_USER_URL,
        DELETE_MASTER_URL, UPDATE_MASTER_URL, CREATE_MASTER_URL, DELETE_CITY_URL,
-       UPDATE_CITY_URL, CREATE_CITY_URL } from '../models/routes';
+       UPDATE_CITY_URL, CREATE_CITY_URL, CREATE_CLOCK_URL, DELETE_CLOCK_URL, UPDATE_CLOCK_URL } from '../models/routes';
 
 
 class Request {
 
-  constructor({ name, email, password, cityId, bookingTime, clockId, masterId, orderId, userId, rating } = {}){
+  constructor({ name, email, password, cityId, bookingTime, clockId, masterId, orderId, userId, rating, size, repairDuration } = {}){
     this.name = name;
     this.email = email;
     this.password = password;
@@ -20,6 +20,8 @@ class Request {
     this.orderId = orderId;
     this.userId = userId;
     this.rating = rating;
+    this.clockSize = size;
+    this.repairDuration = repairDuration;    
   }
   
   async createUser() {     
@@ -324,6 +326,46 @@ class Request {
   async deleteCity() {            
     try {                    
       await authHost.delete(DELETE_CITY_URL, {params: {id: this.cityId }},
+        {
+          withCredentials: true
+        }
+      )                
+    }
+    catch (error) {      
+      console.log('error: ', error); 
+    }   
+  }
+
+  async createClock() {     
+    try {
+      await authHost.post(CREATE_CLOCK_URL, { size: this.clockSize,  repairDuration: this.repairDuration },
+        {          
+          withCredentials: true
+        }      
+      ) 
+    }
+    catch (error) {
+      console.log('error: ', error); 
+    }     
+  }
+
+  async updateClock() {     
+    try {                  
+      const res = await authHost.put(UPDATE_CLOCK_URL, {params: {id: this.clockId, size: this.clockSize,  repairDuration: this.repairDuration }},
+        {
+          withCredentials: true
+        }
+      )
+      return res.data;                
+    }
+    catch (error) {      
+      console.log('error: ', error); 
+    }
+  }
+
+  async deleteClock() {            
+    try {                         
+      await authHost.delete(DELETE_CLOCK_URL, {params: {id: this.clockId }},
         {
           withCredentials: true
         }

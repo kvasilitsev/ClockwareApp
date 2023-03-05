@@ -1,11 +1,19 @@
 import { Request } from '../api/api.request';
 
-export default async function clocks (){
+ async function getAllClocks (){
   try {
     const apiRequest = new Request();    
-    const clocks = await apiRequest.getClocks();
+    const res = await apiRequest.getClocks();
+    //set repair duration in hours        
+    const clocks = res.map(clock => {                   
+      clock.repairDuration = clock.repairDuration['hours'];
+      return clock;
+    });    
     return clocks;
   } catch (e) {
       console.log('error: ', e.response);          
     }      
 }
+
+export default getAllClocks;
+

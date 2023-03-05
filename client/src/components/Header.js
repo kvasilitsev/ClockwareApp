@@ -18,7 +18,7 @@ const Header = () => {
             <Nav.Link href="/users">Users</Nav.Link>
             <Nav.Link href="/masters">Masters</Nav.Link>
             <Nav.Link href="/cities">Cities</Nav.Link>
-            <Nav.Link href="/orders">Clocks</Nav.Link>              
+            <Nav.Link href="/clocks">Clocks</Nav.Link>              
             </Nav>
             <Nav className="ms-auto">            
               <Nav.Link onClick={()=>logout()}>Logout</Nav.Link>       

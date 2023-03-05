@@ -15,7 +15,7 @@ class ClockData {
    * @param {text} size 
    * @param {BigInteger} repairDuration  
    */  
-  async createClock(size, repairDuration) {
+  async createClock(size, repairDuration) {    
     try {
       await db.query('INSERT INTO clocks (size, repair_duration) values ($1, $2) RETURNING *', [size, repairDuration]);    
     } catch (err) {
@@ -55,7 +55,7 @@ class ClockData {
    * @param {text} size 
    * @param {integer} repairDuration 
    */
-  async updateClock(id, size, repairDuration) {   
+  async updateClock(id, size, repairDuration) {     
     try {
       await db.query('UPDATE clocks SET size = $1, repair_duration =$2 WHERE id = $3 RETURNING *', [size, repairDuration, id]);
     } catch (err) {
