@@ -10,9 +10,24 @@ const {isStringNullOrEmpty, isEmailValid, isPasswordValid, isNameValid} = requir
 
 class UserService {
 
-  async createUser(name, email) {    
+  async createUser(name, email) {
+    
+    email = email.toLowerCase();
+    
+    const validate = {
+      isEmail: true      
+    }
+
+    const checkUser = await userData.getUserByEmail(email);    
+    
+    if(checkUser){       // if email exist in the DB 
+      validate.isEmail = false;
+      return validate;
+    }    
+
     try {
       await userData.createUser(name, email);
+      return validate;
     }
     catch(err) {
       throw new Error("Could not create user", { cause: err });      
@@ -37,7 +52,7 @@ class UserService {
 
     const checkUser = await userData.getUserByEmail(email);
     
-    if(checkUser && checkUser.id != id){       // if email exist in db AND this email does not belong to current user.
+    if(checkUser && checkUser.id != id){       // if email exist in the DB AND this email does not belong to current user.
       validate.isEmail = false;
       return validate;
     }

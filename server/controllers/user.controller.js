@@ -15,17 +15,17 @@ class UserController {
    */
   async createUser(req, res) {    
     const {name, email} = req.body;
-    
+    let response = null;
     try {
-      await userService.createUser(name, email);
+      response = await userService.createUser(name, email);
     }
     catch(err) {
       res.json({
         message: err.message,
         cause: err.cause.detail
       } );      
-    }
-    res.send(true);
+    }      
+    res.send(response);
   };
 
   /**

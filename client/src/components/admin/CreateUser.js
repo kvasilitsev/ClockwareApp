@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import { useFormik } from 'formik';
-import { USER_REGEX, EMAIL_REGEX } from '../models/regExp';
-import { Request } from '../api/api.request';
+import { USER_REGEX, EMAIL_REGEX } from '../../models/regExp';
+import { Request } from '../../api/api.request';
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from 'react-bootstrap/Button';
@@ -35,9 +35,13 @@ import Form from 'react-bootstrap/Form';
      onSubmit: async (values) => {      
       try {        
         const apiRequest = new Request({name: values.name, email: values.email});        
-        await apiRequest.createUser();        
+        const validate = await apiRequest.createUser();              
+        if(!validate.isEmail){
+          alert(`User with email ${values.email} already exist, please check email`);
+          window.location.replace('/users');
+        }              
       } catch (e) {
-        console.log('error: ', e.response.data.message);        
+        console.log('error: ', e.response);
       }      
       navigate('/users');      
      },

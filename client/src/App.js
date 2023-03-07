@@ -5,7 +5,7 @@ import CreateOrder from "./components/CreateOrder";
 import OrderReview from './components/OrderReview';
 import Success from './components/Success';
 import NoMasters from "./components/NoMasters";
-import CreateUser from "./components/CreateUser";
+import CreateUser from "./components/admin/CreateUser";
 import RegisterAdmin from "./components/RegisterAdmin";
 import Login from "./components/login";
 import WrongLogin from "./components/WrongLogin";

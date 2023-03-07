@@ -24,9 +24,10 @@ class Request {
     this.repairDuration = repairDuration;    
   }
   
-  async createUser() {     
+  async createUser() {
+    let res = null;     
     try {
-      await authHost.post(REGISTER_URL, { name: this.name, email: this.email },
+      res = await authHost.post(REGISTER_URL, { name: this.name, email: this.email },
         {          
           withCredentials: true
         }      
@@ -34,7 +35,8 @@ class Request {
     }
     catch (error) {
       console.log('error: ', error); 
-    }     
+    }
+    return res.data;    
   }
 
   async registerAdmin() {    
