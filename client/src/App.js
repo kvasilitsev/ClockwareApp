@@ -32,7 +32,7 @@ function App() {
 
   const checkLogin = async () => {
     const token = localStorage.getItem("token");
-    if (token) { //(token && token !== 'undefined')
+    if (token && token !== 'undefined') { 
       setAuthState('true');
     } else {
       setAuthState(null);

@@ -6,8 +6,8 @@ import { USER_REGEX, EMAIL_REGEX } from '../models/regExp';
 import { faCheck, faTimes} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AsyncSelect from 'react-select/async'
-import clockOptions from '../utils/clock-options';
-import cityOptions from '../utils/city-options'
+import clockOptions from '../utils/clockOptions';
+import cityOptions from '../utils/cityOptions'
 import DatePicker from "react-datepicker";
 import UTCConverter from '../utils/UTCDateConvert';
 import "react-datepicker/dist/react-datepicker.css";
