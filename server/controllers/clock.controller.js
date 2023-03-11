@@ -62,7 +62,7 @@ class ClockController {
    * @param {*} res 
    */
   async deleteClock(req, res) {
-    const { id } = req.query;     
+    const { id } = req.body.params;     
     try {
       await clockService.deleteClock(id);
     }

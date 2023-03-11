@@ -367,7 +367,7 @@ class Request {
 
   async deleteClock() {            
     try {                         
-      await authHost.delete(DELETE_CLOCK_URL, {params: {id: this.clockId }},
+      await authHost.put(DELETE_CLOCK_URL, {params: {id: this.clockId }},
         {
           withCredentials: true
         }

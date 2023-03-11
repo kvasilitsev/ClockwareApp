@@ -1,3 +1,4 @@
+const { unDeleteClock } = require('../dal/clocks.dal');
 const clockData = require('../dal/clocks.dal');
 const orderData = require('../dal/orders.dal');
 const log4js = require('../logger');
@@ -5,13 +6,22 @@ const logger = log4js.getLogger("clockwiseLog");
 
 class ClockService {
 
-  async createClock(size, repairDuration) { 
-    
-    // Convert repair duration to time interval
-    repairDuration = repairDuration + ' hours';
+  async createClock(size, repairDuration) {    
+   
+    repairDuration = repairDuration + ' hours';  // Convert repair duration to time interval      
+
+    let checkClock = null;
+    size = size.toLowerCase();
 
     try {
-      await clockData.createClock(size, repairDuration);
+      checkClock = await clockData.getClockBySize(size);   // if clock with size exist update repair duration   
+      if(checkClock) {
+        const id = checkClock.id;        
+        await clockData.updateClock(id, size, repairDuration);
+        await clockData.unDeleteClock(id);
+      } else {
+        await clockData.createClock(size, repairDuration);
+      }
     }
     catch(err) {
       throw new Error("Could not create clock type", { cause: err });      

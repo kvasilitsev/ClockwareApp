@@ -32,7 +32,7 @@ class ClockData {
     let clockList = [];    
     let clocksResultSet;
     try {
-      clocksResultSet = await db.query('SELECT id, size, repair_duration FROM clocks');
+      clocksResultSet = await db.query('SELECT id, size, repair_duration FROM clocks WHERE is_deleted = false');
     } catch (err) {
       logger.error(err);      
       throw err;
@@ -47,6 +47,23 @@ class ClockData {
       });   
     }
     return clockList;
+  };
+
+  /**
+   * Method selects clock by its size
+   * @param {text} size data base attribute for clock table
+   * @returns id, size, repair_duration of selected clock
+   */
+  async getClockBySize(size) {
+    let clock = new Clock();
+    const clockResultSet = await db.query('SELECT id, size, repair_duration FROM clocks where size = $1', [size]);
+    if(clockResultSet.rowCount === 1){      
+      clock.id = clockResultSet.rows[0].id;
+      clock.size = clockResultSet.rows[0].size; 
+      clock.repairDuration = clockResultSet.rows[0].repairDuration;     
+    } else return false; 
+    
+    return clock;    
   };
 
    /**
@@ -65,12 +82,26 @@ class ClockData {
   };
 
   /**
-   * Method deletes clock by their id
+   * Method performs soft-delte clock by their id
    * @param {integer} id data base primary key for clock table
    */
   async deleteClock(id) {    
     try {
-      await db.query('DELETE FROM clocks where id = $1', [id]); 
+      await db.query('UPDATE clocks SET is_deleted = true where id = $1', [id]); 
+    } catch (err) {
+      logger.error(`deleteClock failed with reason: ${err.detail}`);
+      throw err;
+    }
+  };
+
+  /**
+   * Method performs undelete clock (det is_deleted = false) by their id
+   * @param {integer} id data base primary key for clock table
+   */
+  async unDeleteClock(id) {    
+    try {
+      logger.info('clock dal', id)
+      await db.query('UPDATE clocks SET is_deleted = false where id = $1', [id]); 
     } catch (err) {
       logger.error(`deleteClock failed with reason: ${err.detail}`);
       throw err;
