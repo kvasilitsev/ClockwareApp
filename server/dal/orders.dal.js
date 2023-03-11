@@ -12,13 +12,13 @@ class OrderData {
   
     /**
      * Method creates new order
-     * @param {integer} userId 
-     * @param {integer} masterId 
-     * @param {integer} cityId 
-     * @param {integer} clockId
-     * @param {time} bookingTime 
-     * @param {varchar} email 
-     * @param {varchar} name 
+     * @param {integer} userId  data base attribute for orders table
+     * @param {integer} masterId data base attribute for orders table
+     * @param {integer} cityId data base attribute for orders table
+     * @param {integer} clockId data base attribute for orders table
+     * @param {time} bookingTime  data base attribute for orders table
+     * @param {varchar} email data base attribute for orders table
+     * @param {varchar} name data base attribute for orders table
      */
   async createOrder(masterId, cityId, clockId, bookingTime, email, name, repairDuration) {
     try {
@@ -54,7 +54,7 @@ class OrderData {
 
   /**
    * Method selects order by its id
-   * @param {integer} id 
+   * @param {integer} id  data base primary key for orders table
    * @returns userId, masterId, cityId, clockId, bookingDateTime, repairDuration of selected order
    */
   async getOrderById(id) {
@@ -75,7 +75,7 @@ class OrderData {
 
   /**
    * Method selects order by master Id
-   * @param {integer} id 
+   * @param {integer} id data base primary key for orders table
    * @returns 
    */
   async getOrdersByMasterId(id) {
@@ -99,7 +99,7 @@ class OrderData {
 
   /**
    * Method selects order by user email
-   * @param {varchar} email  
+   * @param {varchar} email  data base attribute for orders table
    * @returns 
    */
   async getOrdersByUser(email) {
@@ -123,7 +123,7 @@ class OrderData {
   
   /**
    * Method selects order by user email
-   * @param {varchar} email  
+   * @param {varchar} email  data base attribute for orders table
    * @returns 
    */
   async getOrdersByClockId(id) {
@@ -142,12 +142,12 @@ class OrderData {
   
   /**
    * Method updates order by their id
-   * @param {integer} id 
-   * @param {varchar} email 
-   * @param {integer} masterId 
-   * @param {integer} cityId 
-   * @param {integer} clockId 
-   * @param {timestamp} bookingDateTime 
+   * @param {integer} id data base primary key for orders table
+   * @param {varchar} email data base attribute for orders table
+   * @param {integer} masterId data base attribute for orders table
+   * @param {integer} cityId data base attribute for orders table
+   * @param {integer} clockId data base attribute for orders table
+   * @param {timestamp} bookingDateTime data base attribute for orders table
    */
   async updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration) {        
     try {
@@ -174,7 +174,7 @@ class OrderData {
 
   /**
    * Method performs soft delete of order by its id
-   * @param {integer} id 
+   * @param {integer} id data base primary key for orders table
    */
   async deleteOrder(id) {
     try {
@@ -187,7 +187,7 @@ class OrderData {
   
   /**
    * Method performs soft delete of order by user email
-   * @param {varchar} email 
+   * @param {varchar} email data base attribute for orders table
    */
   async deleteOrderByEmail(email) {    
     try { 
@@ -200,7 +200,7 @@ class OrderData {
 
   /**
    * Method performs soft delete of order by master id
-   * @param {*} id 
+   * @param {*} id data base primary key for orders table
    */
   async deleteOrderByMasterId(id) {    
     try { 
@@ -213,7 +213,7 @@ class OrderData {
 
   /**
    * Method performs soft delete of order by city id
-   * @param {*} id 
+   * @param {*} id data base primary key for orders table
    */
   async deleteOrderByCityId(id) {    
     try { 
@@ -226,7 +226,7 @@ class OrderData {
 
   /**
    * Method performs soft delete of order by clock id
-   * @param {*} id 
+   * @param {*} id data base primary key for orders table
    */
   async deleteOrderByClockId(id) {    
     try { 

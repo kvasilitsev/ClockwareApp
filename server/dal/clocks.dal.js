@@ -12,8 +12,8 @@ class ClockData {
 
   /**
    * Method creates new clock type
-   * @param {text} size 
-   * @param {BigInteger} repairDuration  
+   * @param {text} size data base attribute for clock table;
+   * @param {text} repairDuration  data base attribute for clock table;
    */  
   async createClock(size, repairDuration) {    
     try {
@@ -51,9 +51,9 @@ class ClockData {
 
    /**
    * Method updates clock by their id
-   * @param {integer} id 
-   * @param {text} size 
-   * @param {integer} repairDuration 
+   * @param {integer} id data base primary key for clock table
+   * @param {text} size data base attribute for clock table;
+   * @param {integer} repairDuration data base attribute for clock table;
    */
   async updateClock(id, size, repairDuration) {     
     try {
@@ -79,8 +79,8 @@ class ClockData {
   
   /**
    * Method get repair duration time by clock id
-   * @param {integer} id 
-   * @returns 
+   * @param {integer} id data base primary key for clock table
+   * @returns repairDuration time interval
    */
   async getRepairDurationByClockId(id) {
     let clock = new Clock();

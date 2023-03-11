@@ -64,7 +64,7 @@ class OrderController {
    * @param {*} res 
    */
   async getOrdersByUser(req, res) {    
-    const { email } = req.query;    
+    const { email } = req.query;
     const orders = await orderService.getOrdersByUser(email);    
     res.json(orders);   
   }; 

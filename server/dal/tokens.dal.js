@@ -7,8 +7,8 @@ class TokenData {
 
 	/**
 	 * Method creates new token
-	 * @param {integer} userId 
-	 * @param {text} refreshToken 
+	 * @param {integer} userId data base attribute for tokens table
+	 * @param {text} refreshToken data base attribute for tokens table
 	 */
 	async createToken(userId, refreshToken){
 		try {
@@ -21,8 +21,8 @@ class TokenData {
 
 	/**
 	 * Method updates token
-	 * @param {integer} userId 
-	 * @param {text} refreshToken 
+	 * @param {integer} userId data base attribute for tokens table
+	 * @param {text} refreshToken data base attribute for tokens table
 	 */
 	async updateToken(userId, refreshToken){
 		try {
@@ -35,7 +35,7 @@ class TokenData {
 
 	/**
 	 * Method selects token by user id
-	 * @param {integer} userId 
+	 * @param {integer} userId data base attribute for tokens table
 	 */
 	async getTokenByUserId(userId){
 	  let token = null;

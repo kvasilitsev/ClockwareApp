@@ -34,6 +34,11 @@ class MasterService {
     }      
   }
 
+  /**
+   * Function which first soft-deletes orders which are under this master, then deletes the master.
+   * 
+   * @param {integer} id master id primary key in the database
+   */
   async deleteMaster(id){
     try {
       await orderData.deleteOrderByMasterId(id);

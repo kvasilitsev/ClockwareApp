@@ -12,8 +12,8 @@ class UserData {
 
   /**
    * Method creates new user
-   * @param {text} name 
-   * @param {text} email   
+   * @param {text} name data base attribute for users table
+   * @param {text} email data base attribute for users table 
    */  
   async createUser(name, email) {    
     try {
@@ -46,7 +46,7 @@ class UserData {
 
   /**
    * Method selects user by their id
-   * @param {integer} id 
+   * @param {integer} id data base primary key for users table
    * @returns name, email, admin status of certain user
    */
   async getUserById(id) {
@@ -63,10 +63,10 @@ class UserData {
 
   /**
    * Method updates user by their id
-   * @param {integer} id 
-   * @param {text} name 
-   * @param {text} email
-   * @param {boolean} admin
+   * @param {integer} id data base primary key for users table
+   * @param {text} name data base attribute for users table
+   * @param {text} email data base attribute for users table
+   * @param {boolean} admin data base attribute for users table
    */
   async updateUser(id, name, email) {   
     try {
@@ -79,7 +79,7 @@ class UserData {
 
   /**
    * Method deletes user by their id
-   * @param {integer} id
+   * @param {integer} id data base primary key for users table
    */
   async deleteUser(email) {
     try {
@@ -92,7 +92,7 @@ class UserData {
 
   /**
    * Method select user by their email
-   * @param {text} email
+   * @param {text} email data base attribute for users table
    * @returns 
    */
   async getUserByEmail(email) {    
@@ -116,9 +116,9 @@ class UserData {
 
   /**
    * Method create administartor
-   * @param {text} name 
-   * @param {text} email 
-   * @param {varchar} password 
+   * @param {text} name  data base attribute for users table
+   * @param {text} email data base attribute for users table
+   * @param {varchar} password data base attribute for users table
    */
   async createAdmin(name, email, password) {
     try {

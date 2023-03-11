@@ -11,7 +11,7 @@ class CityData {
   
    /**
   * Method creates new city
-  * @param {text} name
+  * @param {text} name data base attribute for city table
   */
   async createCity(name) {
     try {
@@ -49,8 +49,8 @@ class CityData {
 
   /**
    * Method selects city by its id
-   * @param {integer} id 
-   * @returns id, name of certain city
+   * @param {integer} id data base primary key for city table
+   * @returns id, name of selected city
    */
   async getCityById(id) {
     let city = new City();
@@ -65,8 +65,8 @@ class CityData {
 
   /**
   * Method update city by its id
-  * @param {integer} id 
-  * @param {text} name
+  * @param {integer} id data base primary key for city table
+  * @param {text} name data base attribute for city table
   */
   async updateCity(id, name) {
     try {
@@ -79,7 +79,7 @@ class CityData {
 
   /**
    * Method deletes city by its name
-   * @param {integer} id
+   * @param {integer} id data base primary key for city table
    */
   async deleteCity(id) {
     try {
@@ -91,7 +91,7 @@ class CityData {
   };
   /**
    * Method select cities by master id
-   * @param {integer} id 
+   * @param {integer} id data base primary key for city table
    * @returns an array of cities
    */
   async getCitiesByMasterId(id) {
