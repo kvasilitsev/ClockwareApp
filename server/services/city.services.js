@@ -5,8 +5,17 @@ const logger = log4js.getLogger("clockwiseLog");
 
 class CityService {
     async createCity(name){
+
+      let checkCity = null;
+
       try {
-        await cityData.createCity(name);
+        checkCity = await cityData.getCityByName(name);
+        let id = checkCity.id;        
+        if(checkCity){
+          await cityData.unDeleteCity(id);
+        } else {
+          await cityData.createCity(name);
+        }        
       }
       catch(err) {
         throw new Error("Could not create city", { cause: err });

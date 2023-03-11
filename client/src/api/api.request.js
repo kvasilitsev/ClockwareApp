@@ -327,7 +327,7 @@ class Request {
 
   async deleteCity() {            
     try {                    
-      await authHost.delete(DELETE_CITY_URL, {params: {id: this.cityId }},
+      await authHost.put(DELETE_CITY_URL, {params: {id: this.cityId }},
         {
           withCredentials: true
         }

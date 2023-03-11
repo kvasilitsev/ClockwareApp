@@ -4,18 +4,14 @@
  class City {
     id;
     name;
-    masterList;
-
 /**
  * 
  * @param {integer} id
  * @param {text} cityName 
- * @param {Array} masterList 
  */
-    constructor (id, cityName, masterList) {
+    constructor (id, cityName) {
         this.id = id;
-        this.name = cityName;
-        this.masterList = masterList;
+        this.name = cityName;        
     }
 }
 

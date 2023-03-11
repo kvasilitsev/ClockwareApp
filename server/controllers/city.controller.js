@@ -71,7 +71,7 @@ class CityController {
    * @param {*} res 
    */
   async deleteCity(req, res) {
-    const { id } = req.query;    
+    const { id } = req.body.params;   
     try {
       await cityService.deleteCity(id);
     }
