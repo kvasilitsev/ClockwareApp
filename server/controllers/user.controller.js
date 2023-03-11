@@ -75,7 +75,7 @@ class UserController {
    * @param {*} res 
    */
   async deleteUser(req, res) {
-    const { email } = req.query;    
+    const { email } = req.body.params;    
     try {
       await userService.deleteUser(email);
     }

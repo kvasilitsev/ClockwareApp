@@ -247,7 +247,7 @@ class Request {
   
   async deleteUser() {           
     try {                 
-      await authHost.delete(DELETE_USER_URL, {params: {email: this.email }},
+      await authHost.put(DELETE_USER_URL, {params: {email: this.email }},
         {
           withCredentials: true
         }

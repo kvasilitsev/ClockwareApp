@@ -18,15 +18,25 @@ class UserService {
       isEmail: true      
     }
 
-    const checkUser = await userData.getUserByEmail(email);    
-    
-    if(checkUser){       // if email exist in the DB 
-      validate.isEmail = false;
-      return validate;
-    }    
+    let checkUser = null;    
 
-    try {
-      await userData.createUser(name, email);
+    try {     
+      checkUser = await userData.getUserByEmail(email);      
+      const isDeleted = checkUser.isDeleted;      
+      const id = checkUser.id;
+
+      if(checkUser && !isDeleted){       // if email exist in the DB and user is not deleted        
+        validate.isEmail = false;
+        return validate;
+      }
+      
+      if(checkUser && isDeleted){       // if email exist in the DB and user is deleted             
+        await userData.updateUser(id, name, email);          
+        await userData.unDeleteUser(id);           
+      } else {
+        await userData.createUser(name, email);
+      }
+
       return validate;
     }
     catch(err) {

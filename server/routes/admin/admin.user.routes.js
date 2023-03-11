@@ -9,7 +9,7 @@ router.post("/createUser", authAdminMiddleware, userController.createUser);
 router.get("/getUsers", authAdminMiddleware, userController.getUsers);
 router.get("/getUserById/:id",authAdminMiddleware, userController.getUserById);
 router.put("/updateUser", authAdminMiddleware, userController.updateUser);
-router.delete("/deleteUser", authAdminMiddleware, userController.deleteUser);
+router.put("/deleteUser", authAdminMiddleware, userController.deleteUser);
 router.post("/createAdmin", authAdminMiddleware, userController.createAdmin);
 router.post("/adminRegistration", authAdminMiddleware, userController.adminRegistration);
 router.post("/login", userController.login);

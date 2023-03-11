@@ -30,7 +30,7 @@ class UserData {
    */
   async getUsers() {
     let userList = [];    
-    const usersResultSet = await db.query('SELECT id, name, email, admin FROM users');    
+    const usersResultSet = await db.query('SELECT id, name, email, admin FROM users WHERE is_deleted = false');    
     if(usersResultSet.rowCount > 0) { 
       usersResultSet.rows.forEach(element => {                 
         let user = new User();
@@ -69,7 +69,7 @@ class UserData {
    * @param {boolean} admin data base attribute for users table
    */
   async updateUser(id, name, email) {   
-    try {
+    try {      
       await db.query('UPDATE users SET name = $1, email = $2 WHERE id = $3 RETURNING *', [name, email, id]);
     } catch (err) {
       logger.error(`updateUser failed with reason: ${err.detail}`);
@@ -78,14 +78,27 @@ class UserData {
   };
 
   /**
-   * Method deletes user by their id
-   * @param {integer} id data base primary key for users table
+   * Method performs soft delete user by their email (set is_deleted = true)
+   * @param {text} email data base attribute for users table
    */
   async deleteUser(email) {
     try {
-      await db.query('DELETE FROM users where email = $1', [email]); 
+      await db.query('UPDATE users SET is_deleted = true WHERE email = $1', [email]); 
     } catch (err) {
       logger.error(`deleteUser failed with reason: ${err.detail}`);
+      throw err;
+    }
+  };
+
+  /**
+   * Method perfoms user undelete function (set is_deletes = false) by their id
+   * @param {integer} id data base primary key for users table
+   */
+  async unDeleteUser(id) {
+    try {
+      await db.query('UPDATE users SET is_deleted = false WHERE id = $1', [id]); 
+    } catch (err) {
+      logger.error(`unDeleteUser failed with reason: ${err.detail}`);
       throw err;
     }
   };
@@ -98,7 +111,7 @@ class UserData {
   async getUserByEmail(email) {    
     let user = null;
     try{
-      const userResultSet = await db.query('SELECT id, name, email, admin, password FROM users where email = $1', [email]);
+      const userResultSet = await db.query('SELECT id, name, email, admin, password, is_deleted FROM users where email = $1', [email]);
       if(userResultSet.rowCount === 1){  
         user = new User();
         user.name = userResultSet.rows[0].name;
@@ -106,6 +119,7 @@ class UserData {
         user.admin = userResultSet.rows[0].admin;
         user.id = userResultSet.rows[0].id;
         user.password = userResultSet.rows[0].password;
+        user.isDeleted = userResultSet.rows[0].is_deleted;
       };
     } catch (error) {
       logger.error(`getUserByEmail failed with reason: ${error.detail}`);
