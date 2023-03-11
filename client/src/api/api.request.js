@@ -287,7 +287,7 @@ class Request {
 
   async deleteMaster() {            
     try {                 
-      await authHost.delete(DELETE_MASTER_URL, {params: {id: this.masterId }},
+      await authHost.put(DELETE_MASTER_URL, {params: {id: this.masterId }},
         {
           withCredentials: true
         }

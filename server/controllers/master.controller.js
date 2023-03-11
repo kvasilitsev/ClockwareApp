@@ -72,7 +72,7 @@ class MasterController {
    * @param {*} res 
    */
   async deleteMaster(req, res) {
-    const { id } = req.query;   
+    const { id } = req.body.params;   
     try {
       await masterService.deleteMaster(id);
     }

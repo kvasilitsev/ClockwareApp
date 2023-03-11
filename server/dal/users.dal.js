@@ -51,7 +51,7 @@ class UserData {
    */
   async getUserById(id) {
     let user = new User();
-    const userResultSet = await db.query('SELECT id, name, email, admin FROM users where id = $1', [id]);
+    const userResultSet = await db.query('SELECT id, name, email, admin FROM users WHERE is_deleted = false AND id = $1', [id]);
     if(userResultSet.rowCount === 1){      
       user.name = userResultSet.rows[0].name;
       user.email = userResultSet.rows[0].email;

@@ -6,7 +6,7 @@ const logger = log4js.getLogger("clockwiseLog");
 
 class MasterService {
 
-  async createMaster(name, rating) {    
+  async createMaster(name, rating) {  
     try {
       await masterData.createMaster(name, rating);
     }
@@ -25,8 +25,8 @@ class MasterService {
     return master;
   }
 
-  async updateMaster(id, name, rating){    
-    try {      
+  async updateMaster(id, name, rating){
+    try {
       await masterData.updateMaster(id, name, rating);
     }
     catch(err) {
@@ -35,17 +35,33 @@ class MasterService {
   }
 
   /**
-   * Function which first soft-deletes orders which are under this master, then deletes the master.
+   * Function which first soft-deletes orders which are under this master, then performs soft-delete the master.
    * 
    * @param {integer} id master id primary key in the database
    */
-  async deleteMaster(id){
-    try {
+  async deleteMaster(id){  
+    logger.info('masters service', id);
+    try {      
       await orderData.deleteOrderByMasterId(id);
       await masterData.deleteMaster(id);
     }
     catch(err) {
       throw new Error("Could not delete master", { cause: err });      
+    } 
+  }
+
+  /**
+   * Function performs unDelete master (set is_deleted = false)
+   * 
+   * @param {integer} id master id primary key in the database
+   */
+  async unDeleteMaster(id){  
+
+    try {      
+      await masterData.unDeleteMaster(id);
+    }
+    catch(err) {
+      throw new Error("Could not undelete master", { cause: err });      
     } 
   }
 

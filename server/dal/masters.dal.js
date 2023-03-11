@@ -33,7 +33,7 @@ class MasterData {
     let masterList = [];
 
     try {
-      const mastersResultSet = await db.query('SELECT id, name, rating FROM masters');    
+      const mastersResultSet = await db.query('SELECT id, name, rating FROM masters where is_deleted = false');    
       if(mastersResultSet.rowCount > 0) { 
         mastersResultSet.rows.forEach(element => {                 
         let master = new Master();
@@ -60,7 +60,7 @@ class MasterData {
 
     try{
       let master = new Master();
-      const masterResultSet = await db.query('SELECT id, name, rating FROM masters where id = $1', [id]);
+      const masterResultSet = await db.query('SELECT id, name, rating FROM masters where id = $1 AND is_deleted = false', [id]);
       if(masterResultSet.rowCount === 1){      
         master.name = masterResultSet.rows[0].name;
         master.rating = masterResultSet.rows[0].rating;
@@ -90,18 +90,33 @@ class MasterData {
   };
 
   /**
-   * Method deletes master by their id
+   * Method performs soft-delete master by their id
    * @param {integer} id data base primary key for master table
    */
   async deleteMaster(id) {
-
+    logger.info('masters dal', id)
     try {
-      await db.query('DELETE FROM masters where id = $1', [id]); 
+      await db.query('UPDATE masters SET is_deleted = true where id = $1', [id]); 
     } catch (err) {
-      logger.error(`deleteMaster failed with reason: ${err.detail}`);
+      logger.error(`deleteMaster failed with reason: ${err}`);
       throw err;
     }
-  };	
+  };
+
+  /**
+   * Method performs unDelete master by their id (set is_delete = false)
+   * @param {integer} id data base primary key for master table
+   */
+  async unDeleteMaster(id) {
+
+    try {
+      await db.query('UPDATE masters SET is_delete = false where id = $1', [id]); 
+    } catch (err) {
+      logger.error(`unDeleteMaster failed with reason: ${err.detail}`);
+      throw err;
+    }
+  };
+
   /**
    * Methods select masters by cities name
    * @param {text} name data base attribute for master table
@@ -112,7 +127,7 @@ class MasterData {
     let masterList = [];
 
     try{
-      const mastersResultSet = await db.query('select masters.name, masters.id, masters.rating from masters, cities, masters_cities where masters_cities.master_id = masters.id AND masters_cities.city_id = cities.id and cities.id = $1', [id]);
+      const mastersResultSet = await db.query('select masters.name, masters.id, masters.rating from masters, cities, masters_cities where masters_cities.master_id = masters.id AND masters_cities.city_id = cities.id AND masters.is_deleted = false AND cities.id = $1', [id]);
       if (mastersResultSet.rowCount > 0) {
         mastersResultSet.rows.forEach(element => {
           let master = new Master();
@@ -156,7 +171,7 @@ class MasterData {
     let masterList = [];
 
     try{
-      const mastersResultSet = await db.query('SELECT masters.id FROM masters, cities, masters_cities WHERE masters_cities.master_id = masters.id AND masters_cities.city_id = cities.id AND cities.id = $1 AND masters_cities.master_id IN (SELECT orders.master_id FROM orders WHERE ((orders.booking_date_time BETWEEN $2 AND ($2 + $3)) OR (orders.booking_date_time + orders.repair_duration BETWEEN $2 AND ($2 + $3))) AND (orders.booking_date_time <> ($2 +$3)) AND (orders.booking_date_time + orders.repair_duration <> $2))', [cityId, bookingTime, repairDuration]);
+      const mastersResultSet = await db.query('SELECT masters.id FROM masters, cities, masters_cities WHERE masters_cities.master_id = masters.id AND masters_cities.city_id = cities.id AND cities.id = $1 AND masters_cities.master_id IN (SELECT orders.master_id FROM orders WHERE ((orders.booking_date_time BETWEEN $2 AND ($2 + $3)) OR (orders.booking_date_time + orders.repair_duration BETWEEN $2 AND ($2 + $3))) AND (orders.booking_date_time <> ($2 +$3)) AND (orders.booking_date_time + orders.repair_duration <> $2)) AND masters.is_deleted = false', [cityId, bookingTime, repairDuration]);
       if(mastersResultSet.rowCount > 0) {
         mastersResultSet.rows.forEach(element => {
           masterList.push(element.id);
@@ -179,7 +194,7 @@ class MasterData {
   async bookedMastersIdInCityExludeOrderId(cityId, bookingTime, repairDuration, id){ 
     let masterList = [];
     try{
-      const mastersResultSet = await db.query('SELECT masters.id FROM masters, cities, masters_cities WHERE masters_cities.master_id = masters.id AND masters_cities.city_id = cities.id AND cities.id = $1 AND masters_cities.master_id IN (SELECT orders.master_id FROM orders WHERE ((orders.booking_date_time BETWEEN $2 AND ($2 + $3)) OR (orders.booking_date_time + orders.repair_duration BETWEEN $2 AND ($2 + $3))) AND (orders.booking_date_time <> ($2 +$3)) AND (orders.booking_date_time + orders.repair_duration <> $2) AND orders.id <> $4)', [cityId, bookingTime, repairDuration, id]);
+      const mastersResultSet = await db.query('SELECT masters.id FROM masters, cities, masters_cities WHERE masters_cities.master_id = masters.id AND masters_cities.city_id = cities.id AND cities.id = $1 AND masters_cities.master_id IN (SELECT orders.master_id FROM orders WHERE ((orders.booking_date_time BETWEEN $2 AND ($2 + $3)) OR (orders.booking_date_time + orders.repair_duration BETWEEN $2 AND ($2 + $3))) AND (orders.booking_date_time <> ($2 +$3)) AND (orders.booking_date_time + orders.repair_duration <> $2) AND orders.id <> $4) AND masters.is_deleted = false', [cityId, bookingTime, repairDuration, id]);
       if(mastersResultSet.rowCount > 0) {
         mastersResultSet.rows.forEach(element => {
           masterList.push(element.id);
