@@ -8,19 +8,33 @@ const logger = log4js.getLogger("clockwiseLog");
 class OrderService {
 
   async createOrder(masterId, cityId, clockId, bookingTime, email, name) {    
-    const getUser = await userData.getUserByEmail(email);    
-    if (!getUser) {
-      const password = null;
-      await userData.createUser(name, email, password);
-    }
-    const repairDuration = await clockData.getRepairDurationByClockId(clockId);
-    const mastersInCity = await masterData.getMastersByCityId(cityId);
-    const isMasterInCity = mastersInCity.filter(master => master.id == masterId).length === 1;    
-    if(!isMasterInCity){
-      throw new Error("Could not create order, master does not exist in the city", { cause: 'undefiend'})
-    }
-    try {      
-      await orderData.createOrder(masterId, cityId, clockId, bookingTime, email, name, repairDuration);
+    
+    try {
+
+      let userId = null;
+
+      const getUser = await userData.getUserByEmail(email); 
+      
+      if (!getUser) {
+        const password = null;
+        await userData.createUser(name, email, password);         
+      }
+      
+      if(getUser){
+        userId = getUser.id;
+      } else {
+        const getNewUser = await userData.getUserByEmail(email);
+        userId = getNewUser.id; 
+      }      
+
+      const repairDuration = await clockData.getRepairDurationByClockId(clockId);      
+      const mastersInCity = await masterData.getMastersByCityId(cityId);           
+      const isMasterInCity = mastersInCity.filter(master => master.id == masterId).length === 1;           
+      
+      if(!isMasterInCity){
+        throw new Error("Could not create order, master does not exist in the city", { cause: 'undefiend'})
+      }      
+      await orderData.createOrder(masterId, cityId, clockId, bookingTime, email, name, repairDuration, userId);
     }
     catch(err) {
       logger.info('error')

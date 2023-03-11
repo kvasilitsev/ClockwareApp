@@ -99,8 +99,7 @@ class ClockData {
    * @param {integer} id data base primary key for clock table
    */
   async unDeleteClock(id) {    
-    try {
-      logger.info('clock dal', id)
+    try {      
       await db.query('UPDATE clocks SET is_deleted = false where id = $1', [id]); 
     } catch (err) {
       logger.error(`deleteClock failed with reason: ${err.detail}`);
