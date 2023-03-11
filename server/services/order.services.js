@@ -13,32 +13,34 @@ class OrderService {
 
       let userId = null;
 
-      const getUser = await userData.getUserByEmail(email); 
+      const checkUser = await userData.getUserByEmail(email); //check if user exist
       
-      if (!getUser) {
+      if (!checkUser) { //create new user if no email in data base
         const password = null;
         await userData.createUser(name, email, password);         
       }
       
-      if(getUser){
-        userId = getUser.id;
+      if(checkUser){
+        userId = checkUser.id;
       } else {
         const getNewUser = await userData.getUserByEmail(email);
         userId = getNewUser.id; 
       }      
 
-      const repairDuration = await clockData.getRepairDurationByClockId(clockId);      
-      const mastersInCity = await masterData.getMastersByCityId(cityId);           
-      const isMasterInCity = mastersInCity.filter(master => master.id == masterId).length === 1;           
+      const repairDuration = await clockData.getRepairDurationByClockId(clockId);    
+      const mastersInCity = await masterData.getMastersByCityId(cityId);
+      const bookedMastersinCity = await masterData.bookedMastersIdInCity(cityId, bookingTime, repairDuration);          
+      const isMasterInCity = mastersInCity.filter(master => master.id == masterId).length === 1;  //check if master works in the city         
+      const isMasterBooked = bookedMastersinCity.filter(master => master == masterId).length > 0; //check if master is booked
       
-      if(!isMasterInCity){
-        throw new Error("Could not create order, master does not exist in the city", { cause: 'undefiend'})
+      if(!isMasterInCity && isMasterBooked){
+        throw new Error("Could not create order, master does not exist in the city or booked", { cause: 'undefiend'})
       }      
       await orderData.createOrder(masterId, cityId, clockId, bookingTime, email, name, repairDuration, userId);
     }
-    catch(err) {
-      logger.info('error')
-      throw new Error("Could not create order", { cause: err });      
+    catch(error) {
+      logger.info(error)
+      throw new Error("Could not create order", { cause: error });      
     }    
   }
     
