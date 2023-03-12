@@ -30,9 +30,8 @@ function App() {
     checkLogin();
   }, [])
 
-  const checkLogin = async () => {
-    const token = localStorage.getItem("token");
-    if (token && token !== 'undefined') { 
+  const checkLogin = async () => {    
+    if (localStorage.getItem("token")) { 
       setAuthState('true');
     } else {
       setAuthState(null);

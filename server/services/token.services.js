@@ -10,8 +10,8 @@ class TokenService {
 	 * @returns 
 	 */
   generateTokens(payload){
-    const accessToken = jwt.sign(payload, process.env.JWT_ACCESS_SECRET, {expiresIn: '30d'});
-		const refreshToken = jwt.sign(payload, process.env.JWT_REFRESH_SECRET, {expiresIn: '30d'});
+    const accessToken = jwt.sign(payload, process.env.JWT_ACCESS_SECRET, {expiresIn: '900000'}); //15 min
+		const refreshToken = jwt.sign(payload, process.env.JWT_REFRESH_SECRET, {expiresIn: '30d'}); //30 days
 		return {
 			accessToken,
 			refreshToken
