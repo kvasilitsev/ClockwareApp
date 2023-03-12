@@ -69,33 +69,49 @@ class OrderService {
     const validate = {
       isUser: true,
       isMaster: true,
-      isTime: true
-    }
-
-    const checkUser = await userData.getUserByEmail(email);
-
-    if(!checkUser){       
-      validate.isUser = false;
-      return validate;
-    }
-
-    const mastersInCity = await masterData.getMastersByCityId(cityId);
-    const isMasterInCity = mastersInCity.filter(master => master.id == masterId).length === 1;    
-    if (!isMasterInCity){
-      validate.isMaster = false;      
-      return validate;
-    }
-
-    const repairDuration = await clockData.getRepairDurationByClockId(clockId);
-    const bookedMastersIdInCity = await masterData.bookedMastersIdInCityExludeOrderId(cityId, bookingTime, repairDuration, id);
-    const isMasterBusy = bookedMastersIdInCity.find(master => master === masterId);      
-    if(isMasterBusy){
-      validate.isTime = false;
-      return validate;    
-    } 
-   
+      isTime: true,
+      isExpired: false
+    }    
+       
     try {
-      await orderData.updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration);
+      email = email.toLowerCase();
+      const checkUser = await userData.getUserByEmail(email);   
+
+      if(!checkUser){     //Check if user exist  
+        validate.isUser = false;
+        return validate;
+      }
+
+      const mastersInCity = await masterData.getMastersByCityId(cityId);
+      const isMasterInCity = mastersInCity.filter(master => master.id == masterId).length === 1;    
+      if (!isMasterInCity){ //Check if master works in the city
+        validate.isMaster = false;      
+        return validate;
+      }
+      
+      const repairDuration = await clockData.getRepairDurationByClockId(clockId);
+      const bookedMastersIdInCity = await masterData.bookedMastersIdInCityExludeOrderId(cityId, bookingTime, repairDuration, id);
+      const isMasterBooked = bookedMastersIdInCity.find(master => master === masterId);      
+      if(isMasterBooked){ //Check if master is booked
+        validate.isTime = false;
+        return validate;    
+      } 
+      
+      const currentOrderData = await orderData.getOrderById(id);
+      
+      const currentOrderDate = new Date(currentOrderData.bookingDateTime);    
+      if(Date.now() > currentOrderDate){ //Check if order expired/complited
+        validate.isExpired = true;
+        return validate;
+      }
+      let userId = currentOrderData.userId;
+
+      if(email !== currentOrderData.email){ //if change user - change userId
+        const updatedUserData = await userData.getUserByEmail(email);
+        userId = updatedUserData.id;        
+      }
+      
+      await orderData.updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration, userId);
     }
     catch(err) {
       throw new Error("Could not update order", { cause: err });      

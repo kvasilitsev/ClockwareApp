@@ -59,9 +59,9 @@ class OrderData {
    * @param {integer} id  data base primary key for orders table
    * @returns userId, masterId, cityId, clockId, bookingDateTime, repairDuration of selected order
    */
-  async getOrderById(id) {
+  async getOrderById(id) {    
     let order = null;
-    const orderResultSet = await db.query('SELECT user_id, master_id, city_id, clock_id, booking_date_time, repairDuration FROM orders where id = $1', [id]);
+    const orderResultSet = await db.query('SELECT id, user_id, master_id, city_id, clock_id, booking_date_time, repair_duration FROM orders where id = $1', [id]);    
     if(orderResultSet.rowCount === 1){      
       order = new Order();
       order.userId = orderResultSet.rows[0].user_id;
@@ -71,7 +71,7 @@ class OrderData {
       order.bookingDateTime = orderResultSet.rows[0].booking_date_time;
       order.repairDuration = orderResultSet.rows[0].repairDuration; 
       order.id = orderResultSet.rows[0].id;
-    }
+    }    
     return order;
   };
 
@@ -151,9 +151,9 @@ class OrderData {
    * @param {integer} clockId data base attribute for orders table
    * @param {timestamp} bookingDateTime data base attribute for orders table
    */
-  async updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration) {        
+  async updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration, userId) {        
     try {
-      await db.query('UPDATE orders SET email = $1, master_id = $2, city_id = $3, clock_id = $4, booking_date_time = $5, repair_duration = $6 WHERE id = $7 RETURNING *', [email, masterId, cityId, clockId, bookingTime, repairDuration, id]);
+      await db.query('UPDATE orders SET email = $1, master_id = $2, city_id = $3, clock_id = $4, booking_date_time = $5, repair_duration = $6, user_id = $7 WHERE id = $8 RETURNING *', [email, masterId, cityId, clockId, bookingTime, repairDuration, userId, id]);
     } catch (err) {
       logger.error(`updateOrder failed with reason: ${err.detail}`);
       throw err;

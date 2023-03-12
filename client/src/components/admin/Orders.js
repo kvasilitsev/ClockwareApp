@@ -115,6 +115,8 @@ const Orders = () => {
       alert(`Master ${values.masterName} does not work in city ${values.cityName}, please select another master`);   
     } else if(!validateUpdate.isTime){
       alert(`Master ${values.masterName} is not available at this time, please select another master or booking time`); 
+    } else if(validateUpdate.isExpired){
+      alert(`Expired/Complited order can not be updated`);  
     }
     exitEditingMode();
     window.location.replace('/orders');
