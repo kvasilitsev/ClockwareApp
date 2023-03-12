@@ -32,6 +32,18 @@ const Orders = () => {
     .then(data =>
       setOrderList(data)
     );
+    getAllCities()
+    .then(data =>
+      setCities(data)
+    );
+    getAllClocks()
+    .then(data =>
+      setClocks(data)
+    );
+    getAllMasters()
+    .then(data =>
+      setMasters(data)
+    );
    }, []);
    
   useEffect(() => {    
@@ -39,28 +51,7 @@ const Orders = () => {
     .then(data =>
       setNameOrderList(data)
     );
-  }, [orderList]);
-
-  useEffect(() => {    
-    getAllCities()
-    .then(data =>
-      setCities(data)
-    );
-   }, []);
-
-   useEffect(() => {    
-    getAllClocks()
-    .then(data =>
-      setClocks(data)
-    );
-   }, []);
-
-   useEffect(() => {    
-    getAllMasters()
-    .then(data =>
-      setMasters(data)
-    );
-   }, []);  
+  }, [orderList]);  
 
   const validate = useCallback(
     (cell) => {

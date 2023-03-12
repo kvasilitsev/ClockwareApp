@@ -43,7 +43,7 @@ const Login = (props) => {
   return (
   <>
     <section>
-      <h3>Pease login</h3>
+      <h3>Please login</h3>
       <Form onSubmit={formik.handleSubmit}>
         <Form.Group className="mb-3">
         <Form.Label>
