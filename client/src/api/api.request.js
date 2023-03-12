@@ -206,15 +206,16 @@ class Request {
 
   async deleteOrder() {           
     try {                  
-      await authHost.put(DELETE_ORDER_URL, {params: {id: this.orderId }},
+      const res = await authHost.put(DELETE_ORDER_URL, {params: {id: this.orderId }},
         {
           withCredentials: true
         }
-      )                
+      )      
+      return res.data;                
     }
     catch (error) {      
       console.log('error: ', error); 
-    }   
+    }       
   }
 
   async getAllUsers() {

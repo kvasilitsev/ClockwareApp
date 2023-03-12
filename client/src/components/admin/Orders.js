@@ -97,7 +97,10 @@ const Orders = () => {
     ) {
       return;
     }      
-     await deleteOrder(row.getValue('id'));
+     const validateDelete = await deleteOrder(row.getValue('id'));     
+     if(validateDelete.isExpired){
+      alert(`Expired/Complited order can not be deleted`);  
+    }
      window.location.replace('/orders');      
   }
 

@@ -120,13 +120,27 @@ class OrderService {
   }
 
   async deleteOrder(id){
+
+    const validate = {      
+      isExpired: false
+    }    
+
     try {
+      const currentOrderData = await orderData.getOrderById(id);      
+      const currentOrderDate = new Date(currentOrderData.bookingDateTime);    
+      if(Date.now() > currentOrderDate){ //Check if order expired/complited
+        validate.isExpired = true;        
+        return validate;
+      }
+
       await orderData.deleteOrder(id);
     }
     catch(err) {
       throw new Error("Could not delete order", { cause: err });      
-    } 
+    }
+    return validate;
   } 
 }
 
 module.exports = new OrderService();
+

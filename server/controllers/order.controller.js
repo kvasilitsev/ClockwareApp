@@ -96,8 +96,9 @@ class OrderController {
    */
   async deleteOrder(req, res) {    
     const { id } = req.body.params;    
+    let response = null;
     try {
-      await orderService.deleteOrder(id);
+      response = await orderService.deleteOrder(id);
     }
     catch(err) {
       res.json({
@@ -105,7 +106,7 @@ class OrderController {
         cause: err.cause.detail
       });      
     }
-    res.send(true);
+    res.send(response);
   };  
 }
 
