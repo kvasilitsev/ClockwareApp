@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { useFormik } from 'formik';
 import { Request } from '../api/api.request';
 import { useNavigate } from "react-router-dom";
 import UTCConverter from '../utils/UTCDateConvert';
@@ -10,63 +9,53 @@ import Button from 'react-bootstrap/Button';
 const OrderReview = (props) => {
   const { state } = useLocation();
   const navigate = useNavigate();
-  const formik = useFormik({
-    initialValues: {      
-      masterName: state.masterName,
-      masterId: state.masterId,
-      name: state.name,
-      email: state.email,
-      cityId: state.cityId,
-      clockId: state.clockId,
-      bookingTime: state.bookingTime,     
-      city: state.city,
-      clockSize: state.clockSize 
-    },    
-    onSubmit: async (values) => {         
-      try {        
-        const modifyTime = UTCConverter(values.bookingTime); //show time zone in UTC       
-        const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId});  //for production when server in UTC timezone
-        //const apiRequest = new Request({name: values.name, clockId: values.clockId, cityId: values.cityId, bookingTime: values.bookingTime, email: values.email, masterId: values.masterId}); //for dev
-        const res = await apiRequest.createOrder();
-        if (res.data === true){          
-          const apiRequest = new Request({email: values.email})
-          await apiRequest.sendEmail();                      
-          navigate('/success');
-        }             
-      } catch (e) {
-          console.log('error: ', e.response);          
-        }   
-      },    
-    onReset: () => navigate('/')
-  });
-    return (  
+  const handleSubmit = async (event) => {
+    event.preventDefault();            
+    try {        
+      const modifyTime = UTCConverter(state.bookingTime); //show time zone in UTC       
+      const apiRequest = new Request({name: state.name, clockId: state.clockId, cityId: state.cityId, bookingTime: modifyTime, email: state.email, masterId: state.masterId});  //for production when server in UTC timezone        
+      const res = await apiRequest.createOrder();
+      if (res.data === true){          
+        const apiRequest = new Request({email: state.email})
+        await apiRequest.sendEmail();                      
+        navigate('/success');
+      }             
+    } catch (e) {
+        console.log('error: ', e.response);          
+      }           
+  };
+  const handleReset = (event) => {
+    event.preventDefault();
+    navigate('/');
+  }
+  return (  
     <section className='review'>
       <h2>Order review</h2>
-      <Form onSubmit={formik.handleSubmit} onReset={formik.handleReset}>
+      <Form onSubmit={handleSubmit} onReset={handleReset}>
         <div className='order-review'>
           <div>
             <h6>Name</h6>
-            <h5>{formik.values.name}</h5>
+            <h5>{state.name}</h5>
           </div>
           <div>
             <h6>Email</h6>
-            <h5>{formik.values.email}</h5>
+            <h5>{state.email}</h5>
           </div>
           <div>
             <h6>Clock size</h6>
-            <h5>{formik.values.clockSize}</h5>
+            <h5>{state.clockSize}</h5>
           </div>
           <div>
             <h6>City</h6>
-            <h5>{formik.values.city}</h5>
+            <h5>{state.city}</h5>
           </div>
           <div>
             <h6>Booking date and time</h6>
-            <h5>{formik.values.bookingTime.toLocaleString()}</h5>
+            <h5>{state.bookingTime.toLocaleString()}</h5>
           </div>
           <div>
             <h6>Master</h6>
-            <h5>{formik.values.masterName}</h5>
+            <h5>{state.masterName}</h5>
           </div>                       
         </div>
         <div className='order-review-button d-grid gap-2'>
@@ -79,3 +68,4 @@ const OrderReview = (props) => {
  };
  
 export default OrderReview;
+
