@@ -44,9 +44,14 @@ class OrderService {
     }    
   }
     
-  getOrders() {
-    const orders = orderData.getOrders();
-    return orders;
+  async getOrders() {
+    try{
+      const orders = await orderData.getOrders();      
+      return orders;
+    } catch(error){
+      logger.info(error);
+      throw new Error("Could not get order", { cause: error });
+    }    
   }
 
   getOrderById(id){

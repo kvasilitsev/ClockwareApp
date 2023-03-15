@@ -14,6 +14,7 @@ import UTCConverter from '../../utils/UTCDateConvert';
 import { EMAIL_REGEX } from '../../models/regExp';
 import "react-datepicker/dist/react-datepicker.css";
 import updateOrder from "../../utils/updateOrderFunction";
+import timeformatConvert from '../../utils/timeFormatConvert'
 
 const validateRequired = (value) => !!value.length;
 
@@ -169,10 +170,14 @@ const Orders = () => {
         },        
       },
       {
-        header: 'Booking Time',
-        accessorKey: 'bookingDateTime',
+        header: 'Booking Time',        
+        accessorFn: (row) => {
+          let date = row.bookingDateTime;          
+          const formatedDate = timeformatConvert(date);        
+          return formatedDate; 
+        },
         footer: 'Booking Time',        
-        Edit: ({ cell, row }) =>                               
+        Edit: ({ cell, row }) =>                                      
         <>         
             <label className="datePicker-label">Booking time</label>
             <DatePicker            
@@ -181,7 +186,7 @@ const Orders = () => {
             timeFormat="HH:mm"
             dateFormat='MMMM d, yyyy, HH:mm'
             name='bookingTime'
-            placeholderText = {row.original.bookingDateTime}
+            placeholderText = {timeformatConvert(row.original.bookingDateTime)}
             showTimeSelect
             minTime={new Date().setHours(7)}
             maxTime={new Date().setHours(16)}
