@@ -1,23 +1,23 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
 import MaterialReactTable from 'material-react-table';
-import { useNavigate } from "react-router-dom";
 import { Box, Button, IconButton, Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
 import { EMAIL_REGEX, USER_REGEX } from '../../models/regExp';
 import getAllUsers from '../../utils/getAllUsersFunction';
 import deleteUser from '../../utils/deleteUserFunction';
 import updateUser from '../../utils/updateUserFunction';
+import CreateNewUserModal from "../../utils/createNewUserModal";
+import createNewUser from "../../utils/createNewUserFunction";
 
-const Users = () => {
-
-  const navigate = useNavigate();
+const Users = () => {  
   const [userList, setUserList] = useState([]);
   const [validationErrors, setValidationErrors] = useState({});
+  const [createModalOpen, setCreateModalOpen] = useState(false);
 
   useEffect(() => {    
     getAllUsers()
     .then(data =>
-      setUserList(data)      
+      setUserList(data)     
     );    
    }, []);
 
@@ -54,6 +54,10 @@ const Users = () => {
   const handleCancelRowEdits = () => {    
     setValidationErrors({});
   }; 
+
+  const handleCreateUser = (values) => {
+    createNewUser(values);
+  };
 
   const validate = useCallback(
     (cell) => {
@@ -146,17 +150,23 @@ const Users = () => {
           </IconButton>
         </Tooltip>
       </Box>
-    )}
-    renderTopToolbarCustomActions={() => (     
-      <Button 
-        color="inherit"
-        onClick={() => navigate('/createUser')}
+    )}    
+    renderTopToolbarCustomActions={() => (
+      <Button
+      color="inherit"
+        onClick={() => setCreateModalOpen(true)}
         variant="contained"
       >
         Create New User
-      </Button>       
-    )}    
-    />
+      </Button>
+    )}
+  />
+    <CreateNewUserModal
+      columns={columns}
+      open={createModalOpen}
+      onClose={() => setCreateModalOpen(false)}
+      onSubmit={handleCreateUser}
+    />    
   </>
   ); 
 }

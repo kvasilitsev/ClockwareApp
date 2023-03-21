@@ -108,7 +108,7 @@ class UserData {
    * @param {text} email data base attribute for users table
    * @returns 
    */
-  async getUserByEmail(email) {    
+  async getUserByEmail(email) {      
     let user = null;
     try{
       const userResultSet = await db.query('SELECT id, name, email, admin, password, is_deleted FROM users where email = $1', [email]);
@@ -124,7 +124,7 @@ class UserData {
     } catch (error) {
       logger.error(`getUserByEmail failed with reason: ${error.detail}`);
       throw error;
-    }                                      
+    }                                           
     return user;
   };
 

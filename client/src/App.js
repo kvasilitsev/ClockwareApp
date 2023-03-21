@@ -5,7 +5,6 @@ import CreateOrder from "./components/CreateOrder";
 import OrderReview from './components/OrderReview';
 import Success from './components/Success';
 import NoMasters from "./components/NoMasters";
-import CreateUser from "./components/admin/CreateUser";
 import RegisterAdmin from "./components/RegisterAdmin";
 import Login from "./components/login";
 import WrongLogin from "./components/WrongLogin";
@@ -45,8 +44,7 @@ function App() {
           <Route path="/masterSelect" element={<MasterSelect />} />
           <Route path="/orderReview" element={<OrderReview />} />
           <Route path="/success" element={<Success />} />
-          <Route path="/no-masters" element={<NoMasters />} />
-          <Route path="/createUser" element={<CreateUser />} />
+          <Route path="/no-masters" element={<NoMasters />} />          
           <Route path="/register-admin" element={<RegisterAdmin />} />
           <Route path="/login" element={<Login />} />
           <Route path="/wrong-login" element={<WrongLogin />} />
