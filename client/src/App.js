@@ -17,7 +17,6 @@ import CreateMaster from "./components/admin/CreateMaster";
 import Cities from "./components/admin/Cities";
 import CreateCity from "./components/admin/CreateCity";
 import Clocks from "./components/admin/Clocks";
-import CreateClock from "./components/admin/CreateClock";
 
 export const CurrentAuthContext = React.createContext(null);
 
@@ -55,8 +54,7 @@ function App() {
           <Route path="/createMaster" element={<CreateMaster />} />
           <Route path="/cities" element={<Cities />} />
           <Route path="/createCity" element={<CreateCity />} />
-          <Route path="/clocks" element={<Clocks />} />
-          <Route path="/createClock" element={<CreateClock />} />
+          <Route path="/clocks" element={<Clocks />} />          
         </Routes>
         <Footer />
       </main>

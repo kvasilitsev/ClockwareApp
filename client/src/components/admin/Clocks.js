@@ -1,20 +1,21 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
 import MaterialReactTable from 'material-react-table';
-import { useNavigate } from "react-router-dom";
 import { Box, Button, IconButton, Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
 import { USER_REGEX, ID_REGEXP } from '../../models/regExp';
 import getAllClocks from '../../utils/getAllClocksFunction';
 import deleteClock from '../../utils/deleteClockFunction';
 import updateClock from '../../utils/updateClockFunction';
+import CreateNewClockModal from "../../utils/createNewClockModal";
+import createNewClock from "../../utils/createNewClockFunction";
 
 const validateRequired = (value) => !!value.length;
 
 const Clocks = () => {
 
-  const navigate = useNavigate();
   const [clockList, setClockList] = useState([]);
   const [validationErrors, setValidationErrors] = useState({});
+  const [createModalOpen, setCreateModalOpen] = useState(false);
 
   useEffect(() => {    
     getAllClocks()    
@@ -50,6 +51,10 @@ const Clocks = () => {
   const handleCancelRowEdits = () => {    
     setValidationErrors({});
   }; 
+
+  const handleCreateClock = (values) => {    
+    createNewClock(values);
+  };
 
   const validate = useCallback(
     (cell) => {
@@ -138,16 +143,22 @@ const Clocks = () => {
         </Tooltip>
       </Box>
     )}
-    renderTopToolbarCustomActions={() => (     
-      <Button 
-        color="inherit"
-        onClick={() => navigate('/createClock')}
+    renderTopToolbarCustomActions={() => (
+      <Button
+      color="inherit"
+        onClick={() => setCreateModalOpen(true)}
         variant="contained"
       >
-        Add new clock size
-      </Button>       
-    )}    
+        Create New Clock
+      </Button>
+    )}
     />
+    <CreateNewClockModal
+      columns={columns}
+      open={createModalOpen}
+      onClose={() => setCreateModalOpen(false)}
+      onSubmit={handleCreateClock}
+    />    
   </>
   ); 
 }
