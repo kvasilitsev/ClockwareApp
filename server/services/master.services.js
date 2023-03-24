@@ -6,9 +6,27 @@ const logger = log4js.getLogger("clockwiseLog");
 
 class MasterService {
 
-  async createMaster(name, rating) {  
+  async createMaster(name, rating) { 
+    
+    const validate = {
+      isMaster: false      
+    }
+
     try {
-      await masterData.createMaster(name, rating);
+      const isMasterExist = await masterData.getMasterByName(name);
+      if(isMasterExist && !isMasterExist.isDeleted){
+        validate.isMaster = true;
+        return validate;
+      } else if(isMasterExist && isMasterExist.isDeleted){
+        let id = isMasterExist.id;
+        await masterData.updateMaster(id, name, rating);       
+        await masterData.unDeleteMaster(id);
+        return validate;
+      } else {
+        await masterData.createMaster(name, rating);
+      }
+      return validate;
+      
     }
     catch(err) {
       throw new Error("Could not create master", { cause: err });      
@@ -39,8 +57,7 @@ class MasterService {
    * 
    * @param {integer} id master id primary key in the database
    */
-  async deleteMaster(id){  
-    logger.info('masters service', id);
+  async deleteMaster(id){    
     try {      
       await orderData.deleteOrderByMasterId(id);
       await masterData.deleteMaster(id);

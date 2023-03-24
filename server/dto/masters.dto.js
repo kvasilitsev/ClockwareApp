@@ -6,6 +6,7 @@ class Master {
     name;
     rating;
     cityList;
+    isDeleted;
 
     /**
      * 
@@ -13,12 +14,14 @@ class Master {
      * @param {text} name 
      * @param {integer} rating 
      * @param {Array} cityList
+     * @param {boolean} isDeleted
      */
-    constructor (id, masterName, rating, cityList) {
+    constructor (id, masterName, rating, cityList, isDeleted) {
         this.id = id;
         this.name = masterName;
         this.rating = rating;
         this.cityList = cityList;
+        this.isDeleted = isDeleted;
     }
 }
 

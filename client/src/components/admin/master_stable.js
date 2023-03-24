@@ -1,21 +1,20 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
 import MaterialReactTable from 'material-react-table';
+import { useNavigate } from "react-router-dom";
 import { Box, Button, IconButton, Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
 import { RATING_REGEX, USER_REGEX } from '../../models/regExp';
 import getAllMasters from '../../utils/getAllMastersFunction';
 import deleteMaster from '../../utils/deleteMasterFunction';
 import updateMaster from '../../utils/updateMasterFunction';
-import createNewMaster from "../../utils/createNewMasterFunction";
-import CreateNewMasterModal from "../../utils/createNewMasterModal";
 
 const validateRequired = (value) => !!value.length;
 
 const Masters = () => {
 
+  const navigate = useNavigate();
   const [masterList, setMasterList] = useState([]);
   const [validationErrors, setValidationErrors] = useState({});
-  const [createModalOpen, setCreateModalOpen] = useState(false);
 
   useEffect(() => {    
     getAllMasters()
@@ -46,11 +45,7 @@ const Masters = () => {
 
   const handleCancelRowEdits = () => {    
     setValidationErrors({});
-  };
-
-  const handleCreateMaster = (values) => {    
-    createNewMaster(values);
-  };
+  }; 
 
   const validate = useCallback(
     (cell) => {
@@ -140,20 +135,14 @@ const Masters = () => {
       </Box>
     )}
     renderTopToolbarCustomActions={() => (     
-      <Button
-      color="inherit"
-        onClick={() => setCreateModalOpen(true)}
+      <Button 
+        color="inherit"
+        onClick={() => navigate('/createMaster')}
         variant="contained"
       >
         Create New Master
-      </Button>
-    )}
-    />
-    <CreateNewMasterModal
-      columns={columns}
-      open={createModalOpen}
-      onClose={() => setCreateModalOpen(false)}
-      onSubmit={handleCreateMaster}
+      </Button>       
+    )}    
     />
   </>
   ); 

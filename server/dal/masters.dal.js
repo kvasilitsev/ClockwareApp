@@ -74,6 +74,28 @@ class MasterData {
   };
 
   /**
+   * Method selects master by their name
+   * @param {text} name data base attribute for master table
+   * @returns name, rating of certain master
+   */
+  async getMasterByName(name) {
+    try{
+      let master = new Master();
+      const masterResultSet = await db.query('SELECT id, name, rating, is_deleted FROM masters where name = $1', [name]);
+      if(masterResultSet.rowCount === 1){      
+        master.name = masterResultSet.rows[0].name;
+        master.rating = masterResultSet.rows[0].rating;
+        master.id = masterResultSet.rows[0].id;
+        master.isDeleted = masterResultSet.rows[0].is_deleted
+    };    
+    return master;
+    } catch(error) {
+      logger.error(`getMasterByName failed with reason: ${error.detail}`);
+      throw error;
+    }    
+  };
+
+  /**
    * Method updates master by their id
    * @param {integer} id data base primary key for master table
    * @param {text} name data base attribute for master table
@@ -93,8 +115,7 @@ class MasterData {
    * Method performs soft-delete master by their id
    * @param {integer} id data base primary key for master table
    */
-  async deleteMaster(id) {
-    logger.info('masters dal', id)
+  async deleteMaster(id) {    
     try {
       await db.query('UPDATE masters SET is_deleted = true where id = $1', [id]); 
     } catch (err) {
@@ -107,12 +128,11 @@ class MasterData {
    * Method performs unDelete master by their id (set is_delete = false)
    * @param {integer} id data base primary key for master table
    */
-  async unDeleteMaster(id) {
-
+  async unDeleteMaster(id) {    
     try {
-      await db.query('UPDATE masters SET is_delete = false where id = $1', [id]); 
+      await db.query('UPDATE masters SET is_deleted = false where id = $1', [id]); 
     } catch (err) {
-      logger.error(`unDeleteMaster failed with reason: ${err.detail}`);
+      logger.error(`unDeleteMaster failed with reason: ${err}`);
       throw err;
     }
   };

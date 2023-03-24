@@ -259,9 +259,10 @@ class Request {
     }   
   }
 
-  async createMaster() {     
+  async createMaster() {
+    let res = null;     
     try {
-      await authHost.post(CREATE_MASTER_URL, { name: this.name, rating: this.rating },
+      res = await authHost.post(CREATE_MASTER_URL, { name: this.name, rating: this.rating },
         {          
           withCredentials: true
         }      
@@ -269,7 +270,8 @@ class Request {
     }
     catch (error) {
       console.log('error: ', error); 
-    }     
+    }
+    return res.data;     
   }
 
   async updateMaster() {     

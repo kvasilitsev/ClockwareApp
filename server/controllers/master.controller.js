@@ -14,8 +14,10 @@ class MasterController {
    */
   async createMaster(req, res) {
     const {name, rating} = req.body; 
+    let response = null;
+
     try {
-      await masterService.createMaster(name, rating);
+      response = await masterService.createMaster(name, rating);
     }
     catch(err) {
       res.json({
@@ -23,7 +25,7 @@ class MasterController {
         cause: err.cause.detail
       } );      
     }
-    res.send(true);
+    res.send(response);
   };
 
   /**
