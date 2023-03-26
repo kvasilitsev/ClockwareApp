@@ -1,20 +1,22 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
 import MaterialReactTable from 'material-react-table';
-import { useNavigate } from "react-router-dom";
 import { Box, Button, IconButton, Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
 import { USER_REGEX } from '../../models/regExp';
 import getAllCities from '../../utils/getAllCitiesFunction';
 import deleteCity from '../../utils/deleteCityFunction';
 import updateCity from '../../utils/updateCityFunction';
+import CreateNewCityModal from '../../utils/createNewCityModal'
+import createNewCity from '../../utils/createNewCityFunction'
 
 const validateRequired = (value) => !!value.length;
 
 const Cities = () => {
 
-  const navigate = useNavigate();
+  
   const [cityList, setCityList] = useState([]);
   const [validationErrors, setValidationErrors] = useState({});
+  const [createModalOpen, setCreateModalOpen] = useState(false);
 
   useEffect(() => {    
     getAllCities()
@@ -45,7 +47,11 @@ const Cities = () => {
 
   const handleCancelRowEdits = () => {    
     setValidationErrors({});
-  }; 
+  };
+
+  const handleCreateCity = (values) => {    
+    createNewCity(values);
+  };
 
   const validate = useCallback(
     (cell) => {
@@ -125,14 +131,20 @@ const Cities = () => {
       </Box>
     )}
     renderTopToolbarCustomActions={() => (     
-      <Button 
-        color="inherit"
-        onClick={() => navigate('/createCity')}
+      <Button
+      color="inherit"
+        onClick={() => setCreateModalOpen(true)}
         variant="contained"
       >
-        Add new city
-      </Button>       
-    )}    
+        Create New City
+      </Button>
+    )}
+    />
+    <CreateNewCityModal
+      columns={columns}
+      open={createModalOpen}
+      onClose={() => setCreateModalOpen(false)}
+      onSubmit={handleCreateCity}
     />
   </>
   ); 

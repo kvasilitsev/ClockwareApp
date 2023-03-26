@@ -303,11 +303,12 @@ class Request {
 
   async createCity() {     
     try {
-      await authHost.post(CREATE_CITY_URL, { name: this.name },
+      const res = await authHost.post(CREATE_CITY_URL, { name: this.name },
         {          
           withCredentials: true
         }      
-      ) 
+      )
+      return res.data;
     }
     catch (error) {
       console.log('error: ', error); 

@@ -4,14 +4,17 @@
  class City {
     id;
     name;
+    isDeleted
 /**
  * 
  * @param {integer} id
- * @param {text} cityName 
+ * @param {text} cityName
+ * @param {boolean} isDeleted 
  */
-    constructor (id, cityName) {
+    constructor (id, cityName, isDeleted) {
         this.id = id;
-        this.name = cityName;        
+        this.name = cityName;
+        this.isDeleted = isDeleted;      
     }
 }
 

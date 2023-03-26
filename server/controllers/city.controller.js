@@ -13,9 +13,11 @@ class CityController {
    * @param {*} res 
    */
   async createCity(req, res) {
-    const {name} = req.body;    
+    const {name} = req.body;
+    let response = null;
+
     try {
-      await cityService.createCity(name);
+      response = await cityService.createCity(name);      
     }
     catch(err) {
       res.json({
@@ -23,7 +25,7 @@ class CityController {
         cause: err.cause.detail
       } );      
     }
-    res.send(true);
+    res.send(response);
   };
 
   /**

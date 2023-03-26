@@ -70,13 +70,13 @@ class CityData {
    */
    async getCityByName(name) {
     let city = new City();
-    const cityResultSet = await db.query('SELECT id, name FROM cities where name = $1', [name]);
+    const cityResultSet = await db.query('SELECT id, name, is_deleted FROM cities where name = $1', [name]);    
     if(cityResultSet.rowCount === 1){      
       city.id = cityResultSet.rows[0].id;
-      city.name = cityResultSet.rows[0].name;      
+      city.name = cityResultSet.rows[0].name;
+      city.isDeleted = cityResultSet.rows[0].is_deleted;   
     } else return false;
-    return city;
-    
+    return city;    
   };
 
   /**

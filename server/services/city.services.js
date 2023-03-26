@@ -5,16 +5,25 @@ const logger = log4js.getLogger("clockwiseLog");
 
 class CityService {
     async createCity(name){
-
-      let checkCity = null;
+      
+      const validate = {
+        isCity: false      
+      }
 
       try {
-        checkCity = await cityData.getCityByName(name);
-        let id = checkCity.id;        
-        if(checkCity){
+        const isCityExist = await cityData.getCityByName(name);
+               
+        if(isCityExist && !isCityExist.isDeleted){          
+          validate.isCity = true;
+          return validate;
+        }
+        if(isCityExist && isCityExist.isDeleted){          
+          let id = isCityExist.id; 
           await cityData.unDeleteCity(id);
+          return validate;
         } else {
           await cityData.createCity(name);
+          return validate;
         }        
       }
       catch(err) {
