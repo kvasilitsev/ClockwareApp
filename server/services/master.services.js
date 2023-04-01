@@ -13,7 +13,7 @@ class MasterService {
     }
 
     try {
-      const isMasterExist = await masterData.getMasterByName(name);
+      const isMasterExist = await masterData.getMasterByName(name);      
       if(isMasterExist && !isMasterExist.isDeleted){
         validate.isMaster = true;
         return validate;

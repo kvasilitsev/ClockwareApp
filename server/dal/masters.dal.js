@@ -57,7 +57,7 @@ class MasterData {
    * @returns name, rating of certain master
    */
   async getMasterById(id) {
-
+    
     try{
       let master = new Master();
       const masterResultSet = await db.query('SELECT id, name, rating FROM masters where id = $1 AND is_deleted = false', [id]);
@@ -79,20 +79,22 @@ class MasterData {
    * @returns name, rating of certain master
    */
   async getMasterByName(name) {
-    try{
-      let master = new Master();
-      const masterResultSet = await db.query('SELECT id, name, rating, is_deleted FROM masters where name = $1', [name]);
-      if(masterResultSet.rowCount === 1){      
+    let master = null;
+    try{      
+      const masterResultSet = await db.query('SELECT id, name, rating, is_deleted FROM masters where name = $1', [name]);      
+      if(masterResultSet.rowCount === 1){
+        master = new Master();
         master.name = masterResultSet.rows[0].name;
         master.rating = masterResultSet.rows[0].rating;
         master.id = masterResultSet.rows[0].id;
         master.isDeleted = masterResultSet.rows[0].is_deleted
-    };    
-    return master;
+        return master;
+    };      
     } catch(error) {
       logger.error(`getMasterByName failed with reason: ${error.detail}`);
       throw error;
-    }    
+    }        
+    return master;   
   };
 
   /**
