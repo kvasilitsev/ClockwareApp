@@ -53,7 +53,7 @@ const Masters = () => {
   };
 
   const validate = useCallback(
-    (cell) => {
+    (cell) => {      
       return {
         error: !!validationErrors[cell.id],
         helperText: validationErrors[cell.id],
@@ -65,9 +65,9 @@ const Masters = () => {
               ? RATING_REGEX.test(event.target.value)
               : validateRequired(event.target.value);    
           if (!isValid) {            
-            setValidationErrors({
+            setValidationErrors({              
               ...validationErrors,
-              [cell.id]: `${cell.column.columnDef.header} is required`,
+              [cell.id]: `${cell.column.columnDef.header} is required`,              
             });
           } else {            
             delete validationErrors[cell.id];
