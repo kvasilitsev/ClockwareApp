@@ -211,4 +211,7 @@ h4{
     width: 60%;       
     margin: 0 auto;
 }
+.datePicker{
+    border: solid 1px rgb(187, 182, 182);    
+}
 

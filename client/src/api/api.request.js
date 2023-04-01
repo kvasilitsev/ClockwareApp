@@ -52,14 +52,14 @@ class Request {
     }     
   }
 
-  async getFreeMasters() { 
-    try {      
+  async getFreeMasters() {    
+    try {         
       const res = await host.get(GET_FREE_MASTERS_URL, {params: {clockId: this.clockId, cityId: this.cityId, bookingTime: this.bookingTime }},
         {      
           withCredentials: true
         }
       )
-      return res;
+      return res.data;
     }
     catch (error) {
       console.log('error: ', error); 

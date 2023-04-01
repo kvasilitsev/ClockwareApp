@@ -1,5 +1,4 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
 import MaterialReactTable from 'material-react-table';
 import findAllOrders from '../../utils/getAllOrdersFunction';
 import orderIdToName from '../../utils/orderListIdToNameConvert';
@@ -14,19 +13,21 @@ import UTCConverter from '../../utils/UTCDateConvert';
 import { EMAIL_REGEX } from '../../models/regExp';
 import "react-datepicker/dist/react-datepicker.css";
 import updateOrder from "../../utils/updateOrderFunction";
-import timeformatConvert from '../../utils/timeFormatConvert'
+import timeformatConvert from '../../utils/timeFormatConvert';
+import CreateNewOrderModal from '../../utils/createNewOrderModal';
 
 const validateRequired = (value) => !!value.length;
 
-const Orders = () => {
-  const navigate = useNavigate();
-  const [orderList, setOrderList] = useState([]);
+const Orders = () => {  
+  const [orderList, setOrderList] = useState([]);  
   const [nameOrderList, setNameOrderList] = useState([]);  
   const [cities, setCities] = useState([]);
   const [clocks, setClocks] = useState([]);
   const [masters, setMasters] = useState([]);
   const [bookingTime, setBookingTime] = useState('');
   const [validationErrors, setValidationErrors] = useState({});
+  const [createModalOpen, setCreateModalOpen] = useState(false);
+  
       
   useEffect(() => {    
     findAllOrders()
@@ -44,7 +45,7 @@ const Orders = () => {
     getAllMasters()
     .then(data =>
       setMasters(data)
-    );
+    );   
    }, []);
    
   useEffect(() => {    
@@ -244,13 +245,17 @@ const Orders = () => {
     renderTopToolbarCustomActions={() => (
       <Button
         color="inherit"
-        onClick={() => navigate('/')}
+        onClick={() => setCreateModalOpen(true)}
         variant="contained"
       >
         Create New Order
       </Button>
-    )}    
-    />
+    )}
+  />
+    <CreateNewOrderModal      
+      open={createModalOpen}
+      onClose={() => setCreateModalOpen(false)}      
+    />    
   </>
   );  
 };

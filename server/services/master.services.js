@@ -96,7 +96,7 @@ class MasterService {
     }
   }
 
-  async getFreeMastersInCity(cityId, bookingTime, clockId){
+  async getFreeMastersInCity(cityId, bookingTime, clockId){    
     const allMastersInCity = await masterData.getMastersByCityId(cityId);
     const repairDuration = await clockData.getRepairDurationByClockId(clockId);
     const bookedMastersIdInCity =  await masterData.bookedMastersIdInCity(cityId, bookingTime, repairDuration);    

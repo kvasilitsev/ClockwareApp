@@ -70,10 +70,10 @@ const InitialOrder = () => {
         const modifyTime = UTCConverter(values.bookingTime); //to convert time to UTC                    
         const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId}); //for production only when server in UTC zone
         const res = await apiRequest.getFreeMasters();        
-        list = res.data;
+        list = res;
       } catch (e) {
-          console.log('error: ', e.response.data.message);          
-        }        
+          console.log('error: ', e.response.data.message);
+        }       
         if(list.length > 0){                 
           navigate('/masterSelect', {state: {...formik.values, list: list}}); 
         } else {
