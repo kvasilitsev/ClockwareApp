@@ -122,7 +122,7 @@ class UserService {
     const user = await userData.getUserByEmail(email);
     const tokens = tokenService.generateTokens({...user});
     await tokenService.saveToken(user.id, tokens.refreshToken);
-    return {...tokens, user: user}; //temp for debug
+    return {...tokens, user: user}; 
   }
 
   async login(email, password){
@@ -136,7 +136,7 @@ class UserService {
     }
     const tokens = tokenService.generateTokens({...user});
     await tokenService.saveToken(user.id, tokens.refreshToken);
-    return {...tokens, user: user}; //temp for debug
+    return {...tokens, user: user}; 
   }
 
   async logout(refreshToken){
@@ -150,13 +150,12 @@ class UserService {
     }
     const userDataSet = tokenService.validateRefreshToken(refreshToken);
     const isTokenInDB = await tokenService.findToken(refreshToken);    
-    if(!userData || !isTokenInDB){
+    if(!userDataSet || !isTokenInDB){
       throw ApiError.UnauthorizedError();
-    }       
+    }          
     const user = await userData.getUserById(userDataSet.id);
-    const tokens = tokenService.generateTokens({...user});
-    await tokenService.saveToken(user.id, tokens.refreshToken);    
-    return {...tokens, user: user}; //temp for debug
+    const tokens = tokenService.generateTokens({...user});       
+    return {...tokens, user: user}; 
   }
 }
 

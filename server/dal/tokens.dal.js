@@ -59,8 +59,8 @@ class TokenData {
   }
 
   async findToken(refreshToken){
-	  let existToken = false;
-    const tokenResultSet = await db.query('SELECT refresh_token FROM tokens where refresh_token = $1', [refreshToken]);
+	let existToken = false;
+    const tokenResultSet = await db.query('SELECT refresh_token FROM tokens where refresh_token = $1', [refreshToken]);	
     if(tokenResultSet.rowCount === 1){
       existToken = true;
     };
