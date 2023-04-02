@@ -13,7 +13,8 @@ class MasterController {
    * @param {*} res 
    */
   async createMaster(req, res) {
-    const {name, rating} = req.body; 
+    const {name, rating} = req.body;
+
     let response = null;
 
     try {
@@ -105,8 +106,11 @@ class MasterController {
     */ 
   async addCityForMaster(req, res){
     const {masterId, cityId} = req.body;
+    
+    let response = null;
+
     try {
-      await masterService.addCityForMaster(masterId, cityId);
+     response = await masterService.addCityForMaster(masterId, cityId);
     }
     catch(err) {
       res.json({
@@ -114,7 +118,7 @@ class MasterController {
         cause: err.cause.detail
       });      
     }
-    res.send(true);
+    res.send(response);
   }
 
   /**

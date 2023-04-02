@@ -88,8 +88,20 @@ class MasterService {
   }
 
   async addCityForMaster(masterId, cityId){
-    try {
+    
+    const validate = {
+      isCity: false      
+    }
+
+    try {      
+      const cityList = await masterData.getCitiesByMasterId(masterId);      
+      
+      if(cityList.includes(cityId)){
+        validate.isCity = true;
+        return validate;
+      }
       await masterData.addCityForMaster(masterId, cityId);
+      return validate;
     }
     catch (err){
       throw new Error("Could not add new city", { cause: err });

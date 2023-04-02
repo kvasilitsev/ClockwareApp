@@ -6,7 +6,7 @@ import { EMAIL_REGEX, USER_REGEX } from '../../models/regExp';
 import getAllUsers from '../../utils/getAllUsersFunction';
 import deleteUser from '../../utils/deleteUserFunction';
 import updateUser from '../../utils/updateUserFunction';
-import CreateNewUserModal from "../../utils/createNewUserModal";
+import CreateNewUserModal from "../../utils/CreateNewUserModal";
 import createNewUser from "../../utils/createNewUserFunction";
 
 const Users = () => {  

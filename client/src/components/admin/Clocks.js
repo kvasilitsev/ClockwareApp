@@ -6,7 +6,7 @@ import { USER_REGEX, ID_REGEXP } from '../../models/regExp';
 import getAllClocks from '../../utils/getAllClocksFunction';
 import deleteClock from '../../utils/deleteClockFunction';
 import updateClock from '../../utils/updateClockFunction';
-import CreateNewClockModal from "../../utils/createNewClockModal";
+import CreateNewClockModal from "../../utils/CreateNewClockModal";
 import createNewClock from "../../utils/createNewClockFunction";
 
 const validateRequired = (value) => !!value.length;

@@ -14,7 +14,7 @@ import { EMAIL_REGEX } from '../../models/regExp';
 import "react-datepicker/dist/react-datepicker.css";
 import updateOrder from "../../utils/updateOrderFunction";
 import timeformatConvert from '../../utils/timeFormatConvert';
-import CreateNewOrderModal from '../../utils/createNewOrderModal';
+import CreateNewOrderModal from '../../utils/CreateNewOrderModal';
 
 const validateRequired = (value) => !!value.length;
 

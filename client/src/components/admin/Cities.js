@@ -6,7 +6,7 @@ import { USER_REGEX } from '../../models/regExp';
 import getAllCities from '../../utils/getAllCitiesFunction';
 import deleteCity from '../../utils/deleteCityFunction';
 import updateCity from '../../utils/updateCityFunction';
-import CreateNewCityModal from '../../utils/createNewCityModal'
+import CreateNewCityModal from '../../utils/CreateNewCityModal'
 import createNewCity from '../../utils/createNewCityFunction'
 
 const validateRequired = (value) => !!value.length;

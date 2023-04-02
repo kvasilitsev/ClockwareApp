@@ -169,8 +169,8 @@ class MasterData {
 
   /**
    * Method adds City for Master by city id and master id
-   * @param {integer} masterId data base attribute for master table
-   * @param {integer} cityId data base attribute for master table
+   * @param {integer} masterId data base attribute for masters_cities table
+   * @param {integer} cityId data base attribute for masters_cities table
    */
   async addCityForMaster(masterId, cityId){
 
@@ -181,6 +181,30 @@ class MasterData {
       throw err;
     }
   }
+
+  /**
+   * Method gets list of city id by master id
+   * @param {integer} masterId data base attribute for masters_cities table
+   * @returns 
+   */
+  async getCitiesByMasterId(masterId){
+    
+    let cityList = [];
+    
+    try {    
+     let mastersResultSet = await db.query('SELECT city_id FROM masters_cities WHERE master_id = $1', [masterId])
+     if(mastersResultSet.rowCount > 0) {
+        mastersResultSet.rows.forEach(element => {
+          cityList.push(element.city_id);
+        });
+     }     
+    } catch (err) {
+      logger.error(`getCitiesByMasterId failed with reason: ${err}`);
+      throw err;
+    }
+    return cityList;
+  }
+
   /**
    * Method selects all booked masters in city at the specified time
    * @param {integer} cityId data base attribute for master table

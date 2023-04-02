@@ -6,8 +6,10 @@ import { RATING_REGEX, USER_REGEX } from '../../models/regExp';
 import getAllMasters from '../../utils/getAllMastersFunction';
 import deleteMaster from '../../utils/deleteMasterFunction';
 import updateMaster from '../../utils/updateMasterFunction';
-import createNewMaster from "../../utils/createNewMasterFunction";
-import CreateNewMasterModal from "../../utils/createNewMasterModal";
+import createNewMaster from '../../utils/createNewMasterFunction';
+import CreateNewMasterModal from '../../utils/CreateNewMasterModal';
+import AddCityModal from '../../utils/AddCityForMasterModal';
+import AddCityForMaster from '../../utils/addCityForMasterFunction';
 
 const validateRequired = (value) => !!value.length;
 
@@ -16,6 +18,7 @@ const Masters = () => {
   const [masterList, setMasterList] = useState([]);
   const [validationErrors, setValidationErrors] = useState({});
   const [createModalOpen, setCreateModalOpen] = useState(false);
+  const [addCityModalOpen, setAddCityModalOpen] = useState(false);
 
   useEffect(() => {    
     getAllMasters()
@@ -50,6 +53,10 @@ const Masters = () => {
 
   const handleCreateMaster = (values) => {    
     createNewMaster(values);
+  };
+
+  const handleAddCity = (values) => {    
+    AddCityForMaster(values);
   };
 
   const validate = useCallback(
@@ -139,7 +146,8 @@ const Masters = () => {
         </Tooltip>
       </Box>
     )}
-    renderTopToolbarCustomActions={() => (     
+    renderTopToolbarCustomActions={() => (
+      <>
       <Button
       color="inherit"
         onClick={() => setCreateModalOpen(true)}
@@ -147,6 +155,14 @@ const Masters = () => {
       >
         Create New Master
       </Button>
+      <Button
+      color="inherit"
+        onClick={() => setAddCityModalOpen(true)}
+        variant="contained"
+      >
+        Add city for Master
+      </Button>
+      </>   
     )}
     />
     <CreateNewMasterModal
@@ -155,6 +171,13 @@ const Masters = () => {
       onClose={() => setCreateModalOpen(false)}
       onSubmit={handleCreateMaster}
     />
+    <AddCityModal
+      columns={columns}
+      open={addCityModalOpen}
+      onClose={() => setAddCityModalOpen(false)}
+      onSubmit={handleAddCity}
+    />
+    
   </>
   ); 
 }

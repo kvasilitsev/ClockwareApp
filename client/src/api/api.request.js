@@ -4,7 +4,8 @@ import { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_UR
        GET_USERBY_EMAIL_URL, GET_ALL_ORDERS_URL, DELETE_ORDER_URL, GET_MASTERS_URL,
        UPDATE_ORDER_URL, GET_ALL_USERS_URL, DELETE_USER_URL, UPDATE_USER_URL,
        DELETE_MASTER_URL, UPDATE_MASTER_URL, CREATE_MASTER_URL, DELETE_CITY_URL,
-       UPDATE_CITY_URL, CREATE_CITY_URL, CREATE_CLOCK_URL, DELETE_CLOCK_URL, UPDATE_CLOCK_URL } from '../models/routes';
+       UPDATE_CITY_URL, CREATE_CITY_URL, CREATE_CLOCK_URL, DELETE_CLOCK_URL, UPDATE_CLOCK_URL,
+       ADD_CITY_FOR_MASTER_URL } from '../models/routes';
 
 
 class Request {
@@ -79,6 +80,22 @@ class Request {
     catch (error) {
       console.log('error: ', error); 
     }    
+  }
+
+  async addCityForMaster() {
+    
+    try {
+      const res = await authHost.post(ADD_CITY_FOR_MASTER_URL,
+        { masterId: this.masterId, cityId: this.cityId },
+        {
+          withCredentials: true
+        }
+      )
+      return res.data;
+    }
+    catch (error) {
+      console.log('error', error);
+    }
   }
 
   async createOrder() {
