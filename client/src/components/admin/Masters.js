@@ -38,13 +38,15 @@ const Masters = () => {
   }
 
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
-    try{
-      await updateMaster(values); 
-    } catch(err){
-        console.log(err)
-    }       
-    exitEditingMode();
-    window.location.replace('/masters');
+    if (!Object.keys(validationErrors).length){
+      try{
+        await updateMaster(values); 
+      } catch(err){
+          console.log(err)
+      }       
+      exitEditingMode();
+      window.location.replace('/masters');
+    }
   };
 
   const handleCancelRowEdits = () => {    

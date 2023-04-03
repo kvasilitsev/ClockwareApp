@@ -36,6 +36,7 @@ const Cities = () => {
   }
 
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
+    if (!Object.keys(validationErrors).length){
     try{
       await updateCity(values); 
     } catch(err){
@@ -43,6 +44,7 @@ const Cities = () => {
     }       
     exitEditingMode();
     window.location.replace('/cities');
+    }
   };
 
   const handleCancelRowEdits = () => {    

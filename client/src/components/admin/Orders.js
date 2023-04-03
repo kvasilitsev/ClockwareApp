@@ -98,24 +98,26 @@ const Orders = () => {
   }
 
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
-    if (bookingTime) {
-      const modifyTime = UTCConverter(bookingTime)    
-      values.bookingDateTime = modifyTime;
-      setBookingTime('');      
-    } 
-    const validateUpdate = await updateOrder(values);
-        
-    if(!validateUpdate.isUser){
-      alert(`User with email ${values.email} does not exist, please create the user first`);      
-    } else if(!validateUpdate.isMaster){      
-      alert(`Master ${values.masterName} does not work in city ${values.cityName}, please select another master`);   
-    } else if(!validateUpdate.isTime){
-      alert(`Master ${values.masterName} is not available at this time, please select another master or booking time`); 
-    } else if(validateUpdate.isExpired){
-      alert(`Expired/Complited order can not be updated`);  
+    if (!Object.keys(validationErrors).length){
+      if (bookingTime) {
+        const modifyTime = UTCConverter(bookingTime)    
+        values.bookingDateTime = modifyTime;
+        setBookingTime('');      
+      } 
+      const validateUpdate = await updateOrder(values);
+          
+      if(!validateUpdate.isUser){
+        alert(`User with email ${values.email} does not exist, please create the user first`);      
+      } else if(!validateUpdate.isMaster){      
+        alert(`Master ${values.masterName} does not work in city ${values.cityName}, please select another master`);   
+      } else if(!validateUpdate.isTime){
+        alert(`Master ${values.masterName} is not available at this time, please select another master or booking time`); 
+      } else if(validateUpdate.isExpired){
+        alert(`Expired/Complited order can not be updated`);  
+      }
+      exitEditingMode();
+      window.location.replace('/orders');
     }
-    exitEditingMode();
-    window.location.replace('/orders');
   };
 
   const handleCancelRowEdits = () => {

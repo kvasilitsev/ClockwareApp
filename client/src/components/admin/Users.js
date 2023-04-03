@@ -36,19 +36,20 @@ const Users = () => {
   }
 
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
-        
-    if(values.Admin === 'True'){
-      window.alert('Selected user is Admin and can not be modified!');
-      exitEditingMode();
-    }
+    if (!Object.keys(validationErrors).length){          
+      if(values.Admin === 'True'){
+        window.alert('Selected user is Admin and can not be modified!');
+        exitEditingMode();
+      }
 
-    const validateUpdate = await updateUser(values);
-      
-    if(!validateUpdate.isEmail){
-      alert(`User with email ${values.email} already exist, please check email`);      
-    } 
-    exitEditingMode();
-    window.location.replace('/users');
+      const validateUpdate = await updateUser(values);
+        
+      if(!validateUpdate.isEmail){
+        alert(`User with email ${values.email} already exist, please check email`);      
+      } 
+      exitEditingMode();
+      window.location.replace('/users');
+    }
   };
 
   const handleCancelRowEdits = () => {    

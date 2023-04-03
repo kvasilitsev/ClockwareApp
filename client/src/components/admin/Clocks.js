@@ -34,18 +34,20 @@ const Clocks = () => {
   }
 
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
-    try{
+    if (!Object.keys(validationErrors).length){
+      try{
 
-      const validateUpdate = await updateClock(values);      
-      if(validateUpdate.isExistentOrders){
-        alert(`Could not edit clock due to orders with clock size ${values.size}
-        and repair duration less then ${values.repairDuration} hours exist`);      
-      }      
-    } catch(err){
-        console.log(err)
-    }       
-    exitEditingMode();
-    window.location.replace('/clocks');
+        const validateUpdate = await updateClock(values);      
+        if(validateUpdate.isExistentOrders){
+          alert(`Could not edit clock due to orders with clock size ${values.size}
+          and repair duration less then ${values.repairDuration} hours exist`);      
+        }      
+      } catch(err){
+          console.log(err)
+      }       
+      exitEditingMode();
+      window.location.replace('/clocks');
+    }
   };
 
   const handleCancelRowEdits = () => {    
