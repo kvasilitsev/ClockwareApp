@@ -15,6 +15,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import updateOrder from "../../utils/updateOrderFunction";
 import timeformatConvert from '../../utils/timeFormatConvert';
 import CreateNewOrderModal from '../../utils/CreateNewOrderModal';
+import getMinTime from '../../utils/getMinTime';
 
 const validateRequired = (value) => !!value.length;
 
@@ -190,8 +191,8 @@ const Orders = () => {
             dateFormat='MMMM d, yyyy, HH:mm'
             name='bookingTime'
             placeholderText = {timeformatConvert(row.original.bookingDateTime)}
-            showTimeSelect
-            minTime={new Date().setHours(7)}
+            showTimeSelect            
+            minTime={getMinTime(bookingTime)}
             maxTime={new Date().setHours(16)}
             timeIntervals={60}
             minDate={new Date()}            

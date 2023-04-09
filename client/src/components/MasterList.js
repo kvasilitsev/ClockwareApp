@@ -10,7 +10,7 @@ const MasterListItem = (props) => {
         <div className='master-select'>
           <div className='master-select-radio'>
             <Radio 
-              id={id}
+              id={id.toString()}
               value={name}
               name='masters'
               color="default" 

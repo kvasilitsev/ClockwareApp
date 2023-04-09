@@ -13,6 +13,7 @@ import UTCConverter from '../utils/UTCDateConvert';
 import "react-datepicker/dist/react-datepicker.css";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import minTime from '../utils/getMinTime';
 
 const validate = values => {
   const errors = {};  
@@ -174,7 +175,8 @@ const InitialOrder = () => {
           name='bookingTime'
           placeholderText = ' Select...'
           showTimeSelect
-          minTime={new Date().setHours(7)}
+          minTime={minTime(formik.values.bookingTime)}     
+          //minTime={new Date().setHours(7)} // Add ,in time current
           maxTime={new Date().setHours(16)}
           timeIntervals={60}
           minDate={new Date()}
