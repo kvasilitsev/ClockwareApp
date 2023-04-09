@@ -112,12 +112,12 @@ class MasterService {
     const allMastersInCity = await masterData.getMastersByCityId(cityId);
     const repairDuration = await clockData.getRepairDurationByClockId(clockId);
     const bookedMastersIdInCity =  await masterData.bookedMastersIdInCity(cityId, bookingTime, repairDuration);    
-    const bookingHours = new Date(bookingTime).getHours();    
-    if(bookingHours < 8){ //todo: should be in the params file
-      throw new Error(`Sorry, we are open from 8:00`); //todo: should be in the params file
+    const bookingHours = new Date(bookingTime).getHours();  
+    if(bookingHours < 8){ 
+      return `Sorry, we are open from 8:00`;
     };
-    if((bookingHours + repairDuration.hours) > 17){ //todo: should be in the params file
-      throw new Error(`Sorry, we are close at 17:00. Please book your appointment earlier`); //todo: should be in the params file
+    if((bookingHours + repairDuration.hours) > 17){ 
+      return 'Sorry, we are close at 17:00. Please book your appointment earlier';
     };
     const freeMasters = allMastersInCity.filter(master => !bookedMastersIdInCity.includes(master.id))    
     return freeMasters;

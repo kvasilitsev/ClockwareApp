@@ -70,8 +70,13 @@ const InitialOrder = () => {
       try {        
         const modifyTime = UTCConverter(values.bookingTime); //to convert time to UTC                    
         const apiRequest = new Request({clockId: values.clockId, cityId: values.cityId, bookingTime: modifyTime, email: values.email, masterId: values.masterId}); //for production only when server in UTC zone
-        const res = await apiRequest.getFreeMasters();        
-        list = res;
+        const res = await apiRequest.getFreeMasters();
+        if(typeof res === 'string'){
+          window.alert(res);
+          return;         
+        } else {
+          list = res;
+        }
       } catch (e) {
           console.log('error: ', e.response.data.message);
         }       
@@ -82,7 +87,7 @@ const InitialOrder = () => {
         }        
       }      
   });
-    return (  
+    return (
     <section>
     <h5>Complete order form</h5>
     <Form onSubmit={formik.handleSubmit}>

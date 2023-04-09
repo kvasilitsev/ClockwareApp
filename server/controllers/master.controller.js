@@ -127,7 +127,7 @@ class MasterController {
    * @param {*} res 
    */
   async getFreeMastersInCity(req, res){
-    const {cityId, bookingTime, clockId} = req.query;    
+    const {cityId, bookingTime, clockId} = req.query;
     let masters;
     try {
       masters = await masterService.getFreeMastersInCity(cityId, bookingTime, clockId);

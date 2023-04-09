@@ -17,9 +17,9 @@ const OrderReview = (props) => {
       const res = await apiRequest.createOrder();
       if (res.data === true){          
         const apiRequest = new Request({email: state.email})
-        await apiRequest.sendEmail();                      
+        await apiRequest.sendEmail();                    
         navigate('/success');
-      }             
+      }       
     } catch (e) {
         console.log('error: ', e.response);          
       }           
