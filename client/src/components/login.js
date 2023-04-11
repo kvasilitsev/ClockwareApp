@@ -28,15 +28,15 @@ const Login = (props) => {
       try {
         const apiRequest = new Request({email: values.email, password: values.password});  
         const res = await apiRequest.login();
-        localStorage.setItem("token", res);
+        if(res){
+          localStorage.setItem("token", res);
+          window.location.replace('/orders');
+        } else {
+          navigate('/wrong-login');
+        } 
       } catch (e) {        
         console.log('error: ', e.response.data.message);        
-      }
-      if (localStorage.token !== 'undefined') {                
-        window.location.replace('/orders');       
-      } else {
-        navigate('/wrong-login');
-      }       
+      }         
     },
   });
 
