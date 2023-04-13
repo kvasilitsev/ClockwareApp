@@ -14,6 +14,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import minTime from '../utils/getMinTime';
+import getValues from '../utils/getValuesFromSessionStorage';
 
 const validate = values => {
   const errors = {};  
@@ -50,22 +51,34 @@ const validate = values => {
   }
 
   return errors;
-}; 
- 
-const InitialOrder = () => {  
-  const navigate = useNavigate();  
-  const formik = useFormik({
-    initialValues: {         
+};
+
+let initialValues = {};
+
+const InitialOrder = () => {
+
+  const navigate = useNavigate();
+  
+  if(getValues()) {    
+    initialValues = getValues();    
+  } else {
+    initialValues = {
       clockId: '',
       cityId: '',
       bookingTime: '',
       name: '',
       email: '',     
       city: '',
-      clockSize:'',      
-    },
+      clockSize:''
+      };
+  }
+   
+  const formik = useFormik({
+    initialValues,
     validate,
-    onSubmit: async (values) => {
+    onSubmit: async (values) => {      
+      sessionStorage.removeItem('values');        
+      sessionStorage.setItem('values', JSON.stringify(values));        
       let list;
       try {        
         const modifyTime = UTCConverter(values.bookingTime); //to convert time to UTC                    
@@ -136,7 +149,8 @@ const InitialOrder = () => {
         <FontAwesomeIcon icon={faCheck} className={formik.values.clockId ? "valid" : "hide"} />           
         </Form.Label>
       <AsyncSelect 
-        className = 'select'       
+        className = 'select'
+        value={ formik.values.clockSize ? { label: formik.values.clockSize, value: formik.values.clockId } : { label: 'Select clock size'}}        
         onChange={value => {                          
                             formik.setFieldValue('clockId', value.value);
                             formik.setFieldValue('clockSize', value.label);                            
@@ -154,7 +168,8 @@ const InitialOrder = () => {
         <FontAwesomeIcon icon={faCheck} className={formik.values.cityId ? "valid" : "hide"} />           
       </Form.Label>
       <AsyncSelect 
-        className = 'select'       
+        className = 'select'
+        value={formik.values.city ? { label: formik.values.city, value: formik.values.cityId } : { label: 'Select city' }}          
         onChange={value => {
                             formik.setFieldValue('cityId', value.value);
                             formik.setFieldValue('city', value.label);                            
@@ -180,8 +195,7 @@ const InitialOrder = () => {
           name='bookingTime'
           placeholderText = ' Select...'
           showTimeSelect
-          minTime={minTime(formik.values.bookingTime)}     
-          //minTime={new Date().setHours(7)} // Add ,in time current
+          minTime={minTime(formik.values.bookingTime)}         
           maxTime={new Date().setHours(16)}
           timeIntervals={60}
           minDate={new Date()}
@@ -192,7 +206,7 @@ const InitialOrder = () => {
       null }
       </Form.Group>
       <Button type="submit" variant="secondary" className='mt-4' disabled={
-        !(formik.isValid && formik.dirty) ? true : false}>Submit request</Button>      
+        !(formik.isValid) ? true : false}>Submit request</Button>      
     </Form>    
    </section>)
  }; 

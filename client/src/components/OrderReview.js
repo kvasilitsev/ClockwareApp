@@ -6,18 +6,19 @@ import UTCConverter from '../utils/UTCDateConvert';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-const OrderReview = (props) => {
+const OrderReview = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
   const handleSubmit = async (event) => {
-    event.preventDefault();            
-    try {        
+    event.preventDefault();
+    sessionStorage.removeItem('values');           
+    try {       
       const modifyTime = UTCConverter(state.bookingTime); //show time zone in UTC       
       const apiRequest = new Request({name: state.name, clockId: state.clockId, cityId: state.cityId, bookingTime: modifyTime, email: state.email, masterId: state.masterId});  //for production when server in UTC timezone        
       const res = await apiRequest.createOrder();
       if (res.data === true){          
         const apiRequest = new Request({email: state.email})
-        await apiRequest.sendEmail();                    
+        await apiRequest.sendEmail();                  
         navigate('/success');
       }       
     } catch (e) {
@@ -26,6 +27,7 @@ const OrderReview = (props) => {
   };
   const handleReset = (event) => {
     event.preventDefault();
+    sessionStorage.removeItem('values');
     navigate('/');
   }
   return (  
