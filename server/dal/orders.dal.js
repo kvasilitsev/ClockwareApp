@@ -151,7 +151,7 @@ class OrderData {
    * @param {integer} clockId data base attribute for orders table
    * @param {timestamp} bookingDateTime data base attribute for orders table
    */
-  async updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration, userId) {        
+  async updateOrder(id, email, masterId, cityId, clockId, bookingTime, repairDuration, userId) {    
     try {
       await db.query('UPDATE orders SET email = $1, master_id = $2, city_id = $3, clock_id = $4, booking_date_time = $5, repair_duration = $6, user_id = $7 WHERE id = $8 RETURNING *', [email, masterId, cityId, clockId, bookingTime, repairDuration, userId, id]);
     } catch (err) {
@@ -164,8 +164,7 @@ class OrderData {
    * Method updates order by their id   
    * @param {varchar} email   
    */
-  async updateOrderEmail(email, id) { 
-    logger.info(email, id);
+  async updateOrderEmail(email, id) {     
     try {
       await db.query('UPDATE orders SET email = $1 where email = (SELECT email FROM users WHERE id = $2) RETURNING *', [email, id]);
     } catch (err) {

@@ -76,7 +76,9 @@ class OrderController {
    */  
   async updateOrder(req, res) {
     const {id, email, masterId, cityId, clockId, bookingTime} = req.body.params;
+    
     let response = null;
+
     try {                
      response = await orderService.updateOrder(id, email, masterId, cityId, clockId, bookingTime);
     }

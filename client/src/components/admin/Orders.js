@@ -101,13 +101,14 @@ const Orders = () => {
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
     if (!Object.keys(validationErrors).length){
       if (bookingTime) {
+        console.log(values, bookingTime)
         const modifyTime = UTCConverter(bookingTime)    
         values.bookingDateTime = modifyTime;
         setBookingTime('');      
-      } 
+      }      
       const validateUpdate = await updateOrder(values);
-          
-      if(!validateUpdate.isUser){
+
+      if(!validateUpdate.isUser){ 
         alert(`User with email ${values.email} does not exist, please create the user first`);      
       } else if(!validateUpdate.isMaster){      
         alert(`Master ${values.masterName} does not work in city ${values.cityName}, please select another master`);   
@@ -180,6 +181,7 @@ const Orders = () => {
           const formatedDate = timeformatConvert(date);        
           return formatedDate; 
         },
+        id: 'bookingTime',
         footer: 'Booking Time',        
         Edit: ({ cell, row }) =>                                      
         <>         

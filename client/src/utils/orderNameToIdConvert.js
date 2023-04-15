@@ -14,7 +14,7 @@ async function orderNameToId (order){
     cityId: city.id,
     clockId: clock.id,
     masterId: master.id,
-    bookingDateTime: order.bookingDateTime,
+    bookingTime: order.bookingTime,
     email: order.email
   }  
   return newOrder;

@@ -77,12 +77,11 @@ class OrderService {
       isMaster: true,
       isTime: true,
       isExpired: false
-    }    
-       
+    }  
+    
     try {
       email = email.toLowerCase();
-      const checkUser = await userData.getUserByEmail(email);   
-
+      const checkUser = await userData.getUserByEmail(email);      
       if(!checkUser){     //Check if user exist  
         validate.isUser = false;
         return validate;
@@ -93,8 +92,7 @@ class OrderService {
       if (!isMasterInCity){ //Check if master works in the city
         validate.isMaster = false;      
         return validate;
-      }
-      
+      }      
       const repairDuration = await clockData.getRepairDurationByClockId(clockId);
       const bookedMastersIdInCity = await masterData.bookedMastersIdInCityExludeOrderId(cityId, bookingTime, repairDuration, id);
       const isMasterBooked = bookedMastersIdInCity.find(master => master === masterId);      
@@ -103,13 +101,13 @@ class OrderService {
         return validate;    
       } 
       
-      const currentOrderData = await orderData.getOrderById(id);
-      
+      const currentOrderData = await orderData.getOrderById(id);      
       const currentOrderDate = new Date(currentOrderData.bookingDateTime);    
       if(Date.now() > currentOrderDate){ //Check if order expired/complited
         validate.isExpired = true;
         return validate;
       }
+
       let userId = currentOrderData.userId;
 
       if(email !== currentOrderData.email){ //if change user - change userId
