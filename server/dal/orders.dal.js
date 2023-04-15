@@ -164,7 +164,7 @@ class OrderData {
    * Method updates order by their id   
    * @param {varchar} email   
    */
-  async updateOrderEmail(email, id) {     
+  async updateOrderEmail(email, id) {    
     try {
       await db.query('UPDATE orders SET email = $1 where email = (SELECT email FROM users WHERE id = $2) RETURNING *', [email, id]);
     } catch (err) {

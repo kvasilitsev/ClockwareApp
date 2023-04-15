@@ -100,10 +100,9 @@ const Orders = () => {
 
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
     if (!Object.keys(validationErrors).length){
-      if (bookingTime) {
-        console.log(values, bookingTime)
+      if (bookingTime) {        
         const modifyTime = UTCConverter(bookingTime)    
-        values.bookingDateTime = modifyTime;
+        values.bookingTime = modifyTime;        
         setBookingTime('');      
       }      
       const validateUpdate = await updateOrder(values);
