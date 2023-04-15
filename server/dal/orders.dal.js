@@ -23,7 +23,7 @@ class OrderData {
      */
   async createOrder(masterId, cityId, clockId, bookingTime, email, name, repairDuration, userId) {
     try {      
-      await db.query('INSERT INTO orders (master_id, city_id, clock_id, booking_date_time, email, user_name, repair_duration, user_id, is_deleted) values ($1, $2, $3, $4, $5, $6, $7, $8, false) RETURNING *', [masterId, cityId, clockId, bookingTime, email, name, repairDuration, userId]);
+      await db.query('INSERT INTO orders (master_id, city_id, clock_id, booking_date_time, email, user_name, repair_duration, user_id, is_deleted) values ($1, $2, $3, $4, $5, $6, $7, $8, false) RETURNING *', [masterId, cityId, clockId, bookingTime, email, name, repairDuration, userId]);      
     } catch (err) {
       logger.error('can not create order', err);     
       throw err;

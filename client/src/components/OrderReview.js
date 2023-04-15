@@ -10,17 +10,18 @@ const OrderReview = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
   const handleSubmit = async (event) => {
-    event.preventDefault();
-    sessionStorage.removeItem('values');           
+    event.preventDefault();              
     try {       
       const modifyTime = UTCConverter(state.bookingTime); //show time zone in UTC       
       const apiRequest = new Request({name: state.name, clockId: state.clockId, cityId: state.cityId, bookingTime: modifyTime, email: state.email, masterId: state.masterId});  //for production when server in UTC timezone        
       const res = await apiRequest.createOrder();
-      if (res.data === true){          
-        const apiRequest = new Request({email: state.email})
-        await apiRequest.sendEmail();                  
+      if (res.data === true){
+        sessionStorage.removeItem('values');                        
         navigate('/success');
-      }       
+      } else {
+        window.alert('Something went wrong! Please try again!');
+        navigate('/');
+      }     
     } catch (e) {
         console.log('error: ', e.response);          
       }           

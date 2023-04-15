@@ -1,7 +1,8 @@
 const orderData = require('../dal/orders.dal');
 const clockData = require('../dal/clocks.dal');
-const userData = require('../dal/users.dal')
-const masterData = require('../dal/masters.dal')
+const userData = require('../dal/users.dal');
+const masterData = require('../dal/masters.dal');
+const sendEmail = require('./email.services');
 const log4js = require('../logger');
 const logger = log4js.getLogger("clockwiseLog");
 
@@ -10,7 +11,6 @@ class OrderService {
   async createOrder(masterId, cityId, clockId, bookingTime, email, name) {    
     
     try {
-
       let userId = null;
 
       const checkUser = await userData.getUserByEmail(email); //check if user exist
@@ -37,6 +37,7 @@ class OrderService {
         throw new Error("Could not create order, master does not exist in the city or booked", { cause: 'undefiend'})
       }      
       await orderData.createOrder(masterId, cityId, clockId, bookingTime, email, name, repairDuration, userId);
+      await sendEmail(email);      
     }
     catch(error) {
       logger.info(error)
