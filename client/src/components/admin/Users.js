@@ -1,4 +1,5 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
+import { useNavigate } from 'react-router-dom';
 import MaterialReactTable from 'material-react-table';
 import { Box, Button, IconButton, Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
@@ -9,17 +10,21 @@ import updateUser from '../../utils/updateUserFunction';
 import CreateNewUserModal from "../../utils/CreateNewUserModal";
 import createNewUser from "../../utils/createNewUserFunction";
 
-const Users = () => {  
+const Users = () => { 
+
+  const [componentLoaded, setComponentLoaded] = useState(false);
   const [userList, setUserList] = useState([]);
   const [validationErrors, setValidationErrors] = useState({});
   const [createModalOpen, setCreateModalOpen] = useState(false);
+
+  const navigate = useNavigate(); 
 
   useEffect(() => {    
     getAllUsers()
     .then(data =>
       setUserList(data)     
     );    
-   }, []);
+   }, [componentLoaded]);
 
    const handleDeleteRow = async (row) => {
     if(row.original.admin){
@@ -31,8 +36,9 @@ const Users = () => {
     ) {
       return;
     }      
-     await deleteUser(row.getValue('email'));
-     window.location.replace('/users');      
+      await deleteUser(row.getValue('email'));
+      setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000);
+      navigate('/users');     
   }
 
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
@@ -48,7 +54,8 @@ const Users = () => {
         alert(`User with email ${values.email} already exist, please check email`);      
       } 
       exitEditingMode();
-      window.location.replace('/users');
+      setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000);
+      navigate('/users');
     }
   };
 
@@ -166,6 +173,7 @@ const Users = () => {
       columns={columns}
       open={createModalOpen}
       onClose={() => setCreateModalOpen(false)}
+      updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}
       onSubmit={handleCreateUser}
     />    
   </>

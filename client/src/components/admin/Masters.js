@@ -1,4 +1,5 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
+import { useNavigate } from 'react-router-dom';
 import MaterialReactTable from 'material-react-table';
 import { Box, Button, IconButton, Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
@@ -15,17 +16,20 @@ const validateRequired = (value) => !!value.length;
 
 const Masters = () => {
 
+  const [componentLoaded, setComponentLoaded] = useState(false);
   const [masterList, setMasterList] = useState([]);
   const [validationErrors, setValidationErrors] = useState({});
   const [createModalOpen, setCreateModalOpen] = useState(false);
   const [addCityModalOpen, setAddCityModalOpen] = useState(false);
+
+  const navigate = useNavigate(); 
 
   useEffect(() => {    
     getAllMasters()
     .then(data =>
       setMasterList(data)      
     );    
-   }, []);
+   }, [componentLoaded]);
 
    const handleDeleteRow = async (row) => {    
     if (      
@@ -33,8 +37,9 @@ const Masters = () => {
     ) {
       return;
     }      
-     await deleteMaster(row.getValue('id'));
-     window.location.replace('/masters');      
+      await deleteMaster(row.getValue('id'));
+      setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000);
+      navigate('/masters');      
   }
 
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
@@ -45,7 +50,8 @@ const Masters = () => {
           console.log(err)
       }       
       exitEditingMode();
-      window.location.replace('/masters');
+      setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000);
+      navigate('/masters');  
     }
   };
 
@@ -171,13 +177,15 @@ const Masters = () => {
       columns={columns}
       open={createModalOpen}
       onClose={() => setCreateModalOpen(false)}
-      onSubmit={handleCreateMaster}
+      updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}
+      onSubmit={handleCreateMaster}      
     />
     <AddCityModal
       columns={columns}
       open={addCityModalOpen}
       onClose={() => setAddCityModalOpen(false)}
       onSubmit={handleAddCity}
+      updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}
     />
     
   </>

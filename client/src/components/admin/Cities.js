@@ -1,4 +1,5 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
+import { useNavigate } from 'react-router-dom';
 import MaterialReactTable from 'material-react-table';
 import { Box, Button, IconButton, Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
@@ -13,17 +14,19 @@ const validateRequired = (value) => !!value.length;
 
 const Cities = () => {
 
-  
+  const [componentLoaded, setComponentLoaded] = useState(false);
   const [cityList, setCityList] = useState([]);
   const [validationErrors, setValidationErrors] = useState({});
   const [createModalOpen, setCreateModalOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   useEffect(() => {    
     getAllCities()
     .then(data =>
       setCityList(data)      
     );    
-   }, []);
+   }, [componentLoaded]);
 
    const handleDeleteRow = async (row) => {    
     if (      
@@ -31,8 +34,9 @@ const Cities = () => {
     ) {
       return;
     }      
-     await deleteCity(row.getValue('id'));
-     window.location.replace('/cities');      
+      await deleteCity(row.getValue('id'));
+      setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000);
+      navigate('/cities');     
   }
 
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
@@ -42,8 +46,9 @@ const Cities = () => {
     } catch(err){
         console.log(err)
     }       
-    exitEditingMode();
-    window.location.replace('/cities');
+      exitEditingMode();
+      setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000);
+      navigate('/cities'); 
     }
   };
 
@@ -146,6 +151,7 @@ const Cities = () => {
       columns={columns}
       open={createModalOpen}
       onClose={() => setCreateModalOpen(false)}
+      updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}
       onSubmit={handleCreateCity}
     />
   </>

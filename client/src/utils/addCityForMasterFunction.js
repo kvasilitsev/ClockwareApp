@@ -15,8 +15,7 @@ async function addCityForMaster(values) {
       } catch (e) {
         console.log('error: ', e.response.data.message);        
       }
-      window.alert(`City has been added!`);     
-      window.location.replace('/masters');       
+      window.alert(`City has been added!`);           
 }
 
 export default addCityForMaster;

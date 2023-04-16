@@ -33,7 +33,6 @@ async function createNewClock(values) {
       } catch (e) {
         console.log('error: ', e.response.data.message);        
       }      
-      window.location.replace('/clocks');
   }     
 }
 

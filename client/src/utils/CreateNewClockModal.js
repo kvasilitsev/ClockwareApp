@@ -14,13 +14,14 @@ import {
  * @param {*} param0 
  * @returns 
  */
-const CreateNewClockModal = ({ open, columns, onClose, onSubmit }) => {
+const CreateNewClockModal = ({ open, columns, onClose, onSubmit, updateState }) => {
 
     const [values, setValues] = useState({});   
   
     const handleSubmit = () => {      
       onSubmit(values);
       setValues(null);
+      updateState();
       onClose();
     };
     

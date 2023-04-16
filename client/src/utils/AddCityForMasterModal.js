@@ -17,7 +17,7 @@ import getAllMasters from './getAllMastersFunction';
  * @param {*} param0 
  * @returns 
  */
-const CreateNewMasterModal = ({ open, columns, onClose, onSubmit }) => {
+const CreateNewMasterModal = ({ open, columns, onClose, onSubmit, updateState }) => {
 
     const [values, setValues] = useState({});
     const [masters, setMasters] = useState([]);
@@ -37,6 +37,7 @@ const CreateNewMasterModal = ({ open, columns, onClose, onSubmit }) => {
     const handleSubmit = () => {      
       onSubmit(values);
       setValues(null);
+      updateState();
       onClose();
     };
     

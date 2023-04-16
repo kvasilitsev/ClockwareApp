@@ -21,7 +21,7 @@ import createNewOrder from './createNewOrderFunction'
  * @param {*} param0 
  * @returns 
  */
-const CreateNewOrderModal = ({ open, onClose }) => {
+const CreateNewOrderModal = ({ open, onClose, updateState }) => {  
 
   const [values, setValues] = useState({});
   const [cities, setCities] = useState([]);
@@ -30,7 +30,7 @@ const CreateNewOrderModal = ({ open, onClose }) => {
   const [bookingTime, setBookingTime] = useState('');
   
   
-  useEffect(() => {    
+  useEffect(() => {     
     getAllCities()
     .then(data =>
       setCities(data)
@@ -47,10 +47,11 @@ const CreateNewOrderModal = ({ open, onClose }) => {
 
 
   const handleSubmit = () => { 
-    createNewOrder(values);   
+    createNewOrder(values);        
     setValues(null);    
-    setBookingTime(null);    
-    onClose();
+    setBookingTime(null);
+    updateState();
+    onClose();     
   };
 
   return (    
@@ -155,9 +156,9 @@ const CreateNewOrderModal = ({ open, onClose }) => {
         <Button onClick={onClose}>Cancel</Button>
         <Button color="inherit" onClick={handleSubmit} variant="contained">
           Create Order
-        </Button>
+        </Button>        
       </DialogActions>
-    </Dialog>  
+    </Dialog>     
   );
 };
 

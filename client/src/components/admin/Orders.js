@@ -1,4 +1,5 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
+import { useNavigate } from 'react-router-dom';
 import MaterialReactTable from 'material-react-table';
 import findAllOrders from '../../utils/getAllOrdersFunction';
 import orderIdToName from '../../utils/orderListIdToNameConvert';
@@ -19,7 +20,9 @@ import getMinTime from '../../utils/getMinTime';
 
 const validateRequired = (value) => !!value.length;
 
-const Orders = () => {  
+const Orders = () => { 
+
+  const [componentLoaded, setComponentLoaded] = useState(false);
   const [orderList, setOrderList] = useState([]);  
   const [nameOrderList, setNameOrderList] = useState([]);  
   const [cities, setCities] = useState([]);
@@ -28,9 +31,10 @@ const Orders = () => {
   const [bookingTime, setBookingTime] = useState('');
   const [validationErrors, setValidationErrors] = useState({});
   const [createModalOpen, setCreateModalOpen] = useState(false);
-  
-      
-  useEffect(() => {    
+
+  const navigate = useNavigate(); 
+   
+  useEffect(() => {         
     findAllOrders()
     .then(data =>
       setOrderList(data)
@@ -46,9 +50,9 @@ const Orders = () => {
     getAllMasters()
     .then(data =>
       setMasters(data)
-    );   
-   }, []);
-   
+    );    
+   }, [componentLoaded]);
+
   useEffect(() => {    
     orderIdToName(orderList)
     .then(data =>
@@ -95,7 +99,8 @@ const Orders = () => {
      if(validateDelete.isExpired){
       alert(`Expired/Complited order can not be deleted`);  
     }
-     window.location.replace('/orders');      
+      setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000);
+      navigate('/orders');      
   }
 
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
@@ -116,8 +121,9 @@ const Orders = () => {
       } else if(validateUpdate.isExpired){
         alert(`Expired/Complited order can not be updated`);  
       }
-      exitEditingMode();
-      window.location.replace('/orders');
+        exitEditingMode();
+        setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000);
+        navigate('/orders');
     }
   };
 
@@ -258,8 +264,9 @@ const Orders = () => {
   />
     <CreateNewOrderModal      
       open={createModalOpen}
-      onClose={() => setCreateModalOpen(false)}      
-    />    
+      onClose={() => setCreateModalOpen(false)}
+      updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}      
+    />     
   </>
   );  
 };

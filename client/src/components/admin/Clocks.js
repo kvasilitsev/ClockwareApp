@@ -1,4 +1,5 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
+import { useNavigate } from 'react-router-dom';
 import MaterialReactTable from 'material-react-table';
 import { Box, Button, IconButton, Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
@@ -13,24 +14,29 @@ const validateRequired = (value) => !!value.length;
 
 const Clocks = () => {
 
+  const [componentLoaded, setComponentLoaded] = useState(false);
   const [clockList, setClockList] = useState([]);
   const [validationErrors, setValidationErrors] = useState({});
   const [createModalOpen, setCreateModalOpen] = useState(false);
+
+  const navigate = useNavigate(); 
 
   useEffect(() => {    
     getAllClocks()    
     .then(data =>
       setClockList(data)      
     );    
-   }, []);   
+   }, [componentLoaded]);  
+
    const handleDeleteRow = async (row) => {    
     if (      
       !window.confirm(`Are you sure you want to delete clock ${row.getValue('size')}?`)
     ) {
       return;
     }      
-     await deleteClock(row.getValue('id'));
-     window.location.replace('/clocks');      
+      await deleteClock(row.getValue('id'));
+      setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000);
+      navigate('/clocks');       
   }
 
   const handleSaveRowEdits = async ({ exitEditingMode, values }) => {
@@ -46,7 +52,8 @@ const Clocks = () => {
           console.log(err)
       }       
       exitEditingMode();
-      window.location.replace('/clocks');
+      setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000);
+      navigate('/clocks'); 
     }
   };
 
@@ -159,6 +166,7 @@ const Clocks = () => {
       columns={columns}
       open={createModalOpen}
       onClose={() => setCreateModalOpen(false)}
+      updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}
       onSubmit={handleCreateClock}
     />    
   </>

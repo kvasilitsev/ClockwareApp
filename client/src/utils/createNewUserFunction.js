@@ -41,8 +41,7 @@ async function createNewUser(values) {
     } catch (e) {
       console.log('error: ', e.response);
     }
-  }
-  window.location.replace('/users');
+  }  
 }
 
 export default createNewUser;

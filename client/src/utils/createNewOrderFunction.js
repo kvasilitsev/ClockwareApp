@@ -51,32 +51,28 @@ return  errors;
  * Function performs api request createOrder()
  * @param {object} values an object of values
  */
-async function createNewOrder(values) {  
+async function CreateNewOrder(values) {
   const validation = validate(values);
   if(!validation){
     const modifyTime = UTCConverter(values.bookingTime);
     try {                        
       const apiRequest = new Request({name: values.name, email: values.email, cityId: values.cityId, masterId: values.masterId, clockId: values.clockId, bookingTime: modifyTime});       
-      const freeMasters = await apiRequest.getFreeMasters();      
-      console.log(freeMasters);      
+      const freeMasters = await apiRequest.getFreeMasters();         
       if(freeMasters.length < 1){
-        alert(`No masters available in this city at selected time`);
-        window.location.replace('/orders');
+        window.alert(`No masters available in this city at selected time`);        
         return 
       }
       const isMasterInList = freeMasters.filter(master => master.id === values.masterId);
       if (isMasterInList.length !== 1){
-        alert(`master is not available`);
-        window.location.replace('/orders');
+        window.alert(`master is not available`);        
         return 
       }
-      await apiRequest.createOrder();                   
+      await apiRequest.createOrder();      
     } catch (e) {
       console.log('error: ', e.response);
     }
-  }
-  window.location.replace('/orders');
+  }  
 }
 
-export default createNewOrder;
+export default CreateNewOrder;
 
