@@ -124,7 +124,7 @@ class Request {
     catch (error) {      
       console.log('error: ', error); 
     }
-  } 
+  }
 
   async getCities() {
     try {

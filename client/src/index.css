@@ -208,3 +208,12 @@ h4{
     display: block;
     text-align: center;   
  }
+
+ /*-------------404----------*/
+ .error404{
+    display: block;
+    text-align: center; 
+ }
+ .error404 > h1 {
+    font-size: 8rem;
+ }
