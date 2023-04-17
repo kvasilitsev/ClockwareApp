@@ -33,16 +33,21 @@ class MasterData {
     let masterList = [];
 
     try {
-      const mastersResultSet = await db.query('SELECT id, name, rating FROM masters where is_deleted = false');    
+      const mastersResultSet = await db.query('SELECT id, name, rating FROM masters where is_deleted = false');
+      const mastersCities = await db.query('select masters_cities.master_id, masters_cities.city_id from masters_cities,  masters where masters.is_deleted = false');      
+      
       if(mastersResultSet.rowCount > 0) { 
         mastersResultSet.rows.forEach(element => {                 
-        let master = new Master();
-        master.name = element.name;
-        master.id = element.id;
-        master.rating = element.rating;        
-        masterList.push(master);       
-      });
-    }
+          let master = new Master();
+          master.name = element.name;
+          master.id = element.id;
+          master.rating = element.rating; 
+          master.cityList = [];       
+          masterList.push(master);       
+        });        
+      }      
+      
+    //logger.info('master dal', masterCityList)      
     return masterList;
     } catch(error) {
       logger.error(`getMasters failed with reason: ${error.detail}`);

@@ -26,7 +26,7 @@ authHost.interceptors.response.use((config) => {
         try {
             const response = await axios.get(`/api/refresh`, {withCredentials: true});
             localStorage.setItem('token', response.data.accessToken);                                 
-            return await authHost.request(request.url);
+            return await authHost.request(request);
         } catch (e) {
             console.log('Not authorized user')
         }

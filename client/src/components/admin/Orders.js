@@ -34,30 +34,29 @@ const Orders = () => {
 
   const navigate = useNavigate(); 
    
-  useEffect(() => {         
+  useEffect(() => {    
     findAllOrders()
-    .then(data =>
-      setOrderList(data)
+    .then(data => {
+      setOrderList(data);
+      getAllCities().then(data =>
+        setCities(data)
+      )
+      getAllClocks().then(data =>
+        setClocks(data)
+      );
+      getAllMasters().then(data =>
+        setMasters(data)
     );
-    getAllCities()
-    .then(data =>
-      setCities(data)
-    );
-    getAllClocks()
-    .then(data =>
-      setClocks(data)
-    );
-    getAllMasters()
-    .then(data =>
-      setMasters(data)
-    );    
+    })       
    }, [componentLoaded]);
 
-  useEffect(() => {    
-    orderIdToName(orderList)
-    .then(data =>
-      setNameOrderList(data)
-    );
+  useEffect(() => {
+    if(orderList.length > 0){
+      orderIdToName(orderList).then(data =>
+        setNameOrderList(data)
+      );
+    }  
+    
   }, [orderList]);  
 
   const validate = useCallback(
@@ -265,10 +264,14 @@ const Orders = () => {
     <CreateNewOrderModal      
       open={createModalOpen}
       onClose={() => setCreateModalOpen(false)}
-      updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}      
+      updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}} 
+      cities = { cities} 
+      clocks = { clocks} 
+      masters = { masters }    
     />     
   </>
   );  
 };
 
 export default Orders;
+

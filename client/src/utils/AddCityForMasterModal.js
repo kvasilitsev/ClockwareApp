@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   Button,
   Dialog,
@@ -9,30 +9,16 @@ import {
   TextField,
   MenuItem
 } from '@mui/material';
-import getAllCities from './getAllCitiesFunction';
-import getAllMasters from './getAllMastersFunction';
+
 
 /**
  * Function creates modal window create new master
- * @param {*} param0 
+ * @param {*} param
  * @returns 
  */
-const CreateNewMasterModal = ({ open, columns, onClose, onSubmit, updateState }) => {
+const CreateNewMasterModal = ({ open, onClose, onSubmit, updateState, masters, cities }) => {
 
     const [values, setValues] = useState({});
-    const [masters, setMasters] = useState([]);
-    const [cities, setCities] = useState([]);
-
-    useEffect(() => {    
-        getAllMasters()
-        .then(data =>
-          setMasters(data)      
-        );
-        getAllCities()
-        .then(data =>
-          setCities(data)      
-        );    
-       }, []);
   
     const handleSubmit = () => {      
       onSubmit(values);

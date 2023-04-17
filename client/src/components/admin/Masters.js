@@ -5,6 +5,7 @@ import { Box, Button, IconButton, Tooltip } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
 import { RATING_REGEX, USER_REGEX } from '../../models/regExp';
 import getAllMasters from '../../utils/getAllMastersFunction';
+import getAllCities from '../../utils/getAllCitiesFunction';
 import deleteMaster from '../../utils/deleteMasterFunction';
 import updateMaster from '../../utils/updateMasterFunction';
 import createNewMaster from '../../utils/createNewMasterFunction';
@@ -18,16 +19,23 @@ const Masters = () => {
 
   const [componentLoaded, setComponentLoaded] = useState(false);
   const [masterList, setMasterList] = useState([]);
+  const [cities, setCities] = useState([]);
   const [validationErrors, setValidationErrors] = useState({});
   const [createModalOpen, setCreateModalOpen] = useState(false);
   const [addCityModalOpen, setAddCityModalOpen] = useState(false);
+  
 
   const navigate = useNavigate(); 
 
   useEffect(() => {    
     getAllMasters()
-    .then(data =>
-      setMasterList(data)      
+    .then(data => {
+      setMasterList(data);
+      getAllCities()
+        .then(data =>
+          setCities(data)      
+        ); 
+    }
     );    
    }, [componentLoaded]);
 
@@ -186,6 +194,8 @@ const Masters = () => {
       onClose={() => setAddCityModalOpen(false)}
       onSubmit={handleAddCity}
       updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}
+      masters = { masterList }
+      cities = { cities }
     />
     
   </>

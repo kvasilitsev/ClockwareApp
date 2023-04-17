@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import DatePicker from "react-datepicker";
 import {
   Button,
@@ -10,9 +10,7 @@ import {
   TextField,
   MenuItem 
 } from '@mui/material';
-import getAllCities from './getAllCitiesFunction';
-import getAllClocks from './getAllClocksFunction';
-import getAllMasters from './getAllMastersFunction';
+
 import createNewOrder from './createNewOrderFunction'
 
 
@@ -21,30 +19,10 @@ import createNewOrder from './createNewOrderFunction'
  * @param {*} param0 
  * @returns 
  */
-const CreateNewOrderModal = ({ open, onClose, updateState }) => {  
+const CreateNewOrderModal = ({ open, onClose, updateState, cities, clocks, masters }) => {  
 
-  const [values, setValues] = useState({});
-  const [cities, setCities] = useState([]);
-  const [clocks, setClocks] = useState([]);
-  const [masters, setMasters] = useState([]);    
+  const [values, setValues] = useState({}); 
   const [bookingTime, setBookingTime] = useState('');
-  
-  
-  useEffect(() => {     
-    getAllCities()
-    .then(data =>
-      setCities(data)
-    );
-    getAllClocks()
-    .then(data =>
-      setClocks(data)
-    );
-    getAllMasters()
-    .then(data =>
-      setMasters(data)
-    );    
-   }, []);      
-
 
   const handleSubmit = () => { 
     createNewOrder(values);        
