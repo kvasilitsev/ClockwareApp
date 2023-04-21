@@ -14,7 +14,7 @@ import {
  * @param {*} param0 
  * @returns 
  */
-const CreateNewMasterModal = ({ open, columns, onClose, onSubmit, updateState }) => {
+const CreateNewMasterModal = ({ open, onClose, onSubmit, updateState }) => {
 
     const [values, setValues] = useState({});   
   
@@ -36,23 +36,29 @@ const CreateNewMasterModal = ({ open, columns, onClose, onSubmit, updateState })
                 minWidth: { xs: '300px', sm: '360px', md: '400px' },
                 gap: '1.5rem',
               }}
-            >
-              {columns.map((column) => {
-                if(column.id !== 'id') {
-                  return (
-                    <TextField
-                    key={column.accessorKey}
-                    label={column.accessorKey}
-                    name={column.accessorKey}
-                    onChange={(e) =>
-                      setValues({ ...values, [e.target.name]: e.target.value })
-                    }
-                    />
-                  )
-                }
-                return null;
-              }                
-              )}
+            >             
+              <>
+                <TextField                
+                  label='Master name'                        
+                  size='small'
+                  name='name'
+                  defaultValue={''}
+                  onChange={(e) =>
+                    setValues({ ...values, [e.target.name]: e.target.value })
+                  }
+                >                
+                </TextField>
+                <TextField                
+                  label='Rating'                        
+                  size='small'
+                  name='rating'
+                  defaultValue={''}
+                  onChange={(e) =>
+                    setValues({ ...values, [e.target.name]: e.target.value })
+                  }
+                >                
+                </TextField>
+              </>              
             </Stack>
           </form>
         </DialogContent>

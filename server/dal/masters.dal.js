@@ -34,8 +34,8 @@ class MasterData {
 
     try {
       const mastersResultSet = await db.query('SELECT id, name, rating FROM masters where is_deleted = false');
-      const mastersCities = await db.query('select masters_cities.master_id, masters_cities.city_id from masters_cities,  masters where masters.is_deleted = false');      
-      
+      const mastersCitiesResultSet = await db.query('SELECT DISTINCT masters_cities.master_id, cities.name FROM masters_cities,  masters, cities WHERE masters.is_deleted = false and masters_cities.city_id = cities.id');
+           
       if(mastersResultSet.rowCount > 0) { 
         mastersResultSet.rows.forEach(element => {                 
           let master = new Master();
@@ -44,11 +44,18 @@ class MasterData {
           master.rating = element.rating; 
           master.cityList = [];       
           masterList.push(master);       
-        });        
-      }      
+        });   
+      }
       
-    //logger.info('master dal', masterCityList)      
-    return masterList;
+      const mastersCitiesList = masterList.map((master) => {
+        (mastersCitiesResultSet.rows).map((element) => {
+          if(element.master_id === master.id){
+            master.cityList.push(element.name);
+          }
+        })
+        return master;
+      })    
+    return mastersCitiesList;
     } catch(error) {
       logger.error(`getMasters failed with reason: ${error.detail}`);
       throw error;

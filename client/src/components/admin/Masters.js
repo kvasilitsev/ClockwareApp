@@ -127,7 +127,18 @@ const Masters = () => {
         muiTableBodyCellEditTextFieldProps: ({ cell }) => ({
           ...validate(cell),          
         }),        
-      }                
+      },
+      {
+        header: 'Cities',
+        accessorFn: (row) => {          
+          return (row.cityList).join(', ')
+        },
+        id: 'cities',
+        footer: 'Cities',
+        muiTableBodyCellEditTextFieldProps: ({ cell }) => ({
+          ...validate(cell),          
+        }),
+      }               
     ],
     [validate],
   );
