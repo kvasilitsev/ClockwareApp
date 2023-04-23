@@ -11,5 +11,6 @@ router.put("/deleteMaster", authAdmin, masterController.deleteMaster);
 router.get("/getMastersByCityId/:id", authAdmin, masterController.getMastersByCityId);
 router.post("/addCityForMaster", authAdmin, masterController.addCityForMaster);
 router.get("/getFreeMastersInCity", masterController.getFreeMastersInCity);
+router.delete("/removeCityForMaster", authAdmin, masterController.removeCityForMaster);
 
 module.exports = router;

@@ -5,16 +5,17 @@ import { REGISTER_URL, ADMIN_REGISTER_URL, GET_FREE_MASTERS_URL, CREATE_ORDER_UR
        UPDATE_ORDER_URL, GET_ALL_USERS_URL, DELETE_USER_URL, UPDATE_USER_URL,
        DELETE_MASTER_URL, UPDATE_MASTER_URL, CREATE_MASTER_URL, DELETE_CITY_URL,
        UPDATE_CITY_URL, CREATE_CITY_URL, CREATE_CLOCK_URL, DELETE_CLOCK_URL, UPDATE_CLOCK_URL,
-       ADD_CITY_FOR_MASTER_URL } from '../models/routes';
+       ADD_CITY_FOR_MASTER_URL, REMOVE_CITY_FOR_MASTER_URL } from '../models/routes';
 
 
 class Request {
 
-  constructor({ name, email, password, cityId, bookingTime, clockId, masterId, orderId, userId, rating, size, repairDuration } = {}){
+  constructor({ name, email, password, cityId, bookingTime, clockId, masterId, orderId, userId, rating, size, repairDuration, cityName } = {}){
     this.name = name;
     this.email = email;
     this.password = password;
     this.cityId = cityId;
+    this.cityName = cityName;
     this.bookingTime = bookingTime;
     this.clockId = clockId;
     this.masterId = masterId;
@@ -92,6 +93,20 @@ class Request {
         }
       )
       return res.data;
+    }
+    catch (error) {
+      console.log('error', error);
+    }
+  }
+
+  async removeCityForMaster() {    
+    try {
+      return await authHost.delete(REMOVE_CITY_FOR_MASTER_URL,
+        { data: {masterId: this.masterId, cityName: this.cityName} },
+        {
+          withCredentials: true
+        }
+      )      
     }
     catch (error) {
       console.log('error', error);

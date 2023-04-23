@@ -195,6 +195,22 @@ class MasterData {
   }
 
   /**
+   * Method removes City for Master by city name and master id
+   * @param {integer} masterId data base attribute for masters_cities table
+   * @param {integer} cityId data base attribute for masters_cities table
+   */
+  async removeCityForMaster(masterId, cityName){
+    
+    try {
+      await db.query('DELETE FROM masters_cities USING cities WHERE masters_cities.city_id = cities.id AND cities.name = $1 AND masters_cities.master_id = $2', [cityName, masterId])
+      await db.query('UPDATE orders SET is_deleted = true FROM cities WHERE cities.id = orders.city_id AND cities.name = $1 AND orders.master_id = $2', [cityName, masterId])
+    } catch (err) {
+      logger.error(`removeCityForMaster failed with reason: ${err}`);
+      throw err;
+    }
+  }
+
+  /**
    * Method gets list of city id by master id
    * @param {integer} masterId data base attribute for masters_cities table
    * @returns 

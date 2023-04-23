@@ -122,6 +122,27 @@ class MasterController {
   }
 
   /**
+    * Method remove City for Master by Master id and City name
+    * @param {*} req 
+    * @param {*} res 
+    */ 
+  async removeCityForMaster(req, res){
+         
+    const {masterId, cityName} = req.body;   
+    
+    try {
+      await masterService.removeCityForMaster(masterId, cityName);
+    }
+    catch(err) {
+      res.json({
+        message: err.message,
+        cause: err.cause.detail
+      });      
+    }
+    res.send(true);    
+  }
+
+  /**
    * Method get free masters in the city for the specified time range
    * @param {*} req 
    * @param {*} res 

@@ -16,7 +16,7 @@ import {
  * @param {*} param
  * @returns 
  */
-const CreateNewMasterModal = ({ open, onClose, onSubmit, updateState, masters, cities }) => {
+const AddCityForMasterModal = ({ open, onClose, onSubmit, updateState, masters, cities }) => {
 
     const [values, setValues] = useState({});
   
@@ -87,5 +87,5 @@ const CreateNewMasterModal = ({ open, onClose, onSubmit, updateState, masters, c
     );
   };
 
-  export default CreateNewMasterModal;
+  export default AddCityForMasterModal;
 

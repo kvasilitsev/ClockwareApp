@@ -1,7 +1,7 @@
 import React, { useMemo, useEffect, useState, useCallback } from "react";
 import { useNavigate } from 'react-router-dom';
 import MaterialReactTable from 'material-react-table';
-import { Box, Button, IconButton, Tooltip } from '@mui/material';
+import { Box, Button, IconButton, Tooltip, MenuItem, } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
 import { RATING_REGEX, USER_REGEX } from '../../models/regExp';
 import getAllMasters from '../../utils/getAllMastersFunction';
@@ -11,7 +11,9 @@ import updateMaster from '../../utils/updateMasterFunction';
 import createNewMaster from '../../utils/createNewMasterFunction';
 import CreateNewMasterModal from '../../utils/CreateNewMasterModal';
 import AddCityModal from '../../utils/AddCityForMasterModal';
-import AddCityForMaster from '../../utils/addCityForMasterFunction';
+import addCityForMaster from '../../utils/addCityForMasterFunction';
+import RemoveCityModal from '../../utils/RemoveCityForMasterModal';
+import removeCityForMaster from '../../utils/removeCityForMasterFunction';
 
 const validateRequired = (value) => !!value.length;
 
@@ -23,6 +25,7 @@ const Masters = () => {
   const [validationErrors, setValidationErrors] = useState({});
   const [createModalOpen, setCreateModalOpen] = useState(false);
   const [addCityModalOpen, setAddCityModalOpen] = useState(false);
+  const [removeCityModalOpen, setRemoveCityModalOpen] = useState(false);
   
 
   const navigate = useNavigate(); 
@@ -72,7 +75,11 @@ const Masters = () => {
   };
 
   const handleAddCity = (values) => {    
-    AddCityForMaster(values);
+    addCityForMaster(values);
+  };
+
+  const handleRemoveCity = (values) => {    
+    removeCityForMaster(values);
   };
 
   const validate = useCallback(
@@ -135,9 +142,7 @@ const Masters = () => {
         },
         id: 'cities',
         footer: 'Cities',
-        muiTableBodyCellEditTextFieldProps: ({ cell }) => ({
-          ...validate(cell),          
-        }),
+        enableEditing: false,
       }               
     ],
     [validate],
@@ -175,40 +180,55 @@ const Masters = () => {
     )}
     renderTopToolbarCustomActions={() => (
       <>
-      <Button
-      color="inherit"
-        onClick={() => setCreateModalOpen(true)}
-        variant="contained"
-      >
-        Create New Master
-      </Button>
-      <Button
-      color="inherit"
-        onClick={() => setAddCityModalOpen(true)}
-        variant="contained"
-      >
-        Add city for Master
-      </Button>
+        <Button
+        className="m-2"
+        color="inherit"
+          onClick={() => setCreateModalOpen(true)}
+          variant="contained"
+        >
+          Create New Master
+        </Button>
+        <Button
+        className="m-2"
+        color="inherit"
+          onClick={() => setAddCityModalOpen(true)}
+          variant="contained"
+        >
+          Add city for Master
+        </Button>
+        <Button
+        className="m-2"
+        color="inherit"
+          onClick={() => setRemoveCityModalOpen(true)}
+          variant="contained"
+        >
+          Remove city for Master
+        </Button>
       </>   
     )}
     />
-    <CreateNewMasterModal
-      columns={columns}
-      open={createModalOpen}
-      onClose={() => setCreateModalOpen(false)}
-      updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}
-      onSubmit={handleCreateMaster}      
-    />
-    <AddCityModal
-      columns={columns}
-      open={addCityModalOpen}
-      onClose={() => setAddCityModalOpen(false)}
-      onSubmit={handleAddCity}
-      updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}
-      masters = { masterList }
-      cities = { cities }
-    />
-    
+      <CreateNewMasterModal
+        columns={columns}
+        open={createModalOpen}
+        onClose={() => setCreateModalOpen(false)}
+        updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}
+        onSubmit={handleCreateMaster}      
+      />
+      <AddCityModal        
+        open={addCityModalOpen}
+        onClose={() => setAddCityModalOpen(false)}
+        onSubmit={handleAddCity}
+        updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}
+        masters = { masterList }
+        cities = { cities }
+      />
+      <RemoveCityModal        
+        open={removeCityModalOpen}
+        onClose={() => setRemoveCityModalOpen(false)}
+        onSubmit={handleRemoveCity}
+        updateState={() => { setTimeout(() => {setComponentLoaded(!componentLoaded)}, 1000)}}
+        masters = { masterList }        
+      />    
   </>
   ); 
 }

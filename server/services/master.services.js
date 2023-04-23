@@ -108,6 +108,16 @@ class MasterService {
     }
   }
 
+  async removeCityForMaster(masterId, cityName){    
+    
+    try {      
+      await masterData.removeCityForMaster(masterId, cityName);      
+    }
+    catch (err){
+      throw new Error("Could not remove new city", { cause: err });
+    }
+  }
+
   async getFreeMastersInCity(cityId, bookingTime, clockId){    
     const allMastersInCity = await masterData.getMastersByCityId(cityId);
     const repairDuration = await clockData.getRepairDurationByClockId(clockId);

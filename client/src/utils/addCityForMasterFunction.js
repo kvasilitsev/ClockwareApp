@@ -10,7 +10,8 @@ async function addCityForMaster(values) {
         const apiRequest = new Request({ cityId: values.cityId, masterId: values.masterId });        
         const validate = await apiRequest.addCityForMaster();
         if(validate.isCity){
-            window.alert(`Master already works in selected city`);       
+            window.alert(`Master already works in selected city`);
+            return;       
           }                     
       } catch (e) {
         console.log('error: ', e.response.data.message);        
