@@ -150,7 +150,7 @@ const InitialOrder = () => {
         </Form.Label>
       <AsyncSelect 
         className = 'select'
-        id='clock'
+        id = 'clock'
         value={ formik.values.clockSize ? { label: formik.values.clockSize, value: formik.values.clockId } : { label: 'Select clock size'}}        
         onChange={value => {                          
                             formik.setFieldValue('clockId', value.value);
@@ -170,7 +170,7 @@ const InitialOrder = () => {
       </Form.Label>
       <AsyncSelect 
         className = 'select'
-        id='city'
+        id = 'city'
         value={formik.values.city ? { label: formik.values.city, value: formik.values.cityId } : { label: 'Select city' }}          
         onChange={value => {
                             formik.setFieldValue('cityId', value.value);
