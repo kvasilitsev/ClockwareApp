@@ -48,7 +48,7 @@ describe('the order form check', () => {
     //functions which are filling form inputs
 
     const name = () => cy.get('#name').type('name');
-    const email = () => cy.get('#email').type('email@emal.com');
+    const email = () => cy.get('#email').type('email@email.com');
     const clock = () => cy.get('#clock').click().get('#react-select-3-listbox').contains('small').click();
     const city = () => cy.get('#city').click().get('#react-select-5-listbox').contains('Dnipro').click();
     const datetime = () => cy.get('.datePicker').click().get('.react-datepicker__week').contains('29').click()
@@ -75,7 +75,7 @@ describe('the order form check', () => {
 
   it("check submit button works", () => {    
     cy.get('#name').type('name');
-    cy.get('#email').type('email@emal.com');
+    cy.get('#email').type('email@email.com');
     cy.get('#clock').click().get('#react-select-3-listbox').contains('small').click();
     cy.get('#city').click().get('#react-select-5-listbox').contains('Dnipro').click();
     cy.get('.datePicker').click().get('.react-datepicker__week').contains('29').click()
